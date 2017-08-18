@@ -29,6 +29,16 @@ IF EXIST "GTFS" (
     cd GTFS
     git checkout develop
 )
+cd..
+
+IF EXIST "openlr" (
+    cd openlr
+    git pull origin master
+) ELSE (
+    git clone https://github.com/itinero/openlr.git
+    cd openlr
+    git checkout master
+)
 cd ..
 cd ..
 

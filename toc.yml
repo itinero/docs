@@ -1,6 +1,8 @@
 - name: Documentation
   href: docs/
 - name: Itinero API
-  href: api/
+  href: itinero/
 - name: GTFS API
   href: gtfs/
+- name: OpenLR API
+  href: openlr/

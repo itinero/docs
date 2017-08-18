@@ -14,13 +14,13 @@
           ]
         }
       ],
-      "dest": "api"
+      "dest": "itinero"
     },
     {
       "src": [
         {
           "files": [
-            "source/GTFS/src/GTFS/**/*.cs",
+            "source/GTFS/src/GTFS/**/*.cs"
           ],
           "exclude": [
             "**/obj/**",
@@ -30,20 +30,42 @@
         }
       ],
       "dest": "gtfs"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "source/openlr/src/OpenLR/**/*.cs",
+            "source/openlr/src/OpenLR.Geo/**/*.cs"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
+        }
+      ],
+      "dest": "openlr"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md"
+          "itinero/**.yml",
+          "itinero/index.md"
         ]
       },
       {
         "files": [
           "gtfs/**.yml",
           "gtfs/index.md"
+        ]
+      },
+      {
+        "files": [
+          "openlr/**.yml",
+          "openlr/index.md"
         ]
       },
       {

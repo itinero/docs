@@ -43,7 +43,9 @@ packages/*
 
 source/*
 _site/*
-api/*
+itinero/*
+gtfs/*
+openlr/*
 opj/*
 output/*
 
