@@ -5,6 +5,9 @@
         {
           "files": [
             "source/routing/src/Itinero/**/*.cs",
+            "source/routing/src/Itinero.Geo/**/*.cs",
+            "source/routing/src/Itinero.IO.Osm/**/*.cs",
+            "source/routing/src/Itinero.IO.Shape/**/*.cs",
             "source/optimization/src/Itinero.Optimization/**/*.cs"
           ],
           "exclude": [
