@@ -3,12 +3,37 @@ uid: profile
 title: Profile
 ---
 
-## Concepts
+# Profile
 
-To configure routing in Itinero there are three main concepts, Vehicles, Profiles and Profile instances:
+A profile is the most important concept to configure routing. There are two important concepts related to this:
 
 - Vehicle: A **definition of a vehicle** that travels the network. This can be a _car_ but also a _pedestrian_ for example.
-- Profile: A profile describes **the behaviour of a vehicle**. For a car this could be _shortest_ or _fastest_ taking the shortest or fastest route respectively. For bicycles this could be _recreational_ meaning this profile focuses on nice routes to get from A to B.
+- Profile: A profile describes **the behaviour of a vehicle**. 
+
+For a car for example there is the definition of _car_, this means, where can it travel over the network, what is it's maximum speed and so on. How the car behaves, the profile, defines the route it will take, for example _fastest_ or _shortest_. For bicycles this could be _recreational_ meaning this profile focuses on nice routes quiet routes.
+
+## Profile and vehicle definitions
+
+Basically a vehicle and profile are defined together by one basic function: *factor_and_speed*. This function has to be implemented for every vehicle profile and defines both _shortest_ and _fastest_ simultaneously.
+
+```csharp
+/// <summary>
+/// Calculates a factor and speed and adds keys to the given whitelist that are relevant.
+/// </summary>
+/// <returns>A non-zero factor and speed when the edge with the given attributes is usefull for this vehicle.</returns>
+FactorAndSpeed FactorAndSpeed(IAttributeCollection attributes, Whitelist whitelist);
+```
+
+The @Itinero.Profiles.FactorAndSpeed struct defines:
+
+- Speed: The speed in m/s over the edge with the given attributes.
+- Factor: The factor, could be different from speed in custom profiles.
+- Direction: 
+  - 0: Bidirectional.
+  - 1: Oneway in the direction of the edge.
+  - 2: Oneway agains the direction of the edge.
+
+When Factor > 0 the edge is considered routable.
 
 ## Lua
 
