@@ -99,7 +99,7 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "docs/images/**.png"
         ],
         "exclude": [
           "obj/**",
@@ -118,12 +118,15 @@
         ]
       }
     ],
-    "dest": "_site",
-    "globalMetadataFiles": [],
+    "dest": "_site",    
+    "globalMetadata": {
+      "_appTitle": "Itinero - Documentation",
+      "_appFooter": "Built by Itinero, MIT licensed."
+    },
     "fileMetadataFiles": [],
     "template": [
       "default",
-	  "custom-template"
+	    "custom-template"
     ],
     "postProcessors": [],
     "noLangKeyword": false,

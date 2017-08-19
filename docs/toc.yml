@@ -1,14 +1,40 @@
-- name: Introduction
+- name: Content
   href: index.md
-- name: Basic Concepts
+- name: Itinero
+  href: itinero/index.md
   items:
-  - name: Profiles
-    href: profiles.md
-  - name: RouterDb
-    href: routerdb.md
-  - name: Router
-    href: router.md
-  - name: Route
-    href: route.md
-  - name: Shapefiles
-    href: shapefiles.md
+  - name: Basic Concepts
+    href: itinero/basic-concepts/index.md
+    items:
+    - name: RouterDb
+      href: itinero/basic-concepts/routerdb.md
+    - name: Profile
+      href: itinero/basic-concepts/profile.md
+    - name: Router
+      href: itinero/basic-concepts/router.md
+    - name: RouterPoint
+      href: itinero/basic-concepts/routerpoint.md
+    - name: Route
+      href: itinero/basic-concepts/route.md
+  - name: Data Sources
+    href: itinero/data-sources/index.md
+    items:
+    - name: OpenStreetMap (OSM)
+      href: itinero/data-sources/openstreetmap.md
+    - name: Shapefiles
+      href: itinero/data-sources/shapefiles.md
+  - name: Tutorials
+    href: itinero/tutorials/index.md
+    items:
+    - name: Routing Server
+      href: itinero/tutorials/routing-server.md
+    - name: Offline routing in mobile app
+      href: itinero/tutorials/offline-routing.md
+    - name: Matrix calculation
+      href: itinero/tutorials/matrix-calculation.md
+  - name: Routing API
+    href: itinero/routing-api.md
+- name: OpenLR
+  href: openlr/index.md
+- name: GTFS
+  href: gtfs/index.md

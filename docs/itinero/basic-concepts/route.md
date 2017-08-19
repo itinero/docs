@@ -1,4 +1,11 @@
-The Route object is usually the result of a route calculation on the [[Router]]. There is just the bare minimum to represent a route accurately but there are some extension methods available on it to work with the Route object easier.
+---
+uid: route
+title: Route
+---
+
+# Route
+
+The Route object is usually the result of a route calculation on the @router. There is just the bare minimum to represent a route accurately but there are some extension methods available on it to work with the Route object easier.
 
 The following usecases need to be supported by the route object:
 - A geometry-only route, just for display.
@@ -12,6 +19,8 @@ To support all these usecases at the same time the Route object has the followin
 - ```Branches```: Data about intersections along the route.
 
 A minimum route only needs to have ```Shape``` array set. Any of the others are optional.
+
+## Details
 
 ### Shape
 
