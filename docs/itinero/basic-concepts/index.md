@@ -47,7 +47,7 @@ var end = router.Resolve(profile, 51.26797020271655f, 4.801905155181885f);
 var route = router.Calculate(profile, start, end);
 ```
 
-So what is happening in the sample, in the same order:
+So this is happening in the sample, in the same order:
 1. Building a routing network from raw OSM-data.
 2. Creating a router.
 3. Define a profile.

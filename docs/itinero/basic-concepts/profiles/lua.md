@@ -1,16 +1,8 @@
 ---
-uid: profile
-title: Profile
+uid: lua-profile
+title: Lua Profiles
 ---
 
-# Profile
-
-A profile is the most important concept to configure routing. There are two important concepts related to this:
-
-- Vehicle: A **definition of a vehicle** that travels the network. This can be a _car_ but also a _pedestrian_ for example.
-- Profile: A profile describes **the behaviour of a vehicle**. 
-
-For a car for example there is the definition of _car_, this means, where can it travel over the network, what is it's maximum speed and so on. How the car behaves, the profile, defines the route it will take, for example _fastest_ or _shortest_. For bicycles this could be _recreational_ meaning this profile focuses on nice routes quiet routes.
 
 ## Profile and vehicle definitions
 
@@ -27,7 +19,7 @@ FactorAndSpeed FactorAndSpeed(IAttributeCollection attributes, Whitelist whiteli
 The @Itinero.Profiles.FactorAndSpeed struct defines:
 
 - Speed: The speed in m/s over the edge with the given attributes.
-- Factor: The factor, could be different from speed in custom profiles.
+- Factor: The factor, in the default case 1/Speed.
 - Direction: 
   - 0: Bidirectional.
   - 1: Oneway in the direction of the edge.

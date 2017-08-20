@@ -9,7 +9,12 @@
     - name: RouterDb
       href: itinero/basic-concepts/routerdb.md
     - name: Profile
-      href: itinero/basic-concepts/profile.md
+      href: itinero/basic-concepts/profiles/index.md
+      items:
+      - name: Lua
+        href: itinero/basic-concepts/profiles/lua.md
+      - name: C#
+        href: itinero/basic-concepts/profiles/charp.md
     - name: Router
       href: itinero/basic-concepts/router.md
     - name: RouterPoint
