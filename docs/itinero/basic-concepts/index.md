@@ -8,9 +8,9 @@ title: Basic Concepts
 If you want to start using Itinero as a library it's crucial to understand it's basic concepts. The most important are @routerdb, @router, @profile and @routerpoint:
 
 - @routerdb: Contains **the routing network**, all meta-data, restrictions and so on.
-- @router: The router is **where you ask for routes**.
 - @profile: Defines **vehicles and their behaviour**.
 - @routerpoint: A **location on the routing network** to use as a start or endpoint of a route.
+- @router: The router is **where you ask for routes**.
 
 How these tie together:
 
@@ -49,10 +49,9 @@ var route = router.Calculate(profile, start, end);
 
 So this is happening in the sample, in the same order:
 1. Building a routing network from raw OSM-data.
-2. Creating a router.
-3. Define a profile.
-4. Snap the start and end locations of the route to het network.
-5. Ask the router for a route.
+2. Define a profile.
+3. Snap the start and end locations of the route to het network.
+4. Ask the router for a route.
 
 ## What to read next?
 

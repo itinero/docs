@@ -14,14 +14,14 @@ _Image 1: A visualisation of the routerpoint concept._
 
 ## Resolving
 
-In Itinero, **the process of _snapping_ a location to the closest edge** is called **resolving** that location. Usually a routerpoint is resolved with a given @profile in mind, making sure the routerpoint is accessible and not snapping to another closer edge, think about a cylepath next to a road.
-
-You can resolve a location using the router:
+In Itinero, **the process of _snapping_ a location to the closest edge** is called **resolving** that location. You can resolve a location using the @router:
 
 ```csharp
 // snaps the given location to the nearest routable edge.
 var routerPoint = router.Resolve(profile, 51.26797020271655f, 4.801905155181885f);
 ```
+
+Usually a routerpoint is resolved with a given @profile in mind, making sure the routerpoint is accessible and not snapping to another closer edge, think about a cylepath next to a road.
 
 ## Why?
 
@@ -37,4 +37,4 @@ It's often not obvious where to start a route, just given the lat/lon. Just taki
 
 ## What to read next?
 
-If you followed the _what to read next_ sections we pretty much covered all the most important concepts. Interesting could be the information about the @route concept.
+Learn more about the @router concept.

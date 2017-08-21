@@ -14,7 +14,7 @@
       - name: Lua
         href: itinero/basic-concepts/profiles/lua.md
       - name: C#
-        href: itinero/basic-concepts/profiles/charp.md
+        href: itinero/basic-concepts/profiles/csharp.md
     - name: Router
       href: itinero/basic-concepts/router.md
     - name: RouterPoint

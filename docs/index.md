@@ -3,10 +3,10 @@
 
 - [Itinero](itinero/index.md): The main starting point for the Itinero routing core docs.
   - [Basic Concepts](itinero/basic-concepts/index.md): Explains shortly all the basic concepts.
-    - [Profile](itinero/basic-concepts/profile.md): Explains vehicle profiles.
     - [RouterDb](itinero/basic-concepts/routerdb.md): Explains the routerdb.
-    - [Router](itinero/basic-concepts/router.md): Explains the router class.
+    - [Profile](itinero/basic-concepts/profiles/index.md): Explains vehicle profiles.
     - [RouterPoint](itinero/basic-concepts/routerpoint.md): Explains the routerpoint concept.
+    - [Router](itinero/basic-concepts/router.md): Explains the router class.
     - [Route](itinero/basic-concepts/route.md): Explains the route class.
   - [Data sources](itinero/data-sources/index.md):
     - [OpenStreetMap (OSM)](itinero/data-sources/openstreetmap.md): Explains how to load OSM data.
