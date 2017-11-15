@@ -2,7 +2,9 @@
 title: A cacheable edge-based weight matrix algorithm.
 ---
 
-# Goal
+# A cacheable edge-based weight matrix algorithm.
+
+## Goal
 
 The many-to-many calculations don't take into account duplicate locations on edges while still calculating on an edge-to-edge bases. This leads to double work, we want to get rid of these duplicated calculations.
 
@@ -10,7 +12,7 @@ Another goal is the option to cache weights between edges preventing the need to
 
 We will not enable this by default but provide an extension method to use. This may become the default method at a later stage.
 
-# Approach
+## Approach
 
 We adapt the current edge-based contracted algorithm to:
 
@@ -20,6 +22,6 @@ We adapt the current edge-based contracted algorithm to:
   - ELSE calculate non-cached and callback with results to cache.
 - Convert the edge-to-edge matrix back to the original routerpoints.
 
-# Status
+## Status
 
 Planned

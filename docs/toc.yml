@@ -30,6 +30,13 @@
       href: itinero/data-sources/shapefiles.md
   - name: Routing API
     href: itinero/routing-api.md
+  - name: Development
+    href: itinero/development/index.md
+    items:
+    - name: A boundingbox on all routerdb's
+      href: itinero/development/features/2017-11-15-boundingbox-on-all-routerdbs.md
+    - name: A cacheable edge-based weight matrix algorithm.
+      href: itinero/development/features/2017-11-15-cacheable-edge-based-weight-matrix.md
 - name: OpenLR
   href: openlr/index.md
   items:

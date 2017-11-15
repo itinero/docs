@@ -1,3 +1,5 @@
+# Roadmap
+
 This is an overview of features that are either in development or on the roadmap:
 
 ## Version 1.1
@@ -21,15 +23,31 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 
 ## Version 1.3
 
+*This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.3.0.md*
+
 - Meta-data on vertices: More details [here](https://github.com/itinero/routing/wiki/Development-Plan:--Meta-data-on-vertices).
 - A way to extract parts of the network and save them as a new routerDb.
-- Add extension method to directly load data from overpass by polygon.
-- Use the meta-data on vertices to paste networks back together by keeping node id's.
+
+## Version 1.4
+
+*The version is available as a prerelease with the following on the agenda/done:*
+
+- [ ] Add extension method to directly load data from overpass by polygon.
+- [x] Improve the island detection by using boolean arrays.
+- [ ] Elevation profiles: Output height profiles of calculated routes.
 
 ## Version 2.0 and beyond
 
+- Logging: use something like LibLog in v2.0:
+  - http://forums.dotnetfoundation.org/t/logging-best-practices/2758
+  - https://github.com/damianh/LibLog
+- Figure out how to improve island detection, also including restrictions.
+  - Also included edge-based routing and U-turn prevention: http://geojson.io/#id=gist:anonymous/89cf914f12693460bcb117599dc7593f&map=19/50.15657/6.05205
+  - Goal is to get, once resolved 100% success rate from routing.
+  - The only way to do this, to get a final solution, is to invalidate edges, in a given direction.
 - Fix issue with float's not being good enough: https://github.com/itinero/routing/issues/120
 - Move to netstandard2.0 *only*.
+- Use the meta-data on vertices to paste networks back together by keeping node id's.
 - Move to .NET core for the functional test project: development should be possible on any platform.
 - [PLANNED](https://github.com/itinero/routing/tree/features/constraints): Constrained routing: Routing with constraints like weight limits or vehicle size (width and height).
 - [PLANNED] Destination-only access: Handle access constraints where there is destination only access, also when using contracted graphs.
@@ -38,7 +56,6 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 - Figure out a way to better detect islands and route under all conditions: https://github.com/itinero/routing/issues/104
 - Support for dynamic weights per edge, for example to handle floating car data: https://github.com/itinero/routing/issues/103
 - Look at the filesize of the routerDb's: https://github.com/itinero/routing/issues/105
-- Elevation profiles: Output height profiles of calculated routes.
 - Elevation-aware routing: Routing that takes into account elevation. Think avoiding steep hills for bicycles.
 - No-go areas or maximum speeds based on areas: https://github.com/itinero/routing/issues/19
 - Alternative routes.
@@ -52,14 +69,16 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 - cleanup old way of doing edge-based routing.
 - Consider implementing support for multi-level route relations: https://github.com/itinero/routing/wiki/Development-plan:-Handle-multi-level-route-relations.#process-relations-in-multiple-passes
 - Move OSM specific parsing to the OSM namespace: IAttributeCollectionExtension
+- Refactor the island detector to only accept a single profile.
 
 ## General ideas
 
 A collection of general ideas that may or may not end up on the final roadmap.
 
-#### Add a more efficient data structure to represent restrictions
+https://github.com/AArnott/PdbGit/blob/master/README.md
 
-#### Add extension method to turn a routerpoint into GeoJSON
+- Add a more efficient data structure to represent restrictions
+- [x] Add extension method to turn a routerpoint into GeoJSON
 
 Just return geojson with all details included:
 
