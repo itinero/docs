@@ -3,6 +3,10 @@ Itinero Documentation
 
 Published here => http://docs.itinero.tech/
 
+# Build
+
+Install docfx and run ```docfx --serve```
+
 # Structure
 
 The mains structure of these docs are as follows:

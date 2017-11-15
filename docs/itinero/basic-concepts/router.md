@@ -5,7 +5,7 @@ title: Router
 
 # Router
 
-The route class is where all the magic happens. Once you have a @routerdb setup, you can create a router. The router class functions as a façade for most if not all routing requests.
+The router class is where all the magic happens. Once you have a @routerdb setup, you can create a router. The router class functions as a façade for most if not all routing requests.
 
 An overview of available features:
 

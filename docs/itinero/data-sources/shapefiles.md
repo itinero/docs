@@ -1,3 +1,10 @@
+---
+uid: shapefiles
+title: Shapefiles
+---
+
+# Shapefiles
+
 By default Itinero works with OSM data but it's perfectly capable of handling other data. Think closed alternatives like TomTom MultiNet or HERE but there are also several open datasets out there most of them managed by local governments. Most of these datasets are available as shapefile and can be loaded using ```Itinero.IO.Shape```.
 
 ## RouterDb from Shapefile

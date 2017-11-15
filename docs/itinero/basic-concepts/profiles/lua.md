@@ -2,39 +2,16 @@
 uid: lua-profile
 title: Lua Profiles
 ---
+# Lua
 
+The default way to define a vehicle profile is by using [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)). You can control pretty much everything about a vehicle.
 
-## Profile and vehicle definitions
+## An example
 
-Basically a vehicle and profile are defined together by one basic function: *factor_and_speed*. This function has to be implemented for every vehicle profile and defines both _shortest_ and _fastest_ simultaneously.
-
-```csharp
-/// <summary>
-/// Calculates a factor and speed and adds keys to the given whitelist that are relevant.
-/// </summary>
-/// <returns>A non-zero factor and speed when the edge with the given attributes is usefull for this vehicle.</returns>
-FactorAndSpeed FactorAndSpeed(IAttributeCollection attributes, Whitelist whitelist);
-```
-
-The @Itinero.Profiles.FactorAndSpeed struct defines:
-
-- Speed: The speed in m/s over the edge with the given attributes.
-- Factor: The factor, in the default case 1/Speed.
-- Direction: 
-  - 0: Bidirectional.
-  - 1: Oneway in the direction of the edge.
-  - 2: Oneway agains the direction of the edge.
-
-When Factor > 0 the edge is considered routable.
-
-## Lua
-
-A vehicle can be defined by a lua script. This vehicle definition gets embedded in a routerdb when created. 
+A vehicle can be defined by one lua script. This vehicle definition gets embedded in a @routerdb when created. This is the minimum code needed to define a profile:
 
 ```lua
 name = "car"
-
-
 -- whitelists for profile and meta
 profile_whitelist = {
 	"highway"
@@ -42,7 +19,6 @@ profile_whitelist = {
 meta_whitelist = {
 	"name"
 }
-
 -- profile definitions linking a function to a profile
 profiles = {
 	{
@@ -56,7 +32,6 @@ profiles = {
 		metric = "distance",
 	}
 }
-
 -- the main function turning attributes into a factor_and_speed and a tag whitelist
 function factor_and_speed (attributes, result)
 
