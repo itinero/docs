@@ -7,7 +7,7 @@ title: Isochrones
 
 ## Goal
 
-Implement a proper isochone builder.
+Implement a proper isochrone builder.
 
 ## Approach
 

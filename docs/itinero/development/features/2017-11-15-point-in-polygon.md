@@ -3,7 +3,7 @@ uid: dev-feature-point-in-polygon
 title: Point in polygon
 ---
 
-# Isochrones
+# Point in polygon
 
 ## Goal
 
