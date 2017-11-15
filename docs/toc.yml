@@ -39,6 +39,8 @@
       href: itinero/development/features/2017-11-15-cacheable-edge-based-weight-matrix.md
     - name: Isochrones
       href: itinero/development/features/2017-11-15-isochrones.md
+    - name: Point in polygon
+      href: itinero/development/features/2017-11-15-point-in-polygon.md
 - name: OpenLR
   href: openlr/index.md
   items:

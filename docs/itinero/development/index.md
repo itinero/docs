@@ -41,6 +41,7 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 *An idea of the next priorities, this is subject to changes!*
 
 - [ ] Implement a proper @dev-feature-isochrones algorithm.
+- [ ] Implement a proper point in polygon algorithm.
 
 ## Version 2.0 and beyond
 
