@@ -7,7 +7,7 @@ title: Point in polygon
 
 ## Goal
 
-Implement a point in polygon algorithm. Itinero can't depend on another Geo/GIS library just for a few simple core algorithms so the only other option is to implement some basics ourselves.
+Implement a point in polygon algorithm. Itinero can't depend on another Geo/GIS library just for a few core algorithms so the only other option is to implement some basics ourselves.
 
 ## Approach
 
