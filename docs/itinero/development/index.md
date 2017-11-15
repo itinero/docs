@@ -36,6 +36,12 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 - [x] Improve the island detection by using boolean arrays.
 - [ ] Elevation profiles: Output height profiles of calculated routes.
 
+## Version 1.5
+
+*An idea of the next priorities, this is subject to changes!*
+
+- [ ] Implement a proper @dev-feature-isochrones algorithm.
+
 ## Version 2.0 and beyond
 
 - Logging: use something like LibLog in v2.0:
