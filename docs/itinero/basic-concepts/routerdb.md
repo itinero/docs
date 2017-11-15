@@ -59,6 +59,16 @@ This is the alternative for when on a mobile device or when you don't have a lot
 var routerDb = RouterDb.Deserialize(stream, RouterDbProfile.NoCache);
 ```
 
+## Contraction
+
+For most purposes, especially when using Itinero on mobile devices, it's best to optimize the RouterDb by adding a contracted version of the routing data. Adding a contracted graph can be done as follows:
+
+```csharp
+routerDb.AddContracted(routerDb.GetSupportedProfile("car"));
+```
+
+This will optimize the RouterDb for use with the `"car"` @profile and you can do this for as many profiles as required. Each added profile does increase the size of the RouterDb.
+
 ## Why?
 
 Loading raw data, [OpenStreetMap (OSM)](../data-sources/openstreetmap.md) or a routing network from [shapefiles](../data-sources/shapefiles.md), takes a while and is very inefficiënt. There is so much more data in OSM than just the road network, so it's also more efficiënt to only keep what we need. 
