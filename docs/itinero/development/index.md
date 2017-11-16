@@ -45,6 +45,7 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 
 ## Version 2.0 and beyond
 
+- Fixed the directed id issue: https://github.com/itinero/routing/issues/95
 - Logging: use something like LibLog in v2.0:
   - http://forums.dotnetfoundation.org/t/logging-best-practices/2758
   - https://github.com/damianh/LibLog
