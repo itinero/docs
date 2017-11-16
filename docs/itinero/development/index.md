@@ -42,6 +42,7 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 
 - [ ] Implement a proper @dev-feature-isochrones algorithm.
 - [ ] Implement a proper @dev-feature-point-in-polygon algorithm.
+- [ ] Implement support for handling a @dev-feature-multigraph.
 
 ## Version 2.0 and beyond
 
