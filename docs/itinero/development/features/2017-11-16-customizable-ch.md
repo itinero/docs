@@ -24,6 +24,7 @@ Implement a prototype of Customizable Contraction Hierarchies and:
 
 - Test if it handles the current usecases as good as the current implementation.
 - Test if it can handle dynamic weight recalculations as advertised.
+- Test if it can handle [blocked parts of the network](https://github.com/itinero/routing/issues/127).
 - Design a new way to handle contraction in Itinero if tests succeed.
 
 ## Approach
