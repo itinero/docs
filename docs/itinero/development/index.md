@@ -36,7 +36,7 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 - [x] Improve the island detection by using boolean arrays.
 - [ ] Elevation profiles: Output height profiles of calculated routes.
 
-## Version 1.5
+## Version 1.5 and beyond
 
 *An idea of the next priorities, this is subject to changes!*
 
@@ -58,7 +58,9 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 - Move to .NET core for the functional test project: development should be possible on any platform.
 - [PLANNED](https://github.com/itinero/routing/tree/features/constraints): Constrained routing: Routing with constraints like weight limits or vehicle size (width and height).
 - [PLANNED] Destination-only access: Handle access constraints where there is destination only access, also when using contracted graphs.
-- Better CH: https://github.com/itinero/routing/issues/92
+- Better CH: 
+  - https://github.com/itinero/routing/issues/92
+  - Check development plan here: @dev-feature-customizable-ch
 - Reevaluate Lua profiles: https://github.com/itinero/routing/issues/102
 - Figure out a way to better detect islands and route under all conditions: https://github.com/itinero/routing/issues/104
 - Support for dynamic weights per edge, for example to handle floating car data: https://github.com/itinero/routing/issues/103
