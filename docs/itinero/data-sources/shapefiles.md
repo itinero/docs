@@ -21,6 +21,13 @@ First of all make sure to convert your shapefile to use WGS84. After that, the m
 -- car globals
 name = "nwb.car"
 
+-- global profile parameters.
+-- defines columns in the shapefile.
+parameters = {
+	source_vertex = "JTE_ID_BEG",
+	target_vertex = "JTE_ID_END"
+}
+
 -- whitelists for profile and meta
 profile_whitelist = {
     "BST_CODE", 
@@ -236,8 +243,7 @@ Once this is done you can use the profile to create routerdb as follows:
 // create a new router db and load the shapefile.
 var vehicle = new Car(); // load data for the car profile.
 var routerDb = new RouterDb(EdgeDataSerializer.MAX_DISTANCE);
-routerDb.LoadFromShape("/path/to/shape/", "wegvakken.shp", 
-  "JTE_ID_BEG",  "JTE_ID_END", vehicle);
+routerDb.LoadFromShape("/path/to/shape/", "wegvakken.shp", vehicle);
 
 // write the router db to disk for later use.
 routerDb.Serialize("nwb.routerdb");
