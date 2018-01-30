@@ -45,6 +45,8 @@
       href: itinero/development/features/2017-11-16-customizable-ch.md
     - name: Multigraph
       href: itinero/development/features/2017-11-16-multigraph.md
+    - name: Map Matching
+      href: itinero/development/features/22018-01-30-map-matching.md
 - name: OpenLR
   href: openlr/index.md
   items:
