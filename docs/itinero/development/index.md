@@ -34,15 +34,16 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 
 - [ ] Add extension method to directly load data from overpass by polygon.
 - [x] Improve the island detection by using boolean arrays.
-- [ ] Elevation profiles: Output height profiles of calculated routes.
+- [X] Elevation profiles: Output height profiles of calculated routes.
+- [X] Implement a proper @dev-feature-point-in-polygon algorithm.
+- [x] Implement extra meta-data on edges.
+- [ ] Implement support for handling a @dev-feature-multigraph.
 
 ## Version 1.5 and beyond
 
 *An idea of the next priorities, this is subject to changes!*
 
 - [ ] Implement a proper @dev-feature-isochrones algorithm.
-- [ ] Implement a proper @dev-feature-point-in-polygon algorithm.
-- [ ] Implement support for handling a @dev-feature-multigraph.
 
 ## Version 2.0 and beyond
 
