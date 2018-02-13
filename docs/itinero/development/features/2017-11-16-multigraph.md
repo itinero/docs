@@ -30,15 +30,17 @@ We also need to:
 
 Unknown yet but a list could be:
 
-- [ ] Implement support for a multigraph.
-  - [ ] Enable support to add duplicate edges.
-  - [ ] Enable support enumerating duplicate edge.
-  - [ ] Make the edge-enumeration depend on the graph type, simple or multi.
+- [x] Implement support for a multigraph.
+  - [x] Enable support to add duplicate edges.
+  - [x] Enable support enumerating duplicate edge.
+  - [x] Make the edge-enumeration depend on the graph type, simple or multi.
+  - [ ] Add support for loops, edges with the same first and last vertex.
 - [ ] Implement a conversion method to remove loops and doubles to convert to simple.
+- [ ] Implement support for an algorithm to split overly long edges.
 - [ ] Check for graph type where needed.
   - [ ] Check before contraction.
-  - [ ] Check before routing.
+  - ([ ] Check before routing.)
 
 ## Status
 
-Unplanned
+Ongoing
