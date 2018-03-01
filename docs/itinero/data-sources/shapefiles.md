@@ -11,7 +11,7 @@ By default Itinero works with OSM data but it's perfectly capable of handling ot
 
 This is an example of loading data from a shapefile into a router db. We are using an open dataset from the Dutch government called 'NWB', the 'national road registry'. We can't include samples for MultiNet or HERE because we're not sure we are allowed to do this.
 
-You can check a full working sample [here](https://github.com/itinero/routing/tree/develop/samples/Sample.Shape).
+You can check a full working sample [here](https://github.com/itinero/geo/tree/master/samples/Sample.Shape).
 
 #### Vehicle definition
 
