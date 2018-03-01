@@ -11,7 +11,7 @@ By default Itinero works with OSM data but it's perfectly capable of handling ot
 
 This is an example of loading data from a shapefile into a router db. We are using an open dataset from the Dutch government called 'NWB', the 'national road registry'. We can't include samples for MultiNet or HERE because we're not sure we are allowed to do this.
 
-You can check a full working sample [here](https://github.com/itinero/geo/tree/master/samples/Sample.Shape).
+The shapefile you're using has to contain two columns per geometry identifying _endpoints_ or _junctions_ for Itinero to be able to link them together in a network. You can check a full working sample [here](https://github.com/itinero/geo/tree/master/samples/Sample.Shape).
 
 #### Vehicle definition
 
@@ -24,106 +24,106 @@ name = "nwb.car"
 -- global profile parameters.
 -- defines columns in the shapefile.
 parameters = {
-	source_vertex = "JTE_ID_BEG",
-	target_vertex = "JTE_ID_END"
+  source_vertex = "JTE_ID_BEG",
+  target_vertex = "JTE_ID_END"
 }
 
 -- whitelists for profile and meta
 profile_whitelist = {
-    "BST_CODE", 
-	"BAANSUBSRT", 
-	"RIJRICHTNG", 
-	"WEGBEHSRT", 
-	"HECTO_LTTR"
+  "BST_CODE", 
+  "BAANSUBSRT", 
+  "RIJRICHTNG", 
+  "WEGBEHSRT", 
+  "HECTO_LTTR"
 }
 meta_whitelist = {
-	"STT_NAAM"
+  "STT_NAAM"
 }
 
 -- default speed profiles
 speed_profiles = {
-	["BVD"] = { speed = 50, oneway = nil },
-	["AF"] = { speed = 70, oneway = nil },
-	["OP"] = { speed = 70, oneway = nil },
-	["HR"] = { speed = 120, oneway = nil },
-	["MRB"] = { speed = 30, oneway = true},
-	["NRB"] = { speed = 30, oneway = true}
+  ["BVD"] = { speed = 50, oneway = nil },
+  ["AF"] = { speed = 70, oneway = nil },
+  ["OP"] = { speed = 70, oneway = nil },
+  ["HR"] = { speed = 120, oneway = nil },
+  ["MRB"] = { speed = 30, oneway = true},
+  ["NRB"] = { speed = 30, oneway = true}
 }
 
 
 -- profile definitions linking a function to a profile
 profiles = {
-    {
-        name = "",
-        function_name = "factor_and_speed",
-        metric = "time"
-    },
-    { 
-        name = "shortest",
-        function_name = "factor_and_speed",
-        metric = "distance",
-    }
+  {
+    name = "",
+    function_name = "factor_and_speed",
+    metric = "time"
+  },
+  { 
+    name = "shortest",
+    function_name = "factor_and_speed",
+    metric = "distance",
+  }
 }
 
 -- the main function turning attributes into a factor_and_speed and a tag whitelist
 function factor_and_speed (attributes, result)
 
-	result.speed = 0
-	result.direction = 0
-	result.canstop = true
-	result.attributes_to_keep = {}
+  result.speed = 0
+  result.direction = 0
+  result.canstop = true
+  result.attributes_to_keep = {}
 
-	-- get default speed profiles
-	local BST_CODE = attributes.BST_CODE -- code of road type.
-	local speed_profile = speed_profiles[BST_CODE]
-	local speed = 70
-	local direction = 0 -- bidirectional default
-	result.attributes_to_keep.BST_CODE = true -- keep this code.
-	if speed_profile then
-		speed = speed_profile.speed
-		if speed_profile.oneway then
-			direction = 1 -- this type of edge is oneway forward by default
-		end
-	end
+  -- get default speed profiles
+  local BST_CODE = attributes.BST_CODE -- code of road type.
+  local speed_profile = speed_profiles[BST_CODE]
+  local speed = 70
+  local direction = 0 -- bidirectional default
+  result.attributes_to_keep.BST_CODE = true -- keep this code.
+  if speed_profile then
+    speed = speed_profile.speed
+    if speed_profile.oneway then
+      direction = 1 -- this type of edge is oneway forward by default
+    end
+  end
 
-	local RIJRICHTNG = attributes.RIJRICHTNG -- oneway code.
-	if RIJRICHTNG then
-		result.attributes_to_keep.RIJRICHTNG = true -- keep the oneway stuff
-		if RIJRICHTNG == "H" then
-			direction = 1
-		elseif RIJRICHTNG == "T" then
-			direction = 2
-		end
-	end
+  local RIJRICHTNG = attributes.RIJRICHTNG -- oneway code.
+  if RIJRICHTNG then
+    result.attributes_to_keep.RIJRICHTNG = true -- keep the oneway stuff
+    if RIJRICHTNG == "H" then
+      direction = 1
+    elseif RIJRICHTNG == "T" then
+      direction = 2
+    end
+  end
 	 
-	result.speed = speed -- speed in km/h
-    result.direction = direction
-    result.canstop = true
+  result.speed = speed -- speed in km/h
+  result.direction = direction
+  result.canstop = true
 end
 
 -- instruction generators
 instruction_generators = {
-	{
-		applies_to = "", -- applies to all profiles when empty
-		generators = {
-			{
-				name = "start",
-				function_name = "get_start"
-			},
-			{ 
-				name = "stop",
-				function_name = "get_stop"
-			},
-			{
-				name = "roundabout",
-				function_name = "get_roundabout"
-			},
-			{
-				name = "turn",
-				function_name = "get_turn"
-			}
-		}
-	}
+  {
+    applies_to = "", -- applies to all profiles when empty
+    generators = {
+    {
+      name = "start",
+      function_name = "get_start"
+    },
+    { 
+      name = "stop",
+      function_name = "get_stop"
+    },
+    {
+      name = "roundabout",
+      function_name = "get_roundabout"
+    },
+    {
+      name = "turn",
+      function_name = "get_turn"
+    }
+    }
+  }
 }
 
 -- gets the first instruction
