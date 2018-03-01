@@ -44,6 +44,7 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 *An idea of the next priorities, this is subject to changes!*
 
 - [ ] Implement a proper @dev-feature-isochrones algorithm.
+- [ ] Figure out @dev-unity-support.
 
 ## Version 2.0 and beyond
 
