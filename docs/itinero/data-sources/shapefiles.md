@@ -11,11 +11,13 @@ By default Itinero works with OSM data but it's perfectly capable of handling ot
 
 This is an example of loading data from a shapefile into a router db. We are using an open dataset from the Dutch government called 'NWB', the 'national road registry'. We can't include samples for MultiNet or HERE because we're not sure we are allowed to do this.
 
-The shapefile you're using has to contain two columns per geometry identifying _endpoints_ or _junctions_ for Itinero to be able to link them together in a network. You can check a full working sample [here](https://github.com/itinero/geo/tree/master/samples/Sample.Shape).
+You can check a full working sample [here](https://github.com/itinero/geo/tree/master/samples/Sample.Shape).
 
 #### Vehicle definition
 
-First of all make sure to convert your shapefile to use WGS84. After that, the most important part is creating a vehicle definition that describes the attributes in the shapefile in such a way that Itinero knows how to handle the data. An example vehicle profile:
+First of all make sure to convert your shapefile to use WGS84. The shapefile you're using has to contain two columns per geometry identifying _endpoints_ or _junctions_ for Itinero to be able to link them together in a network.
+
+After that, the most important part is creating a vehicle definition that describes the attributes in the shapefile in such a way that Itinero knows how to handle the data. A profile basically translates the information in the columns of the shapefile into speed, distance and access information. An example vehicle profile:
 
 ```lua
 -- car globals
@@ -128,54 +130,54 @@ instruction_generators = {
 
 -- gets the first instruction
 function get_start (route_position, language_reference, instruction)
-	if route_position.is_first() then
-		local direction = route_position.direction()
-		instruction.text = itinero.format(language_reference.get("Start {0}."), language_reference.get(direction));
-		instruction.shape = route_position.shape
-		return 1
-	end
-	return 0
+  if route_position.is_first() then
+    local direction = route_position.direction()
+    instruction.text = itinero.format(language_reference.get("Start {0}."), language_reference.get(direction));
+    instruction.shape = route_position.shape
+    return 1
+  end
+  return 0
 end
 
 -- gets the last instruction
 function get_stop (route_position, language_reference, instruction) 
-	if route_position.is_last() then
-		instruction.text = language_reference.get("Arrived at destination.");
-		instruction.shape = route_position.shape
-		return 1
-	end
-	return 0
+  if route_position.is_last() then
+    instruction.text = language_reference.get("Arrived at destination.");
+    instruction.shape = route_position.shape
+    return 1
+  end
+  return 0
 end
 
 function contains (attributes, key, value)
-	if attributes then
-		return localvalue == attributes[key];
-	end	
+  if attributes then
+    return localvalue == attributes[key];
+  end	
 end
 
 -- gets a roundabout instruction
 function get_roundabout (route_position, language_reference, instruction) 
-	if (route_position.attributes.BST_CODE == "NRB" or 
-		route_position.attributes.BST_CODE == "MRB") and
-		(not route_position.is_last()) then
-		local attributes = route_position.next().attributes
-		if attributes.junction then
-		else
-			local exit = 1
-			local count = 1
-			local previous = route_position.previous()
-			while previous and (previous.attributes.BST_CODE == "NRB" or 
-					previous.attributes.BST_CODE == "MRB") do
-				local branches = previous.branches
-				if branches then
-					branches = branches.get_traversable()
-					if branches.count > 0 then
-						exit = exit + 1
-					end
-				end
-				count = count + 1
-				previous = previous.previous()
-			end
+  if (route_position.attributes.BST_CODE == "NRB" or 
+    route_position.attributes.BST_CODE == "MRB") and
+      (not route_position.is_last()) then
+    local attributes = route_position.next().attributes
+    if attributes.junction then
+    else
+      local exit = 1
+      local count = 1
+      local previous = route_position.previous()
+      while previous and (previous.attributes.BST_CODE == "NRB" or 
+        previous.attributes.BST_CODE == "MRB") do
+        local branches = previous.branches
+        if branches then
+          branches = branches.get_traversable()
+          if branches.count > 0 then
+            exit = exit + 1
+          end
+        end
+        count = count + 1
+        previous = previous.previous()
+      end
 
 			instruction.text = itinero.format(language_reference.get("Take the {0}th exit at the next roundabout."), "" .. exit)
 			if exit == 1 then
