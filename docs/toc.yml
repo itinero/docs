@@ -49,6 +49,8 @@
       href: itinero/development/features/2018-01-30-map-matching.md
     - name: Unity Support
       href: itinero/development/features/2018-03-01-unity-support.md
+    - name: Speed Limit Areas
+      href: itinero/development/features/2018-03-02-speed-limit-areas.md
 - name: OpenLR
   href: openlr/index.md
   items:
