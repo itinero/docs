@@ -47,6 +47,8 @@
       href: itinero/development/features/2017-11-16-multigraph.md
     - name: Map Matching
       href: itinero/development/features/2018-01-30-map-matching.md
+    - name: Unity Support
+      href: itinero/development/features/2018-03-01-unity-support.md
 - name: OpenLR
   href: openlr/index.md
   items:
