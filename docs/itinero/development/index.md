@@ -32,12 +32,12 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 
 *The version is available as a prerelease with the following on the agenda/done:*
 
-- [ ] Add extension method to directly load data from overpass by polygon.
+- [x] Add extension method to directly load data from overpass by polygon.
 - [x] Improve the island detection by using boolean arrays.
 - [X] Elevation profiles: Output height profiles of calculated routes.
 - [X] Implement a proper @dev-feature-point-in-polygon algorithm.
 - [x] Implement extra meta-data on edges.
-- [ ] Implement support for handling a @dev-feature-multigraph.
+- [x] Implement support for handling a @dev-feature-multigraph.
 
 ## Version 1.5 and beyond
 
@@ -45,8 +45,11 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 
 - [ ] Implement a proper @dev-feature-isochrones algorithm.
 - [ ] Figure out @dev-unity-support.
+- [ ] Implement support for @dev-speed-areas.
 
 ## Version 2.0 and beyond
+
+These are issues/features that require breaking changes:
 
 - Fixed the directed id issue: https://github.com/itinero/routing/issues/95
 - Logging: use something like LibLog in v2.0:
