@@ -51,6 +51,13 @@
       href: itinero/development/features/2018-03-01-unity-support.md
     - name: Speed Limit Areas
       href: itinero/development/features/2018-03-02-speed-limit-areas.md
+- name: OsmSharp
+  href: osmsharp/index.md
+  items:
+  - name: OpenStreetMap Data Model
+    href: osmsharp/osm.md
+  - name: Streaming Model
+    href: osmsharp/streaming.md
 - name: OpenLR
   href: openlr/index.md
   items:
