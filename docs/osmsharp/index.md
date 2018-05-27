@@ -12,6 +12,7 @@ OsmSharp is written in C# and can be used anywhere where the language is support
 # Documentation
 
 1. @openstreetmap-data-model
+1. @streaming-model
 1. **Samples**
   - [Filtering](https://github.com/OsmSharp/core/tree/develop/samples/Sample.Filter)
   - [Complete Streams](https://github.com/OsmSharp/core/tree/develop/samples/Sample.CompleteStream)
