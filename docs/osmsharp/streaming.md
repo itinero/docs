@@ -3,6 +3,8 @@ uid: streaming-model
 title: Streaming Model
 ---
 
+# Streaming Model
+
 OsmSharp uses a streaming model to handle OSM-data. The OSM-database is growing every day and an architecture that can handle larges amounts of data is no luxury. 
 
 <img src="http://www.osmsharp.com/static/osmsharp-streaming-model.png"/>

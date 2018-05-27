@@ -3,6 +3,8 @@ uid: openstreetmap-data-model
 title: OpenStreetMap Data Model
 ---
 
+# OpenStreetMap Data Model
+
 There are three basic objects in the OpenStreetMap data model: Nodes, Ways and Relations. 
 
 <img src="http://www.osmsharp.com/static/osm-data-model.png"/>
