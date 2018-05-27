@@ -46,6 +46,7 @@ _site/*
 itinero/*
 gtfs/*
 openlr/*
+osmsharp/*
 opj/*
 output/*
 

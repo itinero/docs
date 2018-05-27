@@ -49,6 +49,22 @@
         }
       ],
       "dest": "openlr"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "source/core/src/OsmSharp/**/*.cs",
+            "source/core/src/OsmSharp.Geo/**/*.cs"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
+        }
+      ],
+      "dest": "osmsharp"
     }
   ],
   "build": {
@@ -69,6 +85,12 @@
         "files": [
           "openlr/**.yml",
           "openlr/index.md"
+        ]
+      },
+      {
+        "files": [
+          "osmsharp/**.yml",
+          "osmsharp/index.md"
         ]
       },
       {

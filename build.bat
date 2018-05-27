@@ -31,6 +31,16 @@ IF EXIST "GTFS" (
 )
 cd..
 
+IF EXIST "core" (
+    cd core
+    git pull origin develop
+) ELSE (
+    git clone https://github.com/OsmSharp/core.git
+    cd core
+    git checkout develop
+)
+cd..
+
 IF EXIST "openlr" (
     cd openlr
     git pull origin master
