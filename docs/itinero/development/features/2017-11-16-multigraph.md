@@ -34,13 +34,13 @@ Unknown yet but a list could be:
   - [x] Enable support to add duplicate edges.
   - [x] Enable support enumerating duplicate edge.
   - [x] Make the edge-enumeration depend on the graph type, simple or multi.
-  - [ ] Add support for loops, edges with the same first and last vertex.
-- [ ] Implement a conversion method to remove loops and doubles to convert to simple.
-- [ ] Implement support for an algorithm to split overly long edges.
-- [ ] Check for graph type where needed.
-  - [ ] Check before contraction.
+  - [x] Add support for loops, edges with the same first and last vertex.
+- [x] Implement a conversion method to remove loops and doubles to convert to simple.
+- [x] Implement support for an algorithm to split overly long edges.
+- [x] Check for graph type where needed.
+  - [x] Check before contraction.
   - ([ ] Check before routing.)
 
 ## Status
 
-Ongoing
+Done
