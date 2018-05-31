@@ -17,7 +17,9 @@ The basic steps we need to complete.
 
 - Cleanup source data. This means removing data is probably due to noise instead of actual movement.
 - Implement or use the current implementation of multiple-resolve. Search for the n-closest points and do it fast.
+   - This is already [this](https://github.com/itinero/routing/blob/develop/src/Itinero/Algorithms/Search/ResolveMultipleAlgorithm.cs) of a multiple-resolve algorithm.
 - Calculate travel distances/times between these points.
+   - Use the current implementation to calculate many-to-many routes.
 - Calculate probabilities on state changes.
 - Calculate best sequence and drop unmatchable segments in the process.
 
