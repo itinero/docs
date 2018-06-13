@@ -86,6 +86,7 @@ These are issues/features that require breaking changes:
 - Consider implementing support for multi-level route relations: https://github.com/itinero/routing/wiki/Development-plan:-Handle-multi-level-route-relations.#process-relations-in-multiple-passes
 - Move OSM specific parsing to the OSM namespace: IAttributeCollectionExtension
 - Refactor the island detector to only accept a single profile.
+- Consider implementing support for time-dependent restrictions: https://www.openstreetmap.org/relation/87146
 
 ## General ideas
 
