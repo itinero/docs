@@ -87,6 +87,8 @@ These are issues/features that require breaking changes:
 - Move OSM specific parsing to the OSM namespace: IAttributeCollectionExtension
 - Refactor the island detector to only accept a single profile.
 - Consider implementing support for time-dependent restrictions: https://www.openstreetmap.org/relation/87146
+- Fix the public API on the weight matrix algorithms, it's a mess and unclear what is meant with the supplied methods.
+   - Talking about `CorrectedIndexOf` and `OriginalIndexOf` specifically.
 
 ## General ideas
 
