@@ -108,3 +108,6 @@ Just return geojson with all details included:
 - Edge with start and end vertex.
 - The location on the network.
 - The original location.
+
+Use arraypool for dykstra calculations to keep pathtree and other data:
+- http://adamsitnik.com/Array-Pool/
