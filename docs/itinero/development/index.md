@@ -1,6 +1,12 @@
 # Roadmap
 
-This is an overview of features that are either in development or on the roadmap:
+This is an overview of features that are either in development or on the roadmap. This roadmap is determined by a few factors:
+
+- Priorities of our clients: This is the main factor because we're getting paid to build this stuff and this means more time and resource to get things done.
+- Technical dependencies: We can't build things out of order, some features depend on others. We cant support turning costs for example without implementing edge-based routing.
+- Priorities of Itinero and it's maintainers: We will don't include things in Itinero that we believe don't belong in the core library, even for clients. We also try to determine what is most valuable for as many users. 
+
+This means you can influence this roadmap by either becoming a client, help with solving technical dependencies or communicate about what you think is missing in Itinero.
 
 ## Version 1.1
 
