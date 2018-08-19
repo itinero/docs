@@ -99,6 +99,7 @@ These are issues/features that require breaking changes:
 - Implement a way for profiles to use information on vertices for routing.
    - This is related to turning costs: https://github.com/oSoc18/bike4brussels-backend/issues/5
    - This is also related to avoiding traffic lights for example: https://github.com/oSoc18/bike4brussels-backend/issues/6
+- Figure out a way or continue on with a way of implementing true memory mapping: https://github.com/itinero/routing/issues/206
 
 ## General ideas
 
