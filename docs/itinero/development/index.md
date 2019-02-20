@@ -1,6 +1,12 @@
 # Roadmap
 
-This is an overview of features that are either in development or on the roadmap:
+This is an overview of features that are either in development or on the roadmap. This roadmap is determined by a few factors:
+
+- Priorities of our clients: This is the main factor because we're getting paid to build this stuff and this means more time and resource to get things done.
+- Technical dependencies: We can't build things out of order, some features depend on others. We cant support turning costs for example without implementing edge-based routing.
+- Priorities of Itinero and it's maintainers: We will don't include things in Itinero that we believe don't belong in the core library, even for clients. We also try to determine what is most valuable for as many users. 
+
+This means you can influence this roadmap by either becoming a client, help with solving technical dependencies or communicate about what you think is missing in Itinero.
 
 ## Version 1.1
 
@@ -62,7 +68,6 @@ These are issues/features that require breaking changes:
 - Fix issue with float's not being good enough: https://github.com/itinero/routing/issues/120
 - Move to netstandard2.0 *only*.
 - Use the meta-data on vertices to paste networks back together by keeping node id's.
-- Move to .NET core for the functional test project: development should be possible on any platform.
 - [PLANNED](https://github.com/itinero/routing/tree/features/constraints): Constrained routing: Routing with constraints like weight limits or vehicle size (width and height).
 - [PLANNED] Destination-only access: Handle access constraints where there is destination only access, also when using contracted graphs.
 - Better CH: 
@@ -86,6 +91,15 @@ These are issues/features that require breaking changes:
 - Consider implementing support for multi-level route relations: https://github.com/itinero/routing/wiki/Development-plan:-Handle-multi-level-route-relations.#process-relations-in-multiple-passes
 - Move OSM specific parsing to the OSM namespace: IAttributeCollectionExtension
 - Refactor the island detector to only accept a single profile.
+- Consider implementing support for time-dependent restrictions: https://www.openstreetmap.org/relation/87146
+- Fix the public API on the weight matrix algorithms, it's a mess and unclear what is meant with the supplied methods.
+   - Talking about `CorrectedIndexOf` and `OriginalIndexOf` specifically.
+- Implement a way for profiles to define a different factor/speed for each direction per edge.
+  Sometimes factors differ depending on direction. Think about elevation but also https://github.com/oSoc18/bike4brussels-backend/issues/7
+- Implement a way for profiles to use information on vertices for routing.
+   - This is related to turning costs: https://github.com/oSoc18/bike4brussels-backend/issues/5
+   - This is also related to avoiding traffic lights for example: https://github.com/oSoc18/bike4brussels-backend/issues/6
+- Figure out a way or continue on with a way of implementing true memory mapping: https://github.com/itinero/routing/issues/206
 
 ## General ideas
 
@@ -101,3 +115,6 @@ Just return geojson with all details included:
 - Edge with start and end vertex.
 - The location on the network.
 - The original location.
+
+Use arraypool for dykstra calculations to keep pathtree and other data:
+- http://adamsitnik.com/Array-Pool/
