@@ -1,6 +1,16 @@
 mkdir source
 cd source
 
+IF EXIST "docfx-tmpl" (
+    cd docfx-tmpl
+    git pull origin master
+) ELSE (
+    git clone https://github.com/itinero/docfx-tmpl
+    cd docfx-tmpl
+    git checkout master
+)
+cd ..
+
 IF EXIST "routing" (
     cd routing
     git pull origin master

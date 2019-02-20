@@ -47,6 +47,7 @@ itinero/*
 gtfs/*
 openlr/*
 osmsharp/*
+docfx-tmpl/*
 opj/*
 output/*
 
