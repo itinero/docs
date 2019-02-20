@@ -1,6 +1,3 @@
-mkdir source
-cd source
-
 IF EXIST "docfx-tmpl" (
     cd docfx-tmpl
     git pull origin master
@@ -10,6 +7,9 @@ IF EXIST "docfx-tmpl" (
     git checkout master
 )
 cd ..
+
+mkdir source
+cd source
 
 IF EXIST "routing" (
     cd routing
