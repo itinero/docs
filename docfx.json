@@ -148,6 +148,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
+      "../docfx-tmpl/src",
 	    "custom-template"
     ],
     "postProcessors": [],
