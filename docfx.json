@@ -23,6 +23,22 @@
       "src": [
         {
           "files": [
+            "source/itinero-transit/src/Itinero.Transit/**/*.cs",
+            "source/itinero-transit/src/Itinero.Transit.IO.LC/**/*.cs"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
+        }
+      ],
+      "dest": "itinero-transit"
+    },
+    {
+      "src": [
+        {
+          "files": [
             "source/GTFS/src/GTFS/**/*.cs"
           ],
           "exclude": [
@@ -73,6 +89,12 @@
         "files": [
           "itinero/**.yml",
           "itinero/index.md"
+        ]
+      },
+      {
+        "files": [
+          "itinero-transit/**.yml",
+          "itinero-transit/index.md"
         ]
       },
       {

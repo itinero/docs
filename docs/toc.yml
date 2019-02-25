@@ -51,6 +51,11 @@
       href: itinero/development/features/2018-03-01-unity-support.md
     - name: Speed Limit Areas
       href: itinero/development/features/2018-03-02-speed-limit-areas.md
+- name: Itinero.Transit
+  href: transit/index.md
+  items:
+  - name: Basic Concepts
+    href: transit/basic-concepts/index.md
 - name: OsmSharp
   href: osmsharp/index.md
   items:

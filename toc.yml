@@ -2,6 +2,8 @@
   href: docs/
 - name: Itinero API
   href: itinero/
+- name: Itinero.Transit API
+  href: itinero-transit/
 - name: GTFS API
   href: gtfs/
 - name: OpenLR API
