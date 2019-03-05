@@ -22,7 +22,7 @@ var departureStop = snapshot.FindClosestStop(4.9376678466796875,51.3227341706504
 var arrivalStop = snapshot.FindClosestStop(4.715280532836914,50.88132251839807);
 
 // calculate journeys.
-var p = new DefaultProfile(snapshot); // create a user-profile.
+var p = new DefaultProfile(); // create a user-profile.
 var journeys = snapshot.CalculateJourneys(p, departureStop.Id, arrivalStop.Id, 
         DateTime.Now);
 ```

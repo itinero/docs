@@ -56,6 +56,14 @@
   items:
   - name: Basic Concepts
     href: transit/basic-concepts/index.md
+  - name: Using the library
+    href: transit/UsingTheLibrary.md
+  - name: Extensions on CSA
+    href: transit/basic-concepts/CSA.md
+  - name: The CSA paper
+    href: transit/basic-concepts/CSA.pdf
+  - name: Development
+    href: transit/development/index.md
 - name: OsmSharp
   href: osmsharp/index.md
   items:
