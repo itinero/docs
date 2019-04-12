@@ -5,7 +5,20 @@ title: Core Concepts
 
 # Core Concepts
 
-If you want to start using Itinero.Transit library it's crucial to understand it's core concepts. The most important are @transitdb, @connection and @journey:
+This document defines a few core concepts and informally describes how the library calculates journeys.
+
+## Data Sources
+
+Although the library can easily be extended to support multiple data sources, at the moment only one data source is supported.
+
+### Linked Connections
+ 
+This library uses [Linked Connections](https://linkedconnections.org/) as datasource. Linked Connections are a way to format public transport data feeds in a semantically coherent way. The data is organized as pages of around 200 individual connections of a certain timespan (e.g. a quarter of an hour), sorted by departure time.
+
+
+## Basic data structures
+
+The most important are @transitdb, @connection and @journey:
 
 - @transitdb: Contains **the data needed for routing**, all stops, connections and trips.
 - @connection: The smallest element in a public transport network. A connection represents a transit vehicle that travels from one stop to the next, _without intermediate stops_.
@@ -15,13 +28,11 @@ How these tie together:
 
 The transitdb contains all connections and is used to calculate journeys.
 
-This document defines a few core concepts and informally describes how the library calculates journeys.
 
-A connection
-------------
+### A connection
  
 A *connection* is the smallest element in a public transport network. A connection represents a PT-vehicle which travels from one station to the next, _without intermediate stops_.
-In most circumstances, the vehicle will continue to a next stop without the passengers having to leave. A chain of such connections is called a *trip*. Knowing the trip of which a connection is part, is important to known how many transfers are needed to make a journey.
+The longest chain of such connections made by the same vehicle (without the traveller needing to get transfered) is called a *trip*.
 
 A connection is characterized by five data points:
 
@@ -33,8 +44,7 @@ A connection is characterized by five data points:
 
 In practice, some other data points are saved needed as well (e.g. vehicle type, operator, headsign, ...). They are however unimportant for the core concepts.
  
-A journey
----------
+### A journey
  
 A *journey* is a list of connections and transfers, representing how a traveller might get from its departure to its arrival.
 
@@ -55,17 +65,13 @@ Each part thus contains
 Thus, if one has a journey part which ends in some location, one can construct the entire journey needed to get there by following the pointers pointing to the `previous` part, not unlike Hans and Gretel in the forest.
 
 
-Linked Connections as data source
----------------------------------
- 
-This library uses [Linked Connections](https://linkedconnections.org/) as datasource. Linked Connections are a way to format public transport data feeds in a semantically coherent way. The data is organized as pages of around 200 individual connections of a certain timespan (e.g. a quarter of an hour), sorted by departure time.
-
-TransitDB
----------
+### TransitDB
  
 Once the connections are loaded, they are stored into the `TransitDB`. This is an in-memory database of connections, trips and stops.
 
 By having the TransitDB, the library can either cache connections for solving multiple queries or can dynamically reload the needed data needed when a query comes in.
+ 
+ 
  
 Connection scan algorithm
 -------------------------
@@ -145,7 +151,7 @@ If a traveller, departing in `A` at `10:00` wanted to know the earliest time he 
         X: ?
         Y: 10:45 (changed)
 
-9. The next connection is looked at: `10:45, Y --> 11:00, Z`. The traveller realizes that he wants to go to `B` and, according to the _earliest arrival table_, he could get there by `10:40` already. This connection departs after he already could have arrived, so there is no point in scanning this connection. As the time table is organized by departure time, all subsequent connections will be later as well. In other words, the traveller is done.
+9. The next connection is looked at: `10:45, Y --> 11:00, Z`. The traveller realizes that he wants to go to `B` and, according to the _earliest arrival table_, he could get there by `10:40` already. This connection departs after he already could have arrived, so there is no point in scanning this connection. As the time table is organized by departure time, all subsequent connections will be later as well. In other words, the traveller is done with calculating travel times.
 
 10. The traveller can now easily lookup in his table the earliest time he could arrive in `B`: namely at `10:40`. As sideproduct, he also knows at what times he could arrive in the other stations, if departing at `10:00` in `A`.
 
@@ -158,13 +164,3 @@ And although knowing when a traveller could arrive as soon as possible is useful
 
 The technicalities of these algorithms can be found [here](CSA.md). It is not necessary to known those to effectivally use the library.
 
-Pareto Frontiers
-----------------
-
-When calculating all journeys (say: every possible journey from `A` to `B`, departing between `10:00` and `12:00`), multiple journeys will be found with different properties. For example, one journey might take only 30 minutes - but needs a transfer halfway whereas the direct train needs 40 minutes. It is difficult for -as library- to make the choice of metric for the end user.
-
-The library copes with this by tracking _both_ metrics by default. If a profile search is needed, _all_ journeys which perform _good_ are kept. In other words, a set of journeys is returned so that each journey in the set performs better on some metric then all the other journeys in the set. Such a set is called a *paretor frontier*.
-
-An example of such a frontier is `{journey with 0 transfers in 1:00, journey with 1 transfers in 0:50, journey with 2 transfers in 0:40}`. The first is superior in the number of transfers, the last is the shortest in travel time. The middle one outperforms the zero-transfer one in time and outperforms the fastest one in number of transfers and might be a good tradeoff for some travellers too. A journey with 2 transfers taking 45 minutes has no place in the pareto frontier, as it is outperformed by the last journey: it takes 5 minutes more and just as much transfers, so it is clearly non-optimal.
-
-For more information on Pareto Frontiers, refer to [Wikipedia](https://en.wikipedia.org/wiki/Pareto_efficiency#Pareto_frontier)
