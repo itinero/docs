@@ -136,7 +136,7 @@ The *profile* contains personal preferences of the traveller, such as:
 A profile can be constructed with:
 
         var p = new Profile
-                <TransferStats>         // The metrics used, here total travel time and number of transfers are minimized
+                <TransferMetric>         // The metrics used, here total travel time and number of transfers are minimized
                     (
                     
                     // The time it takes to transfer from one train to another (and the underlying algorithm, in this case: always the same time)
@@ -146,10 +146,10 @@ A profile can be constructed with:
                     new CrowsFlightTransferGenerator(transitDb, maxDistance: 500 /*meter*/,  walkingSpeed: 1.4 /*meter/second*/),
                     
                     // The object that can create a metric
-                    TransferStats.Factory,
+                    TransferMetric.Factory,
                     
                     // The comparison between routes. _This comparison should check if two journeys are covering each other, as seen in core concepts!_
-                    TransferStats.ProfileTransferCompare
+                    TransferMetric.ProfileTransferCompare
                     ); 
                     
                     
@@ -179,7 +179,7 @@ This will _not_ calculate alternatives, so the calculation is very fast. However
                 this TransitDb.TransitDbSnapShot snapshot,
                 Profile<T> profile, 
                 string fromId, string toId, 
-                DateTime departure, DateTime lastArrival) where T : IJourneyStats<T>
+                DateTime departure, DateTime lastArrival) where T : IJourneyMetric<T>
     
     
     
@@ -197,7 +197,7 @@ If these requirements are fullfilled, use the following function and save the 'I
             Profile<T> profile,
             LocationId fromId, LocationId toId, 
             out IConnectionFilter filter,
-            DateTime departure, Func<DateTime, DateTime, DateTime> stopCalculatingAt = null) where T : IJourneyStats<T>
+            DateTime departure, Func<DateTime, DateTime, DateTime> stopCalculatingAt = null) where T : IJourneyMetric<T>
    
 The passed function will force the algorithm to extend the scanned timeframe.
 
@@ -229,7 +229,7 @@ Of course, the most useful function is to calculate all optimal, possible journe
             
 If an Earliest Arrival Journey has been calculated previously, use the then constructed filter to dramatically speed up the calculations.
 
-These journeys are optimal with respect to the comparator defined in the profile, over a metric such as `TransferStats`. These can be changed or custom-made if necessary.
+These journeys are optimal with respect to the comparator defined in the profile, over a metric such as `TransferMetric`. These can be changed or custom-made if necessary.
 
 
 
