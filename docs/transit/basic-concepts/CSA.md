@@ -1,7 +1,9 @@
  Connection Scan Algorithm: practical expansions
  ===============================================
  
- The core principle of every connection scan is to have a look at every connection, ordered by departure time. 
+ This document gives insight in the extensions made to CSA to get a efficient and usable algorithm.
+ 
+The core principle of every connection scan is to have a look at every connection, ordered by departure time. 
 
  There are a few variations that each give useful results for some usecases:
  

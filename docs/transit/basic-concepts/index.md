@@ -162,5 +162,4 @@ Of course, there is much more work to do: the traveller above knows at what time
 
 And although knowing when a traveller could arrive as soon as possible is useful, most travellers want to minimize either travel time or number of needed transfers. It is thus useful to offer all these best (in one sense) journeys to the user of the library and to let the user pick.
 
-The technicalities of these algorithms can be found [here](CSA.md). It is not necessary to known those to effectivally use the library.
-
+The technicalities of these algorithms can be found [here](CSA.md). It is not necessary to known those to effectivally use the library. A simple guide on using the library can be found [here](UsingTheLibrary.md). Advanced features are detailed [here](MoreOptions.md).
