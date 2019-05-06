@@ -153,99 +153,66 @@ A profile can be constructed with:
                     ); 
                     
                     
-Different calculation modes
----------------------------
-
-The library allows a few different modes to calculate journeys, depending on your needs.
-
-### General notes
-
-All functions calculating journeys require a transitdb (actually a `snapshot`) with the connections, a `profile` with preferences and a timeframe with `departure time` and `arrival time`.
-
-It can be tempting to pass `DateTime.MaxValue` if no arrival time is specified (or analogously `DateTime.MinValue` for departure time). **Don't do this**. If an unreachable location is passed, the program will never stop.
-
-Most functions will also take a `from` and `to`, identifiers for the locations where the traveller whishes to departs or to arrive.
+Creating an object with preferences
+-----------------------------------
 
 
+All algorithms need some basic data - the transitdb (or collection of transitdbs) to route over, the profile of the traveller, the timeframe, stops, ...
+
+Keeping track of all those parameters happens by constructing an object which keeps track of all those. 
+Such a preference object is constructed by chaining a few calls, each with their own objects and very specific methods. These classes are constructed so that an IDE can maximally help you.
+
+### The WithProfile-object
+
+When having one or more transitDbs and a profile to use, one can create a `WithProfile`-object with:
+
+        var withProfile = transitDb.SelectProfile(profile);
+        
+If one of the algorithm needs walking routes from one stop to another (as specified by the profile), these routes are calculated and cached in the withProfile-object.
+Therefore, it is recommended to reuse the withProfile as much as possible. This cache can also be prepoluated by calling `PrecalculateClosestStops()`. 
 
 
-### Earliest Arrival
+### Selecting locations
 
-If only the first journey from a certain stop to another is needed, use 'CalculateEarliestArrival'. This give will you the journey which arrives the earliest at the destination.
-This will _not_ calculate alternatives, so the calculation is very fast. However, a journey which is just as fast and has e.g. less transfers will not be found.
-
-
-        public static Journey<T> CalculateEarliestArrival<T>(
-                this TransitDb.TransitDbSnapShot snapshot,
-                Profile<T> profile, 
-                string fromId, string toId, 
-                DateTime departure, DateTime lastArrival) where T : IJourneyMetric<T>
-    
-    
-    
-There is a special variation available too. If the EAS is just a first step onto calculating a set of possible journeys, the calculations here can make a run of `CalculateJourneys` faster.
-The requirements for these are:
-
-- The departure station should be the same
-- The departure time should be the same
-- The passed arrival time (which acts as a timeout) should fall at or behind the arrival time of the 'calculateJourneys'.
-
-If these requirements are fullfilled, use the following function and save the 'IConnectionFilter' for later use:
-
-        public static Journey<T> CalculateEarliestArrival<T>(
-            this TransitDb.TransitDbSnapShot snapshot,
-            Profile<T> profile,
-            LocationId fromId, LocationId toId, 
-            out IConnectionFilter filter,
-            DateTime departure, Func<DateTime, DateTime, DateTime> stopCalculatingAt = null) where T : IJourneyMetric<T>
-   
-The passed function will force the algorithm to extend the scanned timeframe.
-
-### Latest Departure
-
-If the traveller wishes to arrive at a certain location at a certain time and wishes to know at what latest time she should depart to still arrive in time, then `snapshot.CalculateLatestJourney` is the needed function.
-
-### Isochrones
-
-If a traveller wishes to know everywhere they could get by a certain time if departing at a certain location at a certain time, the needed function is:
-
-        public static IReadOnlyDictionary<LocationId, Journey<T>> CalculateIsochrone<T>(this TransitDb.TransitDbSnapShot snapshot, Profile<T> profile, string from, DateTime departure, DateTime lastArrival);
-    
-    
-Analogously, if the traveller wishes to arrive at a certain location at a certain time, they can calculate at what places they should depart at what times with:
-
-        public static IReadOnlyDictionary<LocationId, Journey<T>> CalculateIsochroneLatestArrival<T>(this TransitDb.TransitDbSnapShot snapshot, Profile<T> profile, string from, DateTime departure, DateTime lastArrival);
-    
-### Multiple, optimal journeys within a timeframe
-
-Of course, the most useful function is to calculate all optimal, possible journeys from A to B wihtin a timeframe.
-
-  public static List<Journey<T>> CalculateJourneys<T>(this TransitDb.TransitDbSnapShot snapshot,
-            Profile<T> profile,
-            LocationId departureStop, LocationId arrivalStop,
-            DateTime departure,
-            DateTime arrival,
-            IConnectionFilter filter = null)
-            
-If an Earliest Arrival Journey has been calculated previously, use the then constructed filter to dramatically speed up the calculations.
-
-These journeys are optimal with respect to the comparator defined in the profile, over a metric such as `TransferMetric`. These can be changed or custom-made if necessary.
+The next steps are selecting locations. In most circumstances, a departure and arrival location are needed. These can be selected with `SelectStops(from, to)`. For your convenience, there are quite some overloads giving freedom in how the stops are identified: using the URI of a stop, the locationId or accepting multiple departurestops and multiple arrivalStops. In the case of e.g. multiple departure stops, the algorithms will choose one of the items in the list to depart from, depending on which one is the fastest (e.g. the latest to depart from, or the earliest to arrive)
 
 
+When only isochronelines are needed, the method `SelectSingleStop` can be used. Note that `IsochroneFrom` and `IsochroneTo` can still be used if two stops are provided.
+
+### Selecting a timeframe
+
+Once locations have been added, the timeinfo can be added by chaining `.SelectTimeFrame(start, end)`. It is not allowed to pass `DateTime.MaxValue`, `DateTime.MinValue` or similar values. For some cases, this seems contra-intuitive and cumbersome. For example, when the traveller wishes to know when he could arrive if he has to go from A to B, departs at time T0. In this case, no end-time is known and the algorithm should figure that out itself. Here, it is very tempting to pass `DateTime.MaxValue` as default, which normally works... unless the destination B is unreachable! If this is the case, the algorithm will scan away till the end of time, crashing in the end.
+We recommend to solve this by using a sensible end time, such as the departure time plus a few hours. 
+
+### Calculating a journey
 
 
+A this point, a typical program could look like:
 
 
+        var transitDbs = <... one or more transitdbs, initialized ...>
+        var profile = < ... the profile of the traveller ...>
+        
+        var startTime, endTime = <...>
+        
+        
+        var departureStops = <... one or more departure stops, of which all are equally preferred to depart ...>
+        var arrivalStops = <... one or more arrival stops, of which all are equally preferred to arrive ..> 
+        
+        var withProfile = transitDbs.SelectProfile(profile);
+        profile.PrecalculateClosestStops();
+        
+        var withTime = withProfile.SelectStops(departureStops, arrivalStops)
+                            .SelectTimeFrame(startTime, endTime)
 
 
+The `withTime` object allows to make queries to get the desired results, such as:
 
-
-
-
-
-
-
-
-
-
-
+        withTime.EarliestJourney()
+        withTime.LatestJourney()
+        withTime.IsochroneFrom()
+        withTime.IsochroneTo()
+        withTime.AllJourneys()
+        
+        
+It should be obvious what each of those methods calculate. Refer to the generated documentation of the package for all details.

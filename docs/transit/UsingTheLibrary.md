@@ -70,23 +70,40 @@ For now, we'll keep things simple and use a default profile:
 Asking a query
 --------------
 
-Now that all data is gathered, a journey can be requested.
+Now that all data is gathered, a journey can be requested. To request queries, an object has to be created which contains all the parameters and settings.
 
-        // Get a snapshot to work with. The transitDB can be updated in the meanwhile by another thread
-        var snapshot = transitDb.Latest;
-
-        // look up departure/arrival stops.
+        // Find a departure stop by closes coordinate
         var departureStop = snapshot.FindClosestStop(4.9376678466796875,51.322734170650484); // Turnhout
-        var arrivalStop = snapshot.FindClosestStop(4.715280532836914,50.88132251839807); // Leuve
+        // Alternatively, find a stop by URL
+        var arrivalStop = snapshot.FindStop("http://irail.be/stations/NMBS/008833001"); // Leuven
 
-        // Alternatively, FindStop(this TransitDb.TransitDbSnapShot snapshot, string locationId, string errMsg = null) could be used
 
-        Console.WriteLine("Calculating journeys...");
+        var preferences =
+                // Start with a (collection of) transitDb 
+                snapshot                        
+                    // Select the profile to use. Note that this uses '.Latest' in the background; this is thus threadsafe and transitDBs can be updated in the background in the meanwhile
+                    .SelectProfile(profile)     
+                    
+                    // OPTIONAL: calculate all the walking routes between all the stations. Takes a few seconds and MB-rams but speeds up queries
+                    .PrecalculateClosestStops()
+                    
+                    // Select the stops from and to. These can be lists of stops too
+                    .SelectStops(departureStop, arrivalStop)
 
-        var journeys = snapshot.CalculateJourneys(p, departureStop, arrivalStop, 
-            DateTime.Now, DateTime.Now.Add(TimeSpan.FromHours(3))); 
+                    // And at last, select a timeframe. When should the journey depart and arrive?
+                    .SelectTimeFrame(DateTime.Now, DateTime.Now.AddHours(3))
 
-This will give a list of pareto-optimal journeys between the given stops during the given timeframe.
+Once the preferences are constructed, this can be used to generate journeys, such as a single earliest arriving journey:
+
+        var eas = preferences.EarliestArrival();
+
+Or a list of pareto-optimal journeys for the given timeframe:
+
+        // And at last, actually calculate the journeys!
+        var journeys = preferences.AllJourneys(); 
+        
+
+Always try to reuse the preferences-object as calculating one piece (such as the `isochroneFrom`) can speed up others (such as `Alljourneys`).
 
 There are more options available (such as Isochrone lines, Earliest arriving journey or latest arriving journey).
 Have a look at [the advanced section](MoreOptions.md)
