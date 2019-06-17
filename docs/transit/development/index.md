@@ -89,7 +89,7 @@ The inner workings of the algorithm are stated in the classes themselves.
 Usage
 -----
 
-# Intramodal routing from station to station
+### Intramodal routing from station to station
 
 1) Start with creating a profile. There are two Belgian PT-operators available by default: Delijn and NMBS/SNCB.
 (**Note: this is still subject to change**)
@@ -141,20 +141,21 @@ This is because PCS supports multiple departure points:
                 new List<...>{Poperinge, Brugge}, Vielsalm,
                 startTime, endTime, profile); 
 
-Or even with walks in or out:
+### Using (lat,lon)-locations
 
-  
-            var home = new Uri("https://www.openstreetmap.org/#map=19/51.21576/3.22048");
-            var startLocation = OsmLocationMapping.Singleton.GetCoordinateFor(home);
-            var starts = deLijn.WalkToClosebyStops(startTime, startLocation, 1000);
+To specify a 'free-floating' departure point, specify `.UseOsmLocations()` after selecting a profile.
+Then, it is possible to use an openstreetmap-url to specify a location, eventually mixed with an operator-stop:
 
-            var station = new Uri("https://www.openstreetmap.org/#map=18/51.19738/3.21830");
-            var endLocation = OsmLocationMapping.Singleton.GetCoordinateFor(station);
-            var ends = deLijn.WalkFromClosebyStops(endTime, endLocation, 1000);
+        tdb.SelectProfile(profile)
+                .UseOsmLocations()
+                .SelectStops(
+                    "https://www.openstreetmap.org/#map=19/51.21460/3.21811",
+                    "http://irail.be/stations/NMBS/008896735")
+                .SelectTimeFrame ...
+              
 
 
-            var pcs = new ProfiledConnectionScan<TransferStats>(
-                starts, ends, startTime, endTime, deLijn);
+
 
 
 Running tests
