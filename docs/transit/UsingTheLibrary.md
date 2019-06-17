@@ -1,92 +1,109 @@
 Once the [core concepts](index.md) are clear, using the library in your project should be quite easy.
+This document gives a minimal example to calculate routes. More features are explained [here](MoreOptions.md)
 
-**Important**: This section is subject to change! While the big outlines will remaint the same, we will streamline the code below. Expect breaking changes in the coming months
+**Important**: This section describes the 1.0-API, which might still slightly change. v1.1 might slightly change.
 
 Performing route planning queries (at the bare minimum) consists of the following parts:
 
-1. Setting up a provider
-2. Setting up a profile
-3. Asking a query
+1. Creating a TransitDb
+2. Loading data into the TransitDb
+3. Setting up a profile
+4. Asking a query
 
 
-Setting up a provider
----------------------
+Creating a TransitDb
+--------------------
 
-As noted, the library needs a server which offers all the information as [Linked Connections](linkedconnections.org).
+Creating a TransitDb can be done trivially:
+
+
+        using Itinero.Transit;
+        using Itinero.Transit.Data;
+        
+        ...
+        
+        var transitDb = new TransitDb();
+        
+
+Setting up a Linked-Connections provider
+----------------------------------------
+
+The library needs a server which offers all the information as [Linked Connections](linkedconnections.org).
 A linked Connections dataset has two entry points:
 
  - A web resource which contains all stops
  - Multiple web resources which contain the connections in a timewindow (with a link to a next and previous timetable)
 
-Search for these links (or ask for them) on your public transport provider website.
+Search for these links on your public transport provider website or ask for them.
 
-Once you have obtained these links, make a new dataset with:
+When found, the linked connections can be loaded into the Transit Database.
+The simplest way is to load a certain timeframe - although automatically reloading them at regular intervals is supported too.
 
 
         using Itinero.Transit.IO.LC;
         
         ...
         
-        Uri locations = <...>
         Uri connections = <...>
-        var dataset = new LinkedConnectionDataset(locations, connections);
-        var transitDB = dataset.AsTransitDb();
+        Uri locations = <...>
+        
 
+For each of these use cases, methods are provided.
 
-If needed, data can already be downloaded now for a certain time period. For example, if the code should run on a server, it can be useful to prefetch the data for the coming days. If it is not certain when the traveller will travel (if he'll travel at all), the next line should be skipped:
+The simplest way of loading data is simply to request a fixed timeframe once:
 
-        transitDB.UpdateTimeFrame(startDate, endDate)        
+        DateTime windowStart = ...
+        DateTime windowEnd = ...
+        transitDb.UseLinkedConnections(connections, locations, windowStart, windowEnd);
 
-If you'd like to force an update on the data already in the transit db, use the refresh flag:
-
-        transitDB.UpdateTimeFrame(startDate, endDate, refresh:true)        
-
-
-Note that *needed data will be downloaded automatically upon request*. In other words, if a traveller want to travel at a time span that is not yet loaded, it'll be loaded dynamically.
 
 Setting up a profile
 --------------------
 
-The *profile* contains personal preferences of the traveller, such as:
+A profile contains all preferences of the traveller, e.g. how long they takes to transfer trains within a station, how fast they walk, ...
 
-- Which public transport providers are available
-- The walking time between stops
-- How much time is needed to get from one vehicle to another
-- Which metrics are used to compare journeys
+For now, we'll keep things simple and use a default profile:
 
-A profile is constructed with:
+        var profile = new DefaultProfile();
 
-        var p = new Profile
-                <TransferStats>         // The metrics used, here total travel time and number of transfers are minimized
-                    (
-                    
-                    // The time it takes to transfer from one train to another (and the underlying algorithm, in this case: always the same time)
-                    new InternalTransferGenerator(180 /*seconds*/), 
-
-                    // The intermodal stop algorithm. Note that a transitDb is used to search stop location
-                    new CrowsFlightTransferGenerator(transitDb, maxDistance: 500 /*meter*/,  walkingSpeed: 1.4 /*meter/second*/),
-                    
-                    // The object that can create a metric
-                    TransferStats.Factory,
-                    
-                    // The comparison between routes. _This comparison should check if two journeys are covering each other, as seen in core concepts!_
-                    TransferStats.ProfileTransferCompare
-                    ); 
                     
 Asking a query
 --------------
 
-Now that all data is gathered, a journey can be requested with:
+Now that all data is gathered, a journey can be requested. To request queries, an object has to be created which contains all the parameters and settings.
 
-        var possibleJourneys = transitDB.CalculateJourneys<TransferStats>
-            (p,
-            from, // a string containing the URI for the departure station
-            to, // a string containing the URI for the arrival station
-            DateTime? departure = null,     // The (earliest) departure time
-            DateTime? arrival = null        // The (latest) arrival time
-            );         
+        // Find a departure stop by closes coordinate
+        var departureStop = snapshot.FindClosestStop(4.9376678466796875,51.322734170650484); // Turnhout
+        // Alternatively, find a stop by URL
+        var arrivalStop = snapshot.FindStop("http://irail.be/stations/NMBS/008833001"); // Leuven
 
-This will give a list of journeys.
 
-There are more options available (such as Isochrone lines, Earliest arriving journey or latest arriving journy).
-For a full overview, refer to [the generated docs](/_site/api/Itinero.Transit.Algorithms.CSA.ProfileExtensions.html).
+        var preferences =
+                // Start with a (collection of) transitDb 
+                snapshot                        
+                    // Select the profile to use. Note that this uses '.Latest' in the background; this is thus threadsafe and transitDBs can be updated in the background in the meanwhile
+                    .SelectProfile(profile)     
+                    
+                    // OPTIONAL: calculate all the walking routes between all the stations. Takes a few seconds and MB-rams but speeds up queries
+                    .PrecalculateClosestStops()
+                    
+                    // Select the stops from and to. These can be lists of stops too
+                    .SelectStops(departureStop, arrivalStop)
+
+                    // And at last, select a timeframe. When should the journey depart and arrive?
+                    .SelectTimeFrame(DateTime.Now, DateTime.Now.AddHours(3))
+
+Once the preferences are constructed, this can be used to generate journeys, such as a single earliest arriving journey:
+
+        var eas = preferences.EarliestArrival();
+
+Or a list of pareto-optimal journeys for the given timeframe:
+
+        // And at last, actually calculate the journeys!
+        var journeys = preferences.AllJourneys(); 
+        
+
+Always try to reuse the preferences-object as calculating one piece (such as the `isochroneFrom`) can speed up others (such as `Alljourneys`).
+
+There are more options available (such as Isochrone lines, Earliest arriving journey or latest arriving journey).
+Have a look at [the advanced section](MoreOptions.md)
