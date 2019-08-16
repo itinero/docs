@@ -132,6 +132,21 @@ Check this section of you use Itinero but also one it's depending projects. How 
 - IDP: Same time as 2.0 release.
 - routing-api: Same time as 2.0 release.
 
+## Itinero.Transit
+
+*this is currently unreleased*  
+STATUS: **Planned**  
+ETA: **01-07-2020**  
+
+This package adds transit routing capabilities to Itinero. This is still in development here:
+
+https://github.com/openplannerteam/itinero-transit
+
+A prelease version is already available but we need to use lessons learned from building this to finalizing the API. We still have the following main TODOs before a release:
+- Finalizing the API design: We need to get a better feel of how the library is going to be used and design the API accordingly.
+- Implementing a better scaling connections db: The current database gets too big when there are too many dates loaded and 90% of connections repeat themselves.
+- Add support to load GTFS directly: We use [linked-connections](https://linkedconnections.org/), this is the way to go, but we know users will ask for GTFS-support.
+
 ## Itinero.IO.Osm.Tiles
 
 This package enables Itinero 1.X to use [routeable tiles](https://github.com/openplannerteam/routable-tiles).
