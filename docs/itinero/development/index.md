@@ -94,7 +94,14 @@ This is a minor update.
 
 ### Itinero 2
 
-This will be the first update of Itinero with breaking changes. The goal is to use lessons learned from building Itinero 1 and use this towards a simpler Itinero 2. Basically we want to be on-par feature-wise with Itinero 1 when we release Itinero 2, you should be able to port any project using Itinero 1 to Itinero 2.
+STATUS: **Planned**  
+ETA: **01-07-2020**  
+
+This will be the first update of Itinero with breaking changes. The work is ongoing here:
+
+https://github.com/openplannerteam/itinero-tiled-routing  
+
+The goal is to use lessons learned from building Itinero 1 and use this towards a simpler Itinero 2. Basically we want to be on-par feature-wise with Itinero 1 when we release Itinero 2, you should be able to port any project using Itinero 1 to Itinero 2.
 
 **What we plan to support starting 2.0:**
 - Routeable tiles: We support loading data on-the-fly and consuming routeable tiles. This enables projects to use Itinero without the need to worry about routing data.
@@ -115,7 +122,6 @@ This will be the first update of Itinero with breaking changes. The goal is to u
 - Support for turning-costs: We want to support scenarios where it is important to add costs to turns. Turning right can be cheaper compared to turning left in right-hand driving countries.
 - Support for vertex-weights: We want to support extra costs on vertices, for example a cost associated with traffic lights or toll-booths.
 
-
 ## Itinero.IO.Osm.Tiles
 
 This package enables Itinero 1.X to use [routeable tiles](https://github.com/openplannerteam/routable-tiles).
@@ -123,8 +129,8 @@ This package enables Itinero 1.X to use [routeable tiles](https://github.com/ope
 ### Version 1
 
 *this is currently unreleased*  
-STATUS: Planned  
-ETA: 31-10-2019  
+STATUS: **Planned**  
+ETA: **31-10-2019**  
 
 The package is already largely functional but some crucial options are missing:
 - [ ] Use compression to consume tiles.
