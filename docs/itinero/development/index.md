@@ -122,6 +122,17 @@ The goal is to use lessons learned from building Itinero 1 and use this towards 
 - Support for turning-costs: We want to support scenarios where it is important to add costs to turns. Turning right can be cheaper compared to turning left in right-hand driving countries.
 - Support for vertex-weights: We want to support extra costs on vertices, for example a cost associated with traffic lights or toll-booths.
 
+**Updating depening projects:**
+
+How will we be handling updates to depending projects like OpenLR, IDP and the routing-api:
+
+- OpenLR: We will start updating this only after the release of 2.0.
+- Itinero.IO.OpenLR: We will start updating this only after the release of 2.0.
+- vector-tiles: If you use Itinero 1 to generate vector-tiles, it's not sure yet we will be updating the vector-tiles module.
+- optimization: The optimization module will also be update after the 2.0 release but we will probably has a prerelease version reading at the time of the 2.0 release.
+- IDP: Same time as 2.0 release.
+- routing-api: Same time as 2.0 release.
+
 ## Itinero.IO.Osm.Tiles
 
 This package enables Itinero 1.X to use [routeable tiles](https://github.com/openplannerteam/routable-tiles).
