@@ -36,16 +36,44 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 
 ## Version 1.4
 
-*The version is available as a prerelease with the following on the agenda/done:*
+*This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.4.0.md*
 
-- [x] Add extension method to directly load data from overpass by polygon.
-- [x] Improve the island detection by using boolean arrays.
-- [X] Elevation profiles: Output height profiles of calculated routes.
-- [X] Implement a proper @dev-feature-point-in-polygon algorithm.
-- [x] Implement extra meta-data on edges.
-- [x] Implement support for handling a @dev-feature-multigraph.
+- Added support for elevation, an example with [SRTM](https://github.com/itinero/srtm) is available [here](https://github.com/itinero/routing/tree/develop/samples/Sample.Elevation).
+- .NET core support for Itinero.IO.Shape and Itinero.Geo. (Thanks NTS!)
+- CancellationToken support in most algorithms.
+- Improved the Itinero native Geo operations.
+- Support for extra data (non-attributes) to be linked to edges and vertices.
+- Support for keeping OSM way/node IDs.
+- Support for removing restrictions from RouterDb.
+- AttributesIndex is writeable after serializing RouterDb.
+- Support to start/end routes in a given direction (angle).
+- Support for island detection: this feature makes sure all resolved points can be routed.
+- Support for optimizing a sequence to prevent u-turns.
+- Support for cached routerpoints to prevent recalculation.
+- Support for disabling tag 'normalization' in (lua) vehicle profiles.
 
-## Version 1.5 and beyond
+Bugfixes:
+
+- We don't register profiles globally anymore, it's now possible to load multiple routerdbs in the same process.
+- Fixed #157 'Route.ProjectOn timeFromStartInSeconds is always 0'.
+- Fixed #153 'DirectionCalculator sometimes erroneously returns default turn direction of 'Left''.
+- Fixed #141 'Add extension method to get directed edge id on routerpoint.'
+- Fixed #203 'One-to-many routing returns only first path'.
+- Fixed #214 'The index out of range exception has been thrown when I try to build the whole US router db'
+- Fixed #209 'AddContraction Stalls'
+- Fixed #238 'DynamicProfile is not thread safe'
+- Fixed #253 'Exception contracting europe-latest.osm.pbf'
+
+## Version 1.5
+
+*This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.4.0.md*
+
+This is a minor update.
+
+- It is now possible to control node-based restrictions in the lua profiles.
+- Updated Reminiscense to 1.3.0.
+
+## Version 1.6 and beyond
 
 *An idea of the next priorities, this is subject to changes!*
 
