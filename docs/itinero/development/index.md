@@ -122,9 +122,8 @@ The goal is to use lessons learned from building Itinero 1 and use this towards 
 - Support for turning-costs: We want to support scenarios where it is important to add costs to turns. Turning right can be cheaper compared to turning left in right-hand driving countries.
 - Support for vertex-weights: We want to support extra costs on vertices, for example a cost associated with traffic lights or toll-booths.
 
-**Updating depening projects:**
-
-How will we be handling updates to depending projects like OpenLR, IDP and the routing-api:
+**Updating depending projects:**
+Check this section of you use Itinero but also one it's depending projects. How will we be handling updates to depending projects like OpenLR, IDP and the routing-api:
 
 - OpenLR: We will start updating this only after the release of 2.0.
 - Itinero.IO.OpenLR: We will start updating this only after the release of 2.0.
