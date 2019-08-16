@@ -155,3 +155,17 @@ Just return geojson with all details included:
 
 Use arraypool for dykstra calculations to keep pathtree and other data:
 - http://adamsitnik.com/Array-Pool/
+
+## Itinero.IO.Osm.Tiles
+
+This package enables Itinero 1.X to use [routeable tiles](https://github.com/openplannerteam/routable-tiles).
+
+### Version 1
+
+*this is currently unreleased*
+STATUS: Planned
+ETA: 31-10-2019
+
+The package is already largely functional but some crucial options are missing:
+- [ ] Use compression to consume tiles.
+- [ ] Add support for restrictions.
