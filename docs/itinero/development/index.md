@@ -66,7 +66,7 @@ Bugfixes:
 
 ## Version 1.5
 
-*This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.4.0.md*
+*This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.5.0.md*
 
 This is a minor update.
 
