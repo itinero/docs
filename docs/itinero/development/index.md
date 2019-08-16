@@ -8,7 +8,16 @@ This is an overview of features that are either in development or on the roadmap
 
 This means you can influence this roadmap by either becoming a client, help with solving technical dependencies or communicate about what you think is missing in Itinero.
 
-## Version 1.1
+## Itinero
+
+This is the roadmap for the Itinero core project. This corresponds to the following packages:
+
+- Itinero: [![NuGet Badge](https://buildstats.info/nuget/Itinero)](https://www.nuget.org/packages/Itinero/)
+- Itinero.Geo: [![NuGet Badge](https://buildstats.info/nuget/Itinero.Geo)](https://www.nuget.org/packages/Itinero.Geo/)
+- Itinero.IO.Osm: [![NuGet Badge](https://buildstats.info/nuget/Itinero.IO.Osm)](https://www.nuget.org/packages/Itinero.IO.Osm/)
+- Itinero.IO.Shape: [![NuGet Badge](https://buildstats.info/nuget/Itinero.IO.Shape)](https://www.nuget.org/packages/Itinero.IO.Shape/)
+
+### Version 1.1
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.1.0.md*
 
@@ -18,7 +27,7 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
   - Check to see if the current edge-based matrix algorithm can be replaced by this more general case. *DONE*
 - And several other issues and ideas: [Milestone for 1.1](https://github.com/itinero/routing/milestone/3) *DONE*
 
-## Version 1.2
+### Version 1.2
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.2.0.md*
 
@@ -27,14 +36,14 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 - Implemented support for nested cycle route relations in the default bicycle profile.
 - Fixed directed weight matrix issue related to resolved points on oneway segments.
 
-## Version 1.3
+### Version 1.3
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.3.0.md*
 
 - Meta-data on vertices: More details [here](https://github.com/itinero/routing/wiki/Development-Plan:--Meta-data-on-vertices).
 - A way to extract parts of the network and save them as a new routerDb.
 
-## Version 1.4
+### Version 1.4
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.4.0.md*
 
@@ -64,7 +73,7 @@ Bugfixes:
 - Fixed #238 'DynamicProfile is not thread safe'
 - Fixed #253 'Exception contracting europe-latest.osm.pbf'
 
-## Version 1.5
+### Version 1.5
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.5.0.md*
 
@@ -73,7 +82,7 @@ This is a minor update.
 - It is now possible to control node-based restrictions in the lua profiles.
 - Updated Reminiscense to 1.3.0.
 
-## Version 1.6 and beyond
+### Version 1.6 and beyond
 
 *An idea of the next priorities, this is subject to changes!*
 
@@ -81,7 +90,7 @@ This is a minor update.
 - [ ] Figure out @dev-unity-support.
 - [ ] Implement support for @dev-speed-areas.
 
-## Version 2.0 and beyond
+### Version 2.0 and beyond
 
 These are issues/features that require breaking changes:
 
@@ -129,7 +138,7 @@ These are issues/features that require breaking changes:
    - This is also related to avoiding traffic lights for example: https://github.com/oSoc18/bike4brussels-backend/issues/6
 - Figure out a way or continue on with a way of implementing true memory mapping: https://github.com/itinero/routing/issues/206
 
-## General ideas
+### General ideas
 
 A collection of general ideas that may or may not end up on the final roadmap.
 
