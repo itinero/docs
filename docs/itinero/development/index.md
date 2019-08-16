@@ -162,9 +162,9 @@ This package enables Itinero 1.X to use [routeable tiles](https://github.com/ope
 
 ### Version 1
 
-*this is currently unreleased*
-STATUS: Planned
-ETA: 31-10-2019
+*this is currently unreleased*  
+STATUS: Planned  
+ETA: 31-10-2019  
 
 The package is already largely functional but some crucial options are missing:
 - [ ] Use compression to consume tiles.
