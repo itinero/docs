@@ -17,7 +17,9 @@ This is the roadmap for the Itinero core project. This corresponds to the follow
 - Itinero.IO.Osm: [![NuGet Badge](https://buildstats.info/nuget/Itinero.IO.Osm)](https://www.nuget.org/packages/Itinero.IO.Osm/)
 - Itinero.IO.Shape: [![NuGet Badge](https://buildstats.info/nuget/Itinero.IO.Shape)](https://www.nuget.org/packages/Itinero.IO.Shape/)
 
-### Version 1.1
+### Itinero 1
+
+#### Version 1.1
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.1.0.md*
 
@@ -27,7 +29,7 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
   - Check to see if the current edge-based matrix algorithm can be replaced by this more general case. *DONE*
 - And several other issues and ideas: [Milestone for 1.1](https://github.com/itinero/routing/milestone/3) *DONE*
 
-### Version 1.2
+#### Version 1.2
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.2.0.md*
 
@@ -36,14 +38,14 @@ This contains some ideas on some non-breaking extensions on top of v1.0.
 - Implemented support for nested cycle route relations in the default bicycle profile.
 - Fixed directed weight matrix issue related to resolved points on oneway segments.
 
-### Version 1.3
+#### Version 1.3
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.3.0.md*
 
 - Meta-data on vertices: More details [here](https://github.com/itinero/routing/wiki/Development-Plan:--Meta-data-on-vertices).
 - A way to extract parts of the network and save them as a new routerDb.
 
-### Version 1.4
+#### Version 1.4
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.4.0.md*
 
@@ -73,7 +75,7 @@ Bugfixes:
 - Fixed #238 'DynamicProfile is not thread safe'
 - Fixed #253 'Exception contracting europe-latest.osm.pbf'
 
-### Version 1.5
+#### Version 1.5
 
 *This version has been released: https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.5.0.md*
 
@@ -82,7 +84,7 @@ This is a minor update.
 - It is now possible to control node-based restrictions in the lua profiles.
 - Updated Reminiscense to 1.3.0.
 
-### Version 1.6 and beyond
+#### Version 1.6 and beyond
 
 *An idea of the next priorities, this is subject to changes!*
 
@@ -90,11 +92,11 @@ This is a minor update.
 - [ ] Figure out @dev-unity-support.
 - [ ] Implement support for @dev-speed-areas.
 
-### Version 2.0 and beyond
+### Itinero 2
 
-This will be the first update of Itinero with breaking changes. The goal is to use lessons learned from building Itinero 1 and use this towards a simpler Itinero 2.
+This will be the first update of Itinero with breaking changes. The goal is to use lessons learned from building Itinero 1 and use this towards a simpler Itinero 2. Basically we want to be on-par feature-wise with Itinero 1 when we release Itinero 2, you should be able to port any project using Itinero 1 to Itinero 2.
 
-What we plan to support starting 2.0:
+**What we plan to support starting 2.0:**
 - Routeable tiles: We support loading data on-the-fly and consuming routeable tiles. This enables projects to use Itinero without the need to worry about routing data.
 - Contraction: Support contraction. We are still looking at options to support this best but we definetely want to be on-par feature-wise with Itinero 1. This means supporting:
   - Planet-wide contraction.
@@ -108,7 +110,7 @@ What we plan to support starting 2.0:
   - Elevation support: support adding elevation data to the routerdb.
   - Island detection: support island detection to make sure routes are always found.
 
-What we won't be implementing just yet but we keep in mind designing the API:
+**What we won't be implementing just yet but we keep in mind designing the API:**
 - Elevation-aware routing: Support profiles that take into account elevation.
 - Support for turning-costs: We want to support scenarios where it is important to add costs to turns. Turning right can be cheaper compared to turning left in right-hand driving countries.
 - Support for vertex-weights: We want to support extra costs on vertices, for example a cost associated with traffic lights or toll-booths.
