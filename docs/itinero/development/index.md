@@ -136,16 +136,17 @@ Check this section of you use Itinero but also one it's depending projects. How 
 
 *this is currently unreleased*  
 STATUS: **Planned**  
-ETA: **01-07-2020**  
+ETA: **31-12-2019**  
 
 This package adds transit routing capabilities to Itinero. This is still in development here:
 
 https://github.com/openplannerteam/itinero-transit
 
-A prelease version is already available but we need to use lessons learned from building this to finalizing the API. We still have the following main TODOs before a release:
-- Finalizing the API design: We need to get a better feel of how the library is going to be used and design the API accordingly.
+A prelease version is already available but we still have the following main TODOs before a release:
 - Implementing a better scaling connections db: The current database gets too big when there are too many dates loaded and 90% of connections repeat themselves.
 - Add support to load GTFS directly: We use [linked-connections](https://linkedconnections.org/), this is the way to go, but we know users will ask for GTFS-support.
+- Refactor the IO.OSM package, remove Itinero2 from the package and move this capability elsewhere.
+- Add a new package to support intermodal routing based on Itinero1.
 
 ## Itinero.IO.Osm.Tiles
 
