@@ -145,7 +145,7 @@ https://github.com/openplannerteam/itinero-transit
 A prelease version is already available but we still have the following main TODOs before a release:
 - Implementing a better scaling connections db: The current database gets too big when there are too many dates loaded and 90% of connections repeat themselves.
 - Add support to load GTFS directly: We use [linked-connections](https://linkedconnections.org/), this is the way to go, but we know users will ask for GTFS-support.
-- Refactor the IO.OSM package, remove Itinero2 from the package and move this capability elsewhere.
+- ~~Refactor the IO.OSM package, remove Itinero2 from the package and move this capability elsewhere.~~
 - Add a new package to support intermodal routing based on Itinero1.
 
 ## Itinero.IO.Osm.Tiles
