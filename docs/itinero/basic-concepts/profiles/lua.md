@@ -15,6 +15,12 @@ A vehicle can be defined by one lua script. This vehicle definition gets embedde
 -- every vehicle type has a name:
 name = "car"
 
+-- Enable extra optimizations; stronlgy urged to set to 'true'. No functional impact towards route planning
+normalize = true
+
+-- Turn restrictions applying to these vehicles will be applied:
+vehicle_types = {"vehicle", "car"}
+
 -- which tags can be used by the profile to calculate weights - see explanation below
 profile_whitelist = {
 	"highway"
@@ -74,6 +80,8 @@ A _custom_ profile uses a _factor_ to define weights of edges. This way, the fac
 - With metric _distance_: Itinero will use the function to get the speed and set factor to a constant, usually 1.
 - With metric _time_: Itinero will use the function to get the speed and set factor to 1/speed.
 - With metric _custom_: Itinero will use the function to get the speed and the factor.
+
+NOTE: the name of this function can be chosen, it only has to match the name given above.
 
 ]]--
 function factor_and_speed (attributes, result)
