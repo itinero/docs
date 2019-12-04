@@ -98,7 +98,7 @@ function factor_and_speed (attributes, result)
     Do we have to drive in a certain direction?
     0: twoway
     1: oneway with the drawing direction of the highway
-    -1: oneway against the drawing direction of the highway
+    2: oneway against the drawing direction of the highway
     ]]
     result.direction = 0
 
@@ -176,6 +176,10 @@ Having a value in the `meta_whitelist` means that the OSM tag is immediatly copi
 ### Handling relations
 
 If you need information from relations to do route planning (e.g. prefer cycling networks), add a function called `relation_tag_processor`.
+This function is called for every relation. The tags that should be kept must be copied into `result.attributes_to_keep`.
+
+All these attributes are then added onto the attributes of every element which is part of the relation. If a key already exists in the tagcollection of that way, the new value will be appended with `,` between them.
+
 Important: the keys mentioned in `attributes_to_keep` have to be in the `profile_whitelist`, the keys needed by this function must be in `meta_whitelist`.
 
 ```Lua
@@ -194,6 +198,14 @@ function relation_tag_processor (attributes, result)
 	end
 end
 ```
+
+### Handling nodes
+
+At the moment, giving delays for e.g. traffic lights is not supported.
+
+[https://github.com/itinero/routing/issues/285]
+
+`node_restrictions` can calculate that a road is not accessible, see an example here: [https://github.com/itinero/routing/blob/develop/src/Itinero/Osm/Vehicles/car.lua#L93]
 
 ### Logging and debugging
 
