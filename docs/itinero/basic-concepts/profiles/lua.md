@@ -44,7 +44,7 @@ Each profile has the following attributes:
 - metric: what is the metric that we will optimize for. Can be one of the following:
     - distance: only keep distance into account, neither speed nor factor will be used. Think speed=1 and factor=1
     - time: for every segment, the factor used is 1/speed (aka: time needed for this segment); the routeplanner will optimize for that
-    - custom: the weight (per meter) for each segment will be used. This custom factor will be minimized
+    - custom: the weight (per meter) for each segment will be used. This custom factor will be minimized. This implies that the metric 'speed' will not be used anymore for determining the route
 
 
 --]]
