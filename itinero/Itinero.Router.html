@@ -1,0 +1,1136 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Router
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Router
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Router">
+  <h1 id="Itinero_Router" data-uid="Itinero.Router">Class Router
+  </h1>
+  <div class="markdown level0 summary"><p>A router implementation encapsulating basic routing functionalities.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></div>
+    <div class="level2"><span class="xref">Router</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_ProfileFactorAndSpeedCache">RouterBase.ProfileFactorAndSpeedCache</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_VerifyAllStoppable">RouterBase.VerifyAllStoppable</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryResolve_IProfileInstance___System_Single_System_Single_Func_RoutingEdge_System_Boolean__System_Single_ResolveSettings_">RouterBase.TryResolve(IProfileInstance[], Single, Single, Func&lt;RoutingEdge, Boolean&gt;, Single, ResolveSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryCheckConnectivity_IProfileInstance_Itinero_RouterPoint_System_Single_System_Nullable_System_Boolean__">RouterBase.TryCheckConnectivity(IProfileInstance, RouterPoint, Single, Nullable&lt;Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_RoutingSettings___0__">RouterBase.TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint, RouterPoint, RoutingSettings&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__System_Int64_System_Int64_Itinero_RoutingSettings___0__">RouterBase.TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, Int64, Int64, RoutingSettings&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_System_Nullable_System_Boolean__Itinero_RouterPoint_System_Nullable_System_Boolean__Itinero_RoutingSettings___0__">RouterBase.TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint, Nullable&lt;Boolean&gt;, RouterPoint, Nullable&lt;Boolean&gt;, RoutingSettings&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint___Itinero_RouterPoint___Itinero_RoutingSettings___0__">RouterBase.TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint[], RouterPoint[], RoutingSettings&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryCalculateWeight__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint___Itinero_RouterPoint___ISet_System_Int32__ISet_System_Int32__Itinero_RoutingSettings___0__">RouterBase.TryCalculateWeight&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint[], RouterPoint[], ISet&lt;Int32&gt;, ISet&lt;Int32&gt;, RoutingSettings&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_BuildRoute__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_EdgePath___0__">RouterBase.BuildRoute&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint, RouterPoint, EdgePath&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Router_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Router : RouterBase</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Router__ctor_" data-uid="Itinero.Router.#ctor*"></a>
+  
+  <h4 id="Itinero_Router__ctor_Itinero_RouterDb_" data-uid="Itinero.Router.#ctor(Itinero.RouterDb)"><a href="#collapsible-Itinero_Router__ctor_Itinero_RouterDb_" class="expander" data-toggle="collapse">Router(RouterDb)</a></h4>
+  
+  <div id="collapsible-Itinero_Router__ctor_Itinero_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new router.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Router(RouterDb db)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Router_CreateCustomResolver_" data-uid="Itinero.Router.CreateCustomResolver*"></a>
+  
+  <h4 id="Itinero_Router_CreateCustomResolver" data-uid="Itinero.Router.CreateCustomResolver"><a href="#collapsible-Itinero_Router_CreateCustomResolver" class="expander" data-toggle="collapse">CreateCustomResolver</a></h4>
+  
+  <div id="collapsible-Itinero_Router_CreateCustomResolver" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the delegate to create a custom resolver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResolveExtensions.CreateResolver CreateCustomResolver { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IResolveExtensions.CreateResolver</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_CustomRouteBuilder_" data-uid="Itinero.Router.CustomRouteBuilder*"></a>
+  
+  <h4 id="Itinero_Router_CustomRouteBuilder" data-uid="Itinero.Router.CustomRouteBuilder"><a href="#collapsible-Itinero_Router_CustomRouteBuilder" class="expander" data-toggle="collapse">CustomRouteBuilder</a></h4>
+  
+  <div id="collapsible-Itinero_Router_CustomRouteBuilder" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the custom route builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRouteBuilder CustomRouteBuilder { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IRouteBuilder</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_Db_" data-uid="Itinero.Router.Db*"></a>
+  
+  <h4 id="Itinero_Router_Db" data-uid="Itinero.Router.Db"><a href="#collapsible-Itinero_Router_Db" class="expander" data-toggle="collapse">Db</a></h4>
+  
+  <div id="collapsible-Itinero_Router_Db" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the db.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed RouterDb Db { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterDb.html">RouterDb</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_Db">RouterBase.Db</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_ResolverCache_" data-uid="Itinero.Router.ResolverCache*"></a>
+  
+  <h4 id="Itinero_Router_ResolverCache" data-uid="Itinero.Router.ResolverCache"><a href="#collapsible-Itinero_Router_ResolverCache" class="expander" data-toggle="collapse">ResolverCache</a></h4>
+  
+  <div id="collapsible-Itinero_Router_ResolverCache" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the resolver cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResolverCache ResolverCache { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IResolverCache</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Router_BuildRoute_" data-uid="Itinero.Router.BuildRoute*"></a>
+  
+  <h4 id="Itinero_Router_BuildRoute__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_EdgePath___0__CancellationToken_" data-uid="Itinero.Router.BuildRoute``1(IProfileInstance,WeightHandler{``0},Itinero.RouterPoint,Itinero.RouterPoint,EdgePath{``0},CancellationToken)"><a href="#collapsible-Itinero_Router_BuildRoute__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_EdgePath___0__CancellationToken_" class="expander" data-toggle="collapse">BuildRoute&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint, RouterPoint, EdgePath&lt;T&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Router_BuildRoute__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_EdgePath___0__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Result&lt;Route&gt; BuildRoute&lt;T&gt;(IProfileInstance profileInstance, WeightHandler&lt;T&gt; weightHandler, RouterPoint source, RouterPoint target, EdgePath&lt;T&gt; path, CancellationToken cancellationToken)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profileInstance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">EdgePath</span>&lt;T&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Itinero.RouterBase.BuildRoute&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, Itinero.RouterPoint, Itinero.RouterPoint, EdgePath&lt;T&gt;, CancellationToken)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_TryCalculateRaw_" data-uid="Itinero.Router.TryCalculateRaw*"></a>
+  
+  <h4 id="Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_RoutingSettings___0__CancellationToken_" data-uid="Itinero.Router.TryCalculateRaw``1(IProfileInstance,WeightHandler{``0},Itinero.RouterPoint,Itinero.RouterPoint,Itinero.RoutingSettings{``0},CancellationToken)"><a href="#collapsible-Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_RoutingSettings___0__CancellationToken_" class="expander" data-toggle="collapse">TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint, RouterPoint, RoutingSettings&lt;T&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_RoutingSettings___0__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates a route between the two locations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Result&lt;EdgePath&lt;T&gt;&gt; TryCalculateRaw&lt;T&gt;(IProfileInstance profileInstance, WeightHandler&lt;T&gt; weightHandler, RouterPoint source, RouterPoint target, RoutingSettings&lt;T&gt; settings, CancellationToken cancellationToken)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profileInstance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RoutingSettings-1.html">RoutingSettings</a>&lt;T&gt;</span>
+        <span class="parametername">settings</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<span class="xref">EdgePath</span>&lt;T&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Itinero.RouterBase.TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, Itinero.RouterPoint, Itinero.RouterPoint, Itinero.RoutingSettings&lt;T&gt;, CancellationToken)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_TryCalculateRaw_" data-uid="Itinero.Router.TryCalculateRaw*"></a>
+  
+  <h4 id="Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_System_Nullable_System_Boolean__Itinero_RouterPoint_System_Nullable_System_Boolean__Itinero_RoutingSettings___0__CancellationToken_" data-uid="Itinero.Router.TryCalculateRaw``1(IProfileInstance,WeightHandler{``0},Itinero.RouterPoint,System.Nullable{System.Boolean},Itinero.RouterPoint,System.Nullable{System.Boolean},Itinero.RoutingSettings{``0},CancellationToken)"><a href="#collapsible-Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_System_Nullable_System_Boolean__Itinero_RouterPoint_System_Nullable_System_Boolean__Itinero_RoutingSettings___0__CancellationToken_" class="expander" data-toggle="collapse">TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint, Nullable&lt;Boolean&gt;, RouterPoint, Nullable&lt;Boolean&gt;, RoutingSettings&lt;T&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint_System_Nullable_System_Boolean__Itinero_RouterPoint_System_Nullable_System_Boolean__Itinero_RoutingSettings___0__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates a route between the two directed edges. The route starts in the direction of the edge and ends with an arrive in the direction of the target edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Result&lt;EdgePath&lt;T&gt;&gt; TryCalculateRaw&lt;T&gt;(IProfileInstance profileInstance, WeightHandler&lt;T&gt; weightHandler, RouterPoint source, bool ? sourceForward, RouterPoint target, bool ? targetForward, RoutingSettings&lt;T&gt; settings, CancellationToken cancellationToken)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profileInstance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">sourceForward</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">targetForward</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RoutingSettings-1.html">RoutingSettings</a>&lt;T&gt;</span>
+        <span class="parametername">settings</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<span class="xref">EdgePath</span>&lt;T&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Itinero.RouterBase.TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, Itinero.RouterPoint, System.Nullable&lt;System.Boolean&gt;, Itinero.RouterPoint, System.Nullable&lt;System.Boolean&gt;, Itinero.RoutingSettings&lt;T&gt;, CancellationToken)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_TryCalculateRaw_" data-uid="Itinero.Router.TryCalculateRaw*"></a>
+  
+  <h4 id="Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint___Itinero_RouterPoint___Itinero_RoutingSettings___0__CancellationToken_" data-uid="Itinero.Router.TryCalculateRaw``1(IProfileInstance,WeightHandler{``0},Itinero.RouterPoint[],Itinero.RouterPoint[],Itinero.RoutingSettings{``0},CancellationToken)"><a href="#collapsible-Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint___Itinero_RouterPoint___Itinero_RoutingSettings___0__CancellationToken_" class="expander" data-toggle="collapse">TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint[], RouterPoint[], RoutingSettings&lt;T&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint___Itinero_RouterPoint___Itinero_RoutingSettings___0__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates all routes between all sources and all targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Result&lt;EdgePath&lt;T&gt;[][]&gt; TryCalculateRaw&lt;T&gt;(IProfileInstance profileInstance, WeightHandler&lt;T&gt; weightHandler, RouterPoint[] sources, RouterPoint[] targets, RoutingSettings&lt;T&gt; settings, CancellationToken cancellationToken)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profileInstance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>[]</span>
+        <span class="parametername">sources</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>[]</span>
+        <span class="parametername">targets</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RoutingSettings-1.html">RoutingSettings</a>&lt;T&gt;</span>
+        <span class="parametername">settings</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<span class="xref">EdgePath</span>&lt;T&gt;[][]&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Itinero.RouterBase.TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, Itinero.RouterPoint[], Itinero.RouterPoint[], Itinero.RoutingSettings&lt;T&gt;, CancellationToken)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_TryCalculateRaw_" data-uid="Itinero.Router.TryCalculateRaw*"></a>
+  
+  <h4 id="Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__System_Int64_System_Int64_Itinero_RoutingSettings___0__CancellationToken_" data-uid="Itinero.Router.TryCalculateRaw``1(IProfileInstance,WeightHandler{``0},System.Int64,System.Int64,Itinero.RoutingSettings{``0},CancellationToken)"><a href="#collapsible-Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__System_Int64_System_Int64_Itinero_RoutingSettings___0__CancellationToken_" class="expander" data-toggle="collapse">TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, Int64, Int64, RoutingSettings&lt;T&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Router_TryCalculateRaw__1_IProfileInstance_WeightHandler___0__System_Int64_System_Int64_Itinero_RoutingSettings___0__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates a route between the two directed edges. The route starts in the direction of the edge and ends with an arrive in the direction of the target edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Result&lt;EdgePath&lt;T&gt;&gt; TryCalculateRaw&lt;T&gt;(IProfileInstance profileInstance, WeightHandler&lt;T&gt; weightHandler, long sourceDirectedEdge, long targetDirectedEdge, RoutingSettings&lt;T&gt; settings, CancellationToken cancellationToken)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profileInstance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">sourceDirectedEdge</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">targetDirectedEdge</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RoutingSettings-1.html">RoutingSettings</a>&lt;T&gt;</span>
+        <span class="parametername">settings</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<span class="xref">EdgePath</span>&lt;T&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Itinero.RouterBase.TryCalculateRaw&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, System.Int64, System.Int64, Itinero.RoutingSettings&lt;T&gt;, CancellationToken)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_TryCalculateWeight_" data-uid="Itinero.Router.TryCalculateWeight*"></a>
+  
+  <h4 id="Itinero_Router_TryCalculateWeight__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint___Itinero_RouterPoint___ISet_System_Int32__ISet_System_Int32__Itinero_RoutingSettings___0__CancellationToken_" data-uid="Itinero.Router.TryCalculateWeight``1(IProfileInstance,WeightHandler{``0},Itinero.RouterPoint[],Itinero.RouterPoint[],ISet{System.Int32},ISet{System.Int32},Itinero.RoutingSettings{``0},CancellationToken)"><a href="#collapsible-Itinero_Router_TryCalculateWeight__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint___Itinero_RouterPoint___ISet_System_Int32__ISet_System_Int32__Itinero_RoutingSettings___0__CancellationToken_" class="expander" data-toggle="collapse">TryCalculateWeight&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, RouterPoint[], RouterPoint[], ISet&lt;Int32&gt;, ISet&lt;Int32&gt;, RoutingSettings&lt;T&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Router_TryCalculateWeight__1_IProfileInstance_WeightHandler___0__Itinero_RouterPoint___Itinero_RouterPoint___ISet_System_Int32__ISet_System_Int32__Itinero_RoutingSettings___0__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates all routes between all sources and all targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Result&lt;T[][]&gt; TryCalculateWeight&lt;T&gt;(IProfileInstance profileInstance, WeightHandler&lt;T&gt; weightHandler, RouterPoint[] sources, RouterPoint[] targets, ISet&lt;int&gt; invalidSources, ISet&lt;int&gt; invalidTargets, RoutingSettings&lt;T&gt; settings, CancellationToken cancellationToken)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profileInstance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>[]</span>
+        <span class="parametername">sources</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>[]</span>
+        <span class="parametername">targets</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ISet</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">invalidSources</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ISet</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">invalidTargets</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RoutingSettings-1.html">RoutingSettings</a>&lt;T&gt;</span>
+        <span class="parametername">settings</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;T[][]&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Itinero.RouterBase.TryCalculateWeight&lt;T&gt;(IProfileInstance, WeightHandler&lt;T&gt;, Itinero.RouterPoint[], Itinero.RouterPoint[], ISet&lt;System.Int32&gt;, ISet&lt;System.Int32&gt;, Itinero.RoutingSettings&lt;T&gt;, CancellationToken)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_TryCheckConnectivity_" data-uid="Itinero.Router.TryCheckConnectivity*"></a>
+  
+  <h4 id="Itinero_Router_TryCheckConnectivity_IProfileInstance_Itinero_RouterPoint_System_Single_System_Nullable_System_Boolean__CancellationToken_" data-uid="Itinero.Router.TryCheckConnectivity(IProfileInstance,Itinero.RouterPoint,System.Single,System.Nullable{System.Boolean},CancellationToken)"><a href="#collapsible-Itinero_Router_TryCheckConnectivity_IProfileInstance_Itinero_RouterPoint_System_Single_System_Nullable_System_Boolean__CancellationToken_" class="expander" data-toggle="collapse">TryCheckConnectivity(IProfileInstance, RouterPoint, Single, Nullable&lt;Boolean&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Router_TryCheckConnectivity_IProfileInstance_Itinero_RouterPoint_System_Single_System_Nullable_System_Boolean__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if the given point is connected to the rest of the network. Use this to detect points on routing islands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Result&lt;bool&gt; TryCheckConnectivity(IProfileInstance profileInstance, RouterPoint point, float radiusInMeter, bool ? forward, CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profileInstance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">radiusInMeter</span>
+        <p><p>The radius metric, that&apos;s always a distance in meters.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">forward</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<span class="xref">System.Boolean</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryCheckConnectivity_IProfileInstance_Itinero_RouterPoint_System_Single_System_Nullable_System_Boolean__CancellationToken_">RouterBase.TryCheckConnectivity(IProfileInstance, RouterPoint, Single, Nullable&lt;Boolean&gt;, CancellationToken)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Router_TryResolve_" data-uid="Itinero.Router.TryResolve*"></a>
+  
+  <h4 id="Itinero_Router_TryResolve_IProfileInstance___System_Single_System_Single_Func_RoutingEdge_System_Boolean__System_Single_ResolveSettings_CancellationToken_" data-uid="Itinero.Router.TryResolve(IProfileInstance[],System.Single,System.Single,Func{RoutingEdge,System.Boolean},System.Single,ResolveSettings,CancellationToken)"><a href="#collapsible-Itinero_Router_TryResolve_IProfileInstance___System_Single_System_Single_Func_RoutingEdge_System_Boolean__System_Single_ResolveSettings_CancellationToken_" class="expander" data-toggle="collapse">TryResolve(IProfileInstance[], Single, Single, Func&lt;RoutingEdge, Boolean&gt;, Single, ResolveSettings, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Router_TryResolve_IProfileInstance___System_Single_System_Single_Func_RoutingEdge_System_Boolean__System_Single_ResolveSettings_CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches for the closest point on the routing network that&apos;s routable for the given profiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Result&lt;RouterPoint&gt; TryResolve(IProfileInstance[] profileInstances, float latitude, float longitude, Func&lt;RoutingEdge, bool&gt; isBetter, float maxSearchDistance, ResolveSettings settings, CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span>[]</span>
+        <span class="parametername">profileInstances</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">latitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">longitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">RoutingEdge</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isBetter</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxSearchDistance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ResolveSettings</span></span>
+        <span class="parametername">settings</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Itinero.RouterBase.html#Itinero_RouterBase_TryResolve_IProfileInstance___System_Single_System_Single_Func_RoutingEdge_System_Boolean__System_Single_ResolveSettings_CancellationToken_">RouterBase.TryResolve(IProfileInstance[], Single, Single, Func&lt;RoutingEdge, Boolean&gt;, Single, ResolveSettings, CancellationToken)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

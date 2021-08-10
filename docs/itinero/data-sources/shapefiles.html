@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Shapefiles | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Shapefiles | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="shapefiles">
+<h1 id="shapefiles">Shapefiles</h1>
+
+<p>By default Itinero works with OSM data but it&#39;s perfectly capable of handling other data. Think closed alternatives like TomTom MultiNet or HERE but there are also several open datasets out there most of them managed by local governments. Most of these datasets are available as shapefile and can be loaded using <code>Itinero.IO.Shape</code>.</p>
+<h2 id="routerdb-from-shapefile">RouterDb from Shapefile</h2>
+<p>This is an example of loading data from a shapefile into a router db. We are using an open dataset from the Dutch government called &#39;NWB&#39;, the &#39;national road registry&#39;. We can&#39;t include samples for MultiNet or HERE because we&#39;re not sure we are allowed to do this.</p>
+<p>You can check a full working sample <a href="https://github.com/itinero/geo/tree/master/samples/Sample.Shape">here</a>.</p>
+<h4 id="vehicle-definition">Vehicle definition</h4>
+<p>First of all make sure to convert your shapefile to use WGS84. The shapefile you&#39;re using has to contain two columns per geometry identifying <em>endpoints</em> or <em>junctions</em> for Itinero to be able to link them together in a network.</p>
+<p>After that, the most important part is creating a vehicle definition that describes the attributes in the shapefile in such a way that Itinero knows how to handle the data. A profile basically translates the information in the columns of the shapefile into speed, distance and access information. An example vehicle profile:</p>
+<pre><code class="lang-lua">-- car globals
+name = &quot;nwb.car&quot;
+
+-- global profile parameters.
+-- defines columns in the shapefile.
+parameters = {
+  source_vertex = &quot;JTE_ID_BEG&quot;,
+  target_vertex = &quot;JTE_ID_END&quot;
+}
+
+-- whitelists for profile and meta
+profile_whitelist = {
+  &quot;BST_CODE&quot;, 
+  &quot;BAANSUBSRT&quot;, 
+  &quot;RIJRICHTNG&quot;, 
+  &quot;WEGBEHSRT&quot;, 
+  &quot;HECTO_LTTR&quot;
+}
+meta_whitelist = {
+  &quot;STT_NAAM&quot;
+}
+
+-- default speed profiles
+speed_profiles = {
+  [&quot;BVD&quot;] = { speed = 50, oneway = nil },
+  [&quot;AF&quot;] = { speed = 70, oneway = nil },
+  [&quot;OP&quot;] = { speed = 70, oneway = nil },
+  [&quot;HR&quot;] = { speed = 120, oneway = nil },
+  [&quot;MRB&quot;] = { speed = 30, oneway = true},
+  [&quot;NRB&quot;] = { speed = 30, oneway = true}
+}
+
+
+-- profile definitions linking a function to a profile
+profiles = {
+  {
+    name = &quot;&quot;,
+    function_name = &quot;factor_and_speed&quot;,
+    metric = &quot;time&quot;
+  },
+  { 
+    name = &quot;shortest&quot;,
+    function_name = &quot;factor_and_speed&quot;,
+    metric = &quot;distance&quot;,
+  }
+}
+
+-- the main function turning attributes into a factor_and_speed and a tag whitelist
+function factor_and_speed (attributes, result)
+
+  result.speed = 0
+  result.direction = 0
+  result.canstop = true
+  result.attributes_to_keep = {}
+
+  -- get default speed profiles
+  local BST_CODE = attributes.BST_CODE -- code of road type.
+  local speed_profile = speed_profiles[BST_CODE]
+  local speed = 70
+  local direction = 0 -- bidirectional default
+  result.attributes_to_keep.BST_CODE = true -- keep this code.
+  if speed_profile then
+    speed = speed_profile.speed
+    if speed_profile.oneway then
+      direction = 1 -- this type of edge is oneway forward by default
+    end
+  end
+
+  local RIJRICHTNG = attributes.RIJRICHTNG -- oneway code.
+  if RIJRICHTNG then
+    result.attributes_to_keep.RIJRICHTNG = true -- keep the oneway stuff
+    if RIJRICHTNG == &quot;H&quot; then
+      direction = 1
+    elseif RIJRICHTNG == &quot;T&quot; then
+      direction = 2
+    end
+  end
+
+  result.speed = speed -- speed in km/h
+  result.direction = direction
+  result.canstop = true
+end
+
+-- instruction generators
+instruction_generators = {
+  {
+    applies_to = &quot;&quot;, -- applies to all profiles when empty
+    generators = {
+    {
+      name = &quot;start&quot;,
+      function_name = &quot;get_start&quot;
+    },
+    { 
+      name = &quot;stop&quot;,
+      function_name = &quot;get_stop&quot;
+    },
+    {
+      name = &quot;roundabout&quot;,
+      function_name = &quot;get_roundabout&quot;
+    },
+    {
+      name = &quot;turn&quot;,
+      function_name = &quot;get_turn&quot;
+    }
+    }
+  }
+}
+
+-- gets the first instruction
+function get_start (route_position, language_reference, instruction)
+  if route_position.is_first() then
+    local direction = route_position.direction()
+    instruction.text = itinero.format(language_reference.get(&quot;Start {0}.&quot;), language_reference.get(direction));
+    instruction.shape = route_position.shape
+    return 1
+  end
+  return 0
+end
+
+-- gets the last instruction
+function get_stop (route_position, language_reference, instruction) 
+  if route_position.is_last() then
+    instruction.text = language_reference.get(&quot;Arrived at destination.&quot;);
+    instruction.shape = route_position.shape
+    return 1
+  end
+  return 0
+end
+
+function contains (attributes, key, value)
+  if attributes then
+    return localvalue == attributes[key];
+  end   
+end
+
+-- gets a roundabout instruction
+function get_roundabout (route_position, language_reference, instruction) 
+  if (route_position.attributes.BST_CODE == &quot;NRB&quot; or 
+    route_position.attributes.BST_CODE == &quot;MRB&quot;) and
+      (not route_position.is_last()) then
+    local attributes = route_position.next().attributes
+    if attributes.junction then
+    else
+      local exit = 1
+      local count = 1
+      local previous = route_position.previous()
+      while previous and (previous.attributes.BST_CODE == &quot;NRB&quot; or 
+        previous.attributes.BST_CODE == &quot;MRB&quot;) do
+        local branches = previous.branches
+        if branches then
+          branches = branches.get_traversable()
+          if branches.count &gt; 0 then
+            exit = exit + 1
+          end
+        end
+        count = count + 1
+        previous = previous.previous()
+      end
+
+            instruction.text = itinero.format(language_reference.get(&quot;Take the {0}th exit at the next roundabout.&quot;), &quot;&quot; .. exit)
+            if exit == 1 then
+                instruction.text = itinero.format(language_reference.get(&quot;Take the first exit at the next roundabout.&quot;))
+            elseif exit == 2 then
+                instruction.text = itinero.format(language_reference.get(&quot;Take the second exit at the next roundabout.&quot;))
+            elseif exit == 3 then
+                instruction.text = itinero.format(language_reference.get(&quot;Take the third exit at the next roundabout.&quot;))
+            end
+            instruction.type = &quot;roundabout&quot;
+            instruction.shape = route_position.shape
+            return count
+        end
+    end
+    return 0
+end
+
+-- gets a turn
+function get_turn (route_position, language_reference, instruction) 
+    local relative_direction = route_position.relative_direction().direction
+
+    local turn_relevant = false
+    local branches = route_position.branches
+    if branches then
+        branches = branches.get_traversable()
+        if relative_direction == &quot;straighton&quot; and
+            branches.count &gt;= 2 then
+            turn_relevant = true -- straight on at cross road
+        end
+        if  relative_direction != &quot;straighton&quot; and 
+            branches.count &gt; 0 then
+            turn_relevant = true -- an actual normal turn
+        end
+    end
+
+    if turn_relevant then
+        local next = route_position.next()
+        local name = nil
+        if next then
+            name = next.attributes.STT_NAAM
+        end
+        if name then
+            instruction.text = itinero.format(language_reference.get(&quot;Go {0} on {1}.&quot;), 
+                language_reference.get(relative_direction), name)
+            instruction.shape = route_position.shape
+        else
+            instruction.text = itinero.format(language_reference.get(&quot;Go {0}.&quot;), 
+                language_reference.get(relative_direction))
+            instruction.shape = route_position.shape
+        end
+
+        return 1
+    end
+    return 0
+end
+</code></pre><p>You will need to create the same kind of profile for your own dataset, telling Itinero what to do and how to load the data.</p>
+<h4 id="loading-the-data">Loading the data</h4>
+<p>Once this is done you can use the profile to create routerdb as follows:</p>
+<pre><code class="lang-csharp">// create a new router db and load the shapefile.
+var vehicle = new Car(); // load data for the car profile.
+var routerDb = new RouterDb(EdgeDataSerializer.MAX_DISTANCE);
+routerDb.LoadFromShape(&quot;/path/to/shape/&quot;, &quot;wegvakken.shp&quot;, vehicle);
+
+// write the router db to disk for later use.
+routerDb.Serialize(&quot;nwb.routerdb&quot;);
+</code></pre><h2 id="routerdb-to-shapefile">RouterDb to Shapefile</h2>
+<p>If for whatever reason you want to go in the opposite direction there is also an extension method in <code>Itinero.IO.Shape</code> to write a routerdb as a shapefile. To write a shapefile with support for car, bicycle and pedestrian just do:</p>
+<pre><code class="lang-csharp">var profiles = new Profile[] {
+  routerDb.GetSupportedProfile(&quot;car&quot;),
+  routerDb.GetSupportedProfile(&quot;bicycle&quot;),
+  routerDb.GetSupportedProfile(&quot;pedestrian&quot;)
+};
+routerDb.WriteToShape(&quot;shapefile&quot;, profiles);
+</code></pre></article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

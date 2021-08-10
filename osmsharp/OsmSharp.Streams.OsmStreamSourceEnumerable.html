@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OsmStreamSourceEnumerable
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OsmStreamSourceEnumerable
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable">
+  <h1 id="OsmSharp_Streams_OsmStreamSourceEnumerable" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable">Class OsmStreamSourceEnumerable
+  </h1>
+  <div class="markdown level0 summary"><p>An enumerable that can ignore nodes, ways or relations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OsmStreamSourceEnumerable</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OsmSharp_Streams_OsmStreamSourceEnumerable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OsmStreamSourceEnumerable : IEnumerable&lt;OsmGeo&gt;, IEnumerator&lt;OsmGeo&gt;</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamSourceEnumerable__ctor_" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.#ctor*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamSourceEnumerable__ctor_OsmSharp_Streams_OsmStreamSource_System_Boolean_System_Boolean_System_Boolean_" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.#ctor(OsmSharp.Streams.OsmStreamSource,System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable__ctor_OsmSharp_Streams_OsmStreamSource_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">OsmStreamSourceEnumerable(OsmStreamSource, Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable__ctor_OsmSharp_Streams_OsmStreamSource_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new enumerable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OsmStreamSourceEnumerable(OsmStreamSource source, bool ignoreNodes, bool ignoreWays, bool ignoreRelations)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.Streams.OsmStreamSource.html">OsmStreamSource</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">ignoreNodes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">ignoreWays</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">ignoreRelations</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamSourceEnumerable_Current_" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.Current*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamSourceEnumerable_Current" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.Current"><a href="#collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_Current" class="expander" data-toggle="collapse">Current</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_Current" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OsmGeo Current { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamSourceEnumerable_Dispose_" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.Dispose*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamSourceEnumerable_Dispose" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.Dispose"><a href="#collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_Dispose" class="expander" data-toggle="collapse">Dispose()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_Dispose" class="collapse in">
+  <div class="markdown level1 summary"><p>Disposes this enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamSourceEnumerable_GetEnumerator_" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.GetEnumerator*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamSourceEnumerable_GetEnumerator" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.GetEnumerator"><a href="#collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_GetEnumerator" class="expander" data-toggle="collapse">GetEnumerator()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_GetEnumerator" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;OsmGeo&gt; GetEnumerator()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerator</span>&lt;<a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamSourceEnumerable_MoveNext_" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.MoveNext*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamSourceEnumerable_MoveNext" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.MoveNext"><a href="#collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_MoveNext" class="expander" data-toggle="collapse">MoveNext()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_MoveNext" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves to the next object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveNext()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamSourceEnumerable_Reset_" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.Reset*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamSourceEnumerable_Reset" data-uid="OsmSharp.Streams.OsmStreamSourceEnumerable.Reset"><a href="#collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_Reset" class="expander" data-toggle="collapse">Reset()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamSourceEnumerable_Reset" class="collapse in">
+  <div class="markdown level1 summary"><p>Resets this enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

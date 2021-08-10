@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RouterDbStreamTarget
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RouterDbStreamTarget
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget">
+  <h1 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget">Class RouterDbStreamTarget
+  </h1>
+  <div class="markdown level0 summary"><p>A stream target to load a routing database.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RouterDbStreamTarget</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RouterDbStreamTarget : OsmStreamTarget</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget__ctor_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.#ctor*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget__ctor_Itinero_RouterDb_Vehicle___System_Boolean_System_Int32_IEnumerable_Itinero_IO_Osm_Streams_ITwoPassProcessor__System_Boolean_System_Single_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.#ctor(Itinero.RouterDb,Vehicle[],System.Boolean,System.Int32,IEnumerable{Itinero.IO.Osm.Streams.ITwoPassProcessor},System.Boolean,System.Single)"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget__ctor_Itinero_RouterDb_Vehicle___System_Boolean_System_Int32_IEnumerable_Itinero_IO_Osm_Streams_ITwoPassProcessor__System_Boolean_System_Single_" class="expander" data-toggle="collapse">RouterDbStreamTarget(RouterDb, Vehicle[], Boolean, Int32, IEnumerable&lt;ITwoPassProcessor&gt;, Boolean, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget__ctor_Itinero_RouterDb_Vehicle___System_Boolean_System_Int32_IEnumerable_Itinero_IO_Osm_Streams_ITwoPassProcessor__System_Boolean_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new router db stream target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RouterDbStreamTarget(RouterDb db, Vehicle[] vehicles, bool allCore = false, int minimumStages = 1, IEnumerable&lt;ITwoPassProcessor&gt; processors = null, bool processRestrictions = false, float simplifyEpsilonInMeter = 0.1F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vehicle</span>[]</span>
+        <span class="parametername">vehicles</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">allCore</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">minimumStages</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.IO.Osm.Streams.ITwoPassProcessor.html">ITwoPassProcessor</a>&gt;</span>
+        <span class="parametername">processors</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">processRestrictions</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">simplifyEpsilonInMeter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget__ctor_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.#ctor*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget__ctor_Itinero_RouterDb_VehicleCache_System_Boolean_System_Int32_IEnumerable_Itinero_IO_Osm_Streams_ITwoPassProcessor__System_Boolean_System_Single_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.#ctor(Itinero.RouterDb,VehicleCache,System.Boolean,System.Int32,IEnumerable{Itinero.IO.Osm.Streams.ITwoPassProcessor},System.Boolean,System.Single)"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget__ctor_Itinero_RouterDb_VehicleCache_System_Boolean_System_Int32_IEnumerable_Itinero_IO_Osm_Streams_ITwoPassProcessor__System_Boolean_System_Single_" class="expander" data-toggle="collapse">RouterDbStreamTarget(RouterDb, VehicleCache, Boolean, Int32, IEnumerable&lt;ITwoPassProcessor&gt;, Boolean, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget__ctor_Itinero_RouterDb_VehicleCache_System_Boolean_System_Int32_IEnumerable_Itinero_IO_Osm_Streams_ITwoPassProcessor__System_Boolean_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new router db stream target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RouterDbStreamTarget(RouterDb db, VehicleCache vehicleCache, bool allCore = false, int minimumStages = 1, IEnumerable&lt;ITwoPassProcessor&gt; processors = null, bool processRestrictions = false, float simplifyEpsilonInMeter = 0.1F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">VehicleCache</span></span>
+        <span class="parametername">vehicleCache</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">allCore</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">minimumStages</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.IO.Osm.Streams.ITwoPassProcessor.html">ITwoPassProcessor</a>&gt;</span>
+        <span class="parametername">processors</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">processRestrictions</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">simplifyEpsilonInMeter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepNodeIds_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.KeepNodeIds*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepNodeIds" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.KeepNodeIds"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepNodeIds" class="expander" data-toggle="collapse">KeepNodeIds</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepNodeIds" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a flag to keep node id&apos;s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeepNodeIds { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepNodeIds_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a way to build &apos;stable&apos; identifiers for each vertex.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepWayIds_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.KeepWayIds*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepWayIds" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.KeepWayIds"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepWayIds" class="expander" data-toggle="collapse">KeepWayIds</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepWayIds" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a flag to keep way id&apos;s and the index of the first node of the edge in the original way.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeepWayIds { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_KeepWayIds_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a way to build &apos;stable&apos; identifiers for each segment.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_NodeIndex_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.NodeIndex*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_NodeIndex" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.NodeIndex"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_NodeIndex" class="expander" data-toggle="collapse">NodeIndex</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_NodeIndex" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the core node id map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeIndex NodeIndex { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.IO.Osm.Streams.NodeIndex.html">NodeIndex</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_Processors_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.Processors*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_Processors" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.Processors"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_Processors" class="expander" data-toggle="collapse">Processors</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_Processors" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets extra two-pass processors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ITwoPassProcessor&gt; Processors { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="Itinero.IO.Osm.Streams.ITwoPassProcessor.html">ITwoPassProcessor</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_VehicleCache_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.VehicleCache*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_VehicleCache" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.VehicleCache"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_VehicleCache" class="expander" data-toggle="collapse">VehicleCache</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_VehicleCache" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the vehicle cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VehicleCache VehicleCache { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">VehicleCache</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddCoreEdge_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.AddCoreEdge*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddCoreEdge_System_UInt32_System_UInt32_Itinero_Data_Network_Edges_EdgeData_List_Coordinate__System_Int64_System_UInt16_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.AddCoreEdge(System.UInt32,System.UInt32,Itinero.Data.Network.Edges.EdgeData,List{Coordinate},System.Int64,System.UInt16)"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddCoreEdge_System_UInt32_System_UInt32_Itinero_Data_Network_Edges_EdgeData_List_Coordinate__System_Int64_System_UInt16_" class="expander" data-toggle="collapse">AddCoreEdge(UInt32, UInt32, EdgeData, List&lt;Coordinate&gt;, Int64, UInt16)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddCoreEdge_System_UInt32_System_UInt32_Itinero_Data_Network_Edges_EdgeData_List_Coordinate__System_Int64_System_UInt16_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCoreEdge(uint vertex1, uint vertex2, EdgeData data, List&lt;Coordinate&gt; shape, long wayId, ushort nodeIdx)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Data.Network.Edges.EdgeData.html">EdgeData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">Coordinate</span>&gt;</span>
+        <span class="parametername">shape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">wayId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt16</span></span>
+        <span class="parametername">nodeIdx</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddNode_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.AddNode*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddNode_Node_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.AddNode(Node)"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddNode_Node_" class="expander" data-toggle="collapse">AddNode(Node)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddNode_Node_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddNode(Node node)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Node</span></span>
+        <span class="parametername">node</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddRelation_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.AddRelation*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddRelation_Relation_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.AddRelation(Relation)"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddRelation_Relation_" class="expander" data-toggle="collapse">AddRelation(Relation)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddRelation_Relation_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a relation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddRelation(Relation relation)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Relation</span></span>
+        <span class="parametername">relation</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddWay_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.AddWay*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddWay_Way_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.AddWay(Way)"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddWay_Way_" class="expander" data-toggle="collapse">AddWay(Way)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_AddWay_Way_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a way.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddWay(Way way)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Way</span></span>
+        <span class="parametername">way</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_Initialize_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.Initialize*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_Initialize" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.Initialize"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_Initialize" class="expander" data-toggle="collapse">Initialize()</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_Initialize" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes this target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_OnBeforePull_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.OnBeforePull*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_OnBeforePull" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.OnBeforePull"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_OnBeforePull" class="expander" data-toggle="collapse">OnBeforePull()</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_OnBeforePull" class="collapse in">
+  <div class="markdown level1 summary"><p>Called right before pull and right after initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool OnBeforePull()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_RegisterSource_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.RegisterSource*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_RegisterSource_OsmStreamSource_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.RegisterSource(OsmStreamSource)"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_RegisterSource_OsmStreamSource_" class="expander" data-toggle="collapse">RegisterSource(OsmStreamSource)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_RegisterSource_OsmStreamSource_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RegisterSource(OsmStreamSource source)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">OsmStreamSource</span></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_RegisterSource_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.RegisterSource*"></a>
+  
+  <h4 id="Itinero_IO_Osm_Streams_RouterDbStreamTarget_RegisterSource_OsmStreamSource_System_Boolean_" data-uid="Itinero.IO.Osm.Streams.RouterDbStreamTarget.RegisterSource(OsmStreamSource,System.Boolean)"><a href="#collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_RegisterSource_OsmStreamSource_System_Boolean_" class="expander" data-toggle="collapse">RegisterSource(OsmStreamSource, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Osm_Streams_RouterDbStreamTarget_RegisterSource_OsmStreamSource_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterSource(OsmStreamSource source, bool filterNonRoutingTags)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">OsmStreamSource</span></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">filterNonRoutingTags</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1096 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class XmlExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class XmlExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.IO.Xml.XmlExtensions">
+  <h1 id="Itinero_IO_Xml_XmlExtensions" data-uid="Itinero.IO.Xml.XmlExtensions">Class XmlExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains extension methods for xml readers and writers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">XmlExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_IO_Xml_XmlExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class XmlExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_GetAttributeBool_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeBool*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_GetAttributeBool_XmlReader_System_String_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeBool(XmlReader,System.String)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeBool_XmlReader_System_String_" class="expander" data-toggle="collapse">GetAttributeBool(XmlReader, String)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeBool_XmlReader_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads a boolean attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ? GetAttributeBool(this XmlReader reader, string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlReader</span></span>
+        <span class="parametername">reader</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_GetAttributeDateTime_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeDateTime*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_GetAttributeDateTime_XmlReader_System_String_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeDateTime(XmlReader,System.String)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeDateTime_XmlReader_System_String_" class="expander" data-toggle="collapse">GetAttributeDateTime(XmlReader, String)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeDateTime_XmlReader_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads a datetime attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime? GetAttributeDateTime(this XmlReader reader, string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlReader</span></span>
+        <span class="parametername">reader</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_GetAttributeDouble_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeDouble*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_GetAttributeDouble_XmlReader_System_String_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeDouble(XmlReader,System.String)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeDouble_XmlReader_System_String_" class="expander" data-toggle="collapse">GetAttributeDouble(XmlReader, String)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeDouble_XmlReader_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads a double attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ? GetAttributeDouble(this XmlReader reader, string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlReader</span></span>
+        <span class="parametername">reader</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_GetAttributeInt32_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeInt32*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_GetAttributeInt32_XmlReader_System_String_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeInt32(XmlReader,System.String)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeInt32_XmlReader_System_String_" class="expander" data-toggle="collapse">GetAttributeInt32(XmlReader, String)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeInt32_XmlReader_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads an Int32 attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ? GetAttributeInt32(this XmlReader reader, string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlReader</span></span>
+        <span class="parametername">reader</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_GetAttributeInt64_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeInt64*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_GetAttributeInt64_XmlReader_System_String_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeInt64(XmlReader,System.String)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeInt64_XmlReader_System_String_" class="expander" data-toggle="collapse">GetAttributeInt64(XmlReader, String)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeInt64_XmlReader_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads an Int64 attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long ? GetAttributeInt64(this XmlReader reader, string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlReader</span></span>
+        <span class="parametername">reader</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_GetAttributeSingle_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeSingle*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_GetAttributeSingle_XmlReader_System_String_" data-uid="Itinero.IO.Xml.XmlExtensions.GetAttributeSingle(XmlReader,System.String)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeSingle_XmlReader_System_String_" class="expander" data-toggle="collapse">GetAttributeSingle(XmlReader, String)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_GetAttributeSingle_XmlReader_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads a single attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ? GetAttributeSingle(this XmlReader reader, string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlReader</span></span>
+        <span class="parametername">reader</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_GetElements_" data-uid="Itinero.IO.Xml.XmlExtensions.GetElements*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_GetElements_XmlReader_Dictionary_System_String_Action__" data-uid="Itinero.IO.Xml.XmlExtensions.GetElements(XmlReader,Dictionary{System.String,Action})"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_GetElements_XmlReader_Dictionary_System_String_Action__" class="expander" data-toggle="collapse">GetElements(XmlReader, Dictionary&lt;String, Action&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_GetElements_XmlReader_Dictionary_System_String_Action__" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets elements using the given actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetElements(this XmlReader reader, Dictionary&lt;string, Action&gt; getElements)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlReader</span></span>
+        <span class="parametername">reader</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Action</span>&gt;</span>
+        <span class="parametername">getElements</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_GetElements_" data-uid="Itinero.IO.Xml.XmlExtensions.GetElements*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_GetElements_XmlReader_Tuple_System_String_Action____" data-uid="Itinero.IO.Xml.XmlExtensions.GetElements(XmlReader,Tuple{System.String,Action}[])"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_GetElements_XmlReader_Tuple_System_String_Action____" class="expander" data-toggle="collapse">GetElements(XmlReader, Tuple&lt;String, Action&gt;[])</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_GetElements_XmlReader_Tuple_System_String_Action____" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets elements using the given actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetElements(this XmlReader reader, params Tuple&lt;string, Action&gt;[] getElements)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlReader</span></span>
+        <span class="parametername">reader</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Tuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">Action</span>&gt;[]</span>
+        <span class="parametername">getElements</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_SerializeToXml_" data-uid="Itinero.IO.Xml.XmlExtensions.SerializeToXml*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_SerializeToXml__1___0_" data-uid="Itinero.IO.Xml.XmlExtensions.SerializeToXml``1(``0)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_SerializeToXml__1___0_" class="expander" data-toggle="collapse">SerializeToXml&lt;T&gt;(T)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_SerializeToXml__1___0_" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes to xml with default settings for OSM-related entities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeToXml&lt;T&gt;(this T value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_DateTime__" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute(XmlWriter,System.String,System.Nullable{DateTime})"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_DateTime__" class="expander" data-toggle="collapse">WriteAttribute(XmlWriter, String, Nullable&lt;DateTime&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_DateTime__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes a datetime as an attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAttribute(this XmlWriter writer, string name, DateTime? value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Boolean__" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute(XmlWriter,System.String,System.Nullable{System.Boolean})"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Boolean__" class="expander" data-toggle="collapse">WriteAttribute(XmlWriter, String, Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes a bool as an attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAttribute(this XmlWriter writer, string name, bool ? value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Double__" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute(XmlWriter,System.String,System.Nullable{System.Double})"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Double__" class="expander" data-toggle="collapse">WriteAttribute(XmlWriter, String, Nullable&lt;Double&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Double__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes a double as an attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAttribute(this XmlWriter writer, string name, double ? value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Int32__" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute(XmlWriter,System.String,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">WriteAttribute(XmlWriter, String, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes an Int32 as an attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAttribute(this XmlWriter writer, string name, int ? value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Int64__" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute(XmlWriter,System.String,System.Nullable{System.Int64})"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Int64__" class="expander" data-toggle="collapse">WriteAttribute(XmlWriter, String, Nullable&lt;Int64&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Int64__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes an Int64 as an attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAttribute(this XmlWriter writer, string name, long ? value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Single__" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute(XmlWriter,System.String,System.Nullable{System.Single})"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Single__" class="expander" data-toggle="collapse">WriteAttribute(XmlWriter, String, Nullable&lt;Single&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_Nullable_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes a single as an attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAttribute(this XmlWriter writer, string name, float ? value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_String_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteAttribute(XmlWriter,System.String,System.String)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_String_" class="expander" data-toggle="collapse">WriteAttribute(XmlWriter, String, String)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteAttribute_XmlWriter_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes a string as an attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAttribute(this XmlWriter writer, string name, string value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteElement_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteElement*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteElement_XmlWriter_System_String_IXmlSerializable_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteElement(XmlWriter,System.String,IXmlSerializable)"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteElement_XmlWriter_System_String_IXmlSerializable_" class="expander" data-toggle="collapse">WriteElement(XmlWriter, String, IXmlSerializable)</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteElement_XmlWriter_System_String_IXmlSerializable_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes an xml serializable object as an element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteElement(this XmlWriter writer, string name, IXmlSerializable xmlSerializable)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IXmlSerializable</span></span>
+        <span class="parametername">xmlSerializable</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_IO_Xml_XmlExtensions_WriteElements_" data-uid="Itinero.IO.Xml.XmlExtensions.WriteElements*"></a>
+  
+  <h4 id="Itinero_IO_Xml_XmlExtensions_WriteElements_XmlWriter_System_String_IXmlSerializable___" data-uid="Itinero.IO.Xml.XmlExtensions.WriteElements(XmlWriter,System.String,IXmlSerializable[])"><a href="#collapsible-Itinero_IO_Xml_XmlExtensions_WriteElements_XmlWriter_System_String_IXmlSerializable___" class="expander" data-toggle="collapse">WriteElements(XmlWriter, String, IXmlSerializable[])</a></h4>
+  
+  <div id="collapsible-Itinero_IO_Xml_XmlExtensions_WriteElements_XmlWriter_System_String_IXmlSerializable___" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes an xml serializable object as an element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteElements(this XmlWriter writer, string name, IXmlSerializable[] xmlSerializables)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">XmlWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IXmlSerializable</span>[]</span>
+        <span class="parametername">xmlSerializables</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

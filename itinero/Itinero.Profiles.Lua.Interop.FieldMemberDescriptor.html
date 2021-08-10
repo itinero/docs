@@ -1,0 +1,653 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FieldMemberDescriptor
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FieldMemberDescriptor
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor">
+  <h1 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor">Class FieldMemberDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>Class providing easier marshalling of CLR fields</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FieldMemberDescriptor</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FieldMemberDescriptor : IMemberDescriptor, IOptimizableDescriptor, IWireableDescriptor</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor__ctor_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor__ctor_FieldInfo_Itinero_Profiles_Lua_InteropAccessMode_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.#ctor(FieldInfo,Itinero.Profiles.Lua.InteropAccessMode)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor__ctor_FieldInfo_Itinero_Profiles_Lua_InteropAccessMode_" class="expander" data-toggle="collapse">FieldMemberDescriptor(FieldInfo, InteropAccessMode)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor__ctor_FieldInfo_Itinero_Profiles_Lua_InteropAccessMode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Itinero.Profiles.Lua.Interop.PropertyMemberDescriptor.html">PropertyMemberDescriptor</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FieldMemberDescriptor(FieldInfo fi, InteropAccessMode accessMode)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">FieldInfo</span></span>
+        <span class="parametername">fi</span>
+        <p><p>The FieldInfo.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">accessMode</span>
+        <p><p>The <a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a> </p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_AccessMode_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.AccessMode*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_AccessMode" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.AccessMode"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_AccessMode" class="expander" data-toggle="collapse">AccessMode</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_AccessMode" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteropAccessMode AccessMode { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_FieldInfo_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.FieldInfo*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_FieldInfo" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.FieldInfo"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_FieldInfo" class="expander" data-toggle="collapse">FieldInfo</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_FieldInfo" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the FieldInfo got by reflection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FieldInfo FieldInfo { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">FieldInfo</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsConst_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.IsConst*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsConst" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.IsConst"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsConst" class="expander" data-toggle="collapse">IsConst</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsConst" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is a constant </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConst { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsReadonly_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.IsReadonly*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsReadonly" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.IsReadonly"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsReadonly" class="expander" data-toggle="collapse">IsReadonly</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsReadonly" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is readonly </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadonly { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsStatic_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.IsStatic*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsStatic" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.IsStatic"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsStatic" class="expander" data-toggle="collapse">IsStatic</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_IsStatic" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the described property is static.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStatic { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_MemberAccess_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.MemberAccess*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_MemberAccess" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.MemberAccess"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_MemberAccess" class="expander" data-toggle="collapse">MemberAccess</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_MemberAccess" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the types of access supported by this member</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemberDescriptorAccess MemberAccess { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">MemberDescriptorAccess</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_Name_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.Name*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_Name" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.Name"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_Name" class="expander" data-toggle="collapse">Name</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_Name" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the name of the property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_GetValue_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.GetValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_GetValue_Itinero_Profiles_Lua_Script_System_Object_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.GetValue(Itinero.Profiles.Lua.Script,System.Object)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_GetValue_Itinero_Profiles_Lua_Script_System_Object_" class="expander" data-toggle="collapse">GetValue(Script, Object)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_GetValue_Itinero_Profiles_Lua_Script_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the value of the property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue GetValue(Script script, object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_PrepareForWiring_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.PrepareForWiring*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_PrepareForWiring_Itinero_Profiles_Lua_Table_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.PrepareForWiring(Itinero.Profiles.Lua.Table)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_PrepareForWiring_Itinero_Profiles_Lua_Table_" class="expander" data-toggle="collapse">PrepareForWiring(Table)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_PrepareForWiring_Itinero_Profiles_Lua_Table_" class="collapse in">
+  <div class="markdown level1 summary"><p>Prepares the descriptor for hard-wiring.
+The descriptor fills the passed table with all the needed data for hardwire generators to generate the appropriate code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareForWiring(Table t)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Table.html">Table</a></span>
+        <span class="parametername">t</span>
+        <p><p>The table to be filled</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_SetValue_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.SetValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_SetValue_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.SetValue(Itinero.Profiles.Lua.Script,System.Object,Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_SetValue_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">SetValue(Script, Object, DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_SetValue_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the value of the property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(Script script, object obj, DynValue v)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">v</span>
+        <p><p>The value to set.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_TryCreateIfVisible_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.TryCreateIfVisible*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_TryCreateIfVisible_FieldInfo_Itinero_Profiles_Lua_InteropAccessMode_" data-uid="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.TryCreateIfVisible(FieldInfo,Itinero.Profiles.Lua.InteropAccessMode)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_TryCreateIfVisible_FieldInfo_Itinero_Profiles_Lua_InteropAccessMode_" class="expander" data-toggle="collapse">TryCreateIfVisible(FieldInfo, InteropAccessMode)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_FieldMemberDescriptor_TryCreateIfVisible_FieldInfo_Itinero_Profiles_Lua_InteropAccessMode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to create a new StandardUserDataFieldDescriptor, returning <code>null</code> in case the field is not 
+visible to script code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FieldMemberDescriptor TryCreateIfVisible(FieldInfo fi, InteropAccessMode accessMode)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">FieldInfo</span></span>
+        <span class="parametername">fi</span>
+        <p><p>The FieldInfo.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">accessMode</span>
+        <p><p>The <a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.html">FieldMemberDescriptor</a>
+        <p><p>A new StandardUserDataFieldDescriptor or null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

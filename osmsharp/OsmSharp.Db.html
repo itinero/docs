@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace OsmSharp.Db
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace OsmSharp.Db
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OsmSharp.Db">
+  <h1 id="OsmSharp_Db" data-uid="OsmSharp.Db">Namespace OsmSharp.Db
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.DbException.html">DbException</a></p>
+          <p><p>An exception thrown when something bad happens in one of the db-implementations.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.DiffResultResult.html">DiffResultResult</a></p>
+          <p><p>An expanded diff result result.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.HistoryDb.html">HistoryDb</a></p>
+          <p><p>An internal class implementing a snapshot db.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.IHistoryDbExtensions.html">IHistoryDbExtensions</a></p>
+          <p><p>Contains extensions for the history db.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.IOsmGeoSourceExtensions.html">IOsmGeoSourceExtensions</a></p>
+          <p><p>Contains extension methods for an osm-geo source.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.ISnapshotDbExtensions.html">ISnapshotDbExtensions</a></p>
+          <p><p>Contains extensions for the snapshot db.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.OsmGeoVersionKey.html">OsmGeoVersionKey</a></p>
+          <p><p>A unique identifier including types and version #.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.SnapshotDb.html">SnapshotDb</a></p>
+          <p><p>An internal class implementing a snapshot db.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="structs">Structs
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.OsmGeoKey.html">OsmGeoKey</a></p>
+          <p><p>A unique identifier including types.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.IHistoryDb.html">IHistoryDb</a></p>
+          <p><p>Abstract representation of a database to store OSM-data including history. This db can store nodes, ways, relations and changesets.</p>
+<ul>
+<li>Multiple version of the same node can exist.</li>
+<li>Changes are only possible by:</li>
+<li>Applying changesets.</li>
+<li>Changeset meta-data can only be updated when changesets are open.</li>
+<li>Changesets have to applied in the following order:</li>
+<li><ol>
+<li>Open new changeset, an new id is returned.</li>
+</ol>
+</li>
+<li><ol>
+<li>Apply changes.</li>
+</ol>
+</li>
+<li><ol>
+<li>Close the changeset.</li>
+</ol>
+</li>
+</ul>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.IOsmGeoSource.html">IOsmGeoSource</a></p>
+          <p><p>Abstract representation of a source of OSM-objects.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.ISnapshotDb.html">ISnapshotDb</a></p>
+          <p><p>Abstract representation of a database to store OSM nodes, ways and relations without version and using only one object per id.</p>
+<ul>
+<li>Only one node per id.</li>
+<li>Only one way per id.</li>
+<li>Only one relation per id.</li>
+<li>Does not generate id&apos;s, objects are stored as-is.</li>
+</ul>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="enums">Enums
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="OsmSharp.Db.DiffResultStatus.html">DiffResultStatus</a></p>
+          <p><p>Status after applying a changeset.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

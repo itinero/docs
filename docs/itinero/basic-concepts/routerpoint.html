@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>RouterPoint | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="RouterPoint | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="routerpoint">
+<h1 id="routerpoint">RouterPoint</h1>
+
+<p>A router point is a location on the network. Usually a router point is the result of <em>snapping</em> a location to the closest edge.</p>
+<p>
+<img src="../../images/routerpoint.png" style="max-height: 400px"><br>
+<em>Image 1: A visualisation of the routerpoint concept.</em>
+</p>
+
+<h2 id="resolving">Resolving</h2>
+<p>In Itinero, <strong>the process of <em>snapping</em> a location to the closest edge</strong> is called <strong>resolving</strong> that location. You can resolve a location using the <a class="xref" href="router.html">Router</a>:</p>
+<pre><code class="lang-csharp">// snaps the given location to the nearest routable edge.
+var routerPoint = router.Resolve(profile, 51.26797020271655f, 4.801905155181885f);
+</code></pre><p>Usually a routerpoint is resolved with a given <a class="xref" href="profiles/index.html">Profile</a> in mind, making sure the routerpoint is accessible and not snapping to another closer edge, think about a cylepath next to a road.</p>
+<h2 id="why">Why?</h2>
+<p>We introduced this concept to give applications using Itinero full control over this part of the routing process. There are two main motivations for this:</p>
+<h4 id="performance">Performance</h4>
+<p>The routing algorithm can be so fast that the resolving process takes up a signficant part of the time when calculating a route. Routerpoints make it possible to cache the result, use a faster but less accurate resolving algorithm in one application, a slower but better one in another.</p>
+<h4 id="advanced-usecases">Advanced usecases</h4>
+<p>It&#39;s often not obvious where to start a route, just given the lat/lon. Just taking the closest street is sometimes not good enough, perhaps the snapping of a location to the network can depend on the streetname.</p>
+<h2 id="what-to-read-next">What to read next?</h2>
+<p>Learn more about the <a class="xref" href="router.html">Router</a> concept.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

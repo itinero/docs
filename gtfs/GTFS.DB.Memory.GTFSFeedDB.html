@@ -1,0 +1,991 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GTFSFeedDB
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GTFSFeedDB
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GTFS.DB.Memory.GTFSFeedDB">
+  <h1 id="GTFS_DB_Memory_GTFSFeedDB" data-uid="GTFS.DB.Memory.GTFSFeedDB">Class GTFSFeedDB
+  </h1>
+  <div class="markdown level0 summary"><p>A naive in-memory implementation of a GTFS feed db.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GTFSFeedDB</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="GTFS_DB_Memory_GTFSFeedDB_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GTFSFeedDB : IGTFSFeedDB</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_ConnectionString_" data-uid="GTFS.DB.Memory.GTFSFeedDB.ConnectionString*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_ConnectionString" data-uid="GTFS.DB.Memory.GTFSFeedDB.ConnectionString"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_ConnectionString" class="expander" data-toggle="collapse">ConnectionString</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_ConnectionString" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the connection string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConnectionString { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_ConnectionString">IGTFSFeedDB.ConnectionString</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_Tag_" data-uid="GTFS.DB.Memory.GTFSFeedDB.Tag*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_Tag" data-uid="GTFS.DB.Memory.GTFSFeedDB.Tag"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_Tag" class="expander" data-toggle="collapse">Tag</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_Tag" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Tag { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_Tag">IGTFSFeedDB.Tag</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_AddFeed_" data-uid="GTFS.DB.Memory.GTFSFeedDB.AddFeed*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_AddFeed" data-uid="GTFS.DB.Memory.GTFSFeedDB.AddFeed"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_AddFeed" class="expander" data-toggle="collapse">AddFeed()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_AddFeed" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new empty feed to this db.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddFeed()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_AddFeed">IGTFSFeedDB.AddFeed()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_AddFeed_" data-uid="GTFS.DB.Memory.GTFSFeedDB.AddFeed*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_AddFeed_GTFS_IGTFSFeed_" data-uid="GTFS.DB.Memory.GTFSFeedDB.AddFeed(GTFS.IGTFSFeed)"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_AddFeed_GTFS_IGTFSFeed_" class="expander" data-toggle="collapse">AddFeed(IGTFSFeed)</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_AddFeed_GTFS_IGTFSFeed_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new feed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddFeed(IGTFSFeed feed)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.IGTFSFeed.html">IGTFSFeed</a></span>
+        <span class="parametername">feed</span>
+        <p><p>The feed to add.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The id of the new feed.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_AddFeed_GTFS_IGTFSFeed_">IGTFSFeedDB.AddFeed(IGTFSFeed)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_ColumnExists_" data-uid="GTFS.DB.Memory.GTFSFeedDB.ColumnExists*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_ColumnExists_System_String_System_String_" data-uid="GTFS.DB.Memory.GTFSFeedDB.ColumnExists(System.String,System.String)"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_ColumnExists_System_String_System_String_" class="expander" data-toggle="collapse">ColumnExists(String, String)</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_ColumnExists_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given column in the given table exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ColumnExists(string tableName, string columnName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">tableName</span>
+        <p><p>The table name.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">columnName</span>
+        <p><p>The column name.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_ColumnExists_System_String_System_String_">IGTFSFeedDB.ColumnExists(String, String)</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_GetFeed_" data-uid="GTFS.DB.Memory.GTFSFeedDB.GetFeed*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_GetFeed_System_Int32_" data-uid="GTFS.DB.Memory.GTFSFeedDB.GetFeed(System.Int32)"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_GetFeed_System_Int32_" class="expander" data-toggle="collapse">GetFeed(Int32)</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_GetFeed_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the feed with the given id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGTFSFeed GetFeed(int id)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="GTFS.IGTFSFeed.html">IGTFSFeed</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_GetFeed_System_Int32_">IGTFSFeedDB.GetFeed(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_GetFeeds_" data-uid="GTFS.DB.Memory.GTFSFeedDB.GetFeeds*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_GetFeeds" data-uid="GTFS.DB.Memory.GTFSFeedDB.GetFeeds"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_GetFeeds" class="expander" data-toggle="collapse">GetFeeds()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_GetFeeds" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns all feeds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;int&gt; GetFeeds()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_GetFeeds">IGTFSFeedDB.GetFeeds()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_GetFullDataSource_" data-uid="GTFS.DB.Memory.GTFSFeedDB.GetFullDataSource*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_GetFullDataSource" data-uid="GTFS.DB.Memory.GTFSFeedDB.GetFullDataSource"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_GetFullDataSource" class="expander" data-toggle="collapse">GetFullDataSource()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_GetFullDataSource" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the full data source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFullDataSource()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_GetFullDataSource">IGTFSFeedDB.GetFullDataSource()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotSupportedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_RemoveFeed_" data-uid="GTFS.DB.Memory.GTFSFeedDB.RemoveFeed*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_RemoveFeed_System_Int32_" data-uid="GTFS.DB.Memory.GTFSFeedDB.RemoveFeed(System.Int32)"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_RemoveFeed_System_Int32_" class="expander" data-toggle="collapse">RemoveFeed(Int32)</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_RemoveFeed_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the feed with the given id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveFeed(int id)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id</span>
+        <p><p>The id of the feed to remove.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_RemoveFeed_System_Int32_">IGTFSFeedDB.RemoveFeed(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortAllTables_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortAllTables*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortAllTables" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortAllTables"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortAllTables" class="expander" data-toggle="collapse">SortAllTables()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortAllTables" class="collapse in">
+  <div class="markdown level1 summary"><p>Sort all tables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortAllTables()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortAllTables">IGTFSFeedDB.SortAllTables()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortCalendarDates_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortCalendarDates*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortCalendarDates" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortCalendarDates"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortCalendarDates" class="expander" data-toggle="collapse">SortCalendarDates()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortCalendarDates" class="collapse in">
+  <div class="markdown level1 summary"><p>Sorts calendar dates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortCalendarDates()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortCalendarDates">IGTFSFeedDB.SortCalendarDates()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortCalendars_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortCalendars*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortCalendars" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortCalendars"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortCalendars" class="expander" data-toggle="collapse">SortCalendars()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortCalendars" class="collapse in">
+  <div class="markdown level1 summary"><p>Sorts calendars.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortCalendars()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortCalendars">IGTFSFeedDB.SortCalendars()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortFrequencies_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortFrequencies*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortFrequencies" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortFrequencies"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortFrequencies" class="expander" data-toggle="collapse">SortFrequencies()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortFrequencies" class="collapse in">
+  <div class="markdown level1 summary"><p>Sorts frequencies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortFrequencies()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortFrequencies">IGTFSFeedDB.SortFrequencies()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortRoutes_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortRoutes*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortRoutes" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortRoutes"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortRoutes" class="expander" data-toggle="collapse">SortRoutes()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortRoutes" class="collapse in">
+  <div class="markdown level1 summary"><p>Sorts routes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortRoutes()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortRoutes">IGTFSFeedDB.SortRoutes()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortShapes_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortShapes*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortShapes" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortShapes"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortShapes" class="expander" data-toggle="collapse">SortShapes()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortShapes" class="collapse in">
+  <div class="markdown level1 summary"><p>Sort shapes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortShapes()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortShapes">IGTFSFeedDB.SortShapes()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortStops_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortStops*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortStops" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortStops"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortStops" class="expander" data-toggle="collapse">SortStops()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortStops" class="collapse in">
+  <div class="markdown level1 summary"><p>Sorts stops.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortStops()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortStops">IGTFSFeedDB.SortStops()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortStopTimes_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortStopTimes*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortStopTimes" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortStopTimes"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortStopTimes" class="expander" data-toggle="collapse">SortStopTimes()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortStopTimes" class="collapse in">
+  <div class="markdown level1 summary"><p>Sorts stop times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortStopTimes()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortStopTimes">IGTFSFeedDB.SortStopTimes()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_SortTrips_" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortTrips*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_SortTrips" data-uid="GTFS.DB.Memory.GTFSFeedDB.SortTrips"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_SortTrips" class="expander" data-toggle="collapse">SortTrips()</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_SortTrips" class="collapse in">
+  <div class="markdown level1 summary"><p>Sort trips.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortTrips()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_SortTrips">IGTFSFeedDB.SortTrips()</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="GTFS_DB_Memory_GTFSFeedDB_TableExists_" data-uid="GTFS.DB.Memory.GTFSFeedDB.TableExists*"></a>
+  
+  <h4 id="GTFS_DB_Memory_GTFSFeedDB_TableExists_System_String_" data-uid="GTFS.DB.Memory.GTFSFeedDB.TableExists(System.String)"><a href="#collapsible-GTFS_DB_Memory_GTFSFeedDB_TableExists_System_String_" class="expander" data-toggle="collapse">TableExists(String)</a></h4>
+  
+  <div id="collapsible-GTFS_DB_Memory_GTFSFeedDB_TableExists_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given table exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TableExists(string tableName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">tableName</span>
+        <p><p>The table name.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="GTFS.DB.IGTFSFeedDB.html#GTFS_DB_IGTFSFeedDB_TableExists_System_String_">IGTFSFeedDB.TableExists(String)</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

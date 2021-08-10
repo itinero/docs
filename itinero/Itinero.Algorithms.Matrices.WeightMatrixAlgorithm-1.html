@@ -1,0 +1,747 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WeightMatrixAlgorithm&lt;T&gt;
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WeightMatrixAlgorithm&lt;T&gt;
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1">
+  <h1 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1">Class WeightMatrixAlgorithm&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>An algorithm to calculate a weight-matrix for a set of locations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Itinero.Algorithms.AlgorithmBase.html">AlgorithmBase</a></div>
+    <div class="level2"><span class="xref">WeightMatrixAlgorithm&lt;T&gt;</span></div>
+  </div>
+  
+      <div class="level3"><a class="xref" href="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm.html">WeightMatrixAlgorithm</a></div>
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_HasRun">AlgorithmBase.HasRun</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_HasSucceeded">AlgorithmBase.HasSucceeded</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_ErrorMessage">AlgorithmBase.ErrorMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_CheckHasRun">AlgorithmBase.CheckHasRun()</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_CheckHasRunAndHasSucceeded">AlgorithmBase.CheckHasRunAndHasSucceeded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_Run">AlgorithmBase.Run()</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_Run_CancellationToken_">AlgorithmBase.Run(CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WeightMatrixAlgorithm&lt;T&gt; : AlgorithmBase, IWeightMatrixAlgorithm&lt;T&gt;, IAlgorithm where T : struct</code></pre>
+  </div>
+  
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.#ctor*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__Coordinate___" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.#ctor(Itinero.RouterBase,IProfileInstance,WeightHandler{`0},Coordinate[])"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__Coordinate___" class="expander" data-toggle="collapse">WeightMatrixAlgorithm(RouterBase, IProfileInstance, WeightHandler&lt;T&gt;, Coordinate[])</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__Coordinate___" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new weight-matrix algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WeightMatrixAlgorithm(RouterBase router, IProfileInstance profile, WeightHandler&lt;T&gt; weightHandler, Coordinate[] locations)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.#ctor*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__IMassResolvingAlgorithm_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.#ctor(Itinero.RouterBase,IProfileInstance,WeightHandler{`0},IMassResolvingAlgorithm)"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__IMassResolvingAlgorithm_" class="expander" data-toggle="collapse">WeightMatrixAlgorithm(RouterBase, IProfileInstance, WeightHandler&lt;T&gt;, IMassResolvingAlgorithm)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__IMassResolvingAlgorithm_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new weight-matrix algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WeightMatrixAlgorithm(RouterBase router, IProfileInstance profile, WeightHandler&lt;T&gt; weightHandler, IMassResolvingAlgorithm massResolver)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IMassResolvingAlgorithm</span></span>
+        <span class="parametername">massResolver</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.#ctor*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__List_Itinero_RouterPoint__" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.#ctor(Itinero.RouterBase,IProfileInstance,WeightHandler{`0},List{Itinero.RouterPoint})"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__List_Itinero_RouterPoint__" class="expander" data-toggle="collapse">WeightMatrixAlgorithm(RouterBase, IProfileInstance, WeightHandler&lt;T&gt;, List&lt;RouterPoint&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1__ctor_Itinero_RouterBase_IProfileInstance_WeightHandler__0__List_Itinero_RouterPoint__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new weight-matrix algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WeightMatrixAlgorithm(RouterBase router, IProfileInstance profile, WeightHandler&lt;T&gt; weightHandler, List&lt;RouterPoint&gt; resolvedLocations)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProfileInstance</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>&gt;</span>
+        <span class="parametername">resolvedLocations</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Errors_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.Errors*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Errors" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.Errors"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Errors" class="expander" data-toggle="collapse">Errors</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Errors" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the errors indexed per original routerpoint index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, RouterPointError&gt; Errors { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Itinero.Algorithms.Matrices.RouterPointError.html">RouterPointError</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Algorithms.Matrices.IWeightMatrixAlgorithm-1.html#Itinero_Algorithms_Matrices_IWeightMatrixAlgorithm_1_Errors">IWeightMatrixAlgorithm&lt;T&gt;.Errors</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_MassResolver_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.MassResolver*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_MassResolver" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.MassResolver"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_MassResolver" class="expander" data-toggle="collapse">MassResolver</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_MassResolver" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the mass resolver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMassResolvingAlgorithm MassResolver { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IMassResolvingAlgorithm</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Algorithms.Matrices.IWeightMatrixAlgorithm-1.html#Itinero_Algorithms_Matrices_IWeightMatrixAlgorithm_1_MassResolver">IWeightMatrixAlgorithm&lt;T&gt;.MassResolver</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Profile_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.Profile*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Profile" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.Profile"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Profile" class="expander" data-toggle="collapse">Profile</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Profile" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProfileInstance Profile { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IProfileInstance</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Algorithms.Matrices.IWeightMatrixAlgorithm-1.html#Itinero_Algorithms_Matrices_IWeightMatrixAlgorithm_1_Profile">IWeightMatrixAlgorithm&lt;T&gt;.Profile</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Router_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.Router*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Router" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.Router"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Router" class="expander" data-toggle="collapse">Router</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Router" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the router.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RouterBase Router { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterBase.html">RouterBase</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Algorithms.Matrices.IWeightMatrixAlgorithm-1.html#Itinero_Algorithms_Matrices_IWeightMatrixAlgorithm_1_Router">IWeightMatrixAlgorithm&lt;T&gt;.Router</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_RouterPoints_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.RouterPoints*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_RouterPoints" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.RouterPoints"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_RouterPoints" class="expander" data-toggle="collapse">RouterPoints</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_RouterPoints" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the valid router points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;RouterPoint&gt; RouterPoints { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Algorithms.Matrices.IWeightMatrixAlgorithm-1.html#Itinero_Algorithms_Matrices_IWeightMatrixAlgorithm_1_RouterPoints">IWeightMatrixAlgorithm&lt;T&gt;.RouterPoints</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Weights_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.Weights*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Weights" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.Weights"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Weights" class="expander" data-toggle="collapse">Weights</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_Weights" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the weights between all valid router points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[][] Weights { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        T[][]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Algorithms.Matrices.IWeightMatrixAlgorithm-1.html#Itinero_Algorithms_Matrices_IWeightMatrixAlgorithm_1_Weights">IWeightMatrixAlgorithm&lt;T&gt;.Weights</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_CorrectedIndexOf_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.CorrectedIndexOf*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_CorrectedIndexOf_System_Int32_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.CorrectedIndexOf(System.Int32)"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_CorrectedIndexOf_System_Int32_" class="expander" data-toggle="collapse">CorrectedIndexOf(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_CorrectedIndexOf_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the corrected index, or the index in the weight matrix for the given routerpoint index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CorrectedIndexOf(int resolvedIdx)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">resolvedIdx</span>
+        <p><p>The index of the resolved point.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The index in the weight matrix, -1 if this point is in error.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Algorithms.Matrices.IWeightMatrixAlgorithm-1.html#Itinero_Algorithms_Matrices_IWeightMatrixAlgorithm_1_CorrectedIndexOf_System_Int32_">IWeightMatrixAlgorithm&lt;T&gt;.CorrectedIndexOf(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_DoRun_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.DoRun*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_DoRun_CancellationToken_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.DoRun(CancellationToken)"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_DoRun_CancellationToken_" class="expander" data-toggle="collapse">DoRun(CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_DoRun_CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Executes the algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed void DoRun(CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_DoRun_CancellationToken_">AlgorithmBase.DoRun(CancellationToken)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_OriginalIndexOf_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.OriginalIndexOf*"></a>
+  
+  <h4 id="Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_OriginalIndexOf_System_Int32_" data-uid="Itinero.Algorithms.Matrices.WeightMatrixAlgorithm`1.OriginalIndexOf(System.Int32)"><a href="#collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_OriginalIndexOf_System_Int32_" class="expander" data-toggle="collapse">OriginalIndexOf(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Matrices_WeightMatrixAlgorithm_1_OriginalIndexOf_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the routerpoint index that represents the given weight in the weight matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OriginalIndexOf(int weightIdx)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">weightIdx</span>
+        <p><p>The index in the weight matrix.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The routerpoint index, always exists and always returns a proper value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Algorithms.Matrices.IWeightMatrixAlgorithm-1.html#Itinero_Algorithms_Matrices_IWeightMatrixAlgorithm_1_OriginalIndexOf_System_Int32_">IWeightMatrixAlgorithm&lt;T&gt;.OriginalIndexOf(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

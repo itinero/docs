@@ -1,0 +1,2101 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RouterDb
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RouterDb
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.RouterDb">
+  <h1 id="Itinero_RouterDb" data-uid="Itinero.RouterDb">Class RouterDb
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a routing database.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RouterDb</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_RouterDb_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RouterDb</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_RouterDb__ctor_" data-uid="Itinero.RouterDb.#ctor*"></a>
+  
+  <h4 id="Itinero_RouterDb__ctor_MemoryMap_RoutingNetworkProfile_System_Single_" data-uid="Itinero.RouterDb.#ctor(MemoryMap,RoutingNetworkProfile,System.Single)"><a href="#collapsible-Itinero_RouterDb__ctor_MemoryMap_RoutingNetworkProfile_System_Single_" class="expander" data-toggle="collapse">RouterDb(MemoryMap, RoutingNetworkProfile, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb__ctor_MemoryMap_RoutingNetworkProfile_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new router database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RouterDb(MemoryMap map, RoutingNetworkProfile profile, float maxEdgeDistance = 5000F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">MemoryMap</span></span>
+        <span class="parametername">map</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RoutingNetworkProfile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxEdgeDistance</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb__ctor_" data-uid="Itinero.RouterDb.#ctor*"></a>
+  
+  <h4 id="Itinero_RouterDb__ctor_MemoryMap_System_Single_" data-uid="Itinero.RouterDb.#ctor(MemoryMap,System.Single)"><a href="#collapsible-Itinero_RouterDb__ctor_MemoryMap_System_Single_" class="expander" data-toggle="collapse">RouterDb(MemoryMap, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb__ctor_MemoryMap_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new router database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RouterDb(MemoryMap map, float maxEdgeDistance = 5000F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">MemoryMap</span></span>
+        <span class="parametername">map</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxEdgeDistance</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb__ctor_" data-uid="Itinero.RouterDb.#ctor*"></a>
+  
+  <h4 id="Itinero_RouterDb__ctor_RoutingNetwork_AttributesIndex_AttributesIndex_IAttributeCollection_Itinero_Profiles_Vehicle___" data-uid="Itinero.RouterDb.#ctor(RoutingNetwork,AttributesIndex,AttributesIndex,IAttributeCollection,Itinero.Profiles.Vehicle[])"><a href="#collapsible-Itinero_RouterDb__ctor_RoutingNetwork_AttributesIndex_AttributesIndex_IAttributeCollection_Itinero_Profiles_Vehicle___" class="expander" data-toggle="collapse">RouterDb(RoutingNetwork, AttributesIndex, AttributesIndex, IAttributeCollection, Vehicle[])</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb__ctor_RoutingNetwork_AttributesIndex_AttributesIndex_IAttributeCollection_Itinero_Profiles_Vehicle___" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new router database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RouterDb(RoutingNetwork network, AttributesIndex profiles, AttributesIndex meta, IAttributeCollection dbMeta, params Vehicle[] supportedVehicles)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RoutingNetwork</span></span>
+        <span class="parametername">network</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">AttributesIndex</span></span>
+        <span class="parametername">profiles</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">AttributesIndex</span></span>
+        <span class="parametername">meta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IAttributeCollection</span></span>
+        <span class="parametername">dbMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Vehicle.html">Vehicle</a>[]</span>
+        <span class="parametername">supportedVehicles</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb__ctor_" data-uid="Itinero.RouterDb.#ctor*"></a>
+  
+  <h4 id="Itinero_RouterDb__ctor_System_Single_" data-uid="Itinero.RouterDb.#ctor(System.Single)"><a href="#collapsible-Itinero_RouterDb__ctor_System_Single_" class="expander" data-toggle="collapse">RouterDb(Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb__ctor_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new router database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RouterDb(float maxEdgeDistance = 5000F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxEdgeDistance</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_RouterDb_EdgeData_" data-uid="Itinero.RouterDb.EdgeData*"></a>
+  
+  <h4 id="Itinero_RouterDb_EdgeData" data-uid="Itinero.RouterDb.EdgeData"><a href="#collapsible-Itinero_RouterDb_EdgeData" class="expander" data-toggle="collapse">EdgeData</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_EdgeData" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetaCollectionDb EdgeData { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">MetaCollectionDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_EdgeMeta_" data-uid="Itinero.RouterDb.EdgeMeta*"></a>
+  
+  <h4 id="Itinero_RouterDb_EdgeMeta" data-uid="Itinero.RouterDb.EdgeMeta"><a href="#collapsible-Itinero_RouterDb_EdgeMeta" class="expander" data-toggle="collapse">EdgeMeta</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_EdgeMeta" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the meta-data index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributesIndex EdgeMeta { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">AttributesIndex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_EdgeProfiles_" data-uid="Itinero.RouterDb.EdgeProfiles*"></a>
+  
+  <h4 id="Itinero_RouterDb_EdgeProfiles" data-uid="Itinero.RouterDb.EdgeProfiles"><a href="#collapsible-Itinero_RouterDb_EdgeProfiles" class="expander" data-toggle="collapse">EdgeProfiles</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_EdgeProfiles" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the profiles index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributesIndex EdgeProfiles { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">AttributesIndex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Guid_" data-uid="Itinero.RouterDb.Guid*"></a>
+  
+  <h4 id="Itinero_RouterDb_Guid" data-uid="Itinero.RouterDb.Guid"><a href="#collapsible-Itinero_RouterDb_Guid" class="expander" data-toggle="collapse">Guid</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Guid" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the guid for this db.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Guid { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Guid</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_HasContracted_" data-uid="Itinero.RouterDb.HasContracted*"></a>
+  
+  <h4 id="Itinero_RouterDb_HasContracted" data-uid="Itinero.RouterDb.HasContracted"><a href="#collapsible-Itinero_RouterDb_HasContracted" class="expander" data-toggle="collapse">HasContracted</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_HasContracted" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if there is at least one contracted version of the network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasContracted { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_HasRestrictions_" data-uid="Itinero.RouterDb.HasRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDb_HasRestrictions" data-uid="Itinero.RouterDb.HasRestrictions"><a href="#collapsible-Itinero_RouterDb_HasRestrictions" class="expander" data-toggle="collapse">HasRestrictions</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_HasRestrictions" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if there are restrictions in this database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasRestrictions { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_HasShortcuts_" data-uid="Itinero.RouterDb.HasShortcuts*"></a>
+  
+  <h4 id="Itinero_RouterDb_HasShortcuts" data-uid="Itinero.RouterDb.HasShortcuts"><a href="#collapsible-Itinero_RouterDb_HasShortcuts" class="expander" data-toggle="collapse">HasShortcuts</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_HasShortcuts" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if there are shortcuts in this database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasShortcuts { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_IsEmpty_" data-uid="Itinero.RouterDb.IsEmpty*"></a>
+  
+  <h4 id="Itinero_RouterDb_IsEmpty" data-uid="Itinero.RouterDb.IsEmpty"><a href="#collapsible-Itinero_RouterDb_IsEmpty" class="expander" data-toggle="collapse">IsEmpty</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_IsEmpty" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this router db is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Meta_" data-uid="Itinero.RouterDb.Meta*"></a>
+  
+  <h4 id="Itinero_RouterDb_Meta" data-uid="Itinero.RouterDb.Meta"><a href="#collapsible-Itinero_RouterDb_Meta" class="expander" data-toggle="collapse">Meta</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Meta" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the meta-data collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAttributeCollection Meta { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IAttributeCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Network_" data-uid="Itinero.RouterDb.Network*"></a>
+  
+  <h4 id="Itinero_RouterDb_Network" data-uid="Itinero.RouterDb.Network"><a href="#collapsible-Itinero_RouterDb_Network" class="expander" data-toggle="collapse">Network</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Network" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoutingNetwork Network { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">RoutingNetwork</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_RestrictionDbs_" data-uid="Itinero.RouterDb.RestrictionDbs*"></a>
+  
+  <h4 id="Itinero_RouterDb_RestrictionDbs" data-uid="Itinero.RouterDb.RestrictionDbs"><a href="#collapsible-Itinero_RouterDb_RestrictionDbs" class="expander" data-toggle="collapse">RestrictionDbs</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_RestrictionDbs" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all restriction dbs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RestrictionsDbMeta&gt; RestrictionDbs { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">RestrictionsDbMeta</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_VertexData_" data-uid="Itinero.RouterDb.VertexData*"></a>
+  
+  <h4 id="Itinero_RouterDb_VertexData" data-uid="Itinero.RouterDb.VertexData"><a href="#collapsible-Itinero_RouterDb_VertexData" class="expander" data-toggle="collapse">VertexData</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_VertexData" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the vertex data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetaCollectionDb VertexData { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">MetaCollectionDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_VertexMeta_" data-uid="Itinero.RouterDb.VertexMeta*"></a>
+  
+  <h4 id="Itinero_RouterDb_VertexMeta" data-uid="Itinero.RouterDb.VertexMeta"><a href="#collapsible-Itinero_RouterDb_VertexMeta" class="expander" data-toggle="collapse">VertexMeta</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_VertexMeta" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the vertex meta-date index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MappedAttributesIndex VertexMeta { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">MappedAttributesIndex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_RouterDb_AddContracted_" data-uid="Itinero.RouterDb.AddContracted*"></a>
+  
+  <h4 id="Itinero_RouterDb_AddContracted_Itinero_Profiles_Profile_ContractedDb_" data-uid="Itinero.RouterDb.AddContracted(Itinero.Profiles.Profile,ContractedDb)"><a href="#collapsible-Itinero_RouterDb_AddContracted_Itinero_Profiles_Profile_ContractedDb_" class="expander" data-toggle="collapse">AddContracted(Profile, ContractedDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_AddContracted_Itinero_Profiles_Profile_ContractedDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a contracted version of the routing network for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddContracted(Profile profile, ContractedDb contracted)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ContractedDb</span></span>
+        <span class="parametername">contracted</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_AddRestrictions_" data-uid="Itinero.RouterDb.AddRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDb_AddRestrictions_System_String_RestrictionsDb_" data-uid="Itinero.RouterDb.AddRestrictions(System.String,RestrictionsDb)"><a href="#collapsible-Itinero_RouterDb_AddRestrictions_System_String_RestrictionsDb_" class="expander" data-toggle="collapse">AddRestrictions(String, RestrictionsDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_AddRestrictions_System_String_RestrictionsDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds the restrictions for the given vehicle type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRestrictions(string vehicleType, RestrictionsDb restrictions)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">vehicleType</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RestrictionsDb</span></span>
+        <span class="parametername">restrictions</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_AddShortcuts_" data-uid="Itinero.RouterDb.AddShortcuts*"></a>
+  
+  <h4 id="Itinero_RouterDb_AddShortcuts_System_String_ShortcutsDb_" data-uid="Itinero.RouterDb.AddShortcuts(System.String,ShortcutsDb)"><a href="#collapsible-Itinero_RouterDb_AddShortcuts_System_String_ShortcutsDb_" class="expander" data-toggle="collapse">AddShortcuts(String, ShortcutsDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_AddShortcuts_System_String_ShortcutsDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a shortcuts db.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddShortcuts(string name, ShortcutsDb shortcutsDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ShortcutsDb</span></span>
+        <span class="parametername">shortcutsDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_AddSupportedVehicle_" data-uid="Itinero.RouterDb.AddSupportedVehicle*"></a>
+  
+  <h4 id="Itinero_RouterDb_AddSupportedVehicle_Itinero_Profiles_Vehicle_" data-uid="Itinero.RouterDb.AddSupportedVehicle(Itinero.Profiles.Vehicle)"><a href="#collapsible-Itinero_RouterDb_AddSupportedVehicle_Itinero_Profiles_Vehicle_" class="expander" data-toggle="collapse">AddSupportedVehicle(Vehicle)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_AddSupportedVehicle_Itinero_Profiles_Vehicle_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a supported vehicle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSupportedVehicle(Vehicle vehicle)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Vehicle.html">Vehicle</a></span>
+        <span class="parametername">vehicle</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Compress_" data-uid="Itinero.RouterDb.Compress*"></a>
+  
+  <h4 id="Itinero_RouterDb_Compress" data-uid="Itinero.RouterDb.Compress"><a href="#collapsible-Itinero_RouterDb_Compress" class="expander" data-toggle="collapse">Compress()</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Compress" class="collapse in">
+  <div class="markdown level1 summary"><p>Compresses the network and rearranges all id&apos;s as needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Compress()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Deserialize_" data-uid="Itinero.RouterDb.Deserialize*"></a>
+  
+  <h4 id="Itinero_RouterDb_Deserialize_Stream_" data-uid="Itinero.RouterDb.Deserialize(Stream)"><a href="#collapsible-Itinero_RouterDb_Deserialize_Stream_" class="expander" data-toggle="collapse">Deserialize(Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Deserialize_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Deserializes a database from the given stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterDb Deserialize(Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterDb.html">RouterDb</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Deserialize_" data-uid="Itinero.RouterDb.Deserialize*"></a>
+  
+  <h4 id="Itinero_RouterDb_Deserialize_Stream_Itinero_RouterDbProfile_" data-uid="Itinero.RouterDb.Deserialize(Stream,Itinero.RouterDbProfile)"><a href="#collapsible-Itinero_RouterDb_Deserialize_Stream_Itinero_RouterDbProfile_" class="expander" data-toggle="collapse">Deserialize(Stream, RouterDbProfile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Deserialize_Stream_Itinero_RouterDbProfile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Deserializes a database from the given stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterDb Deserialize(Stream stream, RouterDbProfile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDbProfile.html">RouterDbProfile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterDb.html">RouterDb</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_DeserializeAndAddContracted_" data-uid="Itinero.RouterDb.DeserializeAndAddContracted*"></a>
+  
+  <h4 id="Itinero_RouterDb_DeserializeAndAddContracted_Stream_" data-uid="Itinero.RouterDb.DeserializeAndAddContracted(Stream)"><a href="#collapsible-Itinero_RouterDb_DeserializeAndAddContracted_Stream_" class="expander" data-toggle="collapse">DeserializeAndAddContracted(Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_DeserializeAndAddContracted_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads a contracted graph from the given stream and adds it to this db.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeserializeAndAddContracted(Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_DeserializeAndAddContracted_" data-uid="Itinero.RouterDb.DeserializeAndAddContracted*"></a>
+  
+  <h4 id="Itinero_RouterDb_DeserializeAndAddContracted_Stream_ContractedDbProfile_" data-uid="Itinero.RouterDb.DeserializeAndAddContracted(Stream,ContractedDbProfile)"><a href="#collapsible-Itinero_RouterDb_DeserializeAndAddContracted_Stream_ContractedDbProfile_" class="expander" data-toggle="collapse">DeserializeAndAddContracted(Stream, ContractedDbProfile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_DeserializeAndAddContracted_Stream_ContractedDbProfile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads a contracted graph from the given stream and adds it to this db.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeserializeAndAddContracted(Stream stream, ContractedDbProfile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ContractedDbProfile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_GetContractedProfiles_" data-uid="Itinero.RouterDb.GetContractedProfiles*"></a>
+  
+  <h4 id="Itinero_RouterDb_GetContractedProfiles" data-uid="Itinero.RouterDb.GetContractedProfiles"><a href="#collapsible-Itinero_RouterDb_GetContractedProfiles" class="expander" data-toggle="collapse">GetContractedProfiles()</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_GetContractedProfiles" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all the profiles that have contracted db&apos;s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetContractedProfiles()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_GetRestrictedVehicleTypes_" data-uid="Itinero.RouterDb.GetRestrictedVehicleTypes*"></a>
+  
+  <h4 id="Itinero_RouterDb_GetRestrictedVehicleTypes" data-uid="Itinero.RouterDb.GetRestrictedVehicleTypes"><a href="#collapsible-Itinero_RouterDb_GetRestrictedVehicleTypes" class="expander" data-toggle="collapse">GetRestrictedVehicleTypes()</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_GetRestrictedVehicleTypes" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the names of the restricted vehicle types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetRestrictedVehicleTypes()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_GetSupportedProfile_" data-uid="Itinero.RouterDb.GetSupportedProfile*"></a>
+  
+  <h4 id="Itinero_RouterDb_GetSupportedProfile_System_String_" data-uid="Itinero.RouterDb.GetSupportedProfile(System.String)"><a href="#collapsible-Itinero_RouterDb_GetSupportedProfile_System_String_" class="expander" data-toggle="collapse">GetSupportedProfile(String)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_GetSupportedProfile_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets one of the supported vehicles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Profile GetSupportedProfile(string profileName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">profileName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_GetSupportedProfiles_" data-uid="Itinero.RouterDb.GetSupportedProfiles*"></a>
+  
+  <h4 id="Itinero_RouterDb_GetSupportedProfiles" data-uid="Itinero.RouterDb.GetSupportedProfiles"><a href="#collapsible-Itinero_RouterDb_GetSupportedProfiles" class="expander" data-toggle="collapse">GetSupportedProfiles()</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_GetSupportedProfiles" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets one of the supported profiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Profile&gt; GetSupportedProfiles()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">Profile</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_GetSupportedVehicle_" data-uid="Itinero.RouterDb.GetSupportedVehicle*"></a>
+  
+  <h4 id="Itinero_RouterDb_GetSupportedVehicle_System_String_" data-uid="Itinero.RouterDb.GetSupportedVehicle(System.String)"><a href="#collapsible-Itinero_RouterDb_GetSupportedVehicle_System_String_" class="expander" data-toggle="collapse">GetSupportedVehicle(String)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_GetSupportedVehicle_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets one of the supported vehicles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vehicle GetSupportedVehicle(string vehicleName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">vehicleName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vehicle</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_GetSupportedVehicles_" data-uid="Itinero.RouterDb.GetSupportedVehicles*"></a>
+  
+  <h4 id="Itinero_RouterDb_GetSupportedVehicles" data-uid="Itinero.RouterDb.GetSupportedVehicles"><a href="#collapsible-Itinero_RouterDb_GetSupportedVehicles" class="expander" data-toggle="collapse">GetSupportedVehicles()</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_GetSupportedVehicles" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all the supported vehicle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Vehicle&gt; GetSupportedVehicles()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">Vehicle</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_HasContractedFor_" data-uid="Itinero.RouterDb.HasContractedFor*"></a>
+  
+  <h4 id="Itinero_RouterDb_HasContractedFor_Itinero_Profiles_Profile_" data-uid="Itinero.RouterDb.HasContractedFor(Itinero.Profiles.Profile)"><a href="#collapsible-Itinero_RouterDb_HasContractedFor_Itinero_Profiles_Profile_" class="expander" data-toggle="collapse">HasContractedFor(Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_HasContractedFor_Itinero_Profiles_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this routing db has a contracted version of the routing network for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasContractedFor(Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_NewGuid_" data-uid="Itinero.RouterDb.NewGuid*"></a>
+  
+  <h4 id="Itinero_RouterDb_NewGuid" data-uid="Itinero.RouterDb.NewGuid"><a href="#collapsible-Itinero_RouterDb_NewGuid" class="expander" data-toggle="collapse">NewGuid()</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_NewGuid" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates a new guid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NewGuid()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="Itinero_RouterDb_NewGuid_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To use then the network was changed externally and was already writting to disk before.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_RemoveContracted_" data-uid="Itinero.RouterDb.RemoveContracted*"></a>
+  
+  <h4 id="Itinero_RouterDb_RemoveContracted_Profile_" data-uid="Itinero.RouterDb.RemoveContracted(Profile)"><a href="#collapsible-Itinero_RouterDb_RemoveContracted_Profile_" class="expander" data-toggle="collapse">RemoveContracted(Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_RemoveContracted_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the contracted version of the routing network for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveContracted(Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_RemoveRestrictions_" data-uid="Itinero.RouterDb.RemoveRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDb_RemoveRestrictions_System_String_" data-uid="Itinero.RouterDb.RemoveRestrictions(System.String)"><a href="#collapsible-Itinero_RouterDb_RemoveRestrictions_System_String_" class="expander" data-toggle="collapse">RemoveRestrictions(String)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_RemoveRestrictions_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the restrictions for the given vehicle type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveRestrictions(string vehicleType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">vehicleType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_RemoveShortcuts_" data-uid="Itinero.RouterDb.RemoveShortcuts*"></a>
+  
+  <h4 id="Itinero_RouterDb_RemoveShortcuts_System_String_" data-uid="Itinero.RouterDb.RemoveShortcuts(System.String)"><a href="#collapsible-Itinero_RouterDb_RemoveShortcuts_System_String_" class="expander" data-toggle="collapse">RemoveShortcuts(String)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_RemoveShortcuts_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes a shortcuts db.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveShortcuts(string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Serialize_" data-uid="Itinero.RouterDb.Serialize*"></a>
+  
+  <h4 id="Itinero_RouterDb_Serialize_Stream_" data-uid="Itinero.RouterDb.Serialize(Stream)"><a href="#collapsible-Itinero_RouterDb_Serialize_Stream_" class="expander" data-toggle="collapse">Serialize(Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Serialize_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes this database to the given stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Serialize(Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Serialize_" data-uid="Itinero.RouterDb.Serialize*"></a>
+  
+  <h4 id="Itinero_RouterDb_Serialize_Stream_System_Boolean_" data-uid="Itinero.RouterDb.Serialize(Stream,System.Boolean)"><a href="#collapsible-Itinero_RouterDb_Serialize_Stream_System_Boolean_" class="expander" data-toggle="collapse">Serialize(Stream, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Serialize_Stream_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes this database to the given stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Serialize(Stream stream, bool toReadonly)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">toReadonly</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_SerializeContracted_" data-uid="Itinero.RouterDb.SerializeContracted*"></a>
+  
+  <h4 id="Itinero_RouterDb_SerializeContracted_Profile_Stream_" data-uid="Itinero.RouterDb.SerializeContracted(Profile,Stream)"><a href="#collapsible-Itinero_RouterDb_SerializeContracted_Profile_Stream_" class="expander" data-toggle="collapse">SerializeContracted(Profile, Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_SerializeContracted_Profile_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes the contracted graph for the given profile to the given stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long SerializeContracted(Profile profile, Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_SupportProfile_" data-uid="Itinero.RouterDb.SupportProfile*"></a>
+  
+  <h4 id="Itinero_RouterDb_SupportProfile_System_String_" data-uid="Itinero.RouterDb.SupportProfile(System.String)"><a href="#collapsible-Itinero_RouterDb_SupportProfile_System_String_" class="expander" data-toggle="collapse">SupportProfile(String)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_SupportProfile_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the profile with the given name is supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportProfile(string profileName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">profileName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_Supports_" data-uid="Itinero.RouterDb.Supports*"></a>
+  
+  <h4 id="Itinero_RouterDb_Supports_System_String_" data-uid="Itinero.RouterDb.Supports(System.String)"><a href="#collapsible-Itinero_RouterDb_Supports_System_String_" class="expander" data-toggle="collapse">Supports(String)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_Supports_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given vehicle is supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Supports(string vehicleName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">vehicleName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_TryGetContracted_" data-uid="Itinero.RouterDb.TryGetContracted*"></a>
+  
+  <h4 id="Itinero_RouterDb_TryGetContracted_Itinero_Profiles_Profile_ContractedDb__" data-uid="Itinero.RouterDb.TryGetContracted(Itinero.Profiles.Profile,ContractedDb@)"><a href="#collapsible-Itinero_RouterDb_TryGetContracted_Itinero_Profiles_Profile_ContractedDb__" class="expander" data-toggle="collapse">TryGetContracted(Profile, out ContractedDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_TryGetContracted_Itinero_Profiles_Profile_ContractedDb__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to get a contracted version of the routing network for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetContracted(Profile profile, out ContractedDb contracted)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ContractedDb</span></span>
+        <span class="parametername">contracted</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_TryGetRestrictions_" data-uid="Itinero.RouterDb.TryGetRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDb_TryGetRestrictions_System_String_RestrictionsDb__" data-uid="Itinero.RouterDb.TryGetRestrictions(System.String,RestrictionsDb@)"><a href="#collapsible-Itinero_RouterDb_TryGetRestrictions_System_String_RestrictionsDb__" class="expander" data-toggle="collapse">TryGetRestrictions(String, out RestrictionsDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_TryGetRestrictions_System_String_RestrictionsDb__" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this routing db has a restriction db for the given vehicle type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetRestrictions(string vehicleType, out RestrictionsDb restrictions)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">vehicleType</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RestrictionsDb</span></span>
+        <span class="parametername">restrictions</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDb_TryGetShortcuts_" data-uid="Itinero.RouterDb.TryGetShortcuts*"></a>
+  
+  <h4 id="Itinero_RouterDb_TryGetShortcuts_System_String_ShortcutsDb__" data-uid="Itinero.RouterDb.TryGetShortcuts(System.String,ShortcutsDb@)"><a href="#collapsible-Itinero_RouterDb_TryGetShortcuts_System_String_ShortcutsDb__" class="expander" data-toggle="collapse">TryGetShortcuts(String, out ShortcutsDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDb_TryGetShortcuts_System_String_ShortcutsDb__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to get a shortcuts db.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetShortcuts(string name, out ShortcutsDb shortcutsDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ShortcutsDb</span></span>
+        <span class="parametername">shortcutsDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

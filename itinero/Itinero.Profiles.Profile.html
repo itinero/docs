@@ -1,0 +1,1029 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Profile
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Profile
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Profile">
+  <h1 id="Itinero_Profiles_Profile" data-uid="Itinero.Profiles.Profile">Class Profile
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a profile.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Profile</span></div>
+  </div>
+  
+      <div class="level2"><a class="xref" href="Itinero.Profiles.DynamicProfile.html">DynamicProfile</a></div>
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Profile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Profile : IProfileInstance</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Profile__ctor_" data-uid="Itinero.Profiles.Profile.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile__ctor_System_String_Itinero_Profiles_ProfileMetric_System_String___Itinero_Profiles_Constraint___Itinero_Profiles_Vehicle_" data-uid="Itinero.Profiles.Profile.#ctor(System.String,Itinero.Profiles.ProfileMetric,System.String[],Itinero.Profiles.Constraint[],Itinero.Profiles.Vehicle)"><a href="#collapsible-Itinero_Profiles_Profile__ctor_System_String_Itinero_Profiles_ProfileMetric_System_String___Itinero_Profiles_Constraint___Itinero_Profiles_Vehicle_" class="expander" data-toggle="collapse">Profile(String, ProfileMetric, String[], Constraint[], Vehicle)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile__ctor_System_String_Itinero_Profiles_ProfileMetric_System_String___Itinero_Profiles_Constraint___Itinero_Profiles_Vehicle_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Profile(string name, ProfileMetric metric, string[] vehicleTypes, Constraint[] constrainedVariables, Vehicle parent)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.ProfileMetric.html">ProfileMetric</a></span>
+        <span class="parametername">metric</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span>[]</span>
+        <span class="parametername">vehicleTypes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Constraint.html">Constraint</a>[]</span>
+        <span class="parametername">constrainedVariables</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Vehicle.html">Vehicle</a></span>
+        <span class="parametername">parent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile__ctor_" data-uid="Itinero.Profiles.Profile.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile__ctor_System_String_Itinero_Profiles_ProfileMetric_System_String___Itinero_Profiles_Constraint___Itinero_Profiles_Vehicle_Func_IAttributeCollection_Itinero_Profiles_FactorAndSpeed__" data-uid="Itinero.Profiles.Profile.#ctor(System.String,Itinero.Profiles.ProfileMetric,System.String[],Itinero.Profiles.Constraint[],Itinero.Profiles.Vehicle,Func{IAttributeCollection,Itinero.Profiles.FactorAndSpeed})"><a href="#collapsible-Itinero_Profiles_Profile__ctor_System_String_Itinero_Profiles_ProfileMetric_System_String___Itinero_Profiles_Constraint___Itinero_Profiles_Vehicle_Func_IAttributeCollection_Itinero_Profiles_FactorAndSpeed__" class="expander" data-toggle="collapse">Profile(String, ProfileMetric, String[], Constraint[], Vehicle, Func&lt;IAttributeCollection, FactorAndSpeed&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile__ctor_System_String_Itinero_Profiles_ProfileMetric_System_String___Itinero_Profiles_Constraint___Itinero_Profiles_Vehicle_Func_IAttributeCollection_Itinero_Profiles_FactorAndSpeed__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Profile(string name, ProfileMetric metric, string[] vehicleTypes, Constraint[] constrainedVariables, Vehicle parent, Func&lt;IAttributeCollection, FactorAndSpeed&gt; custom)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.ProfileMetric.html">ProfileMetric</a></span>
+        <span class="parametername">metric</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span>[]</span>
+        <span class="parametername">vehicleTypes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Constraint.html">Constraint</a>[]</span>
+        <span class="parametername">constrainedVariables</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Vehicle.html">Vehicle</a></span>
+        <span class="parametername">parent</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">IAttributeCollection</span>, <a class="xref" href="Itinero.Profiles.FactorAndSpeed.html">FactorAndSpeed</a>&gt;</span>
+        <span class="parametername">custom</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Profile_ConstrainedVariables_" data-uid="Itinero.Profiles.Profile.ConstrainedVariables*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_ConstrainedVariables" data-uid="Itinero.Profiles.Profile.ConstrainedVariables"><a href="#collapsible-Itinero_Profiles_Profile_ConstrainedVariables" class="expander" data-toggle="collapse">ConstrainedVariables</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_ConstrainedVariables" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the constrained variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Constraint[] ConstrainedVariables { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Constraint.html">Constraint</a>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_FullName_" data-uid="Itinero.Profiles.Profile.FullName*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_FullName" data-uid="Itinero.Profiles.Profile.FullName"><a href="#collapsible-Itinero_Profiles_Profile_FullName" class="expander" data-toggle="collapse">FullName</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_FullName" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the full name used by this profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FullName { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_InstructionGenerator_" data-uid="Itinero.Profiles.Profile.InstructionGenerator*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_InstructionGenerator" data-uid="Itinero.Profiles.Profile.InstructionGenerator"><a href="#collapsible-Itinero_Profiles_Profile_InstructionGenerator" class="expander" data-toggle="collapse">InstructionGenerator</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_InstructionGenerator" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the instruction generator for this profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IUnimodalInstructionGenerator InstructionGenerator { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUnimodalInstructionGenerator</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_Metric_" data-uid="Itinero.Profiles.Profile.Metric*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_Metric" data-uid="Itinero.Profiles.Profile.Metric"><a href="#collapsible-Itinero_Profiles_Profile_Metric" class="expander" data-toggle="collapse">Metric</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_Metric" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the metric used by this profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ProfileMetric Metric { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.ProfileMetric.html">ProfileMetric</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_Name_" data-uid="Itinero.Profiles.Profile.Name*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_Name" data-uid="Itinero.Profiles.Profile.Name"><a href="#collapsible-Itinero_Profiles_Profile_Name" class="expander" data-toggle="collapse">Name</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_Name" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the name used by this profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Name { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_Parent_" data-uid="Itinero.Profiles.Profile.Parent*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_Parent" data-uid="Itinero.Profiles.Profile.Parent"><a href="#collapsible-Itinero_Profiles_Profile_Parent" class="expander" data-toggle="collapse">Parent</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_Parent" class="collapse in">
+  <div class="markdown level1 summary"><p>The vehicle this profile is for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vehicle Parent { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Vehicle.html">Vehicle</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_VehicleTypes_" data-uid="Itinero.Profiles.Profile.VehicleTypes*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_VehicleTypes" data-uid="Itinero.Profiles.Profile.VehicleTypes"><a href="#collapsible-Itinero_Profiles_Profile_VehicleTypes" class="expander" data-toggle="collapse">VehicleTypes</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_VehicleTypes" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the vehicle types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] VehicleTypes { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Profile_BuildConstrained_" data-uid="Itinero.Profiles.Profile.BuildConstrained*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_BuildConstrained_System_Single___" data-uid="Itinero.Profiles.Profile.BuildConstrained(System.Single[])"><a href="#collapsible-Itinero_Profiles_Profile_BuildConstrained_System_Single___" class="expander" data-toggle="collapse">BuildConstrained(Single[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_BuildConstrained_System_Single___" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a constrained instance of this profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProfileInstance BuildConstrained(float[] values)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[]</span>
+        <span class="parametername">values</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.IProfileInstance.html">IProfileInstance</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_ClearRegistered_" data-uid="Itinero.Profiles.Profile.ClearRegistered*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_ClearRegistered" data-uid="Itinero.Profiles.Profile.ClearRegistered"><a href="#collapsible-Itinero_Profiles_Profile_ClearRegistered" class="expander" data-toggle="collapse">ClearRegistered()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_ClearRegistered" class="collapse in">
+  <div class="markdown level1 summary"><p>Clears all registered profiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearRegistered()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_Equals_" data-uid="Itinero.Profiles.Profile.Equals*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_Equals_IAttributeCollection_IAttributeCollection_" data-uid="Itinero.Profiles.Profile.Equals(IAttributeCollection,IAttributeCollection)"><a href="#collapsible-Itinero_Profiles_Profile_Equals_IAttributeCollection_IAttributeCollection_" class="expander" data-toggle="collapse">Equals(IAttributeCollection, IAttributeCollection)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_Equals_IAttributeCollection_IAttributeCollection_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the two given edges are equals as far as this vehicle is concerned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Equals(IAttributeCollection attributes1, IAttributeCollection attributes2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IAttributeCollection</span></span>
+        <span class="parametername">attributes1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IAttributeCollection</span></span>
+        <span class="parametername">attributes2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_FactorAndSpeed_" data-uid="Itinero.Profiles.Profile.FactorAndSpeed*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_FactorAndSpeed_IAttributeCollection_" data-uid="Itinero.Profiles.Profile.FactorAndSpeed(IAttributeCollection)"><a href="#collapsible-Itinero_Profiles_Profile_FactorAndSpeed_IAttributeCollection_" class="expander" data-toggle="collapse">FactorAndSpeed(IAttributeCollection)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_FactorAndSpeed_IAttributeCollection_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get a function to calculate properties for a set given edge attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FactorAndSpeed FactorAndSpeed(IAttributeCollection attributes)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IAttributeCollection</span></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.FactorAndSpeed.html">FactorAndSpeed</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_GetRegistered_" data-uid="Itinero.Profiles.Profile.GetRegistered*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_GetRegistered" data-uid="Itinero.Profiles.Profile.GetRegistered"><a href="#collapsible-Itinero_Profiles_Profile_GetRegistered" class="expander" data-toggle="collapse">GetRegistered()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_GetRegistered" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all registered profiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Profile&gt; GetRegistered()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.Profiles.Profile.html">Profile</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_GetRegistered_" data-uid="Itinero.Profiles.Profile.GetRegistered*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_GetRegistered_System_String_" data-uid="Itinero.Profiles.Profile.GetRegistered(System.String)"><a href="#collapsible-Itinero_Profiles_Profile_GetRegistered_System_String_" class="expander" data-toggle="collapse">GetRegistered(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_GetRegistered_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a registered profiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Profile GetRegistered(string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Profile.html">Profile</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_Register_" data-uid="Itinero.Profiles.Profile.Register*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_Register_Itinero_Profiles_Profile_" data-uid="Itinero.Profiles.Profile.Register(Itinero.Profiles.Profile)"><a href="#collapsible-Itinero_Profiles_Profile_Register_Itinero_Profiles_Profile_" class="expander" data-toggle="collapse">Register(Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_Register_Itinero_Profiles_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register(Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_ToString_" data-uid="Itinero.Profiles.Profile.ToString*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_ToString" data-uid="Itinero.Profiles.Profile.ToString"><a href="#collapsible-Itinero_Profiles_Profile_ToString" class="expander" data-toggle="collapse">ToString()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_ToString" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a description of this profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_TryGet_" data-uid="Itinero.Profiles.Profile.TryGet*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_TryGet_System_String_Itinero_Profiles_Profile__" data-uid="Itinero.Profiles.Profile.TryGet(System.String,Itinero.Profiles.Profile@)"><a href="#collapsible-Itinero_Profiles_Profile_TryGet_System_String_Itinero_Profiles_Profile__" class="expander" data-toggle="collapse">TryGet(String, out Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_TryGet_System_String_Itinero_Profiles_Profile__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to get a registred profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGet(string name, out Profile value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Profile_Itinero_Profiles_IProfileInstance_Constraints_" data-uid="Itinero.Profiles.Profile.Itinero#Profiles#IProfileInstance#Constraints*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_Itinero_Profiles_IProfileInstance_Constraints" data-uid="Itinero.Profiles.Profile.Itinero#Profiles#IProfileInstance#Constraints"><a href="#collapsible-Itinero_Profiles_Profile_Itinero_Profiles_IProfileInstance_Constraints" class="expander" data-toggle="collapse">IProfileInstance.Constraints</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_Itinero_Profiles_IProfileInstance_Constraints" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the constraint variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float[] IProfileInstance.Constraints { get; }</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.IProfileInstance.html#Itinero_Profiles_IProfileInstance_Constraints">IProfileInstance.Constraints</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Profile_Itinero_Profiles_IProfileInstance_Profile_" data-uid="Itinero.Profiles.Profile.Itinero#Profiles#IProfileInstance#Profile*"></a>
+  
+  <h4 id="Itinero_Profiles_Profile_Itinero_Profiles_IProfileInstance_Profile" data-uid="Itinero.Profiles.Profile.Itinero#Profiles#IProfileInstance#Profile"><a href="#collapsible-Itinero_Profiles_Profile_Itinero_Profiles_IProfileInstance_Profile" class="expander" data-toggle="collapse">IProfileInstance.Profile</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Profile_Itinero_Profiles_IProfileInstance_Profile" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Profile IProfileInstance.Profile { get; }</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Profile.html">Profile</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.IProfileInstance.html#Itinero_Profiles_IProfileInstance_Profile">IProfileInstance.Profile</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

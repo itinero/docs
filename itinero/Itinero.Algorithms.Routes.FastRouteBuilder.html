@@ -1,0 +1,1018 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FastRouteBuilder
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FastRouteBuilder
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder">
+  <h1 id="Itinero_Algorithms_Routes_FastRouteBuilder" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder">Class FastRouteBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>An algorithm to build a route from a path.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Itinero.Algorithms.AlgorithmBase.html">AlgorithmBase</a></div>
+    <div class="level2"><span class="xref">FastRouteBuilder</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_HasRun">AlgorithmBase.HasRun</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_HasSucceeded">AlgorithmBase.HasSucceeded</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_ErrorMessage">AlgorithmBase.ErrorMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_CheckHasRun">AlgorithmBase.CheckHasRun()</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_CheckHasRunAndHasSucceeded">AlgorithmBase.CheckHasRunAndHasSucceeded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_Run">AlgorithmBase.Run()</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_Run_CancellationToken_">AlgorithmBase.Run(CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Algorithms_Routes_FastRouteBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FastRouteBuilder : AlgorithmBase, IAlgorithm</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder__ctor_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.#ctor*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder__ctor_Itinero_RouterDb_Profile_Func_System_UInt16_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.#ctor(Itinero.RouterDb,Profile,Func{System.UInt16,Factor},Itinero.RouterPoint,Itinero.RouterPoint,List{System.UInt32})"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder__ctor_Itinero_RouterDb_Profile_Func_System_UInt16_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" class="expander" data-toggle="collapse">FastRouteBuilder(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, List&lt;UInt32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder__ctor_Itinero_RouterDb_Profile_Func_System_UInt16_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a router builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FastRouteBuilder(RouterDb routerDb, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, List&lt;uint&gt; path)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <span class="xref">Factor</span>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_Route_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Route*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_Route" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Route"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Route" class="expander" data-toggle="collapse">Route</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Route" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Route Route { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_Build_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Build*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Build(Itinero.RouterDb,Profile,Func{System.UInt16,Itinero.Profiles.Factor},Itinero.RouterPoint,Itinero.RouterPoint,Itinero.Algorithms.EdgePath{System.Single})"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__" class="expander" data-toggle="collapse">Build(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, EdgePath&lt;Single&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route Build(RouterDb db, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, EdgePath&lt;float&gt; path)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <a class="xref" href="Itinero.Profiles.Factor.html">Factor</a>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Algorithms.EdgePath-1.html">EdgePath</a>&lt;<span class="xref">System.Single</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_Build_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Build*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__CancellationToken_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Build(Itinero.RouterDb,Profile,Func{System.UInt16,Itinero.Profiles.Factor},Itinero.RouterPoint,Itinero.RouterPoint,Itinero.Algorithms.EdgePath{System.Single},CancellationToken)"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__CancellationToken_" class="expander" data-toggle="collapse">Build(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, EdgePath&lt;Single&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route Build(RouterDb db, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, EdgePath&lt;float&gt; path, CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <a class="xref" href="Itinero.Profiles.Factor.html">Factor</a>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Algorithms.EdgePath-1.html">EdgePath</a>&lt;<span class="xref">System.Single</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_Build_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Build*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Build(Itinero.RouterDb,Profile,Func{System.UInt16,Itinero.Profiles.Factor},Itinero.RouterPoint,Itinero.RouterPoint,List{System.UInt32})"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" class="expander" data-toggle="collapse">Build(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, List&lt;UInt32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route Build(RouterDb db, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, List&lt;uint&gt; path)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <a class="xref" href="Itinero.Profiles.Factor.html">Factor</a>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_Build_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Build*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__CancellationToken_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.Build(Itinero.RouterDb,Profile,Func{System.UInt16,Itinero.Profiles.Factor},Itinero.RouterPoint,Itinero.RouterPoint,List{System.UInt32},CancellationToken)"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__CancellationToken_" class="expander" data-toggle="collapse">Build(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, List&lt;UInt32&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_Build_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route Build(RouterDb db, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, List&lt;uint&gt; path, CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <a class="xref" href="Itinero.Profiles.Factor.html">Factor</a>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_DoRun_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.DoRun*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_DoRun_CancellationToken_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.DoRun(CancellationToken)"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_DoRun_CancellationToken_" class="expander" data-toggle="collapse">DoRun(CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_DoRun_CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Executes the actual run of the algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DoRun(CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Itinero.Algorithms.AlgorithmBase.html#Itinero_Algorithms_AlgorithmBase_DoRun_CancellationToken_">AlgorithmBase.DoRun(CancellationToken)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.TryBuild*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.TryBuild(Itinero.RouterDb,Profile,Func{System.UInt16,Itinero.Profiles.Factor},Itinero.RouterPoint,Itinero.RouterPoint,Itinero.Algorithms.EdgePath{System.Single})"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__" class="expander" data-toggle="collapse">TryBuild(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, EdgePath&lt;Single&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryBuild(RouterDb db, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, EdgePath&lt;float&gt; path)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <a class="xref" href="Itinero.Profiles.Factor.html">Factor</a>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Algorithms.EdgePath-1.html">EdgePath</a>&lt;<span class="xref">System.Single</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.TryBuild*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__CancellationToken_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.TryBuild(Itinero.RouterDb,Profile,Func{System.UInt16,Itinero.Profiles.Factor},Itinero.RouterPoint,Itinero.RouterPoint,Itinero.Algorithms.EdgePath{System.Single},CancellationToken)"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__CancellationToken_" class="expander" data-toggle="collapse">TryBuild(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, EdgePath&lt;Single&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_Itinero_Algorithms_EdgePath_System_Single__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryBuild(RouterDb db, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, EdgePath&lt;float&gt; path, CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <a class="xref" href="Itinero.Profiles.Factor.html">Factor</a>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Algorithms.EdgePath-1.html">EdgePath</a>&lt;<span class="xref">System.Single</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.TryBuild*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.TryBuild(Itinero.RouterDb,Profile,Func{System.UInt16,Itinero.Profiles.Factor},Itinero.RouterPoint,Itinero.RouterPoint,List{System.UInt32})"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" class="expander" data-toggle="collapse">TryBuild(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, List&lt;UInt32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryBuild(RouterDb db, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, List&lt;uint&gt; path)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <a class="xref" href="Itinero.Profiles.Factor.html">Factor</a>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.TryBuild*"></a>
+  
+  <h4 id="Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__CancellationToken_" data-uid="Itinero.Algorithms.Routes.FastRouteBuilder.TryBuild(Itinero.RouterDb,Profile,Func{System.UInt16,Itinero.Profiles.Factor},Itinero.RouterPoint,Itinero.RouterPoint,List{System.UInt32},CancellationToken)"><a href="#collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__CancellationToken_" class="expander" data-toggle="collapse">TryBuild(RouterDb, Profile, Func&lt;UInt16, Factor&gt;, RouterPoint, RouterPoint, List&lt;UInt32&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Routes_FastRouteBuilder_TryBuild_Itinero_RouterDb_Profile_Func_System_UInt16_Itinero_Profiles_Factor__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryBuild(RouterDb db, Profile profile, Func&lt;ushort, Factor&gt; getFactor, RouterPoint source, RouterPoint target, List&lt;uint&gt; path, CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt16</span>, <a class="xref" href="Itinero.Profiles.Factor.html">Factor</a>&gt;</span>
+        <span class="parametername">getFactor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">path</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,840 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InflaterInputBuffer
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InflaterInputBuffer
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer">
+  <h1 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer">Class InflaterInputBuffer
+  </h1>
+  <div class="markdown level0 summary"><p>An input buffer customised for use by <a class="xref" href="OsmSharp.IO.Zip.Streams.InflaterInputStream.html">InflaterInputStream</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">InflaterInputBuffer</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InflaterInputBuffer</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The buffer supports decryption of incoming data.</p>
+</div>
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.#ctor*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_Stream_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.#ctor(Stream)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_Stream_" class="expander" data-toggle="collapse">InflaterInputBuffer(Stream)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initialise a new instance of <a class="xref" href="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.html">InflaterInputBuffer</a> with a default buffer size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InflaterInputBuffer(Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p><p>The stream to buffer.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.#ctor*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_Stream_System_Int32_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.#ctor(Stream,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_Stream_System_Int32_" class="expander" data-toggle="collapse">InflaterInputBuffer(Stream, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_Stream_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initialise a new instance of <a class="xref" href="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.html">InflaterInputBuffer</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InflaterInputBuffer(Stream stream, int bufferSize)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p><p>The stream to buffer.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">bufferSize</span>
+        <p><p>The size to use for the buffer</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer__ctor_Stream_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A minimum buffer size of 1KB is permitted.  Lower sizes are treated as 1KB.</p>
+</div>
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_Available_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.Available*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_Available" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.Available"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_Available" class="expander" data-toggle="collapse">Available</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_Available" class="collapse in">
+  <div class="markdown level1 summary"><p>Get/set the number of bytes available</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Available { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearText_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ClearText*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearText" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ClearText"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearText" class="expander" data-toggle="collapse">ClearText</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearText" class="collapse in">
+  <div class="markdown level1 summary"><p>Get the contents of the clear text buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ClearText { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Byte</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearTextLength_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ClearTextLength*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearTextLength" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ClearTextLength"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearTextLength" class="expander" data-toggle="collapse">ClearTextLength</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearTextLength" class="collapse in">
+  <div class="markdown level1 summary"><p>Get the number of useable bytes in <a class="xref" href="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.html#OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ClearText">ClearText</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ClearTextLength { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawData_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.RawData*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawData" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.RawData"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawData" class="expander" data-toggle="collapse">RawData</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawData" class="collapse in">
+  <div class="markdown level1 summary"><p>Get the contents of the raw data buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] RawData { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Byte</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawData_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This may contain encrypted data.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawLength_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.RawLength*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawLength" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.RawLength"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawLength" class="expander" data-toggle="collapse">RawLength</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawLength" class="collapse in">
+  <div class="markdown level1 summary"><p>Get the length of bytes bytes in the <a class="xref" href="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.html#OsmSharp_IO_Zip_Streams_InflaterInputBuffer_RawData">RawData</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RawLength { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_Fill_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.Fill*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_Fill" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.Fill"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_Fill" class="expander" data-toggle="collapse">Fill()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_Fill" class="collapse in">
+  <div class="markdown level1 summary"><p>Fill the buffer from the underlying input stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fill()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadClearTextBuffer_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadClearTextBuffer*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadClearTextBuffer_System_Byte___System_Int32_System_Int32_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadClearTextBuffer(System.Byte[],System.Int32,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadClearTextBuffer_System_Byte___System_Int32_System_Int32_" class="expander" data-toggle="collapse">ReadClearTextBuffer(Byte[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadClearTextBuffer_System_Byte___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Read clear text data from the input stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadClearTextBuffer(byte[] outBuffer, int offset, int length)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">outBuffer</span>
+        <p><p>The buffer to add data to.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset to start adding data at.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">length</span>
+        <p><p>The number of bytes to read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>Returns the number of bytes actually read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeByte_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadLeByte*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeByte" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadLeByte"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeByte" class="expander" data-toggle="collapse">ReadLeByte()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeByte" class="collapse in">
+  <div class="markdown level1 summary"><p>Read a <span class="xref">System.Byte</span> from the input stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadLeByte()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>Returns the byte read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeInt_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadLeInt*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeInt" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadLeInt"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeInt" class="expander" data-toggle="collapse">ReadLeInt()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeInt" class="collapse in">
+  <div class="markdown level1 summary"><p>Read an <span class="xref">System.Int32</span> in little endian byte order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadLeInt()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The int value read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeLong_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadLeLong*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeLong" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadLeLong"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeLong" class="expander" data-toggle="collapse">ReadLeLong()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeLong" class="collapse in">
+  <div class="markdown level1 summary"><p>Read a <span class="xref">System.Int64</span> in little endian byte order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ReadLeLong()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p><p>The long value read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeShort_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadLeShort*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeShort" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadLeShort"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeShort" class="expander" data-toggle="collapse">ReadLeShort()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadLeShort" class="collapse in">
+  <div class="markdown level1 summary"><p>Read an <span class="xref">System.Int16</span> in little endian byte order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadLeShort()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The short value read case to an int.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadRawBuffer_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadRawBuffer*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadRawBuffer_System_Byte___" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadRawBuffer(System.Byte[])"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadRawBuffer_System_Byte___" class="expander" data-toggle="collapse">ReadRawBuffer(Byte[])</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadRawBuffer_System_Byte___" class="collapse in">
+  <div class="markdown level1 summary"><p>Read a buffer directly from the input stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadRawBuffer(byte[] buffer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">buffer</span>
+        <p><p>The buffer to fill</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>Returns the number of bytes read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadRawBuffer_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadRawBuffer*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadRawBuffer_System_Byte___System_Int32_System_Int32_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.ReadRawBuffer(System.Byte[],System.Int32,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadRawBuffer_System_Byte___System_Int32_System_Int32_" class="expander" data-toggle="collapse">ReadRawBuffer(Byte[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_ReadRawBuffer_System_Byte___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Read a buffer directly from the input stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadRawBuffer(byte[] outBuffer, int offset, int length)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">outBuffer</span>
+        <p><p>The buffer to read into</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset to start reading data into.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">length</span>
+        <p><p>The number of bytes to read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>Returns the number of bytes read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_SetInflaterInput_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.SetInflaterInput*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_InflaterInputBuffer_SetInflaterInput_OsmSharp_IO_Zip_Inflater_" data-uid="OsmSharp.IO.Zip.Streams.InflaterInputBuffer.SetInflaterInput(OsmSharp.IO.Zip.Inflater)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_SetInflaterInput_OsmSharp_IO_Zip_Inflater_" class="expander" data-toggle="collapse">SetInflaterInput(Inflater)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_InflaterInputBuffer_SetInflaterInput_OsmSharp_IO_Zip_Inflater_" class="collapse in">
+  <div class="markdown level1 summary"><p>Call <a class="xref" href="OsmSharp.IO.Zip.Inflater.html#OsmSharp_IO_Zip_Inflater_SetInput_System_Byte___System_Int32_System_Int32_">SetInput(Byte[], Int32, Int32)</a> passing the current clear text buffer contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInflaterInput(Inflater inflater)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.IO.Zip.Inflater.html">Inflater</a></span>
+        <span class="parametername">inflater</span>
+        <p><p>The inflater to set input for.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

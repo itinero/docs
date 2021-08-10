@@ -1,0 +1,828 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MemorySnapshotDb
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MemorySnapshotDb
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb">
+  <h1 id="OsmSharp_Db_Impl_MemorySnapshotDb" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb">Class MemorySnapshotDb
+  </h1>
+  <div class="markdown level0 summary"><p>An in-memory data repository of OSM data primitives.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MemorySnapshotDb</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OsmSharp_Db_Impl_MemorySnapshotDb_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MemorySnapshotDb : ISnapshotDbImpl</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 id="OsmSharp_Db_Impl_MemorySnapshotDb_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This is only a not-very-efficient reference implementation.</p>
+</div>
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb__ctor_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.#ctor*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb__ctor" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.#ctor"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb__ctor" class="expander" data-toggle="collapse">MemorySnapshotDb()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb__ctor" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new memory data structure using the default geometry interpreter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemorySnapshotDb()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb__ctor_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.#ctor*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb__ctor_IEnumerable_OsmSharp_OsmGeo__" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.#ctor(IEnumerable{OsmSharp.OsmGeo})"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb__ctor_IEnumerable_OsmSharp_OsmGeo__" class="expander" data-toggle="collapse">MemorySnapshotDb(IEnumerable&lt;OsmGeo&gt;)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb__ctor_IEnumerable_OsmSharp_OsmGeo__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new memory data structure using the default geometry interpreter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemorySnapshotDb(IEnumerable&lt;OsmGeo&gt; initial)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>&gt;</span>
+        <span class="parametername">initial</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb__ctor_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.#ctor*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb__ctor_OsmSharp_OsmGeo___" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.#ctor(OsmSharp.OsmGeo[])"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb__ctor_OsmSharp_OsmGeo___" class="expander" data-toggle="collapse">MemorySnapshotDb(OsmGeo[])</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb__ctor_OsmSharp_OsmGeo___" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new memory data structure using the default geometry interpreter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemorySnapshotDb(params OsmGeo[] initial)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>[]</span>
+        <span class="parametername">initial</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_IsSynchronized_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.IsSynchronized*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_IsSynchronized" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.IsSynchronized"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_IsSynchronized" class="expander" data-toggle="collapse">IsSynchronized</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_IsSynchronized" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this db is thread-safe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynchronized { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.AddOrUpdate*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_IEnumerable_OsmSharp_OsmGeo__" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.AddOrUpdate(IEnumerable{OsmSharp.OsmGeo})"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_IEnumerable_OsmSharp_OsmGeo__" class="expander" data-toggle="collapse">AddOrUpdate(IEnumerable&lt;OsmGeo&gt;)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_IEnumerable_OsmSharp_OsmGeo__" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or updates osm objects in the db exactly as they are given.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrUpdate(IEnumerable&lt;OsmGeo&gt; osmGeos)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>&gt;</span>
+        <span class="parametername">osmGeos</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Db.Impl.ISnapshotDbImpl.html#OsmSharp_Db_Impl_ISnapshotDbImpl_AddOrUpdate_IEnumerable_OsmSharp_OsmGeo__">ISnapshotDbImpl.AddOrUpdate(IEnumerable&lt;OsmGeo&gt;)</a></div>
+  
+  <h5 id="OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_IEnumerable_OsmSharp_OsmGeo___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><ul>
+<li>Replaces objects that already exist with the given id.</li>
+</ul>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.AddOrUpdate*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_OsmSharp_OsmGeo_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.AddOrUpdate(OsmSharp.OsmGeo)"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_OsmSharp_OsmGeo_" class="expander" data-toggle="collapse">AddOrUpdate(OsmGeo)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_OsmSharp_OsmGeo_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or updates the given osm object in the db exactly as given.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrUpdate(OsmGeo osmGeo)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a></span>
+        <span class="parametername">osmGeo</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="OsmSharp_Db_Impl_MemorySnapshotDb_AddOrUpdate_OsmSharp_OsmGeo__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><ul>
+<li>Replaces objects that already exist with the given id.</li>
+</ul>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_Clear_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Clear*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_Clear" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Clear"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Clear" class="collapse in">
+  <div class="markdown level1 summary"><p>Clears all data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Db.Impl.ISnapshotDbImpl.html#OsmSharp_Db_Impl_ISnapshotDbImpl_Clear">ISnapshotDbImpl.Clear()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_Delete_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Delete*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_Delete_IEnumerable_OsmSharp_Db_OsmGeoKey__" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Delete(IEnumerable{OsmSharp.Db.OsmGeoKey})"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Delete_IEnumerable_OsmSharp_Db_OsmGeoKey__" class="expander" data-toggle="collapse">Delete(IEnumerable&lt;OsmGeoKey&gt;)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Delete_IEnumerable_OsmSharp_Db_OsmGeoKey__" class="collapse in">
+  <div class="markdown level1 summary"><p>Deletes all osm objects with the given types and the given id&apos;s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(IEnumerable&lt;OsmGeoKey&gt; keys)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.Db.OsmGeoKey.html">OsmGeoKey</a>&gt;</span>
+        <span class="parametername">keys</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Db.Impl.ISnapshotDbImpl.html#OsmSharp_Db_Impl_ISnapshotDbImpl_Delete_IEnumerable_OsmSharp_Db_OsmGeoKey__">ISnapshotDbImpl.Delete(IEnumerable&lt;OsmGeoKey&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_Delete_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Delete*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_Delete_OsmSharp_OsmGeoType_System_Int64_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Delete(OsmSharp.OsmGeoType,System.Int64)"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Delete_OsmSharp_OsmGeoType_System_Int64_" class="expander" data-toggle="collapse">Delete(OsmGeoType, Int64)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Delete_OsmSharp_OsmGeoType_System_Int64_" class="collapse in">
+  <div class="markdown level1 summary"><p>Deletes the osm object with the given type, the given id without applying a changeset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Delete(OsmGeoType type, long id)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.OsmGeoType.html">OsmGeoType</a></span>
+        <span class="parametername">type</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_Get_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Get*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_Get" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Get"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Get" class="expander" data-toggle="collapse">Get()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Get" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all the objects in the form of an osm stream source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;OsmGeo&gt; Get()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Db.Impl.ISnapshotDbImpl.html#OsmSharp_Db_Impl_ISnapshotDbImpl_Get">ISnapshotDbImpl.Get()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_Get_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Get*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_Get_IEnumerable_OsmSharp_Db_OsmGeoKey__" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Get(IEnumerable{OsmSharp.Db.OsmGeoKey})"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Get_IEnumerable_OsmSharp_Db_OsmGeoKey__" class="expander" data-toggle="collapse">Get(IEnumerable&lt;OsmGeoKey&gt;)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Get_IEnumerable_OsmSharp_Db_OsmGeoKey__" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all osm objects with the given types and the given id&apos;s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;OsmGeo&gt; Get(IEnumerable&lt;OsmGeoKey&gt; keys)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.Db.OsmGeoKey.html">OsmGeoKey</a>&gt;</span>
+        <span class="parametername">keys</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Db.Impl.ISnapshotDbImpl.html#OsmSharp_Db_Impl_ISnapshotDbImpl_Get_IEnumerable_OsmSharp_Db_OsmGeoKey__">ISnapshotDbImpl.Get(IEnumerable&lt;OsmGeoKey&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_Get_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Get*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_Get_OsmSharp_OsmGeoType_System_Int64_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Get(OsmSharp.OsmGeoType,System.Int64)"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Get_OsmSharp_OsmGeoType_System_Int64_" class="expander" data-toggle="collapse">Get(OsmGeoType, Int64)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Get_OsmSharp_OsmGeoType_System_Int64_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets an osm object of the given type and the given id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OsmGeo Get(OsmGeoType type, long id)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.OsmGeoType.html">OsmGeoType</a></span>
+        <span class="parametername">type</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_Get_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Get*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_Get_System_Single_System_Single_System_Single_System_Single_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.Get(System.Single,System.Single,System.Single,System.Single)"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Get_System_Single_System_Single_System_Single_System_Single_" class="expander" data-toggle="collapse">Get(Single, Single, Single, Single)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_Get_System_Single_System_Single_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns all the objects within a given bounding box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;OsmGeo&gt; Get(float minLatitude, float minLongitude, float maxLatitude, float maxLongitude)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLongitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLongitude</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Db.Impl.ISnapshotDbImpl.html#OsmSharp_Db_Impl_ISnapshotDbImpl_Get_System_Single_System_Single_System_Single_System_Single_">ISnapshotDbImpl.Get(Single, Single, Single, Single)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_GetRelations_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.GetRelations*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_GetRelations_IEnumerable_OsmSharp_Db_OsmGeoKey__" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.GetRelations(IEnumerable{OsmSharp.Db.OsmGeoKey})"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_GetRelations_IEnumerable_OsmSharp_Db_OsmGeoKey__" class="expander" data-toggle="collapse">GetRelations(IEnumerable&lt;OsmGeoKey&gt;)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_GetRelations_IEnumerable_OsmSharp_Db_OsmGeoKey__" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all relations with at least one member in the given key set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Relation&gt; GetRelations(IEnumerable&lt;OsmGeoKey&gt; keys)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.Db.OsmGeoKey.html">OsmGeoKey</a>&gt;</span>
+        <span class="parametername">keys</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.Relation.html">Relation</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Db.Impl.ISnapshotDbImpl.html#OsmSharp_Db_Impl_ISnapshotDbImpl_GetRelations_IEnumerable_OsmSharp_Db_OsmGeoKey__">ISnapshotDbImpl.GetRelations(IEnumerable&lt;OsmGeoKey&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Db_Impl_MemorySnapshotDb_GetWays_" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.GetWays*"></a>
+  
+  <h4 id="OsmSharp_Db_Impl_MemorySnapshotDb_GetWays_IEnumerable_System_Int64__" data-uid="OsmSharp.Db.Impl.MemorySnapshotDb.GetWays(IEnumerable{System.Int64})"><a href="#collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_GetWays_IEnumerable_System_Int64__" class="expander" data-toggle="collapse">GetWays(IEnumerable&lt;Int64&gt;)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Db_Impl_MemorySnapshotDb_GetWays_IEnumerable_System_Int64__" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all ways with at least one node in the given id set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Way&gt; GetWays(IEnumerable&lt;long&gt; ids)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Int64</span>&gt;</span>
+        <span class="parametername">ids</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.Way.html">Way</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Db.Impl.ISnapshotDbImpl.html#OsmSharp_Db_Impl_ISnapshotDbImpl_GetWays_IEnumerable_System_Int64__">ISnapshotDbImpl.GetWays(IEnumerable&lt;Int64&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

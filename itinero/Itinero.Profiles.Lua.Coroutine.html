@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Coroutine
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Coroutine
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Coroutine">
+  <h1 id="Itinero_Profiles_Lua_Coroutine" data-uid="Itinero.Profiles.Lua.Coroutine">Class Coroutine
+  </h1>
+  <div class="markdown level0 summary"><p>A class representing a script coroutine</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Itinero.Profiles.Lua.RefIdObject.html">RefIdObject</a></div>
+    <div class="level2"><span class="xref">Coroutine</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Itinero.Profiles.Lua.RefIdObject.html#Itinero_Profiles_Lua_RefIdObject_ReferenceID">RefIdObject.ReferenceID</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Profiles.Lua.RefIdObject.html#Itinero_Profiles_Lua_RefIdObject_FormatTypeString_System_String_">RefIdObject.FormatTypeString(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_Coroutine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Coroutine : RefIdObject, IScriptPrivateResource</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_AutoYieldCounter_" data-uid="Itinero.Profiles.Lua.Coroutine.AutoYieldCounter*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_AutoYieldCounter" data-uid="Itinero.Profiles.Lua.Coroutine.AutoYieldCounter"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_AutoYieldCounter" class="expander" data-toggle="collapse">AutoYieldCounter</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_AutoYieldCounter" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the automatic yield counter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long AutoYieldCounter { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p><p>The automatic yield counter.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_OwnerScript_" data-uid="Itinero.Profiles.Lua.Coroutine.OwnerScript*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_OwnerScript" data-uid="Itinero.Profiles.Lua.Coroutine.OwnerScript"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_OwnerScript" class="expander" data-toggle="collapse">OwnerScript</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_OwnerScript" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the script owning this resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Script OwnerScript { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a>
+        <p><p>The script owning this resource.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.IScriptPrivateResource.html#Itinero_Profiles_Lua_IScriptPrivateResource_OwnerScript">IScriptPrivateResource.OwnerScript</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_State_" data-uid="Itinero.Profiles.Lua.Coroutine.State*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_State" data-uid="Itinero.Profiles.Lua.Coroutine.State"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_State" class="expander" data-toggle="collapse">State</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_State" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the coroutine state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoroutineState State { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.CoroutineState.html">CoroutineState</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_Type_" data-uid="Itinero.Profiles.Lua.Coroutine.Type*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_Type" data-uid="Itinero.Profiles.Lua.Coroutine.Type"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_Type" class="expander" data-toggle="collapse">Type</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_Type" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the type of coroutine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coroutine.CoroutineType Type { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Coroutine.CoroutineType.html">Coroutine.CoroutineType</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_AsEnumerable_" data-uid="Itinero.Profiles.Lua.Coroutine.AsEnumerable*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_AsEnumerable" data-uid="Itinero.Profiles.Lua.Coroutine.AsEnumerable"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_AsEnumerable" class="expander" data-toggle="collapse">AsEnumerable()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_AsEnumerable" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets this coroutine as a typed enumerable which can be looped over for resuming.
+Returns its result as System.Object. Only the first element of tuples is returned.
+Only non-CLR coroutines can be resumed with this method. Use an overload of the Resume method accepting a ScriptExecutionContext instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;object&gt; AsEnumerable()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_AsEnumerable_" data-uid="Itinero.Profiles.Lua.Coroutine.AsEnumerable*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_AsEnumerable__1" data-uid="Itinero.Profiles.Lua.Coroutine.AsEnumerable``1"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_AsEnumerable__1" class="expander" data-toggle="collapse">AsEnumerable&lt;T&gt;()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_AsEnumerable__1" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets this coroutine as a typed enumerable which can be looped over for resuming.
+Returns its result as the specified type. Only the first element of tuples is returned.
+Only non-CLR coroutines can be resumed with this method. Use an overload of the Resume method accepting a ScriptExecutionContext instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; AsEnumerable&lt;T&gt;()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_AsTypedEnumerable_" data-uid="Itinero.Profiles.Lua.Coroutine.AsTypedEnumerable*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_AsTypedEnumerable" data-uid="Itinero.Profiles.Lua.Coroutine.AsTypedEnumerable"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_AsTypedEnumerable" class="expander" data-toggle="collapse">AsTypedEnumerable()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_AsTypedEnumerable" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets this coroutine as a typed enumerable which can be looped over for resuming.
+Returns its result as DynValue(s)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;DynValue&gt; AsTypedEnumerable()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_AsUnityCoroutine_" data-uid="Itinero.Profiles.Lua.Coroutine.AsUnityCoroutine*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_AsUnityCoroutine" data-uid="Itinero.Profiles.Lua.Coroutine.AsUnityCoroutine"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_AsUnityCoroutine" class="expander" data-toggle="collapse">AsUnityCoroutine()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_AsUnityCoroutine" class="collapse in">
+  <div class="markdown level1 summary"><p>The purpose of this method is to convert a MoonSharp/Lua coroutine to a Unity3D coroutine.
+This loops over the coroutine, discarding returned values, and returning null for each invocation.
+This means however that the coroutine will be invoked each frame.
+Only non-CLR coroutines can be resumed with this method. Use an overload of the Resume method accepting a ScriptExecutionContext instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator AsUnityCoroutine()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.IEnumerator</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_GetStackTrace_" data-uid="Itinero.Profiles.Lua.Coroutine.GetStackTrace*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_GetStackTrace_System_Int32_SourceRef_" data-uid="Itinero.Profiles.Lua.Coroutine.GetStackTrace(System.Int32,SourceRef)"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_GetStackTrace_System_Int32_SourceRef_" class="expander" data-toggle="collapse">GetStackTrace(Int32, SourceRef)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_GetStackTrace_System_Int32_SourceRef_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the coroutine stack trace for debug purposes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WatchItem[] GetStackTrace(int skip, SourceRef entrySourceRef = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">skip</span>
+        <p><p>The skip.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">SourceRef</span></span>
+        <span class="parametername">entrySourceRef</span>
+        <p><p>The entry source reference.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">WatchItem</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_Resume_" data-uid="Itinero.Profiles.Lua.Coroutine.Resume*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_Resume" data-uid="Itinero.Profiles.Lua.Coroutine.Resume"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_Resume" class="expander" data-toggle="collapse">Resume()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_Resume" class="collapse in">
+  <div class="markdown level1 summary"><p>Resumes the coroutine.
+Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Resume()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_Resume_" data-uid="Itinero.Profiles.Lua.Coroutine.Resume*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_DynValue___" data-uid="Itinero.Profiles.Lua.Coroutine.Resume(Itinero.Profiles.Lua.DynValue[])"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_DynValue___" class="expander" data-toggle="collapse">Resume(DynValue[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_DynValue___" class="collapse in">
+  <div class="markdown level1 summary"><p>Resumes the coroutine.
+Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Resume(params DynValue[] args)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>[]</span>
+        <span class="parametername">args</span>
+        <p><p>The arguments.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_Resume_" data-uid="Itinero.Profiles.Lua.Coroutine.Resume*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_" data-uid="Itinero.Profiles.Lua.Coroutine.Resume(Itinero.Profiles.Lua.ScriptExecutionContext)"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_" class="expander" data-toggle="collapse">Resume(ScriptExecutionContext)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_" class="collapse in">
+  <div class="markdown level1 summary"><p>Resumes the coroutine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Resume(ScriptExecutionContext context)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.ScriptExecutionContext.html">ScriptExecutionContext</a></span>
+        <span class="parametername">context</span>
+        <p><p>The ScriptExecutionContext.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_Resume_" data-uid="Itinero.Profiles.Lua.Coroutine.Resume*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_Itinero_Profiles_Lua_DynValue___" data-uid="Itinero.Profiles.Lua.Coroutine.Resume(Itinero.Profiles.Lua.ScriptExecutionContext,Itinero.Profiles.Lua.DynValue[])"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_Itinero_Profiles_Lua_DynValue___" class="expander" data-toggle="collapse">Resume(ScriptExecutionContext, DynValue[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_Itinero_Profiles_Lua_DynValue___" class="collapse in">
+  <div class="markdown level1 summary"><p>Resumes the coroutine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Resume(ScriptExecutionContext context, params DynValue[] args)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.ScriptExecutionContext.html">ScriptExecutionContext</a></span>
+        <span class="parametername">context</span>
+        <p><p>The ScriptExecutionContext.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>[]</span>
+        <span class="parametername">args</span>
+        <p><p>The arguments.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_Resume_" data-uid="Itinero.Profiles.Lua.Coroutine.Resume*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_System_Object___" data-uid="Itinero.Profiles.Lua.Coroutine.Resume(Itinero.Profiles.Lua.ScriptExecutionContext,System.Object[])"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_System_Object___" class="expander" data-toggle="collapse">Resume(ScriptExecutionContext, Object[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_Resume_Itinero_Profiles_Lua_ScriptExecutionContext_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"><p>Resumes the coroutine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Resume(ScriptExecutionContext context, params object[] args)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.ScriptExecutionContext.html">ScriptExecutionContext</a></span>
+        <span class="parametername">context</span>
+        <p><p>The ScriptExecutionContext.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">args</span>
+        <p><p>The arguments.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Coroutine_Resume_" data-uid="Itinero.Profiles.Lua.Coroutine.Resume*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Coroutine_Resume_System_Object___" data-uid="Itinero.Profiles.Lua.Coroutine.Resume(System.Object[])"><a href="#collapsible-Itinero_Profiles_Lua_Coroutine_Resume_System_Object___" class="expander" data-toggle="collapse">Resume(Object[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Coroutine_Resume_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"><p>Resumes the coroutine.
+Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Resume(params object[] args)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">args</span>
+        <p><p>The arguments.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

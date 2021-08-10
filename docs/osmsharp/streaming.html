@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Streaming Model | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Streaming Model | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="streaming-model">
+<h1 id="streaming-model">Streaming Model</h1>
+
+<p>OsmSharp uses a streaming model to handle OSM-data. The OSM-database is growing every day and an architecture that can handle larges amounts of data is no luxury. </p>
+<p><img src="http://www.osmsharp.com/static/osmsharp-streaming-model.png"></p>
+<p>The basic types that are used in the streaming model are:</p>
+<ul>
+<li><strong>OsmStreamSource</strong>: Abstract representation of a source of an OSM data stream. There are several implementations available, the most important ones being:<ul>
+<li><strong>XmlOsmStreamSource</strong>: Reads OSM-XML files.</li>
+<li><strong>PBFOsmStreamSource</strong>: Reads OSM-PBF files.</li>
+</ul>
+</li>
+<li><strong>OsmStreamFilter</strong>: Abstract representation of a filter, also a source, that can be used to filter a stream. Implementations are <strong>OsmStreamFilterBoundingBox</strong> and <strong>OsmStreamFilterTags</strong>.</li>
+<li><strong>OsmStreamTarget</strong>: Abstract representation of a target for an OSM data stream. There are several implementations available, the most important ones being:<ul>
+<li><strong>XmlOsmStreamTarget</strong>: Writes OSM-XML files.</li>
+<li><strong>PBFOsmStreamTarget</strong>: Writes OSM-PBF files.</li>
+</ul>
+</li>
+</ul>
+<p>All sources and filters are also IEnumerable<t> meaning you can use Linq to work with the streams:<p>
+<pre><code class="lang-csharp">using (var fileStream = File.OpenRead(&quot;path/to/file.osm.pbf&quot;))
+{
+  // create source stream.
+  var source = new PBFOsmStreamSource(fileStream);
+
+  // filter all powerlines and keep all nodes.
+  var filtered = from osmGeo in source
+   where osmGeo.Type == OsmSharp.OsmGeoType.Node || 
+    (osmGeo.Type == OsmSharp.OsmGeoType.Way &amp;&amp; osmGeo.Tags != null &amp;&amp; osmGeo.Tags.Contains(&quot;power&quot;, &quot;line&quot;))
+   select osmGeo;
+
+  // convert to complete stream.
+ // WARNING: nodes that are partof powerlines will be kept in-memory.
+  //          it&#39;s important to filter only the objects you need **before** 
+  //          you convert to a complete stream otherwise all objects will 
+  //          be kept in-memory.
+  var complete = filtered.ToComplete();
+}
+
+
+</code></pre></t></article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2411 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DirectedDynamicGraphExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DirectedDynamicGraphExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions">
+  <h1 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions">Class DirectedDynamicGraphExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains contraction related extension methods related to the directed dynamic graph.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DirectedDynamicGraphExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DirectedDynamicGraphExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Edge definition of an edge-based dynamic graph:</p>
+<ul>
+<li>Original edge     : [0] FIXED weight.</li>
+<li>Contracted edges   </li>
+<li>no sequences  : [0] FIXED weight.
+                [0] DYN   contracted id.</li>
+<li>sequences     : [0] FIXED weight.
+                [0] DYN   contracted id.
+                [1] DYN   size 
+                [2] DYN   seq1.0 (assuming size = 1)
+                [3] DYN   seq2.0 (starts at this location assuming size = 1)</li>
+</ul>
+<p>Sequences are always added in the corresponding edge-direction:</p>
+<ul>
+<li>source seq: {source} -&gt; seq1.0 -&gt; seq1.0 -&gt; ...</li>
+<li>target seq: ... -&gt; seq2.0 -&gt; seq2.1 -&gt; {target}</li>
+</ul>
+</div>
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,System.Single,System.Nullable{System.Boolean})"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__" class="expander" data-toggle="collapse">AddEdge(DirectedDynamicGraph, UInt32, UInt32, Single, Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds an edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint AddEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, float weight, bool ? direction)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_Nullable_System_UInt32__System_UInt32___System_UInt32___" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,System.Single,System.Nullable{System.Boolean},System.Nullable{System.UInt32},System.UInt32[],System.UInt32[])"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_Nullable_System_UInt32__System_UInt32___System_UInt32___" class="expander" data-toggle="collapse">AddEdge(DirectedDynamicGraph, UInt32, UInt32, Single, Nullable&lt;Boolean&gt;, Nullable&lt;UInt32&gt;, UInt32[], UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_Nullable_System_UInt32__System_UInt32___System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a contracted edge including sequences.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint AddEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, float weight, bool ? direction, uint ? contractedId, uint[] sequence1, uint[] sequence2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p><p>The graph.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p><p>The start vertex.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p><p>The end vertex.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p><p>The weight.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p><p>The direction.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">contractedId</span>
+        <p><p>The vertex being shortcutted.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence1</span>
+        <p><p>The relevant sequence starting but not including vertex1; vertex1-&gt;(0-&gt;1...).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence2</span>
+        <p><p>The relevant sequence starting but not including vertex2; (0-&gt;1...)-&gt;vertex2.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_Single_System_Single_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,System.Single,System.Nullable{System.Boolean},System.Single,System.Single)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_Single_System_Single_" class="expander" data-toggle="collapse">AddEdge(DirectedDynamicGraph, UInt32, UInt32, Single, Nullable&lt;Boolean&gt;, Single, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds an edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint AddEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, float weight, bool ? direction, float distance, float time)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Single_System_Single_System_UInt32___System_UInt32___" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,System.Single,System.Nullable{System.Boolean},System.UInt32,System.Single,System.Single,System.UInt32[],System.UInt32[])"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Single_System_Single_System_UInt32___System_UInt32___" class="expander" data-toggle="collapse">AddEdge(DirectedDynamicGraph, UInt32, UInt32, Single, Nullable&lt;Boolean&gt;, UInt32, Single, Single, UInt32[], UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Single_System_Single_System_UInt32___System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a contracted edge including sequences.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint AddEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, float weight, bool ? direction, uint contractedId, float distance, float time, uint[] sequence1, uint[] sequence2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p><p>The graph.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p><p>The start vertex.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p><p>The end vertex.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p><p>The weight.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p><p>The direction.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">contractedId</span>
+        <p><p>The vertex being shortcutted.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p><p>The distance.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p><p>The time.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence1</span>
+        <p><p>The relevant sequence starting but not including vertex1; vertex1-&gt;(0-&gt;1...).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence2</span>
+        <p><p>The relevant sequence starting but not including vertex2; (0-&gt;1...)-&gt;vertex2.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_UInt32___System_UInt32___" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,System.Single,System.Nullable{System.Boolean},System.UInt32,System.UInt32[],System.UInt32[])"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_UInt32___System_UInt32___" class="expander" data-toggle="collapse">AddEdge(DirectedDynamicGraph, UInt32, UInt32, Single, Nullable&lt;Boolean&gt;, UInt32, UInt32[], UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_UInt32___System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a contracted edge including sequences.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint AddEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, float weight, bool ? direction, uint contractedId, uint[] sequence1, uint[] sequence2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p><p>The graph.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p><p>The start vertex.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p><p>The end vertex.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p><p>The weight.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p><p>The direction.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">contractedId</span>
+        <p><p>The vertex being shortcutted.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence1</span>
+        <p><p>The relevant sequence starting but not including vertex1; vertex1-&gt;(0-&gt;1...).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence2</span>
+        <p><p>The relevant sequence starting but not including vertex2; (0-&gt;1...)-&gt;vertex2.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddOrUpdateEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddOrUpdateEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Single_System_Single_System_UInt32___System_UInt32___" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddOrUpdateEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,System.Single,System.Nullable{System.Boolean},System.UInt32,System.Single,System.Single,System.UInt32[],System.UInt32[])"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Single_System_Single_System_UInt32___System_UInt32___" class="expander" data-toggle="collapse">AddOrUpdateEdge(DirectedDynamicGraph, UInt32, UInt32, Single, Nullable&lt;Boolean&gt;, UInt32, Single, Single, UInt32[], UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Single_System_Single_System_UInt32___System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Add or update edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOrUpdateEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, float weight, bool ? direction, uint contractedId, float distance, float time, uint[] s1, uint[] s2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">contractedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">s1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">s2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddOrUpdateEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddOrUpdateEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_UInt32___System_UInt32___" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.AddOrUpdateEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,System.Single,System.Nullable{System.Boolean},System.UInt32,System.UInt32[],System.UInt32[])"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_UInt32___System_UInt32___" class="expander" data-toggle="collapse">AddOrUpdateEdge(DirectedDynamicGraph, UInt32, UInt32, Single, Nullable&lt;Boolean&gt;, UInt32, UInt32[], UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_AddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_UInt32___System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Add or update edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOrUpdateEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, float weight, bool ? direction, uint contractedId, uint[] s1, uint[] s2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">contractedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">s1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">s2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_BuildPath_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.BuildPath*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_BuildPath_DirectedDynamicGraph_System_UInt32___System_Boolean_System_Boolean_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.BuildPath(DirectedDynamicGraph,System.UInt32[],System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_BuildPath_DirectedDynamicGraph_System_UInt32___System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">BuildPath(DirectedDynamicGraph, UInt32[], Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_BuildPath_DirectedDynamicGraph_System_UInt32___System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a path along the sequence of vertices that can be followed using original edges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;float&gt; BuildPath(this DirectedDynamicGraph graph, uint[] originalPath, bool reverse = false, bool pathIsBackwards = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p><p>The graph.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">originalPath</span>
+        <p><p>The sequence.&quot;</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">reverse</span>
+        <p><p>The sequence has to be used in reverse, for performance reasons to avoid creating another array.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">pathIsBackwards</span>
+        <p><p>When the resulting path is a backwards path agains the direction of the direction flags.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Algorithms.EdgePath-1.html">EdgePath</a>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_BuildPath_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.BuildPath*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_BuildPath_DirectedDynamicGraph_EdgeEnumerator_System_UInt32___System_Boolean_System_Boolean_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.BuildPath(DirectedDynamicGraph.EdgeEnumerator,System.UInt32[],System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_BuildPath_DirectedDynamicGraph_EdgeEnumerator_System_UInt32___System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">BuildPath(DirectedDynamicGraph.EdgeEnumerator, UInt32[], Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_BuildPath_DirectedDynamicGraph_EdgeEnumerator_System_UInt32___System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a path along the sequence of vertices that can be followed using original edges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;float&gt; BuildPath(this DirectedDynamicGraph.EdgeEnumerator enumerator, uint[] originalPath, bool reverse = false, bool pathIsBackwards = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p><p>The enumerator.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">originalPath</span>
+        <p><p>The sequence.&quot;</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">reverse</span>
+        <p><p>The sequence has to be used in reverse, for performance reasons to avoid creating another array.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">pathIsBackwards</span>
+        <p><p>When the resulting path is a backwards path agains the direction of the direction flags.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Algorithms.EdgePath-1.html">EdgePath</a>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_Direction_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.Direction*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_Direction_DirectedDynamicGraph_EdgeEnumerator_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.Direction(DirectedDynamicGraph.EdgeEnumerator)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_Direction_DirectedDynamicGraph_EdgeEnumerator_" class="expander" data-toggle="collapse">Direction(DirectedDynamicGraph.EdgeEnumerator)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_Direction_DirectedDynamicGraph_EdgeEnumerator_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ? Direction(this DirectedDynamicGraph.EdgeEnumerator enumerator)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_ExpandEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.ExpandEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_ExpandEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_List_System_UInt32__System_Boolean_System_Boolean_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.ExpandEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,List{System.UInt32},System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_ExpandEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_List_System_UInt32__System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">ExpandEdge(DirectedDynamicGraph, UInt32, UInt32, List&lt;UInt32&gt;, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_ExpandEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_List_System_UInt32__System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Expands a the shortest edge between the two given vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExpandEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, List&lt;uint&gt; vertices, bool inverted, bool forward)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">vertices</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">inverted</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">forward</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetContracted_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetContracted*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetContracted_DirectedDynamicGraph_EdgeEnumerator_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetContracted(DirectedDynamicGraph.EdgeEnumerator)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetContracted_DirectedDynamicGraph_EdgeEnumerator_" class="expander" data-toggle="collapse">GetContracted(DirectedDynamicGraph.EdgeEnumerator)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetContracted_DirectedDynamicGraph_EdgeEnumerator_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the contracted id, returns null if this edge is not a shortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint ? GetContracted(this DirectedDynamicGraph.EdgeEnumerator edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetContracted_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetContracted*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetContracted_DynamicEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetContracted(DynamicEdge)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetContracted_DynamicEdge_" class="expander" data-toggle="collapse">GetContracted(DynamicEdge)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetContracted_DynamicEdge_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the contracted id, returns null if this edge is not a shortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint ? GetContracted(this DynamicEdge edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DynamicEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetEdges_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetEdges*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetEdges_DirectedDynamicGraph_System_UInt32_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetEdges(DirectedDynamicGraph,System.UInt32)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetEdges_DirectedDynamicGraph_System_UInt32_" class="expander" data-toggle="collapse">GetEdges(DirectedDynamicGraph, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetEdges_DirectedDynamicGraph_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all edges starting at this edges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;DynamicEdge&gt; GetEdges(this DirectedDynamicGraph graph, uint vertex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">DynamicEdge</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginal_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetOriginal*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginal_DirectedDynamicGraph_System_UInt32_System_UInt32_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetOriginal(DirectedDynamicGraph,System.UInt32,System.UInt32)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginal_DirectedDynamicGraph_System_UInt32_System_UInt32_" class="expander" data-toggle="collapse">GetOriginal(DirectedDynamicGraph, UInt32, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginal_DirectedDynamicGraph_System_UInt32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the original edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicEdge GetOriginal(this DirectedDynamicGraph graph, uint vertex1, uint vertex2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicEdge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginal_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetOriginal*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginal_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetOriginal(DirectedDynamicGraph.EdgeEnumerator,System.UInt32,System.UInt32)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginal_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_" class="expander" data-toggle="collapse">GetOriginal(DirectedDynamicGraph.EdgeEnumerator, UInt32, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginal_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the original edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicEdge GetOriginal(this DirectedDynamicGraph.EdgeEnumerator enumerator, uint vertex1, uint vertex2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicEdge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginalWeight_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetOriginalWeight*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginalWeight_DirectedDynamicGraph_System_UInt32_System_UInt32_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetOriginalWeight(DirectedDynamicGraph,System.UInt32,System.UInt32)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginalWeight_DirectedDynamicGraph_System_UInt32_System_UInt32_" class="expander" data-toggle="collapse">GetOriginalWeight(DirectedDynamicGraph, UInt32, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginalWeight_DirectedDynamicGraph_System_UInt32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the best original weight between the two given vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetOriginalWeight(this DirectedDynamicGraph graph, uint vertex1, uint vertex2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginalWeight_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetOriginalWeight*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginalWeight_DirectedDynamicGraph_System_UInt32___" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetOriginalWeight(DirectedDynamicGraph,System.UInt32[])"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginalWeight_DirectedDynamicGraph_System_UInt32___" class="expander" data-toggle="collapse">GetOriginalWeight(DirectedDynamicGraph, UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetOriginalWeight_DirectedDynamicGraph_System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the weight for the given original sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetOriginalWeight(this DirectedDynamicGraph graph, uint[] sequence)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence1*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DirectedDynamicGraph_EdgeEnumerator_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence1(DirectedDynamicGraph.EdgeEnumerator)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DirectedDynamicGraph_EdgeEnumerator_" class="expander" data-toggle="collapse">GetSequence1(DirectedDynamicGraph.EdgeEnumerator)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DirectedDynamicGraph_EdgeEnumerator_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the sequence at the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] GetSequence1(this DirectedDynamicGraph.EdgeEnumerator edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence1*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DirectedDynamicGraph_EdgeEnumerator_System_UInt32____" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence1(DirectedDynamicGraph.EdgeEnumerator,System.UInt32[]@)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DirectedDynamicGraph_EdgeEnumerator_System_UInt32____" class="expander" data-toggle="collapse">GetSequence1(DirectedDynamicGraph.EdgeEnumerator, ref UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DirectedDynamicGraph_EdgeEnumerator_System_UInt32____" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the sequence at the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetSequence1(this DirectedDynamicGraph.EdgeEnumerator edge, ref uint[] sequence1)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence1</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The number of elements in the array that represent the sequence.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence1*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DynamicEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence1(DynamicEdge)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DynamicEdge_" class="expander" data-toggle="collapse">GetSequence1(DynamicEdge)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence1_DynamicEdge_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the sequence at the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] GetSequence1(this DynamicEdge edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DynamicEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence2_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence2*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence2_DirectedDynamicGraph_EdgeEnumerator_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence2(DirectedDynamicGraph.EdgeEnumerator)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence2_DirectedDynamicGraph_EdgeEnumerator_" class="expander" data-toggle="collapse">GetSequence2(DirectedDynamicGraph.EdgeEnumerator)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence2_DirectedDynamicGraph_EdgeEnumerator_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the sequence at the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] GetSequence2(this DirectedDynamicGraph.EdgeEnumerator edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence2_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence2*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence2_DynamicEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetSequence2(DynamicEdge)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence2_DynamicEdge_" class="expander" data-toggle="collapse">GetSequence2(DynamicEdge)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetSequence2_DynamicEdge_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the sequence at the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] GetSequence2(this DynamicEdge edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DynamicEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetShortestEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetShortestEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetShortestEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_Func_System_UInt32___System_Nullable_System_Single___" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.GetShortestEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,Func{System.UInt32[],System.Nullable{System.Single}})"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetShortestEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_Func_System_UInt32___System_Nullable_System_Single___" class="expander" data-toggle="collapse">GetShortestEdge(DirectedDynamicGraph, UInt32, UInt32, Func&lt;UInt32[], Nullable&lt;Single&gt;&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_GetShortestEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_Func_System_UInt32___System_Nullable_System_Single___" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the shortest edge between two vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicEdge GetShortestEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, Func&lt;uint[], float ? &gt; getWeight)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt32</span>[], <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;&gt;</span>
+        <span class="parametername">getWeight</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicEdge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.IdDirected*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_DirectedDynamicGraph_EdgeEnumerator_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.IdDirected(DirectedDynamicGraph.EdgeEnumerator)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_DirectedDynamicGraph_EdgeEnumerator_" class="expander" data-toggle="collapse">IdDirected(DirectedDynamicGraph.EdgeEnumerator)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_DirectedDynamicGraph_EdgeEnumerator_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns a directed version of the edge-id. Smaller than 0 if inverted, as-is if not inverted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long IdDirected(this DirectedDynamicGraph.EdgeEnumerator enumerator)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_DirectedDynamicGraph_EdgeEnumerator__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The relationship between a regular edge id and a directed edge id:</p>
+<ul>
+<li>0 -&gt; 1 forward, -1 backward.</li>
+<li>all other id&apos;s are offset by 1 and postive when forward, negative when backward.</li>
+</ul>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.IdDirected*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_DynamicEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.IdDirected(DynamicEdge)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_DynamicEdge_" class="expander" data-toggle="collapse">IdDirected(DynamicEdge)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_DynamicEdge_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns a directed version of the edge-id. Smaller than 0 if inverted, as-is if not inverted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long IdDirected(this DynamicEdge edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DynamicEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IdDirected_DynamicEdge__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The relationship between a regular edge id and a directed edge id:</p>
+<ul>
+<li>0 -&gt; 1 forward, -1 backward.</li>
+<li>all other id&apos;s are offset by 1 and postive when forward, negative when backward.</li>
+</ul>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IsOriginal_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.IsOriginal*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IsOriginal_DirectedDynamicGraph_EdgeEnumerator_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.IsOriginal(DirectedDynamicGraph.EdgeEnumerator)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IsOriginal_DirectedDynamicGraph_EdgeEnumerator_" class="expander" data-toggle="collapse">IsOriginal(DirectedDynamicGraph.EdgeEnumerator)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IsOriginal_DirectedDynamicGraph_EdgeEnumerator_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this edge is an original edge, not a shortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOriginal(this DirectedDynamicGraph.EdgeEnumerator edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IsOriginal_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.IsOriginal*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IsOriginal_DynamicEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.IsOriginal(DynamicEdge)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IsOriginal_DynamicEdge_" class="expander" data-toggle="collapse">IsOriginal(DynamicEdge)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_IsOriginal_DynamicEdge_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this edge is an original edge, not a shortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOriginal(this DynamicEdge edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DynamicEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.MoveToEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToEdge_DirectedDynamicGraph_EdgeEnumerator_System_Int64_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.MoveToEdge(DirectedDynamicGraph.EdgeEnumerator,System.Int64)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToEdge_DirectedDynamicGraph_EdgeEnumerator_System_Int64_" class="expander" data-toggle="collapse">MoveToEdge(DirectedDynamicGraph.EdgeEnumerator, Int64)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToEdge_DirectedDynamicGraph_EdgeEnumerator_System_Int64_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves to the given directed edge-id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveToEdge(this DirectedDynamicGraph.EdgeEnumerator enumerator, long directedEdgeId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">directedEdgeId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.MoveToEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToEdge__1_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_System_UInt32___Itinero_Algorithms_Weights_WeightHandler___0__System_Boolean___0__" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.MoveToEdge``1(DirectedDynamicGraph.EdgeEnumerator,System.UInt32,System.UInt32,System.UInt32[],Itinero.Algorithms.Weights.WeightHandler{``0},System.Boolean,``0@)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToEdge__1_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_System_UInt32___Itinero_Algorithms_Weights_WeightHandler___0__System_Boolean___0__" class="expander" data-toggle="collapse">MoveToEdge&lt;T&gt;(DirectedDynamicGraph.EdgeEnumerator, UInt32, UInt32, UInt32[], WeightHandler&lt;T&gt;, Boolean, out T)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToEdge__1_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_System_UInt32___Itinero_Algorithms_Weights_WeightHandler___0__System_Boolean___0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves this enumerator to an edge (vertex1-&gt;vertex2) that has an end sequence that matches the given sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MoveToEdge&lt;T&gt;(this DirectedDynamicGraph.EdgeEnumerator enumerator, uint vertex1, uint vertex2, uint[] sequence2, WeightHandler&lt;T&gt; weightHandler, bool direction, out T weight)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">sequence2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Algorithms.Weights.WeightHandler-1.html">WeightHandler</a>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToOriginal_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.MoveToOriginal*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToOriginal_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.MoveToOriginal(DirectedDynamicGraph.EdgeEnumerator,System.UInt32,System.UInt32)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToOriginal_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_" class="expander" data-toggle="collapse">MoveToOriginal(DirectedDynamicGraph.EdgeEnumerator, UInt32, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToOriginal_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the enumerator to the edge representing the original edge between the two given vertices that can form a path from vertex1 -&gt; vertex2. When returned true, the edge is vertex1 -&gt; vertex2 when false vertex2 -&gt; vertex1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MoveToOriginal(this DirectedDynamicGraph.EdgeEnumerator enumerator, uint vertex1, uint vertex2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToTargetVertex_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.MoveToTargetVertex*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToTargetVertex_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.MoveToTargetVertex(DirectedDynamicGraph.EdgeEnumerator,System.UInt32)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToTargetVertex_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_" class="expander" data-toggle="collapse">MoveToTargetVertex(DirectedDynamicGraph.EdgeEnumerator, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_MoveToTargetVertex_DirectedDynamicGraph_EdgeEnumerator_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the enumerator to the target vertex of the given edge id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MoveToTargetVertex(this DirectedDynamicGraph.EdgeEnumerator enumerator, uint edgeId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">edgeId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_TryAddOrUpdateEdge_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.TryAddOrUpdateEdge*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_TryAddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Int32__System_Int32__" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.TryAddOrUpdateEdge(DirectedDynamicGraph,System.UInt32,System.UInt32,System.Single,System.Nullable{System.Boolean},System.UInt32,System.Int32@,System.Int32@)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_TryAddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Int32__System_Int32__" class="expander" data-toggle="collapse">TryAddOrUpdateEdge(DirectedDynamicGraph, UInt32, UInt32, Single, Nullable&lt;Boolean&gt;, UInt32, out Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_TryAddOrUpdateEdge_DirectedDynamicGraph_System_UInt32_System_UInt32_System_Single_System_Nullable_System_Boolean__System_UInt32_System_Int32__System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries adding or updating an edge and returns #added and #removed edges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TryAddOrUpdateEdge(this DirectedDynamicGraph graph, uint vertex1, uint vertex2, float weight, bool ? direction, uint contractedId, out int added, out int removed)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">contractedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">added</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">removed</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_Weight_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.Weight*"></a>
+  
+  <h4 id="Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_Weight_DirectedDynamicGraph_EdgeEnumerator_" data-uid="Itinero.Algorithms.Contracted.EdgeBased.DirectedDynamicGraphExtensions.Weight(DirectedDynamicGraph.EdgeEnumerator)"><a href="#collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_Weight_DirectedDynamicGraph_EdgeEnumerator_" class="expander" data-toggle="collapse">Weight(DirectedDynamicGraph.EdgeEnumerator)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Contracted_EdgeBased_DirectedDynamicGraphExtensions_Weight_DirectedDynamicGraph_EdgeEnumerator_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the weight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Weight(this DirectedDynamicGraph.EdgeEnumerator enumerator)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedDynamicGraph.EdgeEnumerator</span></span>
+        <span class="parametername">enumerator</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

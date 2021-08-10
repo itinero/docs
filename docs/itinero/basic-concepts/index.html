@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Basic Concepts | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Basic Concepts | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="basic-concepts">
+<h1 id="basic-concepts">Basic Concepts</h1>
+
+<p>If you want to start using Itinero as a library it&#39;s crucial to understand it&#39;s basic concepts. The most important are <a class="xref" href="routerdb.html">RouterDb</a>, <a class="xref" href="router.html">Router</a>, <a class="xref" href="profiles/index.html">Profile</a> and <a class="xref" href="routerpoint.html">RouterPoint</a>:</p>
+<ul>
+<li><a class="xref" href="routerdb.html">RouterDb</a>: Contains <strong>the routing network</strong>, all meta-data, restrictions and so on.</li>
+<li><a class="xref" href="profiles/index.html">Profile</a>: Defines <strong>vehicles and their behaviour</strong>.</li>
+<li><a class="xref" href="routerpoint.html">RouterPoint</a>: A <strong>location on the routing network</strong> to use as a start or endpoint of a route.</li>
+<li><a class="xref" href="router.html">Router</a>: The router is <strong>where you ask for routes</strong>.</li>
+</ul>
+<p>How these tie together:</p>
+<p>The <a class="xref" href="router.html">Router</a> uses the <a class="xref" href="routerdb.html">RouterDb</a> data to calculate routes for a given <a class="xref" href="profiles/index.html">Profile</a>. It starts and ends the <a class="xref" href="route.html">Route</a> at a <a class="xref" href="routerpoint.html">RouterPoint</a>.</p>
+<h2 id="example">Example</h2>
+<p>You can see all of these in action in the following example:</p>
+<pre><code class="lang-csharp">// using Itinero;
+// using Itinero.IO.Osm;
+// using Itinero.Osm.Vehicles;
+
+// load some routing data and build a routing network.
+var routerDb = new RouterDb();
+using (var stream = new FileInfo(@&quot;/path/to/some/osmfile.osm.pbf&quot;).OpenRead())
+{
+    routerDb.LoadOsmData(stream, Vehicle.Car); // create the network for cars only.
+}
+
+// create a router.
+var router = new Router(routerDb);
+
+// get a profile.
+var profile = Vehicle.Car.Fastest(); // the default OSM car profile.
+
+// create a routerpoint from a location.
+// snaps the given location to the nearest routable edge.
+var start = router.Resolve(profile, 51.26797020271655f, 4.801905155181885f);
+var end = router.Resolve(profile, 51.26797020271655f, 4.801905155181885f);
+
+// calculate a route.
+var route = router.Calculate(profile, start, end);
+</code></pre><p>So this is happening in the sample, in the same order:</p>
+<ol>
+<li>Building a routing network from raw OSM-data.</li>
+<li>Define a profile.</li>
+<li>Snap the start and end locations of the route to het network.</li>
+<li>Ask the router for a route.</li>
+</ol>
+<h2 id="what-to-read-next">What to read next?</h2>
+<p>Learn more about the individual concepts, starting with the first step, the <a class="xref" href="routerdb.html">RouterDb</a>.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

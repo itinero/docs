@@ -1,0 +1,1346 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SortedSet&lt;T&gt;
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SortedSet&lt;T&gt;
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Algorithms.Collections.SortedSet`1">
+  <h1 id="Itinero_Algorithms_Collections_SortedSet_1" data-uid="Itinero.Algorithms.Collections.SortedSet`1">Class SortedSet&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a strongly typed list of objects that will be sorted using the IComparable interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SortedSet&lt;T&gt;</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Algorithms_Collections_SortedSet_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SortedSet&lt;T&gt; : ISet&lt;T&gt;, ICollection&lt;T&gt;, IEnumerable&lt;T&gt;, ICollection, IEnumerable</code></pre>
+  </div>
+  
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The type of the elements in the list.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 id="Itinero_Algorithms_Collections_SortedSet_1_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Re-implemented for compatibility with Windows Phone/Silverlight.</p>
+</div>
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1__ctor_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.#ctor*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1__ctor" data-uid="Itinero.Algorithms.Collections.SortedSet`1.#ctor"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1__ctor" class="expander" data-toggle="collapse">SortedSet()</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1__ctor" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new sorted set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedSet()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1__ctor_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.#ctor*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1__ctor_IComparer__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.#ctor(IComparer{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1__ctor_IComparer__0__" class="expander" data-toggle="collapse">SortedSet(IComparer&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1__ctor_IComparer__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new sorted set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedSet(IComparer&lt;T&gt; comparer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IComparer</span>&lt;T&gt;</span>
+        <span class="parametername">comparer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1__ctor_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.#ctor*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1__ctor_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.#ctor(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1__ctor_IEnumerable__0__" class="expander" data-toggle="collapse">SortedSet(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1__ctor_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new sorted set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedSet(IEnumerable&lt;T&gt; enumerable)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">enumerable</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1__ctor_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.#ctor*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1__ctor_IEnumerable__0__IComparer__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.#ctor(IEnumerable{`0},IComparer{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1__ctor_IEnumerable__0__IComparer__0__" class="expander" data-toggle="collapse">SortedSet(IEnumerable&lt;T&gt;, IComparer&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1__ctor_IEnumerable__0__IComparer__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new sorted set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedSet(IEnumerable&lt;T&gt; enumerable, IComparer&lt;T&gt; comparer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">enumerable</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IComparer</span>&lt;T&gt;</span>
+        <span class="parametername">comparer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Comparer_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Comparer*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Comparer" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Comparer"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Comparer" class="expander" data-toggle="collapse">Comparer</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Comparer" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the System.Collections.Generic.IEqualityComparer object that is used
+to determine equality for the values in the System.Collections.Generic.SortedSet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IComparer&lt;T&gt; Comparer { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IComparer</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Count_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Count*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Count" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Count"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Count" class="expander" data-toggle="collapse">Count</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Count" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the number of elements contained in the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_IsReadOnly_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsReadOnly*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_IsReadOnly" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsReadOnly"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsReadOnly" class="expander" data-toggle="collapse">IsReadOnly</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsReadOnly" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the SortedSet is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_IsSynchronized_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsSynchronized*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_IsSynchronized" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsSynchronized"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsSynchronized" class="expander" data-toggle="collapse">IsSynchronized</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsSynchronized" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether access to the System.Collections.ICollection is synchronized (thread safe).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynchronized { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Max_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Max*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Max" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Max"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Max" class="expander" data-toggle="collapse">Max</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Max" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the maximum value in the System.Collections.Generic.SortedSet, as
+defined by the comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Max { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Min_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Min*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Min" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Min"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Min" class="expander" data-toggle="collapse">Min</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Min" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the minimum value in the System.Collections.Generic.SortedSet, as
+defined by the comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Min { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_SyncRoot_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.SyncRoot*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_SyncRoot" data-uid="Itinero.Algorithms.Collections.SortedSet`1.SyncRoot"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_SyncRoot" class="expander" data-toggle="collapse">SyncRoot</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_SyncRoot" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets an object that can be used to synchronize access to the System.Collections.ICollection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object SyncRoot { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Add_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Add*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Add__0_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Add(`0)"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Add__0_" class="expander" data-toggle="collapse">Add(T)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Add__0_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds an item to the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add(T item)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">item</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Clear_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Clear*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Clear" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Clear"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Clear" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes all items from the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Contains_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Contains*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Contains__0_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Contains(`0)"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Contains__0_" class="expander" data-toggle="collapse">Contains(T)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Contains__0_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a> contains
+a specific value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">item</span>
+        <p><p>The object to locate in the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>true if item is found in the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>; otherwise,
+    false.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_CopyTo_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.CopyTo*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_CopyTo__0___System_Int32_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.CopyTo(`0[],System.Int32)"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_CopyTo__0___System_Int32_" class="expander" data-toggle="collapse">CopyTo(T[], Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_CopyTo__0___System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies the elements of the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a> to an
+System.Array, starting at a particular System.Array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right">T[]</span>
+        <span class="parametername">array</span>
+        <p><p>The one-dimensional System.Array that is the destination of the elements
+    copied from <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>. The System.Array must
+    have zero-based indexing.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">arrayIndex</span>
+        <p><p>The zero-based index in array at which copying begins.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_CopyTo_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.CopyTo*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_CopyTo_Array_System_Int32_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.CopyTo(Array,System.Int32)"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_CopyTo_Array_System_Int32_" class="expander" data-toggle="collapse">CopyTo(Array, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_CopyTo_Array_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies all objects to the given array starting at the given location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(Array array, int index)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Array</span></span>
+        <span class="parametername">array</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_ExceptWith_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.ExceptWith*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_ExceptWith_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.ExceptWith(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_ExceptWith_IEnumerable__0__" class="expander" data-toggle="collapse">ExceptWith(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_ExceptWith_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes all elements in the specified collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExceptWith(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_GetEnumerator_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.GetEnumerator*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_GetEnumerator" data-uid="Itinero.Algorithms.Collections.SortedSet`1.GetEnumerator"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_GetEnumerator" class="expander" data-toggle="collapse">GetEnumerator()</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_GetEnumerator" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerator</span>&lt;T&gt;
+        <p><p>A System.Collections.Generic.IEnumerator that can be used to iterate through
+    the collection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_IntersectWith_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IntersectWith*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_IntersectWith_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IntersectWith(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_IntersectWith_IEnumerable__0__" class="expander" data-toggle="collapse">IntersectWith(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_IntersectWith_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Keeps only the elements that are in the given collection and in this set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IntersectWith(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_IsProperSubsetOf_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsProperSubsetOf*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_IsProperSubsetOf_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsProperSubsetOf(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsProperSubsetOf_IEnumerable__0__" class="expander" data-toggle="collapse">IsProperSubsetOf(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsProperSubsetOf_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if all elements in the given collection are contained in this set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProperSubsetOf(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_IsProperSupersetOf_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsProperSupersetOf*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_IsProperSupersetOf_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsProperSupersetOf(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsProperSupersetOf_IEnumerable__0__" class="expander" data-toggle="collapse">IsProperSupersetOf(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsProperSupersetOf_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if all elements in this set are also in the given collection. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProperSupersetOf(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_IsSubsetOf_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsSubsetOf*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_IsSubsetOf_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsSubsetOf(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsSubsetOf_IEnumerable__0__" class="expander" data-toggle="collapse">IsSubsetOf(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsSubsetOf_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSubsetOf(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_IsSupersetOf_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsSupersetOf*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_IsSupersetOf_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.IsSupersetOf(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsSupersetOf_IEnumerable__0__" class="expander" data-toggle="collapse">IsSupersetOf(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_IsSupersetOf_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSupersetOf(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Overlaps_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Overlaps*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Overlaps_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Overlaps(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Overlaps_IEnumerable__0__" class="expander" data-toggle="collapse">Overlaps(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Overlaps_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this collection and the other share at least one element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Overlaps(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_Remove_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Remove*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_Remove__0_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.Remove(`0)"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_Remove__0_" class="expander" data-toggle="collapse">Remove(T)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_Remove__0_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the first occurrence of a specific object from the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(T item)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">item</span>
+        <p><p>The object to remove from the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>true if item was successfully removed from the <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>;
+    otherwise, false. This method also returns false if item is not found in
+    the original <a class="xref" href="Itinero.Algorithms.Collections.SortedSet-1.html">SortedSet&lt;T&gt;</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_SetEquals_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.SetEquals*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_SetEquals_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.SetEquals(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_SetEquals_IEnumerable__0__" class="expander" data-toggle="collapse">SetEquals(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_SetEquals_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the two sets contain the same elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetEquals(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_SymmetricExceptWith_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.SymmetricExceptWith*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_SymmetricExceptWith_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.SymmetricExceptWith(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_SymmetricExceptWith_IEnumerable__0__" class="expander" data-toggle="collapse">SymmetricExceptWith(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_SymmetricExceptWith_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Keeps only items that are in one set or the other but not in both.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SymmetricExceptWith(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_UnionWith_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.UnionWith*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_UnionWith_IEnumerable__0__" data-uid="Itinero.Algorithms.Collections.SortedSet`1.UnionWith(IEnumerable{`0})"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_UnionWith_IEnumerable__0__" class="expander" data-toggle="collapse">UnionWith(IEnumerable&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_UnionWith_IEnumerable__0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds all items in other too.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnionWith(IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Itinero_Algorithms_Collections_SortedSet_1_System_Collections_IEnumerable_GetEnumerator_" data-uid="Itinero.Algorithms.Collections.SortedSet`1.System#Collections#IEnumerable#GetEnumerator*"></a>
+  
+  <h4 id="Itinero_Algorithms_Collections_SortedSet_1_System_Collections_IEnumerable_GetEnumerator" data-uid="Itinero.Algorithms.Collections.SortedSet`1.System#Collections#IEnumerable#GetEnumerator"><a href="#collapsible-Itinero_Algorithms_Collections_SortedSet_1_System_Collections_IEnumerable_GetEnumerator" class="expander" data-toggle="collapse">IEnumerable.GetEnumerator()</a></h4>
+  
+  <div id="collapsible-Itinero_Algorithms_Collections_SortedSet_1_System_Collections_IEnumerable_GetEnumerator" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.IEnumerator</span>
+        <p><p>An System.Collections.IEnumerator object that can be used to iterate through
+    the collection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

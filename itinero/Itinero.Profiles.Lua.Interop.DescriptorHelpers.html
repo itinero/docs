@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DescriptorHelpers
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DescriptorHelpers
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers">
+  <h1 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers">Class DescriptorHelpers
+  </h1>
+  <div class="markdown level0 summary"><p>Helper extension methods used to simplify some parts of userdata descriptor implementations</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DescriptorHelpers</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DescriptorHelpers</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_Camelify_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.Camelify*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_Camelify_System_String_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.Camelify(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_Camelify_System_String_" class="expander" data-toggle="collapse">Camelify(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_Camelify_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the specified name from underscore_case to camelCase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Camelify(string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetAllImplementedTypes_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetAllImplementedTypes*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetAllImplementedTypes_Type_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetAllImplementedTypes(Type)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetAllImplementedTypes_Type_" class="expander" data-toggle="collapse">GetAllImplementedTypes(Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetAllImplementedTypes_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all implemented types by a given type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Type&gt; GetAllImplementedTypes(this Type t)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">t</span>
+        <p><p>The t.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">Type</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetClrVisibility*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_FieldInfo_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetClrVisibility(FieldInfo)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_FieldInfo_" class="expander" data-toggle="collapse">GetClrVisibility(FieldInfo)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_FieldInfo_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a string representing visibility of the given member type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetClrVisibility(this FieldInfo info)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">FieldInfo</span></span>
+        <span class="parametername">info</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetClrVisibility*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_MethodBase_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetClrVisibility(MethodBase)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_MethodBase_" class="expander" data-toggle="collapse">GetClrVisibility(MethodBase)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_MethodBase_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a string representing visibility of the given member type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetClrVisibility(this MethodBase info)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">MethodBase</span></span>
+        <span class="parametername">info</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetClrVisibility*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_PropertyInfo_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetClrVisibility(PropertyInfo)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_PropertyInfo_" class="expander" data-toggle="collapse">GetClrVisibility(PropertyInfo)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_PropertyInfo_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a string representing visibility of the given member type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetClrVisibility(this PropertyInfo info)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">PropertyInfo</span></span>
+        <span class="parametername">info</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetClrVisibility*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_Type_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetClrVisibility(Type)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_Type_" class="expander" data-toggle="collapse">GetClrVisibility(Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetClrVisibility_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the visibility of the type as a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetClrVisibility(this Type type)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetConversionMethodName_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetConversionMethodName*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetConversionMethodName_Type_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetConversionMethodName(Type)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetConversionMethodName_Type_" class="expander" data-toggle="collapse">GetConversionMethodName(Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetConversionMethodName_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the name of a conversion method to be exposed to Lua scripts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetConversionMethodName(this Type type)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p><p>The type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetMetaNamesFromAttributes_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetMetaNamesFromAttributes*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetMetaNamesFromAttributes_MethodInfo_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetMetaNamesFromAttributes(MethodInfo)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetMetaNamesFromAttributes_MethodInfo_" class="expander" data-toggle="collapse">GetMetaNamesFromAttributes(MethodInfo)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetMetaNamesFromAttributes_MethodInfo_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the list of metamethod names from attributes - in practice the list of metamethods declared through
+<a class="xref" href="Itinero.Profiles.Lua.MoonSharpUserDataMetamethodAttribute.html">MoonSharpUserDataMetamethodAttribute</a> .</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; GetMetaNamesFromAttributes(this MethodInfo mi)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">MethodInfo</span></span>
+        <span class="parametername">mi</span>
+        <p><p>The mi.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetVisibilityFromAttributes_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetVisibilityFromAttributes*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetVisibilityFromAttributes_MemberInfo_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.GetVisibilityFromAttributes(MemberInfo)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetVisibilityFromAttributes_MemberInfo_" class="expander" data-toggle="collapse">GetVisibilityFromAttributes(MemberInfo)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_GetVisibilityFromAttributes_MemberInfo_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether a
+<a class="xref" href="Itinero.Profiles.Lua.Interop.MoonSharpVisibleAttribute.html">MoonSharpVisibleAttribute</a> or a <a class="xref" href="Itinero.Profiles.Lua.MoonSharpHiddenAttribute.html">MoonSharpHiddenAttribute</a>  is changing visibility of a member
+to scripts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ? GetVisibilityFromAttributes(this MemberInfo mi)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">MemberInfo</span></span>
+        <span class="parametername">mi</span>
+        <p><p>The member to check.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;
+        <p><p><code>true</code> if visibility is forced visible,
+<code>false</code> if visibility is forced hidden or the specified MemberInfo is null,
+<code>if no attribute was found</code></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>If both MoonSharpHiddenAttribute and MoonSharpVisibleAttribute are specified and they convey different messages.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsDelegateType_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.IsDelegateType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsDelegateType_Type_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.IsDelegateType(Type)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsDelegateType_Type_" class="expander" data-toggle="collapse">IsDelegateType(Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsDelegateType_Type_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDelegateType(this Type t)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">t</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsPropertyInfoPublic_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.IsPropertyInfoPublic*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsPropertyInfoPublic_PropertyInfo_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.IsPropertyInfoPublic(PropertyInfo)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsPropertyInfoPublic_PropertyInfo_" class="expander" data-toggle="collapse">IsPropertyInfoPublic(PropertyInfo)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsPropertyInfoPublic_PropertyInfo_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the specified PropertyInfo is visible publicly (either the getter or the setter is public).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPropertyInfoPublic(this PropertyInfo pi)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">PropertyInfo</span></span>
+        <span class="parametername">pi</span>
+        <p><p>The PropertyInfo.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsValidSimpleIdentifier_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.IsValidSimpleIdentifier*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsValidSimpleIdentifier_System_String_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.IsValidSimpleIdentifier(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsValidSimpleIdentifier_System_String_" class="expander" data-toggle="collapse">IsValidSimpleIdentifier(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_IsValidSimpleIdentifier_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the string is a valid simple identifier (starts with letter or underscore
+and contains only letters, digits and underscores).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidSimpleIdentifier(string str)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">str</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_SafeGetTypes_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.SafeGetTypes*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_SafeGetTypes_Assembly_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.SafeGetTypes(Assembly)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_SafeGetTypes_Assembly_" class="expander" data-toggle="collapse">SafeGetTypes(Assembly)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_SafeGetTypes_Assembly_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the Types implemented in the assembly, catching the ReflectionTypeLoadException just in case..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type[] SafeGetTypes(this Assembly asm)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Assembly</span></span>
+        <span class="parametername">asm</span>
+        <p><p>The assebly</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Type</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_ToValidSimpleIdentifier_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.ToValidSimpleIdentifier*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_ToValidSimpleIdentifier_System_String_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.ToValidSimpleIdentifier(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_ToValidSimpleIdentifier_System_String_" class="expander" data-toggle="collapse">ToValidSimpleIdentifier(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_ToValidSimpleIdentifier_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the string to a valid simple identifier (starts with letter or underscore
+and contains only letters, digits and underscores).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToValidSimpleIdentifier(string str)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">str</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_UpperFirstLetter_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.UpperFirstLetter*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_DescriptorHelpers_UpperFirstLetter_System_String_" data-uid="Itinero.Profiles.Lua.Interop.DescriptorHelpers.UpperFirstLetter(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_UpperFirstLetter_System_String_" class="expander" data-toggle="collapse">UpperFirstLetter(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_DescriptorHelpers_UpperFirstLetter_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the specified name to one with an uppercase first letter (something to Something).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string UpperFirstLetter(string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1306 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RouterExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RouterExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Optimization.RouterExtensions">
+  <h1 id="Itinero_Optimization_RouterExtensions" data-uid="Itinero.Optimization.RouterExtensions">Class RouterExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Optimization convenience extension methods for the router class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RouterExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Optimization_RouterExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RouterExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_CalculateDirected_" data-uid="Itinero.Optimization.RouterExtensions.CalculateDirected*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_CalculateDirected_Itinero_RouterBase_Profile_Coordinate___System_Single_Tour_" data-uid="Itinero.Optimization.RouterExtensions.CalculateDirected(Itinero.RouterBase,Profile,Coordinate[],System.Single,Tour)"><a href="#collapsible-Itinero_Optimization_RouterExtensions_CalculateDirected_Itinero_RouterBase_Profile_Coordinate___System_Single_Tour_" class="expander" data-toggle="collapse">CalculateDirected(RouterBase, Profile, Coordinate[], Single, Tour)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_CalculateDirected_Itinero_RouterBase_Profile_Coordinate___System_Single_Tour_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates a directed sequence of the given sequence of locations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route CalculateDirected(this RouterBase router, Profile profile, Coordinate[] locations, float turnPenaltyInSeconds, Tour sequence)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">turnPenaltyInSeconds</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Tour</span></span>
+        <span class="parametername">sequence</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_CalculateSTSP_" data-uid="Itinero.Optimization.RouterExtensions.CalculateSTSP*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_CalculateSTSP_Itinero_RouterBase_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.CalculateSTSP(Itinero.RouterBase,Profile,Coordinate[],System.Single,System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_CalculateSTSP_Itinero_RouterBase_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">CalculateSTSP(RouterBase, Profile, Coordinate[], Single, Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_CalculateSTSP_Itinero_RouterBase_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates STSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route CalculateSTSP(this RouterBase router, Profile profile, Coordinate[] locations, float max, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">max</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_CalculateSTSPDirected_" data-uid="Itinero.Optimization.RouterExtensions.CalculateSTSPDirected*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_CalculateSTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Single_System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.CalculateSTSPDirected(Itinero.Router,Profile,Coordinate[],System.Single,System.Single,System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_CalculateSTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Single_System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">CalculateSTSPDirected(Router, Profile, Coordinate[], Single, Single, Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_CalculateSTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Single_System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates STSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route CalculateSTSPDirected(this Router router, Profile profile, Coordinate[] locations, float turnPenaltyInSeconds, float max, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Router.html">Router</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">turnPenaltyInSeconds</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">max</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_CalculateTSP_" data-uid="Itinero.Optimization.RouterExtensions.CalculateTSP*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_CalculateTSP_Itinero_RouterBase_Profile_Coordinate___System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.CalculateTSP(Itinero.RouterBase,Profile,Coordinate[],System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_CalculateTSP_Itinero_RouterBase_Profile_Coordinate___System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">CalculateTSP(RouterBase, Profile, Coordinate[], Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_CalculateTSP_Itinero_RouterBase_Profile_Coordinate___System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates TSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route CalculateTSP(this RouterBase router, Profile profile, Coordinate[] locations, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_CalculateTSPDirected_" data-uid="Itinero.Optimization.RouterExtensions.CalculateTSPDirected*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_CalculateTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.CalculateTSPDirected(Itinero.Router,Profile,Coordinate[],System.Single,System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_CalculateTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">CalculateTSPDirected(Router, Profile, Coordinate[], Single, Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_CalculateTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates TSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route CalculateTSPDirected(this Router router, Profile profile, Coordinate[] locations, float turnPenaltyInSeconds, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Router.html">Router</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">turnPenaltyInSeconds</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_CalculateTSPTW_" data-uid="Itinero.Optimization.RouterExtensions.CalculateTSPTW*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_CalculateTSPTW_Itinero_RouterBase_Profile_Coordinate___TimeWindow___System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.CalculateTSPTW(Itinero.RouterBase,Profile,Coordinate[],TimeWindow[],System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_CalculateTSPTW_Itinero_RouterBase_Profile_Coordinate___TimeWindow___System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">CalculateTSPTW(RouterBase, Profile, Coordinate[], TimeWindow[], Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_CalculateTSPTW_Itinero_RouterBase_Profile_Coordinate___TimeWindow___System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates TSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route CalculateTSPTW(this RouterBase router, Profile profile, Coordinate[] locations, TimeWindow[] windows, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TimeWindow</span>[]</span>
+        <span class="parametername">windows</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_CalculateTSPTWDirected_" data-uid="Itinero.Optimization.RouterExtensions.CalculateTSPTWDirected*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_CalculateTSPTWDirected_Itinero_Router_Profile_Coordinate___TimeWindow___System_Single_System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.CalculateTSPTWDirected(Itinero.Router,Profile,Coordinate[],TimeWindow[],System.Single,System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_CalculateTSPTWDirected_Itinero_Router_Profile_Coordinate___TimeWindow___System_Single_System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">CalculateTSPTWDirected(Router, Profile, Coordinate[], TimeWindow[], Single, Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_CalculateTSPTWDirected_Itinero_Router_Profile_Coordinate___TimeWindow___System_Single_System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates TSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route CalculateTSPTWDirected(this Router router, Profile profile, Coordinate[] locations, TimeWindow[] windows, float turnPenaltyInSeconds, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Router.html">Router</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TimeWindow</span>[]</span>
+        <span class="parametername">windows</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">turnPenaltyInSeconds</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_TryCalculateDirected_" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateDirected*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_TryCalculateDirected_Itinero_RouterBase_Profile_Coordinate___System_Single_Tour_" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateDirected(Itinero.RouterBase,Profile,Coordinate[],System.Single,Tour)"><a href="#collapsible-Itinero_Optimization_RouterExtensions_TryCalculateDirected_Itinero_RouterBase_Profile_Coordinate___System_Single_Tour_" class="expander" data-toggle="collapse">TryCalculateDirected(RouterBase, Profile, Coordinate[], Single, Tour)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_TryCalculateDirected_Itinero_RouterBase_Profile_Coordinate___System_Single_Tour_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates a directed sequence of the given sequence of locations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryCalculateDirected(this RouterBase router, Profile profile, Coordinate[] locations, float turnPenaltyInSeconds, Tour sequence)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">turnPenaltyInSeconds</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Tour</span></span>
+        <span class="parametername">sequence</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_TryCalculateSTSP_" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateSTSP*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_TryCalculateSTSP_Itinero_RouterBase_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateSTSP(Itinero.RouterBase,Profile,Coordinate[],System.Single,System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_TryCalculateSTSP_Itinero_RouterBase_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">TryCalculateSTSP(RouterBase, Profile, Coordinate[], Single, Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_TryCalculateSTSP_Itinero_RouterBase_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates STSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryCalculateSTSP(this RouterBase router, Profile profile, Coordinate[] locations, float max, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">max</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_TryCalculateSTSPDirected_" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateSTSPDirected*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_TryCalculateSTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Single_System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateSTSPDirected(Itinero.Router,Profile,Coordinate[],System.Single,System.Single,System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_TryCalculateSTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Single_System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">TryCalculateSTSPDirected(Router, Profile, Coordinate[], Single, Single, Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_TryCalculateSTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Single_System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates STSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryCalculateSTSPDirected(this Router router, Profile profile, Coordinate[] locations, float turnPenaltyInSeconds, float max, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Router.html">Router</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">turnPenaltyInSeconds</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">max</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_TryCalculateTSP_" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateTSP*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_TryCalculateTSP_Itinero_RouterBase_Profile_Coordinate___System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateTSP(Itinero.RouterBase,Profile,Coordinate[],System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_TryCalculateTSP_Itinero_RouterBase_Profile_Coordinate___System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">TryCalculateTSP(RouterBase, Profile, Coordinate[], Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_TryCalculateTSP_Itinero_RouterBase_Profile_Coordinate___System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates TSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryCalculateTSP(this RouterBase router, Profile profile, Coordinate[] locations, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_TryCalculateTSPDirected_" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateTSPDirected*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_TryCalculateTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateTSPDirected(Itinero.Router,Profile,Coordinate[],System.Single,System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_TryCalculateTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">TryCalculateTSPDirected(Router, Profile, Coordinate[], Single, Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_TryCalculateTSPDirected_Itinero_Router_Profile_Coordinate___System_Single_System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates TSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryCalculateTSPDirected(this Router router, Profile profile, Coordinate[] locations, float turnPenaltyInSeconds, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Router.html">Router</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">turnPenaltyInSeconds</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_TryCalculateTSPTW_" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateTSPTW*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_TryCalculateTSPTW_Itinero_RouterBase_Profile_Coordinate___TimeWindow___System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateTSPTW(Itinero.RouterBase,Profile,Coordinate[],TimeWindow[],System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_TryCalculateTSPTW_Itinero_RouterBase_Profile_Coordinate___TimeWindow___System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">TryCalculateTSPTW(RouterBase, Profile, Coordinate[], TimeWindow[], Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_TryCalculateTSPTW_Itinero_RouterBase_Profile_Coordinate___TimeWindow___System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates TSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryCalculateTSPTW(this RouterBase router, Profile profile, Coordinate[] locations, TimeWindow[] windows, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterBase.html">RouterBase</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TimeWindow</span>[]</span>
+        <span class="parametername">windows</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_RouterExtensions_TryCalculateTSPTWDirected_" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateTSPTWDirected*"></a>
+  
+  <h4 id="Itinero_Optimization_RouterExtensions_TryCalculateTSPTWDirected_Itinero_Router_Profile_Coordinate___TimeWindow___System_Single_System_Int32_System_Nullable_System_Int32__" data-uid="Itinero.Optimization.RouterExtensions.TryCalculateTSPTWDirected(Itinero.Router,Profile,Coordinate[],TimeWindow[],System.Single,System.Int32,System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_RouterExtensions_TryCalculateTSPTWDirected_Itinero_Router_Profile_Coordinate___TimeWindow___System_Single_System_Int32_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">TryCalculateTSPTWDirected(Router, Profile, Coordinate[], TimeWindow[], Single, Int32, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_RouterExtensions_TryCalculateTSPTWDirected_Itinero_Router_Profile_Coordinate___TimeWindow___System_Single_System_Int32_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates TSP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; TryCalculateTSPTWDirected(this Router router, Profile profile, Coordinate[] locations, TimeWindow[] windows, float turnPenaltyInSeconds, int first = 0, int ? last = default (int ? ))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Router.html">Router</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span>[]</span>
+        <span class="parametername">locations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TimeWindow</span>[]</span>
+        <span class="parametername">windows</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">turnPenaltyInSeconds</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

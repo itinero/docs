@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CustomConvertersCollection
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CustomConvertersCollection
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection">
+  <h1 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection">Class CustomConvertersCollection
+  </h1>
+  <div class="markdown level0 summary"><p>A collection of custom converters between MoonSharp types and CLR types.
+If a converter function is not specified or returns null, the standard conversion path applies.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CustomConvertersCollection</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CustomConvertersCollection</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_Clear_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.Clear*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_Clear" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.Clear"><a href="#collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_Clear" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes all converters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_GetClrToScriptCustomConversion_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.GetClrToScriptCustomConversion*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_GetClrToScriptCustomConversion_Type_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.GetClrToScriptCustomConversion(Type)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_GetClrToScriptCustomConversion_Type_" class="expander" data-toggle="collapse">GetClrToScriptCustomConversion(Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_GetClrToScriptCustomConversion_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a custom converter from a CLR data type, or null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;Script, object, DynValue&gt; GetClrToScriptCustomConversion(Type clrDataType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">clrDataType</span>
+        <p><p>Type of the color data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a>, <span class="xref">System.Object</span>, <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>&gt;
+        <p><p>The converter function, or null if not found</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_GetScriptToClrCustomConversion_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.GetScriptToClrCustomConversion*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_GetScriptToClrCustomConversion_Itinero_Profiles_Lua_DataType_Type_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.GetScriptToClrCustomConversion(Itinero.Profiles.Lua.DataType,Type)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_GetScriptToClrCustomConversion_Itinero_Profiles_Lua_DataType_Type_" class="expander" data-toggle="collapse">GetScriptToClrCustomConversion(DataType, Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_GetScriptToClrCustomConversion_Itinero_Profiles_Lua_DataType_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a custom converter from a script data type to a CLR data type, or null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;DynValue, object&gt; GetScriptToClrCustomConversion(DataType scriptDataType, Type clrDataType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">scriptDataType</span>
+        <p><p>The script data type</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">clrDataType</span>
+        <p><p>The CLR data type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>, <span class="xref">System.Object</span>&gt;
+        <p><p>The converter function, or null if not found</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetClrToScriptCustomConversion*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_Type_Func_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue__" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetClrToScriptCustomConversion(Type,Func{Itinero.Profiles.Lua.Script,System.Object,Itinero.Profiles.Lua.DynValue})"><a href="#collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_Type_Func_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue__" class="expander" data-toggle="collapse">SetClrToScriptCustomConversion(Type, Func&lt;Script, Object, DynValue&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_Type_Func_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue__" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets a custom converter from a CLR data type. Set null to remove a previous custom converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClrToScriptCustomConversion(Type clrDataType, Func&lt;Script, object, DynValue&gt; converter = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">clrDataType</span>
+        <p><p>The CLR data type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a>, <span class="xref">System.Object</span>, <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>&gt;</span>
+        <span class="parametername">converter</span>
+        <p><p>The converter, or null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetClrToScriptCustomConversion*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_Type_Func_System_Object_Itinero_Profiles_Lua_DynValue__" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetClrToScriptCustomConversion(Type,Func{System.Object,Itinero.Profiles.Lua.DynValue})"><a href="#collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_Type_Func_System_Object_Itinero_Profiles_Lua_DynValue__" class="expander" data-toggle="collapse">SetClrToScriptCustomConversion(Type, Func&lt;Object, DynValue&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_Type_Func_System_Object_Itinero_Profiles_Lua_DynValue__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClrToScriptCustomConversion(Type clrDataType, Func&lt;object, DynValue&gt; converter = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">clrDataType</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.Object</span>, <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>&gt;</span>
+        <span class="parametername">converter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetClrToScriptCustomConversion*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion__1_Func___0_Itinero_Profiles_Lua_DynValue__" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetClrToScriptCustomConversion``1(Func{``0,Itinero.Profiles.Lua.DynValue})"><a href="#collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion__1_Func___0_Itinero_Profiles_Lua_DynValue__" class="expander" data-toggle="collapse">SetClrToScriptCustomConversion&lt;T&gt;(Func&lt;T, DynValue&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion__1_Func___0_Itinero_Profiles_Lua_DynValue__" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets a custom converter from a CLR data type. Set null to remove a previous custom converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClrToScriptCustomConversion&lt;T&gt;(Func&lt;T, DynValue&gt; converter = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;T, <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>&gt;</span>
+        <span class="parametername">converter</span>
+        <p><p>The converter, or null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The CLR data type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetClrToScriptCustomConversion*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion__1_Func_Itinero_Profiles_Lua_Script___0_Itinero_Profiles_Lua_DynValue__" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetClrToScriptCustomConversion``1(Func{Itinero.Profiles.Lua.Script,``0,Itinero.Profiles.Lua.DynValue})"><a href="#collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion__1_Func_Itinero_Profiles_Lua_Script___0_Itinero_Profiles_Lua_DynValue__" class="expander" data-toggle="collapse">SetClrToScriptCustomConversion&lt;T&gt;(Func&lt;Script, T, DynValue&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetClrToScriptCustomConversion__1_Func_Itinero_Profiles_Lua_Script___0_Itinero_Profiles_Lua_DynValue__" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets a custom converter from a CLR data type. Set null to remove a previous custom converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClrToScriptCustomConversion&lt;T&gt;(Func&lt;Script, T, DynValue&gt; converter = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a>, T, <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>&gt;</span>
+        <span class="parametername">converter</span>
+        <p><p>The converter, or null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The CLR data type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetScriptToClrCustomConversion_" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetScriptToClrCustomConversion*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetScriptToClrCustomConversion_Itinero_Profiles_Lua_DataType_Type_Func_Itinero_Profiles_Lua_DynValue_System_Object__" data-uid="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.SetScriptToClrCustomConversion(Itinero.Profiles.Lua.DataType,Type,Func{Itinero.Profiles.Lua.DynValue,System.Object})"><a href="#collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetScriptToClrCustomConversion_Itinero_Profiles_Lua_DataType_Type_Func_Itinero_Profiles_Lua_DynValue_System_Object__" class="expander" data-toggle="collapse">SetScriptToClrCustomConversion(DataType, Type, Func&lt;DynValue, Object&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_CustomConvertersCollection_SetScriptToClrCustomConversion_Itinero_Profiles_Lua_DataType_Type_Func_Itinero_Profiles_Lua_DynValue_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets a custom converter from a script data type to a CLR data type. Set null to remove a previous custom converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScriptToClrCustomConversion(DataType scriptDataType, Type clrDataType, Func&lt;DynValue, object&gt; converter = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">scriptDataType</span>
+        <p><p>The script data type</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">clrDataType</span>
+        <p><p>The CLR data type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">converter</span>
+        <p><p>The converter, or null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1750 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DispatchingUserDataDescriptor
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DispatchingUserDataDescriptor
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor">
+  <h1 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor">Class DispatchingUserDataDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>An abstract user data descriptor which accepts members described by <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a> objects and
+correctly dispatches to them.
+Metamethods are also by default dispatched to operator overloads and other similar methods - see
+<a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_">MetaIndex(Script, Object, String)</a> .</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DispatchingUserDataDescriptor</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DispatchingUserDataDescriptor : IUserDataDescriptor, IOptimizableDescriptor</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor__ctor_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor__ctor_Type_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.#ctor(Type,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor__ctor_Type_System_String_" class="expander" data-toggle="collapse">DispatchingUserDataDescriptor(Type, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor__ctor_Type_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Itinero.Profiles.Lua.Interop.StandardUserDataDescriptor.html">StandardUserDataDescriptor</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DispatchingUserDataDescriptor(Type type, string friendlyName = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p><p>The type this descriptor refers to.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">friendlyName</span>
+        <p><p>A friendly name for the type, or null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_CAST_EXPLICIT" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SPECIALNAME_CAST_EXPLICIT"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_CAST_EXPLICIT" class="expander" data-toggle="collapse">SPECIALNAME_CAST_EXPLICIT</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_CAST_EXPLICIT" class="collapse in">
+  <div class="markdown level1 summary"><p>The special name used by CLR for explicit cast conversions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SPECIALNAME_CAST_EXPLICIT = &quot;op_Explicit&quot;</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_CAST_IMPLICIT" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SPECIALNAME_CAST_IMPLICIT"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_CAST_IMPLICIT" class="expander" data-toggle="collapse">SPECIALNAME_CAST_IMPLICIT</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_CAST_IMPLICIT" class="collapse in">
+  <div class="markdown level1 summary"><p>The special name used by CLR for implicit cast conversions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SPECIALNAME_CAST_IMPLICIT = &quot;op_Implicit&quot;</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_INDEXER_GET" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SPECIALNAME_INDEXER_GET"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_INDEXER_GET" class="expander" data-toggle="collapse">SPECIALNAME_INDEXER_GET</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_INDEXER_GET" class="collapse in">
+  <div class="markdown level1 summary"><p>The special name used by CLR for indexer getters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SPECIALNAME_INDEXER_GET = &quot;get_Item&quot;</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_INDEXER_SET" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SPECIALNAME_INDEXER_SET"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_INDEXER_SET" class="expander" data-toggle="collapse">SPECIALNAME_INDEXER_SET</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_INDEXER_SET" class="collapse in">
+  <div class="markdown level1 summary"><p>The special name used by CLR for indexer setters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SPECIALNAME_INDEXER_SET = &quot;set_Item&quot;</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FriendlyName_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FriendlyName*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FriendlyName" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FriendlyName"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FriendlyName" class="expander" data-toggle="collapse">FriendlyName</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FriendlyName" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a human readable friendly name of the descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FriendlyName { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MemberNames_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MemberNames*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MemberNames" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MemberNames"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MemberNames" class="expander" data-toggle="collapse">MemberNames</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MemberNames" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the member names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; MemberNames { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Members_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Members*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Members" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Members"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Members" class="expander" data-toggle="collapse">Members</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Members" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the members.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValuePair&lt;string, IMemberDescriptor&gt;&gt; Members { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a>&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMemberNames_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaMemberNames*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMemberNames" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaMemberNames"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMemberNames" class="expander" data-toggle="collapse">MetaMemberNames</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMemberNames" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the meta member names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; MetaMemberNames { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMembers_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaMembers*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMembers" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaMembers"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMembers" class="expander" data-toggle="collapse">MetaMembers</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMembers" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the meta members.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValuePair&lt;string, IMemberDescriptor&gt;&gt; MetaMembers { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a>&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Name_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Name*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Name" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Name"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Name" class="expander" data-toggle="collapse">Name</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Name" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the name of the descriptor (usually, the name of the type described).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_IUserDataDescriptor_Name">IUserDataDescriptor.Name</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Type_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Type*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Type" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Type"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Type" class="expander" data-toggle="collapse">Type</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Type" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the type this descriptor refers to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type Type { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Type</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_IUserDataDescriptor_Type">IUserDataDescriptor.Type</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddDynValue_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddDynValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddDynValue_System_String_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddDynValue(System.String,Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddDynValue_System_String_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">AddDynValue(String, DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddDynValue_System_String_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a DynValue as a member</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDynValue(string name, DynValue value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">value</span>
+        <p><p>The value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMember_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddMember*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMember_System_String_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddMember(System.String,Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMember_System_String_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_" class="expander" data-toggle="collapse">AddMember(String, IMemberDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMember_System_String_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a property to the member list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMember(string name, IMemberDescriptor desc)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></span>
+        <span class="parametername">desc</span>
+        <p><p>The descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentException</span>
+        <p><p>Thrown if a name conflict is detected and one of the conflicting members does not support overloads.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMetaMember_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddMetaMember*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMetaMember_System_String_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddMetaMember(System.String,Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMetaMember_System_String_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_" class="expander" data-toggle="collapse">AddMetaMember(String, IMemberDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMetaMember_System_String_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a member to the meta-members list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMetaMember(string name, IMemberDescriptor desc)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name of the metamethod.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></span>
+        <span class="parametername">desc</span>
+        <p><p>The desc.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentException</span>
+        <p><p>Thrown if a name conflict is detected and one of the conflicting members does not support overloads.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AsString_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AsString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AsString_System_Object_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AsString(System.Object)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AsString_System_Object_" class="expander" data-toggle="collapse">AsString(Object)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AsString_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this userdata to string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string AsString(object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_IUserDataDescriptor_AsString_System_Object_">IUserDataDescriptor.AsString(Object)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Camelify_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Camelify*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Camelify_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Camelify(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Camelify_System_String_" class="expander" data-toggle="collapse">Camelify(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Camelify_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the specified name from underscore_case to camelCase.
+Just a wrapper over the <a class="xref" href="Itinero.Profiles.Lua.Interop.DescriptorHelpers.html">DescriptorHelpers</a> method with the same name,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string Camelify(string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_ExecuteIndexer_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.ExecuteIndexer*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_ExecuteIndexer_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.ExecuteIndexer(Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor,Itinero.Profiles.Lua.Script,System.Object,Itinero.Profiles.Lua.DynValue,Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_ExecuteIndexer_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">ExecuteIndexer(IMemberDescriptor, Script, Object, DynValue, DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_ExecuteIndexer_Itinero_Profiles_Lua_Interop_BasicDescriptors_IMemberDescriptor_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Executes the specified indexer method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DynValue ExecuteIndexer(IMemberDescriptor mdesc, Script script, object obj, DynValue index, DynValue value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></span>
+        <span class="parametername">mdesc</span>
+        <p><p>The method descriptor</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">index</span>
+        <p><p>The indexer parameter</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">value</span>
+        <p><p>The dynvalue to set on a setter, or null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMember_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FindMember*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMember_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FindMember(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMember_System_String_" class="expander" data-toggle="collapse">FindMember(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMember_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Finds the member with a given name. If not found, null is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMemberDescriptor FindMember(string memberName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">memberName</span>
+        <p><p>Name of the member.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMetaMember_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FindMetaMember*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMetaMember_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FindMetaMember(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMetaMember_System_String_" class="expander" data-toggle="collapse">FindMetaMember(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMetaMember_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Finds the meta member with a given name. If not found, null is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMemberDescriptor FindMetaMember(string memberName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">memberName</span>
+        <p><p>Name of the member.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMember_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.HasMember*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMember_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.HasMember(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMember_System_String_" class="expander" data-toggle="collapse">HasMember(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMember_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the descriptor contains the specified member (by exact name)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMember(string exactName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">exactName</span>
+        <p><p>Name of the member.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMetaMember_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.HasMetaMember*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMetaMember_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.HasMetaMember(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMetaMember_System_String_" class="expander" data-toggle="collapse">HasMetaMember(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMetaMember_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the descriptor contains the specified member in the meta list (by exact name)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMetaMember(string exactName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">exactName</span>
+        <p><p>Name of the meta-member.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Index_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Index*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Index_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_System_Boolean_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Index(Itinero.Profiles.Lua.Script,System.Object,Itinero.Profiles.Lua.DynValue,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Index_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_System_Boolean_" class="expander" data-toggle="collapse">Index(Script, Object, DynValue, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Index_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Performs an &quot;index&quot; &quot;get&quot; operation. This tries to resolve minor variations of member names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DynValue Index(Script script, object obj, DynValue index, bool isDirectIndexing)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script originating the request</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object (null if a static request is done)</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">index</span>
+        <p><p>The index.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">isDirectIndexing</span>
+        <p><p>If set to true, it&apos;s indexed with a name, if false it&apos;s indexed through brackets.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_IUserDataDescriptor_Index_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_System_Boolean_">IUserDataDescriptor.Index(Script, Object, DynValue, Boolean)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_IsTypeCompatible_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.IsTypeCompatible*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_IsTypeCompatible_Type_System_Object_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.IsTypeCompatible(Type,System.Object)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_IsTypeCompatible_Type_System_Object_" class="expander" data-toggle="collapse">IsTypeCompatible(Type, Object)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_IsTypeCompatible_Type_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the specified object is compatible with the specified type.
+Unless a very specific behaviour is needed, the correct implementation is a 
+simple &quot; return type.IsInstanceOfType(obj); &quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsTypeCompatible(Type type, object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p><p>The type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_IUserDataDescriptor_IsTypeCompatible_Type_System_Object_">IUserDataDescriptor.IsTypeCompatible(Type, Object)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaIndex*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaIndex(Itinero.Profiles.Lua.Script,System.Object,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_" class="expander" data-toggle="collapse">MetaIndex(Script, Object, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a &quot;meta&quot; operation on this userdata. If a descriptor does not support this functionality,
+it should return &quot;null&quot; (not a nil). 
+See <a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_IUserDataDescriptor_MetaIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_">MetaIndex(Script, Object, String)</a> for further details.</p>
+<p>If a method exists marked with <a class="xref" href="Itinero.Profiles.Lua.MoonSharpUserDataMetamethodAttribute.html">MoonSharpUserDataMetamethodAttribute</a> for the specific
+metamethod requested, that method is returned.</p>
+<p>If the above fails, the following dispatching occur:</p>
+<p>__add, __sub, __mul, __div, __mod and __unm are dispatched to C# operator overloads (if they exist)
+__eq is dispatched to System.Object.Equals.
+__lt and __le are dispatched IComparable.Compare, if the type implements IComparable or IComparable{object}
+__len is dispatched to Length and Count properties, if those exist.
+__iterator is handled if the object implements IEnumerable or IEnumerator.
+__tonumber is dispatched to implicit or explicit conversion operators to standard numeric types.
+__tobool is dispatched to an implicit or explicit conversion operator to bool. If that fails, operator true is used.</p>
+<param name="script">The script originating the request
+<param name="obj">The object (null if a static request is done)
+<param name="metaname">The name of the metamember.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DynValue MetaIndex(Script script, object obj, string metaname)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">metaname</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_IUserDataDescriptor_MetaIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_">IUserDataDescriptor.MetaIndex(Script, Object, String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMember_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.RemoveMember*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMember_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.RemoveMember(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMember_System_String_" class="expander" data-toggle="collapse">RemoveMember(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMember_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the member with a given name. In case of overloaded functions, all overloads are removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMember(string memberName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">memberName</span>
+        <p><p>Name of the member.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMetaMember_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.RemoveMetaMember*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMetaMember_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.RemoveMetaMember(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMetaMember_System_String_" class="expander" data-toggle="collapse">RemoveMetaMember(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMetaMember_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the meta member with a given name. In case of overloaded functions, all overloads are removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMetaMember(string memberName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">memberName</span>
+        <p><p>Name of the member.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SetIndex_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SetIndex*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SetIndex_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_System_Boolean_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SetIndex(Itinero.Profiles.Lua.Script,System.Object,Itinero.Profiles.Lua.DynValue,Itinero.Profiles.Lua.DynValue,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SetIndex_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_System_Boolean_" class="expander" data-toggle="collapse">SetIndex(Script, Object, DynValue, DynValue, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SetIndex_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Performs an &quot;index&quot; &quot;set&quot; operation. This tries to resolve minor variations of member names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SetIndex(Script script, object obj, DynValue index, DynValue value, bool isDirectIndexing)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script originating the request</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object (null if a static request is done)</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">index</span>
+        <p><p>The index.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">value</span>
+        <p><p>The value to be set</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">isDirectIndexing</span>
+        <p><p>If set to true, it&apos;s indexed with a name, if false it&apos;s indexed through brackets.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_IUserDataDescriptor_SetIndex_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_System_Boolean_">IUserDataDescriptor.SetIndex(Script, Object, DynValue, DynValue, Boolean)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TryIndex_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.TryIndex*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TryIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.TryIndex(Itinero.Profiles.Lua.Script,System.Object,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TryIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_" class="expander" data-toggle="collapse">TryIndex(Script, Object, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TryIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to perform an indexing operation by checking methods and properties for the given indexName</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DynValue TryIndex(Script script, object obj, string indexName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">indexName</span>
+        <p><p>Member name to be indexed.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TrySetIndex_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.TrySetIndex*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TrySetIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.TrySetIndex(Itinero.Profiles.Lua.Script,System.Object,System.String,Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TrySetIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">TrySetIndex(Script, Object, String, DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TrySetIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to perform an indexing &quot;set&quot; operation by checking methods and properties for the given indexName</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TrySetIndex(Script script, object obj, string indexName, DynValue value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">indexName</span>
+        <p><p>Member name to be indexed.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">value</span>
+        <p><p>The value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_UpperFirstLetter_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.UpperFirstLetter*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_UpperFirstLetter_System_String_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.UpperFirstLetter(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_UpperFirstLetter_System_String_" class="expander" data-toggle="collapse">UpperFirstLetter(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_UpperFirstLetter_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the specified name to one with an uppercase first letter (something to Something).
+Just a wrapper over the <a class="xref" href="Itinero.Profiles.Lua.Interop.DescriptorHelpers.html">DescriptorHelpers</a> method with the same name,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string UpperFirstLetter(string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Itinero_Profiles_Lua_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize_" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Itinero#Profiles#Lua#Interop#BasicDescriptors#IOptimizableDescriptor#Optimize*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Itinero_Profiles_Lua_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Itinero#Profiles#Lua#Interop#BasicDescriptors#IOptimizableDescriptor#Optimize"><a href="#collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Itinero_Profiles_Lua_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize" class="expander" data-toggle="collapse">IOptimizableDescriptor.Optimize()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Itinero_Profiles_Lua_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IOptimizableDescriptor.Optimize()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IOptimizableDescriptor.html#Itinero_Profiles_Lua_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize">IOptimizableDescriptor.Optimize()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

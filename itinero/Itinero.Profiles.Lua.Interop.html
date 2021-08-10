@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Itinero.Profiles.Lua.Interop
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Itinero.Profiles.Lua.Interop
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Interop">
+  <h1 id="Itinero_Profiles_Lua_Interop" data-uid="Itinero.Profiles.Lua.Interop">Namespace Itinero.Profiles.Lua.Interop
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.AnonWrapper.html">AnonWrapper</a></p>
+          <p><p>Internal type used by <a class="xref" href="Itinero.Profiles.Lua.Interop.AnonWrapper-1.html">AnonWrapper&lt;T&gt;</a> for registration</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.AnonWrapper-1.html">AnonWrapper&lt;T&gt;</a></p>
+          <p><p>Wrapper which allows for easier management of userdata without registering a new userdata type - useful 
+if a type which is not exposed to scripts but can be managed as a &quot;black box&quot; by scripts is desired.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.ArrayMemberDescriptor.html">ArrayMemberDescriptor</a></p>
+          <p><p>Member descriptor for indexer of array types</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.CompositeUserDataDescriptor.html">CompositeUserDataDescriptor</a></p>
+          <p><p>A user data descriptor which aggregates multiple descriptors and tries dispatching members
+on them, in order.</p>
+<p>Used, for example, for objects implementing multiple interfaces but for which no descriptor is 
+specifically registered.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.CustomConvertersCollection.html">CustomConvertersCollection</a></p>
+          <p><p>A collection of custom converters between MoonSharp types and CLR types.
+If a converter function is not specified or returns null, the standard conversion path applies.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.DelegateProxyFactory-2.html">DelegateProxyFactory&lt;TProxy, TTarget&gt;</a></p>
+          <p><p>Implementation of IProxyFactory taking two delegates for simple instancing of proxies.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.DescriptorHelpers.html">DescriptorHelpers</a></p>
+          <p><p>Helper extension methods used to simplify some parts of userdata descriptor implementations</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.DynValueMemberDescriptor.html">DynValueMemberDescriptor</a></p>
+          <p><p>Class providing a simple descriptor for constant DynValues in userdata</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.html">EventMemberDescriptor</a></p>
+          <p><p>Class providing easier marshalling of CLR events. Handling is limited to a narrow range of handler signatures, which,
+however, covers in practice most of all available events.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.FieldMemberDescriptor.html">FieldMemberDescriptor</a></p>
+          <p><p>Class providing easier marshalling of CLR fields</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.FunctionMemberDescriptorBase.html">FunctionMemberDescriptorBase</a></p>
+          <p><p>Class providing easier marshalling of CLR functions</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.InteropRegistrationPolicy.html">InteropRegistrationPolicy</a></p>
+          <p><p>Collection of the standard policies to handle UserData type registrations.
+Provided mostly for compile-time backward compatibility with old code.
+See also : <see cref="!:IRegistrationPolicy"></see> .</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.MethodMemberDescriptor.html">MethodMemberDescriptor</a></p>
+          <p><p>Class providing easier marshalling of CLR functions</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.MoonSharpVisibleAttribute.html">MoonSharpVisibleAttribute</a></p>
+          <p><p>Forces a class member visibility to scripts. Can be used to hide public members or to expose non-public ones.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.ObjectCallbackMemberDescriptor.html">ObjectCallbackMemberDescriptor</a></p>
+          <p><p>Member descriptor which allows to define new members which behave similarly to class instance members</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.OverloadedMethodMemberDescriptor.html">OverloadedMethodMemberDescriptor</a></p>
+          <p><p>Class providing easier marshalling of overloaded CLR functions</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.PropertyMemberDescriptor.html">PropertyMemberDescriptor</a></p>
+          <p><p>Class providing easier marshalling of CLR properties</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.PropertyTableAssigner.html">PropertyTableAssigner</a></p>
+          <p><p>Utility class which may be used to set properties on an object from values contained in a Lua table.
+Properties must be decorated with the <a class="xref" href="Itinero.Profiles.Lua.MoonSharpPropertyAttribute.html">MoonSharpPropertyAttribute</a>.
+See <a class="xref" href="Itinero.Profiles.Lua.Interop.PropertyTableAssigner-1.html">PropertyTableAssigner&lt;T&gt;</a> for a generic compile time type-safe version.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.PropertyTableAssigner-1.html">PropertyTableAssigner&lt;T&gt;</a></p>
+          <p><p>Utility class which may be used to set properties on an object of type T, from values contained in a Lua table.
+Properties must be decorated with the <a class="xref" href="Itinero.Profiles.Lua.MoonSharpPropertyAttribute.html">MoonSharpPropertyAttribute</a>.
+This is a generic version of <a class="xref" href="Itinero.Profiles.Lua.Interop.PropertyTableAssigner.html">PropertyTableAssigner</a>.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.ProxyUserDataDescriptor.html">ProxyUserDataDescriptor</a></p>
+          <p><p>Data descriptor used for proxy objects</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.StandardEnumUserDataDescriptor.html">StandardEnumUserDataDescriptor</a></p>
+          <p><p>Standard descriptor for Enum values</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.StandardGenericsUserDataDescriptor.html">StandardGenericsUserDataDescriptor</a></p>
+          <p><p>Standard user data descriptor used to instantiate generics.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.StandardUserDataDescriptor.html">StandardUserDataDescriptor</a></p>
+          <p><p>Standard descriptor for userdata types.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.ValueTypeDefaultCtorMemberDescriptor.html">ValueTypeDefaultCtorMemberDescriptor</a></p>
+          <p><p>Member descriptor for the default constructor of value types.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="structs">Structs
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.ReflectionSpecialName.html">ReflectionSpecialName</a></p>
+          <p><p>Class helping identifying special names found with reflection</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.IGeneratorUserDataDescriptor.html">IGeneratorUserDataDescriptor</a></p>
+          <p><p>An interface for type descriptors having the ability to generate other descriptors on the fly.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.IPropertyTableAssigner.html">IPropertyTableAssigner</a></p>
+          <p><p>Common interface for property assigners - basically used for sub-assigners</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.IProxyFactory.html">IProxyFactory</a></p>
+          <p><p>Interface for proxy objects (type unsafe version)</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.IProxyFactory-2.html">IProxyFactory&lt;TProxy, TTarget&gt;</a></p>
+          <p><p>Interface for proxy objects (type safe version)</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></p>
+          <p><p>Interface used by MoonSharp to access objects of a given type from scripts.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataMemberDescriptor.html">IUserDataMemberDescriptor</a></p>
+          <p><p>Interface used by standard descriptors to access members of a given type from scripts.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataType.html">IUserDataType</a></p>
+          <p><p>As a convenience, every type deriving from IUserDataType is &quot;self-described&quot;. That is, no descriptor is needed/generated
+and the object itself is used to describe the type for interop. See also <a class="xref" href="Itinero.Profiles.Lua.UserData.html">UserData</a>, <a class="xref" href="Itinero.Profiles.Lua.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a> 
+and <a class="xref" href="Itinero.Profiles.Lua.Interop.StandardUserDataDescriptor.html">StandardUserDataDescriptor</a> .</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="enums">Enums
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.ReflectionSpecialNameType.html">ReflectionSpecialNameType</a></p>
+          <p><p>Helps identifying a reflection special name</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.UserDataMemberType.html">UserDataMemberType</a></p>
+          <p>
+        </td>
+      </tr>
+    </table>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

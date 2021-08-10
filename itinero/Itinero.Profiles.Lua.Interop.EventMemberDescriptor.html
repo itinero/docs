@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EventMemberDescriptor
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EventMemberDescriptor
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor">
+  <h1 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor">Class EventMemberDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>Class providing easier marshalling of CLR events. Handling is limited to a narrow range of handler signatures, which,
+however, covers in practice most of all available events.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EventMemberDescriptor</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EventMemberDescriptor : IMemberDescriptor</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor__ctor_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor__ctor_EventInfo_Itinero_Profiles_Lua_InteropAccessMode_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.#ctor(EventInfo,Itinero.Profiles.Lua.InteropAccessMode)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor__ctor_EventInfo_Itinero_Profiles_Lua_InteropAccessMode_" class="expander" data-toggle="collapse">EventMemberDescriptor(EventInfo, InteropAccessMode)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor__ctor_EventInfo_Itinero_Profiles_Lua_InteropAccessMode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.html">EventMemberDescriptor</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventMemberDescriptor(EventInfo ei, InteropAccessMode accessMode = InteropAccessMode.Default)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">EventInfo</span></span>
+        <span class="parametername">ei</span>
+        <p><p>The ei.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">accessMode</span>
+        <p><p>The access mode.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_MAX_ARGS_IN_DELEGATE" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.MAX_ARGS_IN_DELEGATE"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_MAX_ARGS_IN_DELEGATE" class="expander" data-toggle="collapse">MAX_ARGS_IN_DELEGATE</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_MAX_ARGS_IN_DELEGATE" class="collapse in">
+  <div class="markdown level1 summary"><p>The maximum number of arguments supported in an event handler delegate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MAX_ARGS_IN_DELEGATE = 16</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_EventInfo_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.EventInfo*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_EventInfo" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.EventInfo"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_EventInfo" class="expander" data-toggle="collapse">EventInfo</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_EventInfo" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the EventInfo object of the event described by this descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventInfo EventInfo { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EventInfo</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_IsStatic_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.IsStatic*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_IsStatic" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.IsStatic"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_IsStatic" class="expander" data-toggle="collapse">IsStatic</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_IsStatic" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the event described by this descriptor is static.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStatic { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_MemberAccess_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.MemberAccess*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_MemberAccess" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.MemberAccess"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_MemberAccess" class="expander" data-toggle="collapse">MemberAccess</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_MemberAccess" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the types of access supported by this member</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemberDescriptorAccess MemberAccess { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">MemberDescriptorAccess</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_Name_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.Name*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_Name" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.Name"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_Name" class="expander" data-toggle="collapse">Name</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_Name" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the name of the member</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_CheckEventIsCompatible_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.CheckEventIsCompatible*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_CheckEventIsCompatible_EventInfo_System_Boolean_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.CheckEventIsCompatible(EventInfo,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_CheckEventIsCompatible_EventInfo_System_Boolean_" class="expander" data-toggle="collapse">CheckEventIsCompatible(EventInfo, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_CheckEventIsCompatible_EventInfo_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if the event is compatible with a standard descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckEventIsCompatible(EventInfo ei, bool throwException)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">EventInfo</span></span>
+        <span class="parametername">ei</span>
+        <p><p>The EventInfo.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">throwException</span>
+        <p><p>if set to <code>true</code> an exception with the proper error message is thrown if not compatible.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentException</span>
+        <p><p>Thrown if throwException is <code>true</code> and one of this applies:
+The event is declared in a value type
+or
+The event does not have both add and remove methods 
+or
+The event handler type doesn&apos;t implement a public Invoke method
+or
+The event handler has a return type which is not System.Void
+or
+The event handler has more than MAX_ARGS_IN_DELEGATE parameters
+or
+The event handler has a value type parameter or a by ref parameter
+or
+The event handler signature is not a valid method according to <a class="xref" href="Itinero.Profiles.Lua.Interop.MethodMemberDescriptor.html#Itinero_Profiles_Lua_Interop_MethodMemberDescriptor_CheckMethodIsCompatible_MethodBase_System_Boolean_">CheckMethodIsCompatible(MethodBase, Boolean)</a></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_GetValue_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.GetValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_GetValue_Itinero_Profiles_Lua_Script_System_Object_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.GetValue(Itinero.Profiles.Lua.Script,System.Object)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_GetValue_Itinero_Profiles_Lua_Script_System_Object_" class="expander" data-toggle="collapse">GetValue(Script, Object)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_GetValue_Itinero_Profiles_Lua_Script_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a dynvalue which is a facade supporting add/remove methods which is callable from scripts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue GetValue(Script script, object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object for which the facade should be written.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_SetValue_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.SetValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_SetValue_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.SetValue(Itinero.Profiles.Lua.Script,System.Object,Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_SetValue_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">SetValue(Script, Object, DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_SetValue_Itinero_Profiles_Lua_Script_System_Object_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(Script script, object obj, DynValue v)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Script.html">Script</a></span>
+        <span class="parametername">script</span>
+        <p><p>The script.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">v</span>
+        <p><p>The v.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_TryCreateIfVisible_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.TryCreateIfVisible*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_EventMemberDescriptor_TryCreateIfVisible_EventInfo_Itinero_Profiles_Lua_InteropAccessMode_" data-uid="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.TryCreateIfVisible(EventInfo,Itinero.Profiles.Lua.InteropAccessMode)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_TryCreateIfVisible_EventInfo_Itinero_Profiles_Lua_InteropAccessMode_" class="expander" data-toggle="collapse">TryCreateIfVisible(EventInfo, InteropAccessMode)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_EventMemberDescriptor_TryCreateIfVisible_EventInfo_Itinero_Profiles_Lua_InteropAccessMode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to create a new StandardUserDataEventDescriptor, returning <code>null</code> in case the method is not 
+visible to script code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EventMemberDescriptor TryCreateIfVisible(EventInfo ei, InteropAccessMode accessMode)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">EventInfo</span></span>
+        <span class="parametername">ei</span>
+        <p><p>The EventInfo.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">accessMode</span>
+        <p><p>The <a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.EventMemberDescriptor.html">EventMemberDescriptor</a>
+        <p><p>A new StandardUserDataEventDescriptor or null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

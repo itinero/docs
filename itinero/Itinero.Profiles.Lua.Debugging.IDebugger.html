@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDebugger
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDebugger
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger">
+  <h1 id="Itinero_Profiles_Lua_Debugging_IDebugger" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger">Interface IDebugger
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for debuggers to implement, in order to provide debugging facilities to Scripts.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_Debugging_IDebugger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDebugger</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_GetAction_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.GetAction*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_GetAction_System_Int32_Itinero_Profiles_Lua_Debugging_SourceRef_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.GetAction(System.Int32,Itinero.Profiles.Lua.Debugging.SourceRef)"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_GetAction_System_Int32_Itinero_Profiles_Lua_Debugging_SourceRef_" class="expander" data-toggle="collapse">GetAction(Int32, SourceRef)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_GetAction_System_Int32_Itinero_Profiles_Lua_Debugging_SourceRef_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine to get what action to do next.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DebuggerAction GetAction(int ip, SourceRef sourceref)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">ip</span>
+        <p><p>The instruction pointer in bytecode.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Debugging.SourceRef.html">SourceRef</a></span>
+        <span class="parametername">sourceref</span>
+        <p><p>The source reference.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Debugging.DebuggerAction.html">DebuggerAction</a>
+        <p><p>T</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_GetDebuggerCaps_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.GetDebuggerCaps*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_GetDebuggerCaps" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.GetDebuggerCaps"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_GetDebuggerCaps" class="expander" data-toggle="collapse">GetDebuggerCaps()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_GetDebuggerCaps" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the debugger caps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DebuggerCaps GetDebuggerCaps()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Debugging.DebuggerCaps.html">DebuggerCaps</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_GetWatchItems_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.GetWatchItems*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_GetWatchItems" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.GetWatchItems"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_GetWatchItems" class="expander" data-toggle="collapse">GetWatchItems()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_GetWatchItems" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine to get which expressions are active 
+watches in the debugger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DynamicExpression&gt; GetWatchItems()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.DynamicExpression.html">DynamicExpression</a>&gt;
+        <p><p>A list of watches</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_IsPauseRequested_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.IsPauseRequested*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_IsPauseRequested" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.IsPauseRequested"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_IsPauseRequested" class="expander" data-toggle="collapse">IsPauseRequested()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_IsPauseRequested" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine at execution time to check if a break has 
+been requested. Should return pretty fast as it&apos;s called A LOT.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPauseRequested()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_RefreshBreakpoints_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.RefreshBreakpoints*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_RefreshBreakpoints_IEnumerable_Itinero_Profiles_Lua_Debugging_SourceRef__" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.RefreshBreakpoints(IEnumerable{Itinero.Profiles.Lua.Debugging.SourceRef})"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_RefreshBreakpoints_IEnumerable_Itinero_Profiles_Lua_Debugging_SourceRef__" class="expander" data-toggle="collapse">RefreshBreakpoints(IEnumerable&lt;SourceRef&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_RefreshBreakpoints_IEnumerable_Itinero_Profiles_Lua_Debugging_SourceRef__" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine to refresh the breakpoint list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RefreshBreakpoints(IEnumerable&lt;SourceRef&gt; refs)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.Debugging.SourceRef.html">SourceRef</a>&gt;</span>
+        <span class="parametername">refs</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_SetByteCode_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SetByteCode*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_SetByteCode_System_String___" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SetByteCode(System.String[])"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SetByteCode_System_String___" class="expander" data-toggle="collapse">SetByteCode(String[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SetByteCode_System_String___" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine  when the bytecode changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetByteCode(string[] byteCode)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span>[]</span>
+        <span class="parametername">byteCode</span>
+        <p><p>The bytecode source</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_SetDebugService_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SetDebugService*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_SetDebugService_Itinero_Profiles_Lua_Debugging_DebugService_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SetDebugService(Itinero.Profiles.Lua.Debugging.DebugService)"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SetDebugService_Itinero_Profiles_Lua_Debugging_DebugService_" class="expander" data-toggle="collapse">SetDebugService(DebugService)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SetDebugService_Itinero_Profiles_Lua_Debugging_DebugService_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the debug service for this debugger</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetDebugService(DebugService debugService)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Debugging.DebugService.html">DebugService</a></span>
+        <span class="parametername">debugService</span>
+        <p><p>The debug service.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_SetSourceCode_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SetSourceCode*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_SetSourceCode_Itinero_Profiles_Lua_Debugging_SourceCode_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SetSourceCode(Itinero.Profiles.Lua.Debugging.SourceCode)"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SetSourceCode_Itinero_Profiles_Lua_Debugging_SourceCode_" class="expander" data-toggle="collapse">SetSourceCode(SourceCode)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SetSourceCode_Itinero_Profiles_Lua_Debugging_SourceCode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine  when a source code is added or changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetSourceCode(SourceCode sourceCode)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Debugging.SourceCode.html">SourceCode</a></span>
+        <span class="parametername">sourceCode</span>
+        <p><p>The source code object.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_SignalExecutionEnded_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SignalExecutionEnded*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_SignalExecutionEnded" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SignalExecutionEnded"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SignalExecutionEnded" class="expander" data-toggle="collapse">SignalExecutionEnded()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SignalExecutionEnded" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine when the execution ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SignalExecutionEnded()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_SignalRuntimeException_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SignalRuntimeException*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_SignalRuntimeException_Itinero_Profiles_Lua_ScriptRuntimeException_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.SignalRuntimeException(Itinero.Profiles.Lua.ScriptRuntimeException)"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SignalRuntimeException_Itinero_Profiles_Lua_ScriptRuntimeException_" class="expander" data-toggle="collapse">SignalRuntimeException(ScriptRuntimeException)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_SignalRuntimeException_Itinero_Profiles_Lua_ScriptRuntimeException_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine when a runtime error occurs. 
+The debugger can return true to signal the engine that it wants to break 
+into the source of the error. If it does so, it should also return true 
+to subsequent calls to IsPauseRequested().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SignalRuntimeException(ScriptRuntimeException ex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a></span>
+        <span class="parametername">ex</span>
+        <p><p>The runtime exception.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>True if this error should break execution.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Debugging_IDebugger_Update_" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.Update*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Debugging_IDebugger_Update_Itinero_Profiles_Lua_Debugging_WatchType_IEnumerable_Itinero_Profiles_Lua_Debugging_WatchItem__" data-uid="Itinero.Profiles.Lua.Debugging.IDebugger.Update(Itinero.Profiles.Lua.Debugging.WatchType,IEnumerable{Itinero.Profiles.Lua.Debugging.WatchItem})"><a href="#collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_Update_Itinero_Profiles_Lua_Debugging_WatchType_IEnumerable_Itinero_Profiles_Lua_Debugging_WatchItem__" class="expander" data-toggle="collapse">Update(WatchType, IEnumerable&lt;WatchItem&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Debugging_IDebugger_Update_Itinero_Profiles_Lua_Debugging_WatchType_IEnumerable_Itinero_Profiles_Lua_Debugging_WatchItem__" class="collapse in">
+  <div class="markdown level1 summary"><p>Called by the script engine to update watches of a given type. Note 
+that this method is not called only for watches in the strictest term, 
+but also for the stack, etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Update(WatchType watchType, IEnumerable&lt;WatchItem&gt; items)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Debugging.WatchType.html">WatchType</a></span>
+        <span class="parametername">watchType</span>
+        <p><p>Type of the watch.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.Profiles.Lua.Debugging.WatchItem.html">WatchItem</a>&gt;</span>
+        <span class="parametername">items</span>
+        <p><p>The items.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

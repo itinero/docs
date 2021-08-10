@@ -1,0 +1,2088 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RouteExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RouteExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.RouteExtensions">
+  <h1 id="Itinero_RouteExtensions" data-uid="Itinero.RouteExtensions">Class RouteExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains extensions for the route object.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RouteExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_RouteExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RouteExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_RouteExtensions_Concatenate_" data-uid="Itinero.RouteExtensions.Concatenate*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_Concatenate_IEnumerable_Itinero_Result_Itinero_Route___" data-uid="Itinero.RouteExtensions.Concatenate(IEnumerable{Itinero.Result{Itinero.Route}})"><a href="#collapsible-Itinero_RouteExtensions_Concatenate_IEnumerable_Itinero_Result_Itinero_Route___" class="expander" data-toggle="collapse">Concatenate(IEnumerable&lt;Result&lt;Route&gt;&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_Concatenate_IEnumerable_Itinero_Result_Itinero_Route___" class="collapse in">
+  <div class="markdown level1 summary"><p>Concatenates all the given routes or returns an error when one of the routes cannot be concatenated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Result&lt;Route&gt; Concatenate(this IEnumerable&lt;Result&lt;Route&gt;&gt; routes)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;&gt;</span>
+        <span class="parametername">routes</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Result-1.html">Result</a>&lt;<a class="xref" href="Itinero.Route.html">Route</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_Concatenate_" data-uid="Itinero.RouteExtensions.Concatenate*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_Concatenate_Itinero_Route_Itinero_Route_" data-uid="Itinero.RouteExtensions.Concatenate(Itinero.Route,Itinero.Route)"><a href="#collapsible-Itinero_RouteExtensions_Concatenate_Itinero_Route_Itinero_Route_" class="expander" data-toggle="collapse">Concatenate(Route, Route)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_Concatenate_Itinero_Route_Itinero_Route_" class="collapse in">
+  <div class="markdown level1 summary"><p>Concatenates two routes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route Concatenate(this Route route1, Route route2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_Concatenate_" data-uid="Itinero.RouteExtensions.Concatenate*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_Concatenate_Itinero_Route_Itinero_Route_System_Boolean_" data-uid="Itinero.RouteExtensions.Concatenate(Itinero.Route,Itinero.Route,System.Boolean)"><a href="#collapsible-Itinero_RouteExtensions_Concatenate_Itinero_Route_Itinero_Route_System_Boolean_" class="expander" data-toggle="collapse">Concatenate(Route, Route, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_Concatenate_Itinero_Route_Itinero_Route_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Concatenates two routes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route Concatenate(this Route route1, Route route2, bool clone)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">clone</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_DirectionToNext_" data-uid="Itinero.RouteExtensions.DirectionToNext*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_DirectionToNext_Itinero_Route_System_Int32_" data-uid="Itinero.RouteExtensions.DirectionToNext(Itinero.Route,System.Int32)"><a href="#collapsible-Itinero_RouteExtensions_DirectionToNext_Itinero_Route_System_Int32_" class="expander" data-toggle="collapse">DirectionToNext(Route, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_DirectionToNext_Itinero_Route_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the direction to the next shape segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DirectionEnum DirectionToNext(this Route route, int i)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">i</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DirectionEnum</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_DistanceAndTimeAt_" data-uid="Itinero.RouteExtensions.DistanceAndTimeAt*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_DistanceAndTimeAt_Itinero_Route_System_Int32_System_Single__System_Single__" data-uid="Itinero.RouteExtensions.DistanceAndTimeAt(Itinero.Route,System.Int32,System.Single@,System.Single@)"><a href="#collapsible-Itinero_RouteExtensions_DistanceAndTimeAt_Itinero_Route_System_Int32_System_Single__System_Single__" class="expander" data-toggle="collapse">DistanceAndTimeAt(Route, Int32, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_DistanceAndTimeAt_Itinero_Route_System_Int32_System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Distance and time a the given shape index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DistanceAndTimeAt(this Route route, int shape, out float distance, out float time)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">shape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_GenerateInstructions_" data-uid="Itinero.RouteExtensions.GenerateInstructions*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_" data-uid="Itinero.RouteExtensions.GenerateInstructions(Itinero.Route)"><a href="#collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_" class="expander" data-toggle="collapse">GenerateInstructions(Route)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates instructions for the given route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Instruction&gt; GenerateInstructions(this Route route)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IList</span>&lt;<span class="xref">Instruction</span>&gt;
+        <p><p>A list of instructions.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_GenerateInstructions_" data-uid="Itinero.RouteExtensions.GenerateInstructions*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_ILanguageReference_" data-uid="Itinero.RouteExtensions.GenerateInstructions(Itinero.Route,ILanguageReference)"><a href="#collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_ILanguageReference_" class="expander" data-toggle="collapse">GenerateInstructions(Route, ILanguageReference)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_ILanguageReference_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates instructions for the given route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Instruction&gt; GenerateInstructions(this Route route, ILanguageReference languageReference)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ILanguageReference</span></span>
+        <span class="parametername">languageReference</span>
+        <p><p>The language reference.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IList</span>&lt;<span class="xref">Instruction</span>&gt;
+        <p><p>A list of instructions.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_GenerateInstructions_" data-uid="Itinero.RouteExtensions.GenerateInstructions*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Itinero_RouterDb_" data-uid="Itinero.RouteExtensions.GenerateInstructions(Itinero.Route,Itinero.RouterDb)"><a href="#collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Itinero_RouterDb_" class="expander" data-toggle="collapse">GenerateInstructions(Route, RouterDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Itinero_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates instructions for the given route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Instruction&gt; GenerateInstructions(this Route route, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p><p>The route db used to generate the route.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IList</span>&lt;<span class="xref">Instruction</span>&gt;
+        <p><p>A list of instructions.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_GenerateInstructions_" data-uid="Itinero.RouteExtensions.GenerateInstructions*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Itinero_RouterDb_ILanguageReference_" data-uid="Itinero.RouteExtensions.GenerateInstructions(Itinero.Route,Itinero.RouterDb,ILanguageReference)"><a href="#collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Itinero_RouterDb_ILanguageReference_" class="expander" data-toggle="collapse">GenerateInstructions(Route, RouterDb, ILanguageReference)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Itinero_RouterDb_ILanguageReference_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates instructions for the given route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Instruction&gt; GenerateInstructions(this Route route, RouterDb routerDb, ILanguageReference languageReference)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p><p>The route db used to generate the route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ILanguageReference</span></span>
+        <span class="parametername">languageReference</span>
+        <p><p>The language reference.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IList</span>&lt;<span class="xref">Instruction</span>&gt;
+        <p><p>A list of instructions.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_GenerateInstructions_" data-uid="Itinero.RouteExtensions.GenerateInstructions*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Profile_" data-uid="Itinero.RouteExtensions.GenerateInstructions(Itinero.Route,Profile)"><a href="#collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Profile_" class="expander" data-toggle="collapse">GenerateInstructions(Route, Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates instructions for the given route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Instruction&gt; GenerateInstructions(this Route route, Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p><p>The profile.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IList</span>&lt;<span class="xref">Instruction</span>&gt;
+        <p><p>A list of instructions.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_GenerateInstructions_" data-uid="Itinero.RouteExtensions.GenerateInstructions*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Profile_ILanguageReference_" data-uid="Itinero.RouteExtensions.GenerateInstructions(Itinero.Route,Profile,ILanguageReference)"><a href="#collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Profile_ILanguageReference_" class="expander" data-toggle="collapse">GenerateInstructions(Route, Profile, ILanguageReference)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_GenerateInstructions_Itinero_Route_Profile_ILanguageReference_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates instructions for the given route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Instruction&gt; GenerateInstructions(this Route route, Profile profile, ILanguageReference languageReference)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p><p>The profile.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ILanguageReference</span></span>
+        <span class="parametername">languageReference</span>
+        <p><p>The language reference.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IList</span>&lt;<span class="xref">Instruction</span>&gt;
+        <p><p>A list of instructions.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_IsMultimodal_" data-uid="Itinero.RouteExtensions.IsMultimodal*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_IsMultimodal_Itinero_Route_" data-uid="Itinero.RouteExtensions.IsMultimodal(Itinero.Route)"><a href="#collapsible-Itinero_RouteExtensions_IsMultimodal_Itinero_Route_" class="expander" data-toggle="collapse">IsMultimodal(Route)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_IsMultimodal_Itinero_Route_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this route has multiple profiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMultimodal(this Route route)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_PositionAfter_" data-uid="Itinero.RouteExtensions.PositionAfter*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_PositionAfter_Itinero_Route_System_Single_" data-uid="Itinero.RouteExtensions.PositionAfter(Itinero.Route,System.Single)"><a href="#collapsible-Itinero_RouteExtensions_PositionAfter_Itinero_Route_System_Single_" class="expander" data-toggle="collapse">PositionAfter(Route, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_PositionAfter_Itinero_Route_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the position on the route after the given distance from the starting point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate? PositionAfter(this Route route, float distanceInMeter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distanceInMeter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">Coordinate</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ProjectOn_" data-uid="Itinero.RouteExtensions.ProjectOn*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__" data-uid="Itinero.RouteExtensions.ProjectOn(Itinero.Route,Coordinate,Coordinate@)"><a href="#collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__" class="expander" data-toggle="collapse">ProjectOn(Route, Coordinate, out Coordinate)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the closest point on the route relative to the given coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ProjectOn(this Route route, Coordinate coordinate, out Coordinate projected)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">coordinate</span>
+        <p><p>The coordinate to project.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">projected</span>
+        <p><p>The projected coordinate on the route.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ProjectOn_" data-uid="Itinero.RouteExtensions.ProjectOn*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__System_Int32__System_Single__System_Single__" data-uid="Itinero.RouteExtensions.ProjectOn(Itinero.Route,Coordinate,Coordinate@,System.Int32@,System.Single@,System.Single@)"><a href="#collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__System_Int32__System_Single__System_Single__" class="expander" data-toggle="collapse">ProjectOn(Route, Coordinate, out Coordinate, out Int32, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__System_Int32__System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the closest point on the route relative to the given coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ProjectOn(this Route route, Coordinate coordinate, out Coordinate projected, out int shape, out float distanceFromStartInMeter, out float timeFromStartInSeconds)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">coordinate</span>
+        <p><p>The coordinate to project.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">projected</span>
+        <p><p>The projected coordinate on the route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">shape</span>
+        <p><p>The shape segment of the route the point was projected on to.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distanceFromStartInMeter</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">timeFromStartInSeconds</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ProjectOn_" data-uid="Itinero.RouteExtensions.ProjectOn*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__System_Single__System_Single__" data-uid="Itinero.RouteExtensions.ProjectOn(Itinero.Route,Coordinate,Coordinate@,System.Single@,System.Single@)"><a href="#collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__System_Single__System_Single__" class="expander" data-toggle="collapse">ProjectOn(Route, Coordinate, out Coordinate, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_Coordinate__System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the closest point on the route relative to the given coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ProjectOn(this Route route, Coordinate coordinate, out Coordinate projected, out float distanceToProjectedInMeter, out float timeToProjectedInSeconds)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">coordinate</span>
+        <p><p>The coordinate to project.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">projected</span>
+        <p><p>The projected coordinate on the route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distanceToProjectedInMeter</span>
+        <p><p>The distance in meter to the projected point from the start of the route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">timeToProjectedInSeconds</span>
+        <p><p>The time in seconds to the projected point from the start of the route.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ProjectOn_" data-uid="Itinero.RouteExtensions.ProjectOn*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_System_Single__" data-uid="Itinero.RouteExtensions.ProjectOn(Itinero.Route,Coordinate,System.Single@)"><a href="#collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_System_Single__" class="expander" data-toggle="collapse">ProjectOn(Route, Coordinate, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_Coordinate_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the closest point on the route relative to the given coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ProjectOn(this Route route, Coordinate coordinate, out float distanceFromStartInMeter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">coordinate</span>
+        <p><p>The coordinate to project.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distanceFromStartInMeter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ProjectOn_" data-uid="Itinero.RouteExtensions.ProjectOn*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ProjectOn_Itinero_Route_System_Int32_Coordinate_Coordinate__System_Int32__System_Single__System_Single__" data-uid="Itinero.RouteExtensions.ProjectOn(Itinero.Route,System.Int32,Coordinate,Coordinate@,System.Int32@,System.Single@,System.Single@)"><a href="#collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_System_Int32_Coordinate_Coordinate__System_Int32__System_Single__System_Single__" class="expander" data-toggle="collapse">ProjectOn(Route, Int32, Coordinate, out Coordinate, out Int32, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ProjectOn_Itinero_Route_System_Int32_Coordinate_Coordinate__System_Int32__System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the closest point on the route relative to the given coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ProjectOn(this Route route, int startShape, Coordinate coordinate, out Coordinate projected, out int shape, out float distanceFromStartInMeter, out float timeFromStartInSeconds)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p><p>The route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">startShape</span>
+        <p><p>The shape to start at, relevant for routes with u-turns and navigation.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">coordinate</span>
+        <p><p>The coordinate to project.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">projected</span>
+        <p><p>The projected coordinate on the route.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">shape</span>
+        <p><p>The shape segment of the route the point was projected on to.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distanceFromStartInMeter</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">timeFromStartInSeconds</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ReadXml_" data-uid="Itinero.RouteExtensions.ReadXml*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ReadXml_Stream_" data-uid="Itinero.RouteExtensions.ReadXml(Stream)"><a href="#collapsible-Itinero_RouteExtensions_ReadXml_Stream_" class="expander" data-toggle="collapse">ReadXml(Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ReadXml_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads a route in xml.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route ReadXml(Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.html">Route</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_RelativeDirectionAt_" data-uid="Itinero.RouteExtensions.RelativeDirectionAt*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_RelativeDirectionAt_Itinero_Route_System_Int32_System_Single_" data-uid="Itinero.RouteExtensions.RelativeDirectionAt(Itinero.Route,System.Int32,System.Single)"><a href="#collapsible-Itinero_RouteExtensions_RelativeDirectionAt_Itinero_Route_System_Int32_System_Single_" class="expander" data-toggle="collapse">RelativeDirectionAt(Route, Int32, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_RelativeDirectionAt_Itinero_Route_System_Int32_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the turn direction for the shape point at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RelativeDirection RelativeDirectionAt(this Route route, int i, float toleranceInMeters = 1F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">i</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">toleranceInMeters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">RelativeDirection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_SegmentFor_" data-uid="Itinero.RouteExtensions.SegmentFor*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_SegmentFor_Itinero_Route_System_Int32_System_Int32__System_Int32__" data-uid="Itinero.RouteExtensions.SegmentFor(Itinero.Route,System.Int32,System.Int32@,System.Int32@)"><a href="#collapsible-Itinero_RouteExtensions_SegmentFor_Itinero_Route_System_Int32_System_Int32__System_Int32__" class="expander" data-toggle="collapse">SegmentFor(Route, Int32, out Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_SegmentFor_Itinero_Route_System_Int32_System_Int32__System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches the segment the given shape index exists in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SegmentFor(this Route route, int shape, out int segmentStart, out int segmentEnd)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">shape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">segmentStart</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">segmentEnd</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ShapeMetaFor_" data-uid="Itinero.RouteExtensions.ShapeMetaFor*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ShapeMetaFor_Itinero_Route_System_Int32_" data-uid="Itinero.RouteExtensions.ShapeMetaFor(Itinero.Route,System.Int32)"><a href="#collapsible-Itinero_RouteExtensions_ShapeMetaFor_Itinero_Route_System_Int32_" class="expander" data-toggle="collapse">ShapeMetaFor(Route, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ShapeMetaFor_Itinero_Route_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the shape meta for the given shape index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Route.Meta ShapeMetaFor(this Route route, int shape)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">shape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Route.Meta.html">Route.Meta</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ToGeoJson_" data-uid="Itinero.RouteExtensions.ToGeoJson*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ToGeoJson_Itinero_Route_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" data-uid="Itinero.RouteExtensions.ToGeoJson(Itinero.Route,System.Boolean,System.Boolean,System.Boolean,Action{IAttributeCollection},Func{System.String,System.String,System.Boolean})"><a href="#collapsible-Itinero_RouteExtensions_ToGeoJson_Itinero_Route_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" class="expander" data-toggle="collapse">ToGeoJson(Route, Boolean, Boolean, Boolean, Action&lt;IAttributeCollection&gt;, Func&lt;String, String, Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ToGeoJson_Itinero_Route_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns this route as geojson.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToGeoJson(this Route route, bool includeShapeMeta = true, bool includeStops = true, bool groupByShapeMeta = true, Action&lt;IAttributeCollection&gt; attributesCallback = null, Func&lt;string, string, bool&gt; isRaw = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeShapeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeStops</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">groupByShapeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Action</span>&lt;<span class="xref">IAttributeCollection</span>&gt;</span>
+        <span class="parametername">attributesCallback</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isRaw</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ToJson_" data-uid="Itinero.RouteExtensions.ToJson*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ToJson_Itinero_Route_" data-uid="Itinero.RouteExtensions.ToJson(Itinero.Route)"><a href="#collapsible-Itinero_RouteExtensions_ToJson_Itinero_Route_" class="expander" data-toggle="collapse">ToJson(Route)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ToJson_Itinero_Route_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns this route as json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToJson(this Route route)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_ToXml_" data-uid="Itinero.RouteExtensions.ToXml*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_ToXml_Itinero_Route_" data-uid="Itinero.RouteExtensions.ToXml(Itinero.Route)"><a href="#collapsible-Itinero_RouteExtensions_ToXml_Itinero_Route_" class="expander" data-toggle="collapse">ToXml(Route)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_ToXml_Itinero_Route_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns this route as xml.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToXml(this Route route)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_WriteGeoJson_" data-uid="Itinero.RouteExtensions.WriteGeoJson*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_WriteGeoJson_Itinero_Route_Stream_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" data-uid="Itinero.RouteExtensions.WriteGeoJson(Itinero.Route,Stream,System.Boolean,System.Boolean,System.Boolean,Action{IAttributeCollection},Func{System.String,System.String,System.Boolean})"><a href="#collapsible-Itinero_RouteExtensions_WriteGeoJson_Itinero_Route_Stream_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" class="expander" data-toggle="collapse">WriteGeoJson(Route, Stream, Boolean, Boolean, Boolean, Action&lt;IAttributeCollection&gt;, Func&lt;String, String, Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_WriteGeoJson_Itinero_Route_Stream_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes the route as geojson.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteGeoJson(this Route route, Stream stream, bool includeShapeMeta = true, bool includeStops = true, bool groupByShapeMeta = true, Action&lt;IAttributeCollection&gt; attributesCallback = null, Func&lt;string, string, bool&gt; isRaw = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeShapeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeStops</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">groupByShapeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Action</span>&lt;<span class="xref">IAttributeCollection</span>&gt;</span>
+        <span class="parametername">attributesCallback</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isRaw</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_WriteGeoJson_" data-uid="Itinero.RouteExtensions.WriteGeoJson*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_WriteGeoJson_Itinero_Route_TextWriter_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" data-uid="Itinero.RouteExtensions.WriteGeoJson(Itinero.Route,TextWriter,System.Boolean,System.Boolean,System.Boolean,Action{IAttributeCollection},Func{System.String,System.String,System.Boolean})"><a href="#collapsible-Itinero_RouteExtensions_WriteGeoJson_Itinero_Route_TextWriter_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" class="expander" data-toggle="collapse">WriteGeoJson(Route, TextWriter, Boolean, Boolean, Boolean, Action&lt;IAttributeCollection&gt;, Func&lt;String, String, Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_WriteGeoJson_Itinero_Route_TextWriter_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes the route as geojson.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteGeoJson(this Route route, TextWriter writer, bool includeShapeMeta = true, bool includeStops = true, bool groupByShapeMeta = true, Action&lt;IAttributeCollection&gt; attributesCallback = null, Func&lt;string, string, bool&gt; isRaw = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TextWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeShapeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeStops</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">groupByShapeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Action</span>&lt;<span class="xref">IAttributeCollection</span>&gt;</span>
+        <span class="parametername">attributesCallback</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isRaw</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_WriteGeoJsonFeatures_" data-uid="Itinero.RouteExtensions.WriteGeoJsonFeatures*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_WriteGeoJsonFeatures_Itinero_Route_Itinero_IO_Json_JsonWriter_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" data-uid="Itinero.RouteExtensions.WriteGeoJsonFeatures(Itinero.Route,Itinero.IO.Json.JsonWriter,System.Boolean,System.Boolean,System.Boolean,Action{IAttributeCollection},Func{System.String,System.String,System.Boolean})"><a href="#collapsible-Itinero_RouteExtensions_WriteGeoJsonFeatures_Itinero_Route_Itinero_IO_Json_JsonWriter_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" class="expander" data-toggle="collapse">WriteGeoJsonFeatures(Route, JsonWriter, Boolean, Boolean, Boolean, Action&lt;IAttributeCollection&gt;, Func&lt;String, String, Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_WriteGeoJsonFeatures_Itinero_Route_Itinero_IO_Json_JsonWriter_System_Boolean_System_Boolean_System_Boolean_Action_IAttributeCollection__Func_System_String_System_String_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes the route as geojson.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteGeoJsonFeatures(this Route route, JsonWriter jsonWriter, bool includeShapeMeta = true, bool includeStops = true, bool groupByShapeMeta = true, Action&lt;IAttributeCollection&gt; attributesCallback = null, Func&lt;string, string, bool&gt; isRaw = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.IO.Json.JsonWriter.html">JsonWriter</a></span>
+        <span class="parametername">jsonWriter</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeShapeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeStops</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">groupByShapeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Action</span>&lt;<span class="xref">IAttributeCollection</span>&gt;</span>
+        <span class="parametername">attributesCallback</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isRaw</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_WriteJson_" data-uid="Itinero.RouteExtensions.WriteJson*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_WriteJson_Itinero_Route_Stream_" data-uid="Itinero.RouteExtensions.WriteJson(Itinero.Route,Stream)"><a href="#collapsible-Itinero_RouteExtensions_WriteJson_Itinero_Route_Stream_" class="expander" data-toggle="collapse">WriteJson(Route, Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_WriteJson_Itinero_Route_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes the route as json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteJson(this Route route, Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_WriteJson_" data-uid="Itinero.RouteExtensions.WriteJson*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_WriteJson_Itinero_Route_TextWriter_" data-uid="Itinero.RouteExtensions.WriteJson(Itinero.Route,TextWriter)"><a href="#collapsible-Itinero_RouteExtensions_WriteJson_Itinero_Route_TextWriter_" class="expander" data-toggle="collapse">WriteJson(Route, TextWriter)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_WriteJson_Itinero_Route_TextWriter_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes the route as json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteJson(this Route route, TextWriter writer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TextWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_WriteXml_" data-uid="Itinero.RouteExtensions.WriteXml*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_WriteXml_Itinero_Route_Stream_" data-uid="Itinero.RouteExtensions.WriteXml(Itinero.Route,Stream)"><a href="#collapsible-Itinero_RouteExtensions_WriteXml_Itinero_Route_Stream_" class="expander" data-toggle="collapse">WriteXml(Route, Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_WriteXml_Itinero_Route_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes the route as xml.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteXml(this Route route, Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouteExtensions_WriteXml_" data-uid="Itinero.RouteExtensions.WriteXml*"></a>
+  
+  <h4 id="Itinero_RouteExtensions_WriteXml_Itinero_Route_TextWriter_" data-uid="Itinero.RouteExtensions.WriteXml(Itinero.Route,TextWriter)"><a href="#collapsible-Itinero_RouteExtensions_WriteXml_Itinero_Route_TextWriter_" class="expander" data-toggle="collapse">WriteXml(Route, TextWriter)</a></h4>
+  
+  <div id="collapsible-Itinero_RouteExtensions_WriteXml_Itinero_Route_TextWriter_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes the route as xml.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteXml(this Route route, TextWriter writer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Route.html">Route</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TextWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

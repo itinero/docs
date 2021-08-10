@@ -1,0 +1,1736 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LocationExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LocationExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenLR.LocationExtensions">
+  <h1 id="OpenLR_LocationExtensions" data-uid="OpenLR.LocationExtensions">Class LocationExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Extension methods for locations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LocationExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OpenLR_LocationExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LocationExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OpenLR_LocationExtensions_AdjustToValidDistance_" data-uid="OpenLR.LocationExtensions.AdjustToValidDistance*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_AdjustToValidDistance_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_List_System_Int32__System_Int32_" data-uid="OpenLR.LocationExtensions.AdjustToValidDistance(OpenLR.Referenced.Locations.ReferencedLine,OpenLR.Coder,List{System.Int32},System.Int32)"><a href="#collapsible-OpenLR_LocationExtensions_AdjustToValidDistance_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_List_System_Int32__System_Int32_" class="expander" data-toggle="collapse">AdjustToValidDistance(ReferencedLine, Coder, List&lt;Int32&gt;, Int32)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_AdjustToValidDistance_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_List_System_Int32__System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adjusts this location by inserting intermediate LR-points if needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AdjustToValidDistance(this ReferencedLine line, Coder coder, List&lt;int&gt; points, int start = 0)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Coder.html">Coder</a></span>
+        <span class="parametername">coder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">points</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">start</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_AdjustToValidPoints_" data-uid="OpenLR.LocationExtensions.AdjustToValidPoints*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_AdjustToValidPoints_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_" data-uid="OpenLR.LocationExtensions.AdjustToValidPoints(OpenLR.Referenced.Locations.ReferencedLine,OpenLR.Coder)"><a href="#collapsible-OpenLR_LocationExtensions_AdjustToValidPoints_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_" class="expander" data-toggle="collapse">AdjustToValidPoints(ReferencedLine, Coder)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_AdjustToValidPoints_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adjusts this location to use valid LR-points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AdjustToValidPoints(this ReferencedLine line, Coder coder)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Coder.html">Coder</a></span>
+        <span class="parametername">coder</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_BuildLocationReferencePoint_" data-uid="OpenLR.LocationExtensions.BuildLocationReferencePoint*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_BuildLocationReferencePoint_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int32_System_Int32_" data-uid="OpenLR.LocationExtensions.BuildLocationReferencePoint(OpenLR.Referenced.Locations.ReferencedLine,OpenLR.Coder,System.Int32,System.Int32)"><a href="#collapsible-OpenLR_LocationExtensions_BuildLocationReferencePoint_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int32_System_Int32_" class="expander" data-toggle="collapse">BuildLocationReferencePoint(ReferencedLine, Coder, Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_BuildLocationReferencePoint_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a location referenced point for the vertex at the given start-index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocationReferencePoint BuildLocationReferencePoint(this ReferencedLine referencedLocation, Coder coder, int start, int end)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLocation</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Coder.html">Coder</a></span>
+        <span class="parametername">coder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">start</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">end</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="OpenLR.Model.LocationReferencePoint.html">LocationReferencePoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_BuildLocationReferencePointLast_" data-uid="OpenLR.LocationExtensions.BuildLocationReferencePointLast*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_BuildLocationReferencePointLast_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int32_" data-uid="OpenLR.LocationExtensions.BuildLocationReferencePointLast(OpenLR.Referenced.Locations.ReferencedLine,OpenLR.Coder,System.Int32)"><a href="#collapsible-OpenLR_LocationExtensions_BuildLocationReferencePointLast_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int32_" class="expander" data-toggle="collapse">BuildLocationReferencePointLast(ReferencedLine, Coder, Int32)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_BuildLocationReferencePointLast_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a location referenced point for the last vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocationReferencePoint BuildLocationReferencePointLast(this ReferencedLine referencedLocation, Coder coder, int before)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLocation</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Coder.html">Coder</a></span>
+        <span class="parametername">coder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">before</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="OpenLR.Model.LocationReferencePoint.html">LocationReferencePoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_BuildPathFromLine_" data-uid="OpenLR.LocationExtensions.BuildPathFromLine*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_RouterPoint__RouterPoint__" data-uid="OpenLR.LocationExtensions.BuildPathFromLine(OpenLR.Referenced.Locations.ReferencedLine,RouterDb,RouterPoint@,RouterPoint@)"><a href="#collapsible-OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_RouterPoint__RouterPoint__" class="expander" data-toggle="collapse">BuildPathFromLine(ReferencedLine, RouterDb, out RouterPoint, out RouterPoint)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_RouterPoint__RouterPoint__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a path from the given referenced line start and the first referenced point and ending at the last.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;float&gt; BuildPathFromLine(this ReferencedLine referencedLine, RouterDb routerDb, out RouterPoint source, out RouterPoint target)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterPoint</span></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterPoint</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_BuildPathFromLine_" data-uid="OpenLR.LocationExtensions.BuildPathFromLine*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_RouterPoint__System_Single__RouterPoint__System_Single__" data-uid="OpenLR.LocationExtensions.BuildPathFromLine(OpenLR.Referenced.Locations.ReferencedLine,RouterDb,RouterPoint@,System.Single@,RouterPoint@,System.Single@)"><a href="#collapsible-OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_RouterPoint__System_Single__RouterPoint__System_Single__" class="expander" data-toggle="collapse">BuildPathFromLine(ReferencedLine, RouterDb, out RouterPoint, out Single, out RouterPoint, out Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_RouterPoint__System_Single__RouterPoint__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a path from the given referenced line start and the first referenced point and ending at the last.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;float&gt; BuildPathFromLine(this ReferencedLine referencedLine, RouterDb routerDb, out RouterPoint source, out float postiveOffsetInMeters, out RouterPoint target, out float negativeOffsetInMeters)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterPoint</span></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">postiveOffsetInMeters</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterPoint</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">negativeOffsetInMeters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_BuildPathFromLine_" data-uid="OpenLR.LocationExtensions.BuildPathFromLine*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single__System_Single__" data-uid="OpenLR.LocationExtensions.BuildPathFromLine(OpenLR.Referenced.Locations.ReferencedLine,RouterDb,System.Single@,System.Single@)"><a href="#collapsible-OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single__System_Single__" class="expander" data-toggle="collapse">BuildPathFromLine(ReferencedLine, RouterDb, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_BuildPathFromLine_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a path from the given referenced line start and the first referenced point and ending at the last.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;float&gt; BuildPathFromLine(this ReferencedLine referencedLine, RouterDb routerDb, out float postiveOffsetInMeters, out float negativeOffsetInMeters)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">postiveOffsetInMeters</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">negativeOffsetInMeters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetCoordinates_" data-uid="OpenLR.LocationExtensions.GetCoordinates*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Single_System_Int32__Coordinate__System_Single__System_Single__System_Single__" data-uid="OpenLR.LocationExtensions.GetCoordinates(OpenLR.Referenced.Locations.ReferencedLine,OpenLR.Coder,System.Single,System.Int32@,Coordinate@,System.Single@,System.Single@,System.Single@)"><a href="#collapsible-OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Single_System_Int32__Coordinate__System_Single__System_Single__System_Single__" class="expander" data-toggle="collapse">GetCoordinates(ReferencedLine, Coder, Single, out Int32, out Coordinate, out Single, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Single_System_Int32__Coordinate__System_Single__System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the referenced line location to a list of sorted coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Coordinate&gt; GetCoordinates(this ReferencedLine route, Coder coder, float offsetRatio, out int offsetEdgeIdx, out Coordinate offsetLocation, out float offsetLength, out float offsetEdgeLength, out float edgeLength)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">route</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Coder.html">Coder</a></span>
+        <span class="parametername">coder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">offsetRatio</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">offsetEdgeIdx</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Coordinate</span></span>
+        <span class="parametername">offsetLocation</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">offsetLength</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">offsetEdgeLength</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">edgeLength</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">Coordinate</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetCoordinates_" data-uid="OpenLR.LocationExtensions.GetCoordinates*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" data-uid="OpenLR.LocationExtensions.GetCoordinates(OpenLR.Referenced.Locations.ReferencedLine,RouterDb)"><a href="#collapsible-OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="expander" data-toggle="collapse">GetCoordinates(ReferencedLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the referenced line location to features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Coordinate&gt; GetCoordinates(this ReferencedLine referencedLine, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">Coordinate</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetCoordinates_" data-uid="OpenLR.LocationExtensions.GetCoordinates*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Int32_System_Int32_" data-uid="OpenLR.LocationExtensions.GetCoordinates(OpenLR.Referenced.Locations.ReferencedLine,RouterDb,System.Int32,System.Int32)"><a href="#collapsible-OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Int32_System_Int32_" class="expander" data-toggle="collapse">GetCoordinates(ReferencedLine, RouterDb, Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetCoordinates_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the referenced line location to features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Coordinate&gt; GetCoordinates(this ReferencedLine referencedLine, RouterDb routerDb, int start, int count)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">start</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">count</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">Coordinate</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetLocationEdge_" data-uid="OpenLR.LocationExtensions.GetLocationEdge*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetLocationEdge_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_" data-uid="OpenLR.LocationExtensions.GetLocationEdge(OpenLR.Referenced.Locations.ReferencedPointAlongLine,RouterDb)"><a href="#collapsible-OpenLR_LocationExtensions_GetLocationEdge_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_" class="expander" data-toggle="collapse">GetLocationEdge(ReferencedPointAlongLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetLocationEdge_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the edge closest to the location in the point along line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetLocationEdge(this ReferencedPointAlongLine pointAlongLine, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedPointAlongLine.html">ReferencedPointAlongLine</a></span>
+        <span class="parametername">pointAlongLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetLocationEdge_" data-uid="OpenLR.LocationExtensions.GetLocationEdge*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetLocationEdge_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_System_Single__" data-uid="OpenLR.LocationExtensions.GetLocationEdge(OpenLR.Referenced.Locations.ReferencedPointAlongLine,RouterDb,System.Single@)"><a href="#collapsible-OpenLR_LocationExtensions_GetLocationEdge_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_System_Single__" class="expander" data-toggle="collapse">GetLocationEdge(ReferencedPointAlongLine, RouterDb, out Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetLocationEdge_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the edge closest to the location in the point along line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetLocationEdge(this ReferencedPointAlongLine pointAlongLine, RouterDb routerDb, out float offsetInMeter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedPointAlongLine.html">ReferencedPointAlongLine</a></span>
+        <span class="parametername">pointAlongLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">offsetInMeter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetNegativeOffsetLocation_" data-uid="OpenLR.LocationExtensions.GetNegativeOffsetLocation*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetNegativeOffsetLocation_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" data-uid="OpenLR.LocationExtensions.GetNegativeOffsetLocation(OpenLR.Referenced.Locations.ReferencedLine,RouterDb)"><a href="#collapsible-OpenLR_LocationExtensions_GetNegativeOffsetLocation_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="expander" data-toggle="collapse">GetNegativeOffsetLocation(ReferencedLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetNegativeOffsetLocation_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the negative offset location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate GetNegativeOffsetLocation(this ReferencedLine referencedLine, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetNegativeOffsetRouterPoint_" data-uid="OpenLR.LocationExtensions.GetNegativeOffsetRouterPoint*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetNegativeOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" data-uid="OpenLR.LocationExtensions.GetNegativeOffsetRouterPoint(OpenLR.Referenced.Locations.ReferencedLine,RouterDb)"><a href="#collapsible-OpenLR_LocationExtensions_GetNegativeOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="expander" data-toggle="collapse">GetNegativeOffsetRouterPoint(ReferencedLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetNegativeOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the negative offset routerpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint GetNegativeOffsetRouterPoint(this ReferencedLine referencedLine, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">RouterPoint</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetOffsetRouterPoint_" data-uid="OpenLR.LocationExtensions.GetOffsetRouterPoint*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_" data-uid="OpenLR.LocationExtensions.GetOffsetRouterPoint(OpenLR.Referenced.Locations.ReferencedLine,RouterDb,System.Single)"><a href="#collapsible-OpenLR_LocationExtensions_GetOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_" class="expander" data-toggle="collapse">GetOffsetRouterPoint(ReferencedLine, RouterDb, Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a positive offset routerpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint GetOffsetRouterPoint(this ReferencedLine referencedLine, RouterDb routerDb, float positiveOffsetPercentage)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">positiveOffsetPercentage</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">RouterPoint</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetPositionLocation_" data-uid="OpenLR.LocationExtensions.GetPositionLocation*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetPositionLocation_List_Coordinate__System_Single_" data-uid="OpenLR.LocationExtensions.GetPositionLocation(List{Coordinate},System.Single)"><a href="#collapsible-OpenLR_LocationExtensions_GetPositionLocation_List_Coordinate__System_Single_" class="expander" data-toggle="collapse">GetPositionLocation(List&lt;Coordinate&gt;, Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetPositionLocation_List_Coordinate__System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the location of the given position using the given coordinates as the polyline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate GetPositionLocation(this List&lt;Coordinate&gt; coordinates, float position)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">Coordinate</span>&gt;</span>
+        <span class="parametername">coordinates</span>
+        <p><p>The polyline coordinates.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">position</span>
+        <p><p>The position parameter [0-1].</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetPositiveOffsetLocation_" data-uid="OpenLR.LocationExtensions.GetPositiveOffsetLocation*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetPositiveOffsetLocation_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" data-uid="OpenLR.LocationExtensions.GetPositiveOffsetLocation(OpenLR.Referenced.Locations.ReferencedLine,RouterDb)"><a href="#collapsible-OpenLR_LocationExtensions_GetPositiveOffsetLocation_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="expander" data-toggle="collapse">GetPositiveOffsetLocation(ReferencedLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetPositiveOffsetLocation_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the positive offset location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate GetPositiveOffsetLocation(this ReferencedLine referencedLine, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetPositiveOffsetRouterPoint_" data-uid="OpenLR.LocationExtensions.GetPositiveOffsetRouterPoint*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetPositiveOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" data-uid="OpenLR.LocationExtensions.GetPositiveOffsetRouterPoint(OpenLR.Referenced.Locations.ReferencedLine,RouterDb)"><a href="#collapsible-OpenLR_LocationExtensions_GetPositiveOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="expander" data-toggle="collapse">GetPositiveOffsetRouterPoint(ReferencedLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetPositiveOffsetRouterPoint_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the positive offset routerpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint GetPositiveOffsetRouterPoint(this ReferencedLine referencedLine, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">referencedLine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">RouterPoint</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_GetVerticesSet_" data-uid="OpenLR.LocationExtensions.GetVerticesSet*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_GetVerticesSet_OpenLR_Referenced_Locations_ReferencedLine_" data-uid="OpenLR.LocationExtensions.GetVerticesSet(OpenLR.Referenced.Locations.ReferencedLine)"><a href="#collapsible-OpenLR_LocationExtensions_GetVerticesSet_OpenLR_Referenced_Locations_ReferencedLine_" class="expander" data-toggle="collapse">GetVerticesSet(ReferencedLine)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_GetVerticesSet_OpenLR_Referenced_Locations_ReferencedLine_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all vertices in one hashset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HashSet&lt;uint&gt; GetVerticesSet(this ReferencedLine line)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">HashSet</span>&lt;<span class="xref">System.UInt32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_ProjectOn_" data-uid="OpenLR.LocationExtensions.ProjectOn*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_ProjectOn_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_System_Single_" data-uid="OpenLR.LocationExtensions.ProjectOn(OpenLR.Referenced.Locations.ReferencedLine,RouterDb,System.Single,System.Single)"><a href="#collapsible-OpenLR_LocationExtensions_ProjectOn_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_System_Single_" class="expander" data-toggle="collapse">ProjectOn(ReferencedLine, RouterDb, Single, Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_ProjectOn_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Projects the given coordinates on the referenced line and returns the edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long ProjectOn(this ReferencedLine line, RouterDb routerDb, float latitude, float longitude)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">latitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">longitude</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_ProjectOn_" data-uid="OpenLR.LocationExtensions.ProjectOn*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_ProjectOn_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_System_Single_System_Single__" data-uid="OpenLR.LocationExtensions.ProjectOn(OpenLR.Referenced.Locations.ReferencedLine,RouterDb,System.Single,System.Single,System.Single@)"><a href="#collapsible-OpenLR_LocationExtensions_ProjectOn_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_System_Single_System_Single__" class="expander" data-toggle="collapse">ProjectOn(ReferencedLine, RouterDb, Single, Single, out Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_ProjectOn_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_System_Single_System_Single_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Projects the given coordinates on the referenced line and returns the edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long ProjectOn(this ReferencedLine line, RouterDb routerDb, float latitude, float longitude, out float offsetInMeter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">latitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">longitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">offsetInMeter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_TryAdjustToValidPointBackwards_" data-uid="OpenLR.LocationExtensions.TryAdjustToValidPointBackwards*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_TryAdjustToValidPointBackwards_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_UInt32_System_UInt32_HashSet_System_UInt32__" data-uid="OpenLR.LocationExtensions.TryAdjustToValidPointBackwards(OpenLR.Referenced.Locations.ReferencedLine,OpenLR.Coder,System.UInt32,System.UInt32,HashSet{System.UInt32})"><a href="#collapsible-OpenLR_LocationExtensions_TryAdjustToValidPointBackwards_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_UInt32_System_UInt32_HashSet_System_UInt32__" class="expander" data-toggle="collapse">TryAdjustToValidPointBackwards(ReferencedLine, Coder, UInt32, UInt32, HashSet&lt;UInt32&gt;)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_TryAdjustToValidPointBackwards_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_UInt32_System_UInt32_HashSet_System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to adjust this location backwards to a valid point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAdjustToValidPointBackwards(this ReferencedLine line, Coder coder, uint vertex1, uint vertex2, HashSet&lt;uint&gt; exclude)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Coder.html">Coder</a></span>
+        <span class="parametername">coder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">HashSet</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">exclude</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_TryAdjustToValidPointForwards_" data-uid="OpenLR.LocationExtensions.TryAdjustToValidPointForwards*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_TryAdjustToValidPointForwards_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int64_System_Int64_HashSet_System_UInt32__" data-uid="OpenLR.LocationExtensions.TryAdjustToValidPointForwards(OpenLR.Referenced.Locations.ReferencedLine,OpenLR.Coder,System.Int64,System.Int64,HashSet{System.UInt32})"><a href="#collapsible-OpenLR_LocationExtensions_TryAdjustToValidPointForwards_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int64_System_Int64_HashSet_System_UInt32__" class="expander" data-toggle="collapse">TryAdjustToValidPointForwards(ReferencedLine, Coder, Int64, Int64, HashSet&lt;UInt32&gt;)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_TryAdjustToValidPointForwards_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_System_Int64_System_Int64_HashSet_System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to adjust this location forwards to a valid point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAdjustToValidPointForwards(this ReferencedLine line, Coder coder, long vertex1, long vertex2, HashSet&lt;uint&gt; exclude)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Coder.html">Coder</a></span>
+        <span class="parametername">coder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">vertex1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">vertex2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">HashSet</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">exclude</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_ValidateBinary_" data-uid="OpenLR.LocationExtensions.ValidateBinary*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_ValidateBinary_OpenLR_Referenced_Locations_ReferencedLine_" data-uid="OpenLR.LocationExtensions.ValidateBinary(OpenLR.Referenced.Locations.ReferencedLine)"><a href="#collapsible-OpenLR_LocationExtensions_ValidateBinary_OpenLR_Referenced_Locations_ReferencedLine_" class="expander" data-toggle="collapse">ValidateBinary(ReferencedLine)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_ValidateBinary_OpenLR_Referenced_Locations_ReferencedLine_" class="collapse in">
+  <div class="markdown level1 summary"><p>Validates the location for encoding in binary format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateBinary(this ReferencedLine line)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_ValidateConnected_" data-uid="OpenLR.LocationExtensions.ValidateConnected*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_ValidateConnected_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_" data-uid="OpenLR.LocationExtensions.ValidateConnected(OpenLR.Referenced.Locations.ReferencedLine,OpenLR.Coder)"><a href="#collapsible-OpenLR_LocationExtensions_ValidateConnected_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_" class="expander" data-toggle="collapse">ValidateConnected(ReferencedLine, Coder)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_ValidateConnected_OpenLR_Referenced_Locations_ReferencedLine_OpenLR_Coder_" class="collapse in">
+  <div class="markdown level1 summary"><p>Validates if the location is connected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateConnected(this ReferencedLine line, Coder coder)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Coder.html">Coder</a></span>
+        <span class="parametername">coder</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_LocationExtensions_ValidateOffsets_" data-uid="OpenLR.LocationExtensions.ValidateOffsets*"></a>
+  
+  <h4 id="OpenLR_LocationExtensions_ValidateOffsets_OpenLR_Referenced_Locations_ReferencedLine_" data-uid="OpenLR.LocationExtensions.ValidateOffsets(OpenLR.Referenced.Locations.ReferencedLine)"><a href="#collapsible-OpenLR_LocationExtensions_ValidateOffsets_OpenLR_Referenced_Locations_ReferencedLine_" class="expander" data-toggle="collapse">ValidateOffsets(ReferencedLine)</a></h4>
+  
+  <div id="collapsible-OpenLR_LocationExtensions_ValidateOffsets_OpenLR_Referenced_Locations_ReferencedLine_" class="collapse in">
+  <div class="markdown level1 summary"><p>Validates the offsets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateOffsets(this ReferencedLine line)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1584 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DirectedHelper
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DirectedHelper
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper">
+  <h1 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper">Class DirectedHelper
+  </h1>
+  <div class="markdown level0 summary"><p>An helper class to handle directed-aware id&apos;s with direction-aware weights.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DirectedHelper</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DirectedHelper</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><ul>
+<li>id            = The customer id, indepedent of turns or directions.</li>
+<li>directedId    = What happens at a customer, do we u-turn at the customer, go straight forward, backward or u-turn in the other direction.</li>
+<li>departureId   = How we depart from a customer, do we depart &apos;left&apos; or &apos;right&apos;.</li>
+<li>arrivalId     = How we arrive at a customer, do we arrive from &apos;left&apos; or &apos;right&apos;.</li>
+<li>turn          = A turn:<ul>
+<li>0: ------X------- forward</li>
+<li>1: ------X        u-turn</li>
+<li>2:       X------- other u-turn</li>
+<li>3: ------X------- backward</li>
+</ul>
+</li>
+</ul>
+<p>A directedId contains:</p>
+<ul>
+<li>id           : the regular customer id.</li>
+<li>turn         : the turn taken at that customer, the turn defines:<ul>
+<li>arrivalId    : the arrival id at that customer.</li>
+<li>departureId  : the departure id at that customer.</li>
+</ul>
+</li>
+</ul>
+</div>
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_AverageWeight_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.AverageWeight*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_AverageWeight_System_Single_____System_Int32_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.AverageWeight(System.Single[][],System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_AverageWeight_System_Single_____System_Int32_System_Int32_" class="expander" data-toggle="collapse">AverageWeight(Single[][], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_AverageWeight_System_Single_____System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the average weight from customer1 -&gt; customer2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float AverageWeight(this float[][] weights, int id1, int id2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_BuildDirectedId_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.BuildDirectedId*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_BuildDirectedId_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.BuildDirectedId(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_BuildDirectedId_System_Int32_System_Int32_" class="expander" data-toggle="collapse">BuildDirectedId(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_BuildDirectedId_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a directed id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BuildDirectedId(int id, int turn)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">turn</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_BuildTurn_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.BuildTurn*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_BuildTurn_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.BuildTurn(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_BuildTurn_System_Int32_System_Int32_" class="expander" data-toggle="collapse">BuildTurn(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_BuildTurn_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a turn from an arrival and departure offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BuildTurn(int arrivalOffset, int departureOffset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">arrivalOffset</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">departureOffset</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_CheapestInsert_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.CheapestInsert*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_CheapestInsert_System_Single_____System_Single___System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.CheapestInsert(System.Single[][],System.Single[],System.Int32,System.Int32,System.Int32@,System.Int32@)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_CheapestInsert_System_Single_____System_Single___System_Int32_System_Int32_System_Int32__System_Int32__" class="expander" data-toggle="collapse">CheapestInsert(Single[][], Single[], Int32, Int32, out Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_CheapestInsert_System_Single_____System_Single___System_Int32_System_Int32_System_Int32__System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the minimum weight from customer1 -&gt; customer2 while inserting customer2. Outputs the best departure and arrival offsets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CheapestInsert(this float[][] weights, float[] penalties, int id1, int id2, out int departureOffset1, out int arrivalOffset2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[]</span>
+        <span class="parametername">penalties</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">departureOffset1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">arrivalOffset2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_CheapestInsert_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.CheapestInsert*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_CheapestInsert_Weight_____Weight___System_Int32_System_Int32_ProfileMetric_System_Int32__System_Int32__" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.CheapestInsert(Weight[][],Weight[],System.Int32,System.Int32,ProfileMetric,System.Int32@,System.Int32@)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_CheapestInsert_Weight_____Weight___System_Int32_System_Int32_ProfileMetric_System_Int32__System_Int32__" class="expander" data-toggle="collapse">CheapestInsert(Weight[][], Weight[], Int32, Int32, ProfileMetric, out Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_CheapestInsert_Weight_____Weight___System_Int32_System_Int32_ProfileMetric_System_Int32__System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the minimum weight from customer1 -&gt; customer2 while inserting customer2. Outputs the best departure and arrival offsets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Weight CheapestInsert(this Weight[][] weights, Weight[] penalties, int id1, int id2, ProfileMetric metric, out int departureOffset1, out int arrivalOffset2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Weight</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Weight</span>[]</span>
+        <span class="parametername">penalties</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ProfileMetric</span></span>
+        <span class="parametername">metric</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">departureOffset1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">arrivalOffset2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Weight</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractAll_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractAll*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractAll_System_Int32_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractAll(System.Int32,System.Int32@,System.Int32@,System.Int32@,System.Int32@)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractAll_System_Int32_System_Int32__System_Int32__System_Int32__System_Int32__" class="expander" data-toggle="collapse">ExtractAll(Int32, out Int32, out Int32, out Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractAll_System_Int32_System_Int32__System_Int32__System_Int32__System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts the arrivalId, departureId, id, and turn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExtractAll(int directedId, out int arrivalId, out int departureId, out int id, out int turn)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">arrivalId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">departureId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">turn</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractArrivalId_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractArrivalId*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractArrivalId_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractArrivalId(System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractArrivalId_System_Int32_" class="expander" data-toggle="collapse">ExtractArrivalId(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractArrivalId_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts the arrival id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ExtractArrivalId(int directedId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractDepartureId_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractDepartureId*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractDepartureId_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractDepartureId(System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractDepartureId_System_Int32_" class="expander" data-toggle="collapse">ExtractDepartureId(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractDepartureId_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts the departure id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ExtractDepartureId(int directedId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractId_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractId*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractId_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractId(System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractId_System_Int32_" class="expander" data-toggle="collapse">ExtractId(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractId_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts the original customer id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ExtractId(int directedId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractId_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractId*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractId_System_Int32_System_Int32__" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractId(System.Int32,System.Int32@)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractId_System_Int32_System_Int32__" class="expander" data-toggle="collapse">ExtractId(Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractId_System_Int32_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts the turn and id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ExtractId(int directedId, out int turn)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">turn</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractOffset_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractOffset*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractOffset_System_Int32_System_Int32__System_Int32__" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractOffset(System.Int32,System.Int32@,System.Int32@)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractOffset_System_Int32_System_Int32__System_Int32__" class="expander" data-toggle="collapse">ExtractOffset(Int32, out Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractOffset_System_Int32_System_Int32__System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts the arrival and departure offsets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExtractOffset(int turn, out int arrivalOffset, out int departureoffset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">turn</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">arrivalOffset</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">departureoffset</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractTurn_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractTurn*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractTurn_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ExtractTurn(System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractTurn_System_Int32_" class="expander" data-toggle="collapse">ExtractTurn(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ExtractTurn_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts the turn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ExtractTurn(int directedId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_MinWeight_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.MinWeight*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_MinWeight_System_Single_____System_Int32_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.MinWeight(System.Single[][],System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_MinWeight_System_Single_____System_Int32_System_Int32_" class="expander" data-toggle="collapse">MinWeight(Single[][], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_MinWeight_System_Single_____System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the minimum weight from customer1 -&gt; customer2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MinWeight(this float[][] weights, int id1, int id2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SetWeight_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SetWeight*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SetWeight_System_Single_____System_Int32_System_Int32_System_Single_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SetWeight(System.Single[][],System.Int32,System.Int32,System.Single)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SetWeight_System_Single_____System_Int32_System_Int32_System_Single_" class="expander" data-toggle="collapse">SetWeight(Single[][], Int32, Int32, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SetWeight_System_Single_____System_Int32_System_Int32_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the weights between two customers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWeight(this float[][] weights, int id1, int id2, float weight)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SetWeight_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SetWeight*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SetWeight_System_Single_____System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SetWeight(System.Single[][],System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SetWeight_System_Single_____System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_" class="expander" data-toggle="collapse">SetWeight(Single[][], Int32, Int32, Single, Single, Single, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SetWeight_System_Single_____System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the weights between two customers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWeight(this float[][] weights, int id1, int id2, float forward1forward2, float forward1backward2, float backward1forward1, float backward1backward2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">id2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">forward1forward2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">forward1backward2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">backward1forward1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">backward1backward2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ShiftAfterBestTurns_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ShiftAfterBestTurns*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_ShiftAfterBestTurns_Tour_System_Single_____System_Single___System_Int32_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.ShiftAfterBestTurns(Tour,System.Single[][],System.Single[],System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ShiftAfterBestTurns_Tour_System_Single_____System_Single___System_Int32_System_Int32_" class="expander" data-toggle="collapse">ShiftAfterBestTurns(Tour, Single[][], Single[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_ShiftAfterBestTurns_Tour_System_Single_____System_Single___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Shifts the directed customer aft er the given directed before with the best possible turns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ShiftAfterBestTurns(this Tour tour, float[][] weights, float[] penalties, int directedCustomer, int directedBefore)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Tour</span></span>
+        <span class="parametername">tour</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[]</span>
+        <span class="parametername">penalties</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedCustomer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedBefore</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchArrivalOffset_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SwitchArrivalOffset*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchArrivalOffset_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SwitchArrivalOffset(System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchArrivalOffset_System_Int32_" class="expander" data-toggle="collapse">SwitchArrivalOffset(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchArrivalOffset_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Switches the arrival offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SwitchArrivalOffset(int directedId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchDepartureOffset_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SwitchDepartureOffset*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchDepartureOffset_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SwitchDepartureOffset(System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchDepartureOffset_System_Int32_" class="expander" data-toggle="collapse">SwitchDepartureOffset(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchDepartureOffset_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Switches the departure offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SwitchDepartureOffset(int directedId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchToBestTurn_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SwitchToBestTurn*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchToBestTurn_System_Int32_System_Int32_System_Int32_System_Single_____System_Single___System_Int32__System_Boolean__System_Boolean__System_Single__" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.SwitchToBestTurn(System.Int32,System.Int32,System.Int32,System.Single[][],System.Single[],System.Int32@,System.Boolean@,System.Boolean@,System.Single@)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchToBestTurn_System_Int32_System_Int32_System_Int32_System_Single_____System_Single___System_Int32__System_Boolean__System_Boolean__System_Single__" class="expander" data-toggle="collapse">SwitchToBestTurn(Int32, Int32, Int32, Single[][], Single[], out Int32, out Boolean, out Boolean, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_SwitchToBestTurn_System_Int32_System_Int32_System_Int32_System_Single_____System_Single___System_Int32__System_Boolean__System_Boolean__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Switches the given directed id to the best turn given the before and after directed id&apos;s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SwitchToBestTurn(int directedId, int beforeDirectedId, int afterDirectedId, float[][] weights, float[] turnPenalties, out int betterDirectedId, out bool departureIdSwitched, out bool arrivalIdSwitched, out float delta)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">beforeDirectedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">afterDirectedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[]</span>
+        <span class="parametername">turnPenalties</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">betterDirectedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">departureIdSwitched</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">arrivalIdSwitched</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">delta</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_UpdateArrivalOffset_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.UpdateArrivalOffset*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_UpdateArrivalOffset_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.UpdateArrivalOffset(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_UpdateArrivalOffset_System_Int32_System_Int32_" class="expander" data-toggle="collapse">UpdateArrivalOffset(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_UpdateArrivalOffset_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Updates the arrival offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UpdateArrivalOffset(int directedId, int arrivalOffset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">arrivalOffset</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_UpdateDepartureOffset_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.UpdateDepartureOffset*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_UpdateDepartureOffset_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.UpdateDepartureOffset(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_UpdateDepartureOffset_System_Int32_System_Int32_" class="expander" data-toggle="collapse">UpdateDepartureOffset(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_UpdateDepartureOffset_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Updates the departure offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UpdateDepartureOffset(int directedId, int departureOffset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">departureOffset</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_Weight_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.Weight*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_Weight_Tour_System_Single_____System_Single___" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.Weight(Tour,System.Single[][],System.Single[])"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_Weight_Tour_System_Single_____System_Single___" class="expander" data-toggle="collapse">Weight(Tour, Single[][], Single[])</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_Weight_Tour_System_Single_____System_Single___" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the weight of the given tour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Weight(this Tour tour, float[][] weights, float[] turnPenalties)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Tour</span></span>
+        <span class="parametername">tour</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[]</span>
+        <span class="parametername">turnPenalties</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_WeightWithoutTurns_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.WeightWithoutTurns*"></a>
+  
+  <h4 id="Itinero_Optimization_Algorithms_Directed_DirectedHelper_WeightWithoutTurns_System_Single_____System_Int32_System_Int32_" data-uid="Itinero.Optimization.Algorithms.Directed.DirectedHelper.WeightWithoutTurns(System.Single[][],System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_WeightWithoutTurns_System_Single_____System_Int32_System_Int32_" class="expander" data-toggle="collapse">WeightWithoutTurns(Single[][], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Algorithms_Directed_DirectedHelper_WeightWithoutTurns_System_Single_____System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the weights between the two directed id&apos;s without the turn weights.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float WeightWithoutTurns(this float[][] weights, int directed1, int directed2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span>[][]</span>
+        <span class="parametername">weights</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directed1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">directed2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

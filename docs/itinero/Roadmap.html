@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Version 1.1 | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Version 1.1 | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.22.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>This is an overview of features that are either in development or on the roadmap:</p>
+<h2 id="version-11">Version 1.1</h2>
+<p><em>This version has been released: <a href="https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.1.0.md">https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.1.0.md</a></em></p>
+<p>This contains some ideas on some non-breaking extensions on top of v1.0.</p>
+<ul>
+<li>Add a weight matrix calculation algorithm that calculates edge-&gt;edge weights excluding the source-target edge weights. <em>DONE</em><ul>
+<li>Check to see if the current edge-based matrix algorithm can be replaced by this more general case. <em>DONE</em></li>
+</ul>
+</li>
+<li>And several other issues and ideas: <a href="https://github.com/itinero/routing/milestone/3">Milestone for 1.1</a> <em>DONE</em></li>
+</ul>
+<h2 id="version-12">Version 1.2</h2>
+<p><em>This version has been released: <a href="https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.2.0.md">https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.2.0.md</a></em></p>
+<ul>
+<li>Fixed maxspeed normalization issue.</li>
+<li>Implemented support for nested relations by allowing multiple passes over relations if requested.</li>
+<li>Implemented support for nested cycle route relations in the default bicycle profile.</li>
+<li>Fixed directed weight matrix issue related to resolved points on oneway segments.</li>
+</ul>
+<h2 id="version-13">Version 1.3</h2>
+<ul>
+<li>Meta-data on vertices: More details <a href="https://github.com/itinero/routing/wiki/Development-Plan:--Meta-data-on-vertices">here</a>.</li>
+<li>A way to extract parts of the network and save them as a new routerDb.</li>
+<li>Add extension method to directly load data from overpass by polygon.</li>
+<li>Use the meta-data on vertices to paste networks back together by keeping node id&#39;s.</li>
+</ul>
+<h2 id="version-20-and-beyond">Version 2.0 and beyond</h2>
+<ul>
+<li>Fix issue with float&#39;s not being good enough: <a href="https://github.com/itinero/routing/issues/120">https://github.com/itinero/routing/issues/120</a></li>
+<li>Move to netstandard2.0 <em>only</em>.</li>
+<li>Move to .NET core for the functional test project: development should be possible on any platform.</li>
+<li><a href="https://github.com/itinero/routing/tree/features/constraints">PLANNED</a>: Constrained routing: Routing with constraints like weight limits or vehicle size (width and height).</li>
+<li>[PLANNED] Destination-only access: Handle access constraints where there is destination only access, also when using contracted graphs.</li>
+<li>Better CH: <a href="https://github.com/itinero/routing/issues/92">https://github.com/itinero/routing/issues/92</a></li>
+<li>Reevaluate Lua profiles: <a href="https://github.com/itinero/routing/issues/102">https://github.com/itinero/routing/issues/102</a></li>
+<li>Figure out a way to better detect islands and route under all conditions: <a href="https://github.com/itinero/routing/issues/104">https://github.com/itinero/routing/issues/104</a></li>
+<li>Support for dynamic weights per edge, for example to handle floating car data: <a href="https://github.com/itinero/routing/issues/103">https://github.com/itinero/routing/issues/103</a></li>
+<li>Look at the filesize of the routerDb&#39;s: <a href="https://github.com/itinero/routing/issues/105">https://github.com/itinero/routing/issues/105</a></li>
+<li>Elevation profiles: Output height profiles of calculated routes.</li>
+<li>Elevation-aware routing: Routing that takes into account elevation. Think avoiding steep hills for bicycles.</li>
+<li>No-go areas or maximum speeds based on areas: <a href="https://github.com/itinero/routing/issues/19">https://github.com/itinero/routing/issues/19</a></li>
+<li>Alternative routes.</li>
+<li>Map matching.</li>
+<li>Reevaluate lua for instruction generation of fix performance issues.</li>
+<li>Remove nullable booleans to describe directional information.</li>
+<li>Remove this fix: <a href="https://github.com/itinero/routing/issues/108">https://github.com/itinero/routing/issues/108</a></li>
+<li>cleanup weight handlers, let them die!</li>
+<li>cleanup old way of handling restrictions.</li>
+<li>cleanup using bool? for directions and replace by Dir structure.</li>
+<li>cleanup old way of doing edge-based routing.</li>
+<li>Consider implementing support for multi-level route relations: <a href="https://github.com/itinero/routing/wiki/Development-plan:-Handle-multi-level-route-relations.#process-relations-in-multiple-passes">https://github.com/itinero/routing/wiki/Development-plan:-Handle-multi-level-route-relations.#process-relations-in-multiple-passes</a></li>
+<li>Move OSM specific parsing to the OSM namespace: IAttributeCollectionExtension</li>
+</ul>
+<h2 id="general-ideas">General ideas</h2>
+<p>A collection of general ideas that may or may not end up on the final roadmap.</p>
+<h4 id="add-a-more-efficient-data-structure-to-represent-restrictions">Add a more efficient data structure to represent restrictions</h4>
+<h4 id="add-extension-method-to-turn-a-routerpoint-into-geojson">Add extension method to turn a routerpoint into GeoJSON</h4>
+<p>Just return geojson with all details included:</p>
+<ul>
+<li>Edge with start and end vertex.</li>
+<li>The location on the network.</li>
+<li>The original location.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/itinero/docs/blob/master/docs/itinero/Roadmap.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

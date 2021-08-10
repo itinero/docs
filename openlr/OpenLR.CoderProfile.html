@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CoderProfile
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CoderProfile
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenLR.CoderProfile">
+  <h1 id="OpenLR_CoderProfile" data-uid="OpenLR.CoderProfile">Class CoderProfile
+  </h1>
+  <div class="markdown level0 summary"><p>A profile that can be used by the coder to implmenent network-specifics.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CoderProfile</span></div>
+  </div>
+  
+      <div class="level2"><a class="xref" href="OpenLR.Osm.OsmCoderProfile.html">OsmCoderProfile</a></div>
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OpenLR_CoderProfile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CoderProfile</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OpenLR_CoderProfile__ctor_" data-uid="OpenLR.CoderProfile.#ctor*"></a>
+  
+  <h4 id="OpenLR_CoderProfile__ctor_Profile_System_Single_System_Single_" data-uid="OpenLR.CoderProfile.#ctor(Profile,System.Single,System.Single)"><a href="#collapsible-OpenLR_CoderProfile__ctor_Profile_System_Single_System_Single_" class="expander" data-toggle="collapse">CoderProfile(Profile, Single, Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile__ctor_Profile_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new coder profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoderProfile(Profile profile, float scoreThreshold, float maxSearch)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">scoreThreshold</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxSearch</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OpenLR_CoderProfile_MaxSearch_" data-uid="OpenLR.CoderProfile.MaxSearch*"></a>
+  
+  <h4 id="OpenLR_CoderProfile_MaxSearch" data-uid="OpenLR.CoderProfile.MaxSearch"><a href="#collapsible-OpenLR_CoderProfile_MaxSearch" class="expander" data-toggle="collapse">MaxSearch</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile_MaxSearch" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the maximum search (time or distance depending on used profile).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxSearch { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_CoderProfile_MaxSettles_" data-uid="OpenLR.CoderProfile.MaxSettles*"></a>
+  
+  <h4 id="OpenLR_CoderProfile_MaxSettles" data-uid="OpenLR.CoderProfile.MaxSettles"><a href="#collapsible-OpenLR_CoderProfile_MaxSettles" class="expander" data-toggle="collapse">MaxSettles</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile_MaxSettles" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the max settles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxSettles { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_CoderProfile_Profile_" data-uid="OpenLR.CoderProfile.Profile*"></a>
+  
+  <h4 id="OpenLR_CoderProfile_Profile" data-uid="OpenLR.CoderProfile.Profile"><a href="#collapsible-OpenLR_CoderProfile_Profile" class="expander" data-toggle="collapse">Profile</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile_Profile" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the get factor function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Profile Profile { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_CoderProfile_RoutingSettings_" data-uid="OpenLR.CoderProfile.RoutingSettings*"></a>
+  
+  <h4 id="OpenLR_CoderProfile_RoutingSettings" data-uid="OpenLR.CoderProfile.RoutingSettings"><a href="#collapsible-OpenLR_CoderProfile_RoutingSettings" class="expander" data-toggle="collapse">RoutingSettings</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile_RoutingSettings" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the routing settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoutingSettings&lt;float&gt; RoutingSettings { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">RoutingSettings</span>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_CoderProfile_ScoreThreshold_" data-uid="OpenLR.CoderProfile.ScoreThreshold*"></a>
+  
+  <h4 id="OpenLR_CoderProfile_ScoreThreshold" data-uid="OpenLR.CoderProfile.ScoreThreshold"><a href="#collapsible-OpenLR_CoderProfile_ScoreThreshold" class="expander" data-toggle="collapse">ScoreThreshold</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile_ScoreThreshold" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the score threshold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScoreThreshold { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OpenLR_CoderProfile_Extract_" data-uid="OpenLR.CoderProfile.Extract*"></a>
+  
+  <h4 id="OpenLR_CoderProfile_Extract_IAttributeCollection_FunctionalRoadClass__FormOfWay__" data-uid="OpenLR.CoderProfile.Extract(IAttributeCollection,FunctionalRoadClass@,FormOfWay@)"><a href="#collapsible-OpenLR_CoderProfile_Extract_IAttributeCollection_FunctionalRoadClass__FormOfWay__" class="expander" data-toggle="collapse">Extract(IAttributeCollection, out FunctionalRoadClass, out FormOfWay)</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile_Extract_IAttributeCollection_FunctionalRoadClass__FormOfWay__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to extract fow/frc from the given attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool Extract(IAttributeCollection tags, out FunctionalRoadClass frc, out FormOfWay fow)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IAttributeCollection</span></span>
+        <span class="parametername">tags</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">FunctionalRoadClass</span></span>
+        <span class="parametername">frc</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">FormOfWay</span></span>
+        <span class="parametername">fow</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_CoderProfile_GetAggressiveRoutingSettings_" data-uid="OpenLR.CoderProfile.GetAggressiveRoutingSettings*"></a>
+  
+  <h4 id="OpenLR_CoderProfile_GetAggressiveRoutingSettings_System_Single_" data-uid="OpenLR.CoderProfile.GetAggressiveRoutingSettings(System.Single)"><a href="#collapsible-OpenLR_CoderProfile_GetAggressiveRoutingSettings_System_Single_" class="expander" data-toggle="collapse">GetAggressiveRoutingSettings(Single)</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile_GetAggressiveRoutingSettings_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets more aggressive routing settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoutingSettings&lt;float&gt; GetAggressiveRoutingSettings(float factor)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">factor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">RoutingSettings</span>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_CoderProfile_Match_" data-uid="OpenLR.CoderProfile.Match*"></a>
+  
+  <h4 id="OpenLR_CoderProfile_Match_IAttributeCollection_FormOfWay_FunctionalRoadClass_" data-uid="OpenLR.CoderProfile.Match(IAttributeCollection,FormOfWay,FunctionalRoadClass)"><a href="#collapsible-OpenLR_CoderProfile_Match_IAttributeCollection_FormOfWay_FunctionalRoadClass_" class="expander" data-toggle="collapse">Match(IAttributeCollection, FormOfWay, FunctionalRoadClass)</a></h4>
+  
+  <div id="collapsible-OpenLR_CoderProfile_Match_IAttributeCollection_FormOfWay_FunctionalRoadClass_" class="collapse in">
+  <div class="markdown level1 summary"><p>Matches nwb/fow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Match(IAttributeCollection attributes, FormOfWay fow, FunctionalRoadClass frc)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IAttributeCollection</span></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">FormOfWay</span></span>
+        <span class="parametername">fow</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">FunctionalRoadClass</span></span>
+        <span class="parametername">frc</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

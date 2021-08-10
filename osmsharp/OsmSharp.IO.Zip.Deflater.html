@@ -1,0 +1,1268 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Deflater
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Deflater
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OsmSharp.IO.Zip.Deflater">
+  <h1 id="OsmSharp_IO_Zip_Deflater" data-uid="OsmSharp.IO.Zip.Deflater">Class Deflater
+  </h1>
+  <div class="markdown level0 summary"><p>This is the Deflater class.  The deflater class compresses input
+with the deflate algorithm described in RFC 1951.  It has several
+compression levels and three different strategies described below.</p>
+<p>This class is <em>not</em> thread safe.  This is inherent in the API, due
+to the split of deflate and setInput.</p>
+<p>author of the original java version : Jochen Hoenicke</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Deflater</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OsmSharp_IO_Zip_Deflater_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Deflater</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater__ctor_" data-uid="OsmSharp.IO.Zip.Deflater.#ctor*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater__ctor" data-uid="OsmSharp.IO.Zip.Deflater.#ctor"><a href="#collapsible-OsmSharp_IO_Zip_Deflater__ctor" class="expander" data-toggle="collapse">Deflater()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater__ctor" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new deflater with default compression level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Deflater()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater__ctor_" data-uid="OsmSharp.IO.Zip.Deflater.#ctor*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater__ctor_System_Int32_" data-uid="OsmSharp.IO.Zip.Deflater.#ctor(System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Deflater__ctor_System_Int32_" class="expander" data-toggle="collapse">Deflater(Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater__ctor_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new deflater with given compression level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Deflater(int level)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">level</span>
+        <p><p>the compression level, a value between NO_COMPRESSION
+and BEST_COMPRESSION, or DEFAULT_COMPRESSION.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentOutOfRangeException</span>
+        <p><p>if lvl is out of range.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater__ctor_" data-uid="OsmSharp.IO.Zip.Deflater.#ctor*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater__ctor_System_Int32_System_Boolean_" data-uid="OsmSharp.IO.Zip.Deflater.#ctor(System.Int32,System.Boolean)"><a href="#collapsible-OsmSharp_IO_Zip_Deflater__ctor_System_Int32_System_Boolean_" class="expander" data-toggle="collapse">Deflater(Int32, Boolean)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater__ctor_System_Int32_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new deflater with given compression level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Deflater(int level, bool noZlibHeaderOrFooter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">level</span>
+        <p><p>the compression level, a value between NO_COMPRESSION
+and BEST_COMPRESSION.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">noZlibHeaderOrFooter</span>
+        <p><p>true, if we should suppress the Zlib/RFC1950 header at the
+beginning and the adler checksum at the end of the output.  This is
+useful for the GZIP/PKZIP formats.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentOutOfRangeException</span>
+        <p><p>if lvl is out of range.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_BEST_COMPRESSION" data-uid="OsmSharp.IO.Zip.Deflater.BEST_COMPRESSION"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_BEST_COMPRESSION" class="expander" data-toggle="collapse">BEST_COMPRESSION</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_BEST_COMPRESSION" class="collapse in">
+  <div class="markdown level1 summary"><p>The best and slowest compression level.  This tries to find very
+long and distant string repetitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BEST_COMPRESSION = 9</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_BEST_SPEED" data-uid="OsmSharp.IO.Zip.Deflater.BEST_SPEED"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_BEST_SPEED" class="expander" data-toggle="collapse">BEST_SPEED</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_BEST_SPEED" class="collapse in">
+  <div class="markdown level1 summary"><p>The worst but fastest compression level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BEST_SPEED = 1</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_DEFAULT_COMPRESSION" data-uid="OsmSharp.IO.Zip.Deflater.DEFAULT_COMPRESSION"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_DEFAULT_COMPRESSION" class="expander" data-toggle="collapse">DEFAULT_COMPRESSION</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_DEFAULT_COMPRESSION" class="collapse in">
+  <div class="markdown level1 summary"><p>The default compression level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DEFAULT_COMPRESSION = -1</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_DEFLATED" data-uid="OsmSharp.IO.Zip.Deflater.DEFLATED"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_DEFLATED" class="expander" data-toggle="collapse">DEFLATED</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_DEFLATED" class="collapse in">
+  <div class="markdown level1 summary"><p>The compression method.  This is the only method supported so far.
+There is no need to use this constant at all.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DEFLATED = 8</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_NO_COMPRESSION" data-uid="OsmSharp.IO.Zip.Deflater.NO_COMPRESSION"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_NO_COMPRESSION" class="expander" data-toggle="collapse">NO_COMPRESSION</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_NO_COMPRESSION" class="collapse in">
+  <div class="markdown level1 summary"><p>This level won&apos;t compress at all but output uncompressed blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NO_COMPRESSION = 0</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_Adler_" data-uid="OsmSharp.IO.Zip.Deflater.Adler*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_Adler" data-uid="OsmSharp.IO.Zip.Deflater.Adler"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_Adler" class="expander" data-toggle="collapse">Adler</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_Adler" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the current adler checksum of the data that was processed so far.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Adler { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_IsFinished_" data-uid="OsmSharp.IO.Zip.Deflater.IsFinished*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_IsFinished" data-uid="OsmSharp.IO.Zip.Deflater.IsFinished"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_IsFinished" class="expander" data-toggle="collapse">IsFinished</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_IsFinished" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the stream was finished and no more output bytes
+are available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFinished { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_IsNeedingInput_" data-uid="OsmSharp.IO.Zip.Deflater.IsNeedingInput*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_IsNeedingInput" data-uid="OsmSharp.IO.Zip.Deflater.IsNeedingInput"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_IsNeedingInput" class="expander" data-toggle="collapse">IsNeedingInput</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_IsNeedingInput" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true, if the input buffer is empty.
+You should then call setInput(). 
+NOTE: This method can also return true when the stream
+was finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNeedingInput { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_TotalIn_" data-uid="OsmSharp.IO.Zip.Deflater.TotalIn*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_TotalIn" data-uid="OsmSharp.IO.Zip.Deflater.TotalIn"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_TotalIn" class="expander" data-toggle="collapse">TotalIn</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_TotalIn" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the number of input bytes processed so far.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long TotalIn { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_TotalOut_" data-uid="OsmSharp.IO.Zip.Deflater.TotalOut*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_TotalOut" data-uid="OsmSharp.IO.Zip.Deflater.TotalOut"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_TotalOut" class="expander" data-toggle="collapse">TotalOut</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_TotalOut" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the number of output bytes so far.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long TotalOut { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_Deflate_" data-uid="OsmSharp.IO.Zip.Deflater.Deflate*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_Deflate_System_Byte___" data-uid="OsmSharp.IO.Zip.Deflater.Deflate(System.Byte[])"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_Deflate_System_Byte___" class="expander" data-toggle="collapse">Deflate(Byte[])</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_Deflate_System_Byte___" class="collapse in">
+  <div class="markdown level1 summary"><p>Deflates the current input block with to the given array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Deflate(byte[] output)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">output</span>
+        <p><p>The buffer where compressed data is stored</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The number of compressed bytes added to the output, or 0 if either
+IsNeedingInput() or IsFinished returns true or length is zero.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_Deflate_" data-uid="OsmSharp.IO.Zip.Deflater.Deflate*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_Deflate_System_Byte___System_Int32_System_Int32_" data-uid="OsmSharp.IO.Zip.Deflater.Deflate(System.Byte[],System.Int32,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_Deflate_System_Byte___System_Int32_System_Int32_" class="expander" data-toggle="collapse">Deflate(Byte[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_Deflate_System_Byte___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Deflates the current input block to the given array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Deflate(byte[] output, int offset, int length)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">output</span>
+        <p><p>Buffer to store the compressed data.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">offset</span>
+        <p><p>Offset into the output array.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">length</span>
+        <p><p>The maximum number of bytes that may be stored.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The number of compressed bytes added to the output, or 0 if either
+needsInput() or finished() returns true or length is zero.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>If Finish() was previously called.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentOutOfRangeException</span>
+        <p><p>If offset or length don&apos;t match the array length.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_Finish_" data-uid="OsmSharp.IO.Zip.Deflater.Finish*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_Finish" data-uid="OsmSharp.IO.Zip.Deflater.Finish"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_Finish" class="expander" data-toggle="collapse">Finish()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_Finish" class="collapse in">
+  <div class="markdown level1 summary"><p>Finishes the deflater with the current input block.  It is an error
+to give more input after this method was called.  This method must
+be called to force all bytes to be flushed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Finish()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_Flush_" data-uid="OsmSharp.IO.Zip.Deflater.Flush*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_Flush" data-uid="OsmSharp.IO.Zip.Deflater.Flush"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_Flush" class="expander" data-toggle="collapse">Flush()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_Flush" class="collapse in">
+  <div class="markdown level1 summary"><p>Flushes the current input block.  Further calls to deflate() will
+produce enough output to inflate everything in the current input
+block.  This is not part of Sun&apos;s JDK so I have made it package
+private.  It is used by DeflaterOutputStream to implement
+flush().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Flush()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_GetLevel_" data-uid="OsmSharp.IO.Zip.Deflater.GetLevel*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_GetLevel" data-uid="OsmSharp.IO.Zip.Deflater.GetLevel"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_GetLevel" class="expander" data-toggle="collapse">GetLevel()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_GetLevel" class="collapse in">
+  <div class="markdown level1 summary"><p>Get current compression level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLevel()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>Returns the current compression level</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_Reset_" data-uid="OsmSharp.IO.Zip.Deflater.Reset*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_Reset" data-uid="OsmSharp.IO.Zip.Deflater.Reset"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_Reset" class="expander" data-toggle="collapse">Reset()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_Reset" class="collapse in">
+  <div class="markdown level1 summary"><p>Resets the deflater.  The deflater acts afterwards as if it was
+just created with the same compression level and strategy as it
+had before.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_SetDictionary_" data-uid="OsmSharp.IO.Zip.Deflater.SetDictionary*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_SetDictionary_System_Byte___" data-uid="OsmSharp.IO.Zip.Deflater.SetDictionary(System.Byte[])"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_SetDictionary_System_Byte___" class="expander" data-toggle="collapse">SetDictionary(Byte[])</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_SetDictionary_System_Byte___" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the dictionary which should be used in the deflate process.
+This call is equivalent to <pre><code>setDictionary(dict, 0, dict.Length)</code></pre>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDictionary(byte[] dictionary)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">dictionary</span>
+        <p><p>the dictionary.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>if SetInput () or Deflate () were already called or another dictionary was already set.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_SetDictionary_" data-uid="OsmSharp.IO.Zip.Deflater.SetDictionary*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_SetDictionary_System_Byte___System_Int32_System_Int32_" data-uid="OsmSharp.IO.Zip.Deflater.SetDictionary(System.Byte[],System.Int32,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_SetDictionary_System_Byte___System_Int32_System_Int32_" class="expander" data-toggle="collapse">SetDictionary(Byte[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_SetDictionary_System_Byte___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the dictionary which should be used in the deflate process.
+The dictionary is a byte array containing strings that are
+likely to occur in the data which should be compressed.  The
+dictionary is not stored in the compressed output, only a
+checksum.  To decompress the output you need to supply the same
+dictionary again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDictionary(byte[] dictionary, int index, int count)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">dictionary</span>
+        <p><p>The dictionary data</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p><p>The index where dictionary information commences.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">count</span>
+        <p><p>The number of bytes in the dictionary.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>If SetInput () or Deflate() were already called or another dictionary was already set.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_SetInput_" data-uid="OsmSharp.IO.Zip.Deflater.SetInput*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_SetInput_System_Byte___" data-uid="OsmSharp.IO.Zip.Deflater.SetInput(System.Byte[])"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_SetInput_System_Byte___" class="expander" data-toggle="collapse">SetInput(Byte[])</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_SetInput_System_Byte___" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the data which should be compressed next.  This should be only
+called when needsInput indicates that more input is needed.
+If you call setInput when needsInput() returns false, the
+previous input that is still pending will be thrown away.
+The given byte array should not be changed, before needsInput() returns
+true again.
+This call is equivalent to <pre><code>setInput(input, 0, input.length)</code></pre>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInput(byte[] input)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">input</span>
+        <p><p>the buffer containing the input data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>if the buffer was finished() or ended().</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_SetInput_" data-uid="OsmSharp.IO.Zip.Deflater.SetInput*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_SetInput_System_Byte___System_Int32_System_Int32_" data-uid="OsmSharp.IO.Zip.Deflater.SetInput(System.Byte[],System.Int32,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_SetInput_System_Byte___System_Int32_System_Int32_" class="expander" data-toggle="collapse">SetInput(Byte[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_SetInput_System_Byte___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the data which should be compressed next.  This should be
+only called when needsInput indicates that more input is needed.
+The given byte array should not be changed, before needsInput() returns
+true again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInput(byte[] input, int offset, int count)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">input</span>
+        <p><p>the buffer containing the input data.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">offset</span>
+        <p><p>the start of the data.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">count</span>
+        <p><p>the number of data bytes of input.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p>if the buffer was Finish()ed or if previous input is still pending.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_SetLevel_" data-uid="OsmSharp.IO.Zip.Deflater.SetLevel*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_SetLevel_System_Int32_" data-uid="OsmSharp.IO.Zip.Deflater.SetLevel(System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_SetLevel_System_Int32_" class="expander" data-toggle="collapse">SetLevel(Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_SetLevel_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the compression level.  There is no guarantee of the exact
+position of the change, but if you call this when needsInput is
+true the change of compression level will occur somewhere near
+before the end of the so far given input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLevel(int level)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">level</span>
+        <p><p>the new compression level.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Deflater_SetStrategy_" data-uid="OsmSharp.IO.Zip.Deflater.SetStrategy*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Deflater_SetStrategy_OsmSharp_IO_Zip_DeflateStrategy_" data-uid="OsmSharp.IO.Zip.Deflater.SetStrategy(OsmSharp.IO.Zip.DeflateStrategy)"><a href="#collapsible-OsmSharp_IO_Zip_Deflater_SetStrategy_OsmSharp_IO_Zip_DeflateStrategy_" class="expander" data-toggle="collapse">SetStrategy(DeflateStrategy)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Deflater_SetStrategy_OsmSharp_IO_Zip_DeflateStrategy_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the compression strategy. Strategy is one of
+DEFAULT_STRATEGY, HUFFMAN_ONLY and FILTERED.  For the exact
+position where the strategy is changed, the same as for
+SetLevel() applies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStrategy(DeflateStrategy strategy)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.IO.Zip.DeflateStrategy.html">DeflateStrategy</a></span>
+        <span class="parametername">strategy</span>
+        <p><p>The new compression strategy.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

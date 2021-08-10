@@ -1,0 +1,4017 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LuaBase
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LuaBase
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase">
+  <h1 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase">Class LuaBase
+  </h1>
+  <div class="markdown level0 summary"><p>Classes using the classic interface should inherit from this class.
+This class defines only static methods and is really meant to be used only
+from C# and not other .NET languages. </p>
+<p>For easier operation they should also define:
+using ptrdiff_t = System.Int32;
+using lua_Integer = System.Int32;
+using LUA_INTFRM_T = System.Int64;
+using UNSIGNED_LUA_INTFRM_T = System.UInt64;</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LuaBase</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LuaBase</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_INTFRMLEN" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_INTFRMLEN"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_INTFRMLEN" class="expander" data-toggle="collapse">LUA_INTFRMLEN</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_INTFRMLEN" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string LUA_INTFRMLEN = &quot;l&quot;</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_MULTRET" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_MULTRET"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_MULTRET" class="expander" data-toggle="collapse">LUA_MULTRET</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_MULTRET" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_MULTRET = -1</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TBOOLEAN" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TBOOLEAN"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TBOOLEAN" class="expander" data-toggle="collapse">LUA_TBOOLEAN</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TBOOLEAN" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TBOOLEAN = 1</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TFUNCTION" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TFUNCTION"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TFUNCTION" class="expander" data-toggle="collapse">LUA_TFUNCTION</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TFUNCTION" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TFUNCTION = 6</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TLIGHTUSERDATA" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TLIGHTUSERDATA"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TLIGHTUSERDATA" class="expander" data-toggle="collapse">LUA_TLIGHTUSERDATA</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TLIGHTUSERDATA" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TLIGHTUSERDATA = 2</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNIL" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TNIL"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNIL" class="expander" data-toggle="collapse">LUA_TNIL</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNIL" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TNIL = 0</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNONE" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TNONE"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNONE" class="expander" data-toggle="collapse">LUA_TNONE</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNONE" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TNONE = -1</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNUMBER" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TNUMBER"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNUMBER" class="expander" data-toggle="collapse">LUA_TNUMBER</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TNUMBER" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TNUMBER = 3</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TSTRING" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TSTRING"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TSTRING" class="expander" data-toggle="collapse">LUA_TSTRING</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TSTRING" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TSTRING = 4</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TTABLE" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TTABLE"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TTABLE" class="expander" data-toggle="collapse">LUA_TTABLE</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TTABLE" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TTABLE = 5</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TTHREAD" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TTHREAD"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TTHREAD" class="expander" data-toggle="collapse">LUA_TTHREAD</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TTHREAD" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TTHREAD = 8</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TUSERDATA" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_TUSERDATA"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TUSERDATA" class="expander" data-toggle="collapse">LUA_TUSERDATA</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_TUSERDATA" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TUSERDATA = 7</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ArgAsType_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.ArgAsType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ArgAsType_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_Itinero_Profiles_Lua_DataType_System_Boolean_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.ArgAsType(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer,Itinero.Profiles.Lua.DataType,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ArgAsType_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_Itinero_Profiles_Lua_DataType_System_Boolean_" class="expander" data-toggle="collapse">ArgAsType(LuaState, lua_Integer, DataType, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ArgAsType_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_Itinero_Profiles_Lua_DataType_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DynValue ArgAsType(LuaState L, lua_Integer pos, DataType type, bool allowNil = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">pos</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">type</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">allowNil</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_GetArgument_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.GetArgument*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_GetArgument_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.GetArgument(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_GetArgument_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">GetArgument(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_GetArgument_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DynValue GetArgument(LuaState L, lua_Integer pos)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">pos</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalnum_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isalnum*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalnum_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isalnum(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalnum_System_Char_" class="expander" data-toggle="collapse">isalnum(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalnum_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isalnum(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalnum_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isalnum*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalnum_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isalnum(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalnum_System_Int32_" class="expander" data-toggle="collapse">isalnum(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalnum_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isalnum(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalpha_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isalpha*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalpha_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isalpha(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalpha_System_Char_" class="expander" data-toggle="collapse">isalpha(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalpha_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isalpha(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalpha_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isalpha*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalpha_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isalpha(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalpha_System_Int32_" class="expander" data-toggle="collapse">isalpha(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isalpha_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isalpha(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_iscntrl_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.iscntrl*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_iscntrl_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.iscntrl(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_iscntrl_System_Char_" class="expander" data-toggle="collapse">iscntrl(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_iscntrl_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool iscntrl(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_iscntrl_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.iscntrl*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_iscntrl_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.iscntrl(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_iscntrl_System_Int32_" class="expander" data-toggle="collapse">iscntrl(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_iscntrl_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool iscntrl(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isdigit_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isdigit*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isdigit_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isdigit(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isdigit_System_Char_" class="expander" data-toggle="collapse">isdigit(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isdigit_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isdigit(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isdigit_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isdigit*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isdigit_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isdigit(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isdigit_System_Int32_" class="expander" data-toggle="collapse">isdigit(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isdigit_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isdigit(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isgraph_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isgraph*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isgraph_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isgraph(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isgraph_System_Char_" class="expander" data-toggle="collapse">isgraph(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isgraph_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isgraph(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isgraph_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isgraph*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isgraph_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isgraph(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isgraph_System_Int32_" class="expander" data-toggle="collapse">isgraph(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isgraph_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isgraph(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_islower_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.islower*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_islower_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.islower(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_islower_System_Char_" class="expander" data-toggle="collapse">islower(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_islower_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool islower(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_islower_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.islower*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_islower_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.islower(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_islower_System_Int32_" class="expander" data-toggle="collapse">islower(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_islower_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool islower(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ispunct_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.ispunct*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ispunct_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.ispunct(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ispunct_System_Char_" class="expander" data-toggle="collapse">ispunct(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ispunct_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool ispunct(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ispunct_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.ispunct*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ispunct_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.ispunct(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ispunct_System_Int32_" class="expander" data-toggle="collapse">ispunct(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_ispunct_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool ispunct(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isspace_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isspace*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isspace_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isspace(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isspace_System_Char_" class="expander" data-toggle="collapse">isspace(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isspace_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isspace(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isspace_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isspace*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isspace_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isspace(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isspace_System_Int32_" class="expander" data-toggle="collapse">isspace(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isspace_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isspace(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isupper_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isupper*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isupper_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isupper(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isupper_System_Char_" class="expander" data-toggle="collapse">isupper(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isupper_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isupper(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isupper_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isupper*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isupper_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isupper(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isupper_System_Int32_" class="expander" data-toggle="collapse">isupper(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isupper_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isupper(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isxdigit_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isxdigit*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isxdigit_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.isxdigit(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isxdigit_System_Char_" class="expander" data-toggle="collapse">isxdigit(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_isxdigit_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isxdigit(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_QL_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_QL*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_QL_System_String_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LUA_QL(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_QL_System_String_" class="expander" data-toggle="collapse">LUA_QL(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LUA_QL_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LUA_QL(string p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaAssert_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaAssert*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaAssert_System_Boolean_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaAssert(System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaAssert_System_Boolean_" class="expander" data-toggle="collapse">LuaAssert(Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaAssert_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaAssert(bool p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaCall_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaCall*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaCall_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaCall(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaCall_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" class="expander" data-toggle="collapse">LuaCall(LuaState, lua_Integer, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaCall_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calls a function.
+To call a function you must use the following protocol: first, the function to be called is pushed onto the stack; then,
+the arguments to the function are pushed in direct order; that is, the first argument is pushed first. Finally you call
+lua_call; nargs is the number of arguments that you pushed onto the stack. All arguments and the function value are
+popped from the stack when the function is called. The function results are pushed onto the stack when the function
+returns. The number of results is adjusted to nresults, unless nresults is LUA_MULTRET. In this case, all results from
+the function are pushed. Lua takes care that the returned values fit into the stack space. The function results are
+pushed onto the stack in direct order (the first result is pushed first), so that after the call the last result is on
+the top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaCall(LuaState L, lua_Integer nargs, lua_Integer nresults = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p><p>The LuaState</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">nargs</span>
+        <p><p>The number of arguments.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">nresults</span>
+        <p><p>The number of expected results.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotImplementedException</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaGetTable_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaGetTable*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaGetTable_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaGetTable(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaGetTable_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaGetTable(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaGetTable_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaGetTable(LuaState L, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaGetTop_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaGetTop*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaGetTop_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaGetTop(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaGetTop_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_" class="expander" data-toggle="collapse">LuaGetTop(LuaState)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaGetTop_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer LuaGetTop(LuaState L)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaIsString_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaIsString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaIsString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaIsString(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaIsString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaIsString(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaIsString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer LuaIsString(LuaState L, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddChar_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLAddChar*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddChar_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLAddChar(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer,System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddChar_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_System_Char_" class="expander" data-toggle="collapse">LuaLAddChar(LuaLBuffer, Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddChar_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLAddChar(LuaLBuffer b, char p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></span>
+        <span class="parametername">b</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddLString_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLAddLString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLAddLString(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer,Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,System.UInt32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" class="expander" data-toggle="collapse">LuaLAddLString(LuaLBuffer, CharPtr, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLAddLString(LuaLBuffer b, CharPtr s, uint p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></span>
+        <span class="parametername">b</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddString_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLAddString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_System_String_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLAddString(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_System_String_" class="expander" data-toggle="collapse">LuaLAddString(LuaLBuffer, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLAddString(LuaLBuffer b, string s)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></span>
+        <span class="parametername">b</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddValue_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLAddValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddValue_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLAddValue(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddValue_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" class="expander" data-toggle="collapse">LuaLAddValue(LuaLBuffer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLAddValue_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLAddValue(LuaLBuffer b)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></span>
+        <span class="parametername">b</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLArgCheck_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLArgCheck*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLArgCheck_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_Boolean_lua_Integer_System_String_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLArgCheck(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,System.Boolean,lua_Integer,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLArgCheck_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_Boolean_lua_Integer_System_String_" class="expander" data-toggle="collapse">LuaLArgCheck(LuaState, Boolean, lua_Integer, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLArgCheck_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_Boolean_lua_Integer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLArgCheck(LuaState L, bool condition, lua_Integer argNum, string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">condition</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">argNum</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLArgError_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLArgError*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLArgError_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_String_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLArgError(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLArgError_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_String_" class="expander" data-toggle="collapse">LuaLArgError(LuaState, lua_Integer, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLArgError_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLArgError(LuaState L, lua_Integer arg, string p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">arg</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLBuffInit_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLBuffInit*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLBuffInit_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLBuffInit(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLBuffInit_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" class="expander" data-toggle="collapse">LuaLBuffInit(LuaState, LuaLBuffer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLBuffInit_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLBuffInit(LuaState L, LuaLBuffer b)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></span>
+        <span class="parametername">b</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckInt_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckInt*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckInt_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckInt(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckInt_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaLCheckInt(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckInt_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer LuaLCheckInt(LuaState L, lua_Integer argNum)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">argNum</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckInteger_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckInteger*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckInteger(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaLCheckInteger(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer LuaLCheckInteger(LuaState L, lua_Integer pos)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">pos</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckLString_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckLString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_UInt32__" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckLString(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer,System.UInt32@)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_UInt32__" class="expander" data-toggle="collapse">LuaLCheckLString(LuaState, lua_Integer, out UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaLCheckLString(LuaState L, lua_Integer argNum, out uint l)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">argNum</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">l</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckNumber_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckNumber*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckNumber_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckNumber(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckNumber_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaLCheckNumber(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckNumber_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static double LuaLCheckNumber(LuaState L, lua_Integer pos)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">pos</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckStack_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckStack*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckStack_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_String_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckStack(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckStack_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_String_" class="expander" data-toggle="collapse">LuaLCheckStack(LuaState, lua_Integer, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckStack_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLCheckStack(LuaState L, lua_Integer n, string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">n</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckString_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckString(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaLCheckString(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr LuaLCheckString(LuaState L, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckStringStr_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckStringStr*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckStringStr_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLCheckStringStr(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckStringStr_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaLCheckStringStr(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLCheckStringStr_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaLCheckStringStr(LuaState L, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLError_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLError*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLError_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_String_System_Object___" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLError(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,System.String,System.Object[])"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLError_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_String_System_Object___" class="expander" data-toggle="collapse">LuaLError(LuaState, String, Object[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLError_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_String_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer LuaLError(LuaState luaState, string message, params object[] args)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">luaState</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">args</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLOptInt_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLOptInt*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLOptInt_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLOptInt(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLOptInt_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" class="expander" data-toggle="collapse">LuaLOptInt(LuaState, lua_Integer, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLOptInt_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int LuaLOptInt(LuaState L, lua_Integer pos, lua_Integer def)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">pos</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">def</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLOptInteger_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLOptInteger*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLOptInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLOptInteger(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLOptInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" class="expander" data-toggle="collapse">LuaLOptInteger(LuaState, lua_Integer, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLOptInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer LuaLOptInteger(LuaState L, lua_Integer pos, lua_Integer def)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">pos</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">def</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLPushResult_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLPushResult*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLPushResult_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLPushResult(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLPushResult_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" class="expander" data-toggle="collapse">LuaLPushResult(LuaLBuffer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLPushResult_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaLBuffer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLPushResult(LuaLBuffer b)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></span>
+        <span class="parametername">b</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLTypeName_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLTypeName*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLTypeName_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaLTypeName(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLTypeName_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaLTypeName(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaLTypeName_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaLTypeName(LuaState L, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPop_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPop*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPop_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPop(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPop_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaPop(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPop_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPop(LuaState L, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushInteger_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushInteger*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushInteger(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaPushInteger(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushInteger_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushInteger(LuaState L, lua_Integer val)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">val</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushLiteral_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushLiteral*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushLiteral_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_String_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushLiteral(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushLiteral_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_String_" class="expander" data-toggle="collapse">LuaPushLiteral(LuaState, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushLiteral_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushLiteral(LuaState L, string literalString)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">literalString</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushLString_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushLString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushLString(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,System.UInt32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" class="expander" data-toggle="collapse">LuaPushLString(LuaState, CharPtr, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushLString(LuaState L, CharPtr s, uint len)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">len</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushNil_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushNil*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushNil_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushNil(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushNil_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_" class="expander" data-toggle="collapse">LuaPushNil(LuaState)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushNil_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushNil(LuaState L)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushValue_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushValue_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaPushValue(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushValue_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaPushValue(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaPushValue_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushValue(LuaState L, lua_Integer arg)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">arg</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToBoolean_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaToBoolean*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToBoolean_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaToBoolean(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToBoolean_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaToBoolean(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToBoolean_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer LuaToBoolean(LuaState L, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToLString_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaToLString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_UInt32__" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaToLString(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer,System.UInt32@)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_UInt32__" class="expander" data-toggle="collapse">LuaToLString(LuaState, lua_Integer, out UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToLString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaToLString(LuaState luaState, lua_Integer p, out uint l)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">luaState</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">l</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToString_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaToString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaToString(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaToString(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaToString_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaToString(LuaState luaState, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">luaState</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaType_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaType_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.LuaType(Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState,lua_Integer)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaType_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="expander" data-toggle="collapse">LuaType(LuaState, lua_Integer)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_LuaType_Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaState_lua_Integer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer LuaType(LuaState L, lua_Integer p)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaState.html">LuaState</a></span>
+        <span class="parametername">L</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">lua_Integer</span></span>
+        <span class="parametername">p</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memchr_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.memchr*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memchr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Char_System_UInt32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.memchr(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,System.Char,System.UInt32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memchr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Char_System_UInt32_" class="expander" data-toggle="collapse">memchr(CharPtr, Char, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memchr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Char_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr memchr(CharPtr ptr, char c, uint count)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">ptr</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">count</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memcmp_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.memcmp*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memcmp_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.memcmp(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memcmp_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Int32_" class="expander" data-toggle="collapse">memcmp(CharPtr, CharPtr, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memcmp_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int memcmp(CharPtr ptr1, CharPtr ptr2, int size)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">ptr1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">ptr2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">size</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memcmp_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.memcmp*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memcmp_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.memcmp(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,System.UInt32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memcmp_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" class="expander" data-toggle="collapse">memcmp(CharPtr, CharPtr, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_memcmp_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static lua_Integer memcmp(CharPtr ptr1, CharPtr ptr2, uint size)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">ptr1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">ptr2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">size</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">lua_Integer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_sprintf_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.sprintf*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_sprintf_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Object___" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.sprintf(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,System.Object[])"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_sprintf_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Object___" class="expander" data-toggle="collapse">sprintf(CharPtr, CharPtr, Object[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_sprintf_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void sprintf(CharPtr buffer, CharPtr str, params object[] argv)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">buffer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">str</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">argv</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strchr_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strchr*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strchr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strchr(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strchr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Char_" class="expander" data-toggle="collapse">strchr(CharPtr, Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strchr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr strchr(CharPtr str, char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">str</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strcpy_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strcpy*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strcpy_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strcpy(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strcpy_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" class="expander" data-toggle="collapse">strcpy(CharPtr, CharPtr)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strcpy_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr strcpy(CharPtr dst, CharPtr src)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">dst</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">src</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strlen_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strlen*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strlen_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strlen(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strlen_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" class="expander" data-toggle="collapse">strlen(CharPtr)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strlen_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int strlen(CharPtr str)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">str</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strncpy_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strncpy*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strncpy_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strncpy(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strncpy_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Int32_" class="expander" data-toggle="collapse">strncpy(CharPtr, CharPtr, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strncpy_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr strncpy(CharPtr dst, CharPtr src, int length)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">dst</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">src</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">length</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strpbrk_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strpbrk*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strpbrk_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.strpbrk(Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr,Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strpbrk_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" class="expander" data-toggle="collapse">strpbrk(CharPtr, CharPtr)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_strpbrk_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_Itinero_Profiles_Lua_Interop_LuaStateInterop_CharPtr_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr strpbrk(CharPtr str, CharPtr charset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">str</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></span>
+        <span class="parametername">charset</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Interop.LuaStateInterop.CharPtr.html">CharPtr</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_tolower_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.tolower*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_tolower_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.tolower(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_tolower_System_Char_" class="expander" data-toggle="collapse">tolower(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_tolower_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static char tolower(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Char</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_tolower_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.tolower*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_tolower_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.tolower(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_tolower_System_Int32_" class="expander" data-toggle="collapse">tolower(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_tolower_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static char tolower(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Char</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_toupper_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.toupper*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_toupper_System_Char_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.toupper(System.Char)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_toupper_System_Char_" class="expander" data-toggle="collapse">toupper(Char)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_toupper_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static char toupper(char c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Char</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_toupper_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.toupper*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_toupper_System_Int32_" data-uid="Itinero.Profiles.Lua.Interop.LuaStateInterop.LuaBase.toupper(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_toupper_System_Int32_" class="expander" data-toggle="collapse">toupper(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_Interop_LuaStateInterop_LuaBase_toupper_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static char toupper(int c)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">c</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Char</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

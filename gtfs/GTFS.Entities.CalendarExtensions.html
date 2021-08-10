@@ -1,0 +1,1077 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CalendarExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CalendarExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GTFS.Entities.CalendarExtensions">
+  <h1 id="GTFS_Entities_CalendarExtensions" data-uid="GTFS.Entities.CalendarExtensions">Class CalendarExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains extension methods related to the calendar.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CalendarExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="GTFS_Entities_CalendarExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CalendarExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_Add_" data-uid="GTFS.Entities.CalendarExtensions.Add*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_Add_GTFS_Entities_Calendar_System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.Add(GTFS.Entities.Calendar,System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_Add_GTFS_Entities_Calendar_System_DateTime_" class="expander" data-toggle="collapse">Add(Calendar, DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_Add_GTFS_Entities_Calendar_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds the given calendar day and returns one or more new calendar entities representing the new data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Calendar&gt; Add(this Calendar calendar, DateTime day)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">day</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_AddOrSubtract_" data-uid="GTFS.Entities.CalendarExtensions.AddOrSubtract*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_AddOrSubtract_GTFS_Entities_Calendar_GTFS_Entities_CalendarDate_" data-uid="GTFS.Entities.CalendarExtensions.AddOrSubtract(GTFS.Entities.Calendar,GTFS.Entities.CalendarDate)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_AddOrSubtract_GTFS_Entities_Calendar_GTFS_Entities_CalendarDate_" class="expander" data-toggle="collapse">AddOrSubtract(Calendar, CalendarDate)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_AddOrSubtract_GTFS_Entities_Calendar_GTFS_Entities_CalendarDate_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or subtracts the given calendar date and returns one or more new calendar entities representing the same data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Calendar&gt; AddOrSubtract(this Calendar calendar, CalendarDate calendarDate)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.CalendarDate.html">CalendarDate</a></span>
+        <span class="parametername">calendarDate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_ContainsDay_" data-uid="GTFS.Entities.CalendarExtensions.ContainsDay*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_ContainsDay_GTFS_Entities_Calendar_System_DayOfWeek_" data-uid="GTFS.Entities.CalendarExtensions.ContainsDay(GTFS.Entities.Calendar,System.DayOfWeek)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_ContainsDay_GTFS_Entities_Calendar_System_DayOfWeek_" class="expander" data-toggle="collapse">ContainsDay(Calendar, DayOfWeek)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_ContainsDay_GTFS_Entities_Calendar_System_DayOfWeek_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this Calendar is true for the specified DayOfWeek.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsDay(this Calendar _self, DayOfWeek day)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">_self</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DayOfWeek</span></span>
+        <span class="parametername">day</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_CopyWeekPatternFrom_" data-uid="GTFS.Entities.CalendarExtensions.CopyWeekPatternFrom*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_CopyWeekPatternFrom_GTFS_Entities_Calendar_GTFS_Entities_Calendar_" data-uid="GTFS.Entities.CalendarExtensions.CopyWeekPatternFrom(GTFS.Entities.Calendar,GTFS.Entities.Calendar)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_CopyWeekPatternFrom_GTFS_Entities_Calendar_GTFS_Entities_Calendar_" class="expander" data-toggle="collapse">CopyWeekPatternFrom(Calendar, Calendar)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_CopyWeekPatternFrom_GTFS_Entities_Calendar_GTFS_Entities_Calendar_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies the week pattern from the given calendar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyWeekPatternFrom(this Calendar calendar, Calendar weekPatternSource)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">weekPatternSource</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_CoversDate_" data-uid="GTFS.Entities.CalendarExtensions.CoversDate*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_CoversDate_GTFS_Entities_Calendar_System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.CoversDate(GTFS.Entities.Calendar,System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_CoversDate_GTFS_Entities_Calendar_System_DateTime_" class="expander" data-toggle="collapse">CoversDate(Calendar, DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_CoversDate_GTFS_Entities_Calendar_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the calendar covers the given date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CoversDate(this Calendar calendar, DateTime date)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">date</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_CreateCalendar_" data-uid="GTFS.Entities.CalendarExtensions.CreateCalendar*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_CreateCalendar_System_DateTime_System_String_" data-uid="GTFS.Entities.CalendarExtensions.CreateCalendar(System.DateTime,System.String)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_CreateCalendar_System_DateTime_System_String_" class="expander" data-toggle="collapse">CreateCalendar(DateTime, String)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_CreateCalendar_System_DateTime_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a calendar entity for the day.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Calendar CreateCalendar(this DateTime day, string serviceId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">day</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">serviceId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_FirstDayOfWeek_" data-uid="GTFS.Entities.CalendarExtensions.FirstDayOfWeek*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_FirstDayOfWeek_System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.FirstDayOfWeek(System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_FirstDayOfWeek_System_DateTime_" class="expander" data-toggle="collapse">FirstDayOfWeek(DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_FirstDayOfWeek_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the first day of the week that contains the given day.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime FirstDayOfWeek(this DateTime day)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">day</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.DateTime</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="GTFS_Entities_CalendarExtensions_FirstDayOfWeek_System_DateTime__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>First day of the week is monday, last day is sunday.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_GetServicesForDate_" data-uid="GTFS.Entities.CalendarExtensions.GetServicesForDate*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_GetServicesForDate_System_Collections_Generic_List_GTFS_Entities_Calendar__System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.GetServicesForDate(System.Collections.Generic.List{GTFS.Entities.Calendar},System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_GetServicesForDate_System_Collections_Generic_List_GTFS_Entities_Calendar__System_DateTime_" class="expander" data-toggle="collapse">GetServicesForDate(List&lt;Calendar&gt;, DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_GetServicesForDate_System_Collections_Generic_List_GTFS_Entities_Calendar__System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the calendars in this list that covers the specified date and its DayOfWeek.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Calendar&gt; GetServicesForDate(this List&lt;Calendar&gt; calendars, DateTime dt)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a>&gt;</span>
+        <span class="parametername">calendars</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">dt</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_GetServicesForDayOfWeek_" data-uid="GTFS.Entities.CalendarExtensions.GetServicesForDayOfWeek*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_GetServicesForDayOfWeek_System_Collections_Generic_List_GTFS_Entities_Calendar__System_DayOfWeek_System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.GetServicesForDayOfWeek(System.Collections.Generic.List{GTFS.Entities.Calendar},System.DayOfWeek,System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_GetServicesForDayOfWeek_System_Collections_Generic_List_GTFS_Entities_Calendar__System_DayOfWeek_System_DateTime_" class="expander" data-toggle="collapse">GetServicesForDayOfWeek(List&lt;Calendar&gt;, DayOfWeek, DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_GetServicesForDayOfWeek_System_Collections_Generic_List_GTFS_Entities_Calendar__System_DayOfWeek_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the calendar entities in this list that covers the specified DayOfWeek. If the DateTime is specified it will also restrict the list of calendar&apos;s to cover the specified date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Calendar&gt; GetServicesForDayOfWeek(this List&lt;Calendar&gt; calendars, DayOfWeek dow, DateTime dt = default (DateTime))</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a>&gt;</span>
+        <span class="parametername">calendars</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DayOfWeek</span></span>
+        <span class="parametername">dow</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">dt</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_GetStatusFor_" data-uid="GTFS.Entities.CalendarExtensions.GetStatusFor*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_GetStatusFor_GTFS_Entities_Calendar_System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.GetStatusFor(GTFS.Entities.Calendar,System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_GetStatusFor_GTFS_Entities_Calendar_System_DateTime_" class="expander" data-toggle="collapse">GetStatusFor(Calendar, DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_GetStatusFor_GTFS_Entities_Calendar_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the status for the given date, don&apos;t care, true or false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ? GetStatusFor(this Calendar calendar, DateTime date)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">date</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_LastDayOfWeek_" data-uid="GTFS.Entities.CalendarExtensions.LastDayOfWeek*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_LastDayOfWeek_System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.LastDayOfWeek(System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_LastDayOfWeek_System_DateTime_" class="expander" data-toggle="collapse">LastDayOfWeek(DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_LastDayOfWeek_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the last day of the week that contains the given day.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime LastDayOfWeek(this DateTime day)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">day</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.DateTime</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="GTFS_Entities_CalendarExtensions_LastDayOfWeek_System_DateTime__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>First day of the week is monday, last day is sunday.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_MaskForWeek_" data-uid="GTFS.Entities.CalendarExtensions.MaskForWeek*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_MaskForWeek_GTFS_Entities_Calendar_System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.MaskForWeek(GTFS.Entities.Calendar,System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_MaskForWeek_GTFS_Entities_Calendar_System_DateTime_" class="expander" data-toggle="collapse">MaskForWeek(Calendar, DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_MaskForWeek_GTFS_Entities_Calendar_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the mask for the given week. The mask will be adjusted when part of the week is outside of the calendar-range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte MaskForWeek(this Calendar calendar, DateTime day)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">day</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Byte</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_Set_" data-uid="GTFS.Entities.CalendarExtensions.Set*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_Set_GTFS_Entities_Calendar_System_DateTime_System_Boolean_" data-uid="GTFS.Entities.CalendarExtensions.Set(GTFS.Entities.Calendar,System.DateTime,System.Boolean)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_Set_GTFS_Entities_Calendar_System_DateTime_System_Boolean_" class="expander" data-toggle="collapse">Set(Calendar, DateTime, Boolean)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_Set_GTFS_Entities_Calendar_System_DateTime_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the mask for the given day. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Set(this Calendar calendar, DateTime day, bool value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">day</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_Subtract_" data-uid="GTFS.Entities.CalendarExtensions.Subtract*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_Subtract_GTFS_Entities_Calendar_System_DateTime_" data-uid="GTFS.Entities.CalendarExtensions.Subtract(GTFS.Entities.Calendar,System.DateTime)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_Subtract_GTFS_Entities_Calendar_System_DateTime_" class="expander" data-toggle="collapse">Subtract(Calendar, DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_Subtract_GTFS_Entities_Calendar_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Subtracts the given calendar day and returns one or more new calendar entities representing the same data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Calendar&gt; Subtract(this Calendar calendar, DateTime day)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">day</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_TrimDates_" data-uid="GTFS.Entities.CalendarExtensions.TrimDates*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_TrimDates_GTFS_Entities_Calendar_" data-uid="GTFS.Entities.CalendarExtensions.TrimDates(GTFS.Entities.Calendar)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_TrimDates_GTFS_Entities_Calendar_" class="expander" data-toggle="collapse">TrimDates(Calendar)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_TrimDates_GTFS_Entities_Calendar_" class="collapse in">
+  <div class="markdown level1 summary"><p>Trims the end and start dates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TrimDates(this Calendar calendar)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_TrimEndDate_" data-uid="GTFS.Entities.CalendarExtensions.TrimEndDate*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_TrimEndDate_GTFS_Entities_Calendar_" data-uid="GTFS.Entities.CalendarExtensions.TrimEndDate(GTFS.Entities.Calendar)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_TrimEndDate_GTFS_Entities_Calendar_" class="expander" data-toggle="collapse">TrimEndDate(Calendar)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_TrimEndDate_GTFS_Entities_Calendar_" class="collapse in">
+  <div class="markdown level1 summary"><p>Trims the end date when it&apos;s too late and the mask has trailing zero&apos;s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TrimEndDate(this Calendar calendar)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_TrimStartDate_" data-uid="GTFS.Entities.CalendarExtensions.TrimStartDate*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_TrimStartDate_GTFS_Entities_Calendar_" data-uid="GTFS.Entities.CalendarExtensions.TrimStartDate(GTFS.Entities.Calendar)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_TrimStartDate_GTFS_Entities_Calendar_" class="expander" data-toggle="collapse">TrimStartDate(Calendar)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_TrimStartDate_GTFS_Entities_Calendar_" class="collapse in">
+  <div class="markdown level1 summary"><p>Trims the start date when it&apos;s too early and the mask has trailing zero&apos;s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TrimStartDate(this Calendar calendar)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_CalendarExtensions_TryMerge_" data-uid="GTFS.Entities.CalendarExtensions.TryMerge*"></a>
+  
+  <h4 id="GTFS_Entities_CalendarExtensions_TryMerge_GTFS_Entities_Calendar_GTFS_Entities_Calendar_GTFS_Entities_Calendar__" data-uid="GTFS.Entities.CalendarExtensions.TryMerge(GTFS.Entities.Calendar,GTFS.Entities.Calendar,GTFS.Entities.Calendar@)"><a href="#collapsible-GTFS_Entities_CalendarExtensions_TryMerge_GTFS_Entities_Calendar_GTFS_Entities_Calendar_GTFS_Entities_Calendar__" class="expander" data-toggle="collapse">TryMerge(Calendar, Calendar, out Calendar)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_CalendarExtensions_TryMerge_GTFS_Entities_Calendar_GTFS_Entities_Calendar_GTFS_Entities_Calendar__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to merge two calendars together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryMerge(this Calendar calendar, Calendar other, out Calendar merge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">calendar</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Calendar.html">Calendar</a></span>
+        <span class="parametername">merge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

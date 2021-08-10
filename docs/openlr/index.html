@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>OpenLR | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="OpenLR | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="openlr">
+<h1 id="openlr">OpenLR</h1>
+
+<p>OpenLR is a tool to encode/decode location references based on the OpenLR-specification:</p>
+<p><a href="http://www.openlr.be/">http://www.openlr.be/</a></p>
+<h2 id="use-cases">Use Cases</h2>
+<p>OpenLR is used to communicate information about locations a routing network between devices and between different routing networks. It&#39;s possible to encode information linked to a part of a network in a network-agnostic way, allowing information to be stored independently of the actual edge or link id&#39;s of the network. This information can be decoding using another routing network for the same location.</p>
+<p>Information that can be encoded/decoded:</p>
+<ul>
+<li>Traffic information linked to segments on the network.</li>
+<li>Traffic information linked to a point on the network.</li>
+<li>Statistics and history of a link between networks.</li>
+<li>...</li>
+</ul>
+<h2 id="project-structure">Project structure</h2>
+<p>There are two core projects:</p>
+<ul>
+<li>OpenLR: Contains all location types and enumerations from the OpenLR-specification and encoding/decoding base functionality.</li>
+<li>OpenLR.Geo: Contains extension methods to convert locations to Features and Geometries.</li>
+</ul>
+<p>Test project:</p>
+<ul>
+<li>OpenLR.Tests: The unitttests.</li>
+<li>OpenLR.Tests.Functional: Functional testing and regression testing of actual real-life encoding/decoding scenario&#39;s.</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>There are two main steps in using this library. First you need to create a routable network in the form of an Itinero <a class="xref" href="../itinero/basic-concepts/routerdb.html">RouterDb</a>. You can find more info about this <a href="../itinero/data-sources/index.html">here</a>. After that load the RouterDb and create an encoder/decoder using this data.</p>
+<p>You can check the samples to learn more about how this works in code:</p>
+<ul>
+<li><a href="https://github.com/itinero/OpenLR/tree/develop/samples/Samples.OSM">Samples.OSM</a>: Shows how to encode/decode on top of OSM.</li>
+<li><a href="https://github.com/itinero/OpenLR/tree/develop/samples/Samples.NWB">Samples.NWB</a>: Shows how to encode/decode on top of networks in shapefile format, more info about this can also be found in the Itinero docs.</li>
+</ul>
+<h2 id="help-or-support">Help or support?</h2>
+<p>Need help or support you can get in toch with us via the issue tracker, just post whatever issue you have. We can also offer support, feel free to contact use via the contact form on <a href="http://www.itinero.tech/#contact">itinero.tech</a>.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,751 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StopTime
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StopTime
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GTFS.Entities.StopTime">
+  <h1 id="GTFS_Entities_StopTime" data-uid="GTFS.Entities.StopTime">Class StopTime
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a stop time. Times that a vehicle arrives at and departs from individual stops for each trip.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GTFS.Entities.GTFSEntity.html">GTFSEntity</a></div>
+    <div class="level2"><span class="xref">StopTime</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GTFS.Entities.GTFSEntity.html#GTFS_Entities_GTFSEntity_Tag">GTFSEntity.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="GTFS.Entities.GTFSEntity.html#GTFS_Entities_GTFSEntity_EntityChanged">GTFSEntity.EntityChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="GTFS_Entities_StopTime_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StopTime : GTFSEntity, IComparable</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="GTFS_Entities_StopTime_ArrivalTime_" data-uid="GTFS.Entities.StopTime.ArrivalTime*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_ArrivalTime" data-uid="GTFS.Entities.StopTime.ArrivalTime"><a href="#collapsible-GTFS_Entities_StopTime_ArrivalTime" class="expander" data-toggle="collapse">ArrivalTime</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_ArrivalTime" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the arrival time at a specific stop for a specific trip on a route. The time is measured from &quot;noon minus 12h&quot; (effectively midnight, except for days on which daylight savings time changes occur) at the beginning of the service date. For times occurring after midnight on the service date, enter the time as a value greater than 24:00:00 in HH:MM:SS local time for the day on which the trip schedule begins. If you don&apos;t have separate times for arrival and departure at a stop, enter the same value for arrival_time and departure_time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeOfDay? ArrivalTime { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<a class="xref" href="GTFS.Entities.TimeOfDay.html">TimeOfDay</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_DepartureTime_" data-uid="GTFS.Entities.StopTime.DepartureTime*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_DepartureTime" data-uid="GTFS.Entities.StopTime.DepartureTime"><a href="#collapsible-GTFS_Entities_StopTime_DepartureTime" class="expander" data-toggle="collapse">DepartureTime</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_DepartureTime" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the departure time from a specific stop for a specific trip on a route. The time is measured from &quot;noon minus 12h&quot; (effectively midnight, except for days on which daylight savings time changes occur) at the beginning of the service date. For times occurring after midnight on the service date, enter the time as a value greater than 24:00:00 in HH:MM:SS local time for the day on which the trip schedule begins. If you don&apos;t have separate times for arrival and departure at a stop, enter the same value for arrival_time and departure_time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeOfDay? DepartureTime { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<a class="xref" href="GTFS.Entities.TimeOfDay.html">TimeOfDay</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_DropOffType_" data-uid="GTFS.Entities.StopTime.DropOffType*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_DropOffType" data-uid="GTFS.Entities.StopTime.DropOffType"><a href="#collapsible-GTFS_Entities_StopTime_DropOffType" class="expander" data-toggle="collapse">DropOffType</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_DropOffType" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the drop off type field that indicates whether passengers are dropped off at a stop as part of the normal schedule or whether a drop off at the stop is not available. This field also allows the transit agency to indicate that passengers must call the agency or notify the driver to arrange a drop off at a particular stop. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DropOffType? DropOffType { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">DropOffType</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_PickupType_" data-uid="GTFS.Entities.StopTime.PickupType*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_PickupType" data-uid="GTFS.Entities.StopTime.PickupType"><a href="#collapsible-GTFS_Entities_StopTime_PickupType" class="expander" data-toggle="collapse">PickupType</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_PickupType" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the pickup type field that indicates whether passengers are picked up at a stop as part of the normal schedule or whether a pickup at the stop is not available. This field also allows the transit agency to indicate that passengers must call the agency or notify the driver to arrange a pickup at a particular stop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PickupType? PickupType { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">PickupType</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_ShapeDistTravelled_" data-uid="GTFS.Entities.StopTime.ShapeDistTravelled*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_ShapeDistTravelled" data-uid="GTFS.Entities.StopTime.ShapeDistTravelled"><a href="#collapsible-GTFS_Entities_StopTime_ShapeDistTravelled" class="expander" data-toggle="collapse">ShapeDistTravelled</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_ShapeDistTravelled" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a distance from the first shape point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ? ShapeDistTravelled { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_StopHeadsign_" data-uid="GTFS.Entities.StopTime.StopHeadsign*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_StopHeadsign" data-uid="GTFS.Entities.StopTime.StopHeadsign"><a href="#collapsible-GTFS_Entities_StopTime_StopHeadsign" class="expander" data-toggle="collapse">StopHeadsign</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_StopHeadsign" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the text that appears on a sign that identifies the trip&apos;s destination to passengers. Use this field to override the default trip_headsign when the headsign changes between stops. If this headsign is associated with an entire trip, use trip_headsign instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StopHeadsign { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_StopId_" data-uid="GTFS.Entities.StopTime.StopId*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_StopId" data-uid="GTFS.Entities.StopTime.StopId"><a href="#collapsible-GTFS_Entities_StopTime_StopId" class="expander" data-toggle="collapse">StopId</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_StopId" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a stop. Multiple routes may use the same stop. If location_type is used in stops.txt, all stops referenced in stop_times.txt must have location_type of 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StopId { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_StopSequence_" data-uid="GTFS.Entities.StopTime.StopSequence*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_StopSequence" data-uid="GTFS.Entities.StopTime.StopSequence"><a href="#collapsible-GTFS_Entities_StopTime_StopSequence" class="expander" data-toggle="collapse">StopSequence</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_StopSequence" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the order of the stop for a particular trip. The values for stop_sequence must be non-negative integers, and they must increase along the trip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint StopSequence { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_TimepointType_" data-uid="GTFS.Entities.StopTime.TimepointType*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_TimepointType" data-uid="GTFS.Entities.StopTime.TimepointType"><a href="#collapsible-GTFS_Entities_StopTime_TimepointType" class="expander" data-toggle="collapse">TimepointType</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_TimepointType" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the timepoint type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimePointType TimepointType { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">TimePointType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_TripId_" data-uid="GTFS.Entities.StopTime.TripId*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_TripId" data-uid="GTFS.Entities.StopTime.TripId"><a href="#collapsible-GTFS_Entities_StopTime_TripId" class="expander" data-toggle="collapse">TripId</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_TripId" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a trip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TripId { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GTFS_Entities_StopTime_CompareTo_" data-uid="GTFS.Entities.StopTime.CompareTo*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_CompareTo_System_Object_" data-uid="GTFS.Entities.StopTime.CompareTo(System.Object)"><a href="#collapsible-GTFS_Entities_StopTime_CompareTo_System_Object_" class="expander" data-toggle="collapse">CompareTo(Object)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_CompareTo_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Compares this StopTime to the given object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">System.IComparable.CompareTo(System.Object)</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_Equals_" data-uid="GTFS.Entities.StopTime.Equals*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_Equals_System_Object_" data-uid="GTFS.Entities.StopTime.Equals(System.Object)"><a href="#collapsible-GTFS_Entities_StopTime_Equals_System_Object_" class="expander" data-toggle="collapse">Equals(Object)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_Equals_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given object contains the same data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_From_" data-uid="GTFS.Entities.StopTime.From*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_From_GTFS_Entities_StopTime_" data-uid="GTFS.Entities.StopTime.From(GTFS.Entities.StopTime)"><a href="#collapsible-GTFS_Entities_StopTime_From_GTFS_Entities_StopTime_" class="expander" data-toggle="collapse">From(StopTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_From_GTFS_Entities_StopTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns a new StopTime object created from a previous stop time object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StopTime From(StopTime other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.StopTime.html">StopTime</a></span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="GTFS.Entities.StopTime.html">StopTime</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_GetHashCode_" data-uid="GTFS.Entities.StopTime.GetHashCode*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_GetHashCode" data-uid="GTFS.Entities.StopTime.GetHashCode"><a href="#collapsible-GTFS_Entities_StopTime_GetHashCode" class="expander" data-toggle="collapse">GetHashCode()</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_GetHashCode" class="collapse in">
+  <div class="markdown level1 summary"><p>Serves as a hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Entities_StopTime_ToString_" data-uid="GTFS.Entities.StopTime.ToString*"></a>
+  
+  <h4 id="GTFS_Entities_StopTime_ToString" data-uid="GTFS.Entities.StopTime.ToString"><a href="#collapsible-GTFS_Entities_StopTime_ToString" class="expander" data-toggle="collapse">ToString()</a></h4>
+  
+  <div id="collapsible-GTFS_Entities_StopTime_ToString" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns a description of this trip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

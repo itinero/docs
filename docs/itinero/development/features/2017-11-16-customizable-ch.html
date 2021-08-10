@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Customizable Contraction Hierarchies | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Customizable Contraction Hierarchies | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="dev-feature-customizable-ch">
+<h1 id="customizable-contraction-hierarchies">Customizable Contraction Hierarchies</h1>
+
+<p>There was an <a href="https://github.com/itinero/routing/issues/92">issue open</a> from <a href="">airbreather</a>:</p>
+<p><em>On what looks like April 1, 2016, J. Dibbelt et al. published &quot;Customizable Contraction Hierarchies&quot; (DOI: <a href="http://doi.org/10.1145/2886843">10.1145/2886843</a>).</em></p>
+<p><em>If their abstract is to be believed, this splits the preprocessing up into two steps: the first step is still the expensive workhorse, but it&#39;s done in a way that&#39;s independent of the exact edge weights; the second step &quot;customizes&quot; the preprocessed graph by adding in actual edge weights and can run much faster.</em></p>
+<p><em>A hypothetical use case for this kind of thing would be if we wanted to route around bleeding-edge dynamic data.  Consider a live feed that provides information such as &quot;an accident at this location is causing routes using this particular edge to take an extra 2 minutes to travel along that edge&quot;.</em></p>
+<p><em>- Traditionally, in order to accommodate this kind of data efficiently, I believe we&#39;d have to do a ton of re-processing that&#39;s almost certainly impractical to do on a very regular basis unless the data set is very localized: by the time you finish the preprocessing of a graph that incorporates this information, it&#39;s easy to imagine this data already being outdated.</em>
+<em>- If this CCH approach lives up to its claims, one could simply re-run &quot;customization&quot; to incorporate the new information into future route plans at a fraction of the cost of a traditional full contraction.  As a logical extension of this, mobile clients might be able to react to these re-&quot;customizations&quot; and compute new routes on-the-fly while a traveler is actively traversing the route; if the optimal route changes as a result, the application could alert the user that a better route may be available and offer to switch to the new route.</em></p>
+<p><em><a href="https://github.com/RoutingKit/RoutingKit">RoutingKit</a> (BSD 2-clause) has a sample implementation in C++ described <a href="https://github.com/RoutingKit/RoutingKit/blob/101ce16ad0509041ccf60e63bd2cadf49b5bb97f/doc/CustomizableContractionHierarchy.md">here</a>.</em></p>
+<h2 id="goal">Goal</h2>
+<p>Implement a prototype of Customizable Contraction Hierarchies and:</p>
+<ul>
+<li>Test if it handles the current usecases as good as the current implementation.</li>
+<li>Test if it can handle dynamic weight recalculations as advertised.</li>
+<li>Test if it can handle <a href="https://github.com/itinero/routing/issues/127">blocked parts of the network</a>. <a href="https://github.com/itinero/routing/issues/119">This</a> is a similar issue.</li>
+<li>Design a new way to handle contraction in Itinero if tests succeed.</li>
+</ul>
+<h2 id="approach">Approach</h2>
+<p>Start in a seperate branch and strip out all current contraction code and start experimenting.</p>
+<h2 id="status">Status</h2>
+<p>Planned</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

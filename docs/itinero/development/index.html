@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Roadmap | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Roadmap | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="roadmap">Roadmap</h1>
+
+<p>This is an overview of features that are either in development or on the roadmap. This roadmap is determined by a few factors:</p>
+<ul>
+<li>Priorities of our clients: This is the main factor because we&#39;re getting paid to build this stuff and this means more time and resource to get things done.</li>
+<li>Technical dependencies: We can&#39;t build things out of order, some features depend on others. We cant support turning costs for example without implementing edge-based routing.</li>
+<li>Priorities of Itinero and it&#39;s maintainers: We will don&#39;t include things in Itinero that we believe don&#39;t belong in the core library, even for clients. We also try to determine what is most valuable for as many users. </li>
+</ul>
+<p>This means you can influence this roadmap by either becoming a client, help with solving technical dependencies or communicate about what you think is missing in Itinero.</p>
+<h2 id="itinero">Itinero</h2>
+<p>This is the roadmap for the Itinero core project. This corresponds to the following packages:</p>
+<ul>
+<li>Itinero: <a href="https://www.nuget.org/packages/Itinero/"><img src="https://buildstats.info/nuget/Itinero" alt="NuGet Badge"></a></li>
+<li>Itinero.Geo: <a href="https://www.nuget.org/packages/Itinero.Geo/"><img src="https://buildstats.info/nuget/Itinero.Geo" alt="NuGet Badge"></a></li>
+<li>Itinero.IO.Osm: <a href="https://www.nuget.org/packages/Itinero.IO.Osm/"><img src="https://buildstats.info/nuget/Itinero.IO.Osm" alt="NuGet Badge"></a></li>
+<li>Itinero.IO.Shape: <a href="https://www.nuget.org/packages/Itinero.IO.Shape/"><img src="https://buildstats.info/nuget/Itinero.IO.Shape" alt="NuGet Badge"></a></li>
+</ul>
+<h3 id="itinero-1">Itinero 1</h3>
+<h4 id="version-11">Version 1.1</h4>
+<p><em>This version has been released: <a href="https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.1.0.md">https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.1.0.md</a></em></p>
+<p>This contains some ideas on some non-breaking extensions on top of v1.0.</p>
+<ul>
+<li>Add a weight matrix calculation algorithm that calculates edge-&gt;edge weights excluding the source-target edge weights. <em>DONE</em><ul>
+<li>Check to see if the current edge-based matrix algorithm can be replaced by this more general case. <em>DONE</em></li>
+</ul>
+</li>
+<li>And several other issues and ideas: <a href="https://github.com/itinero/routing/milestone/3">Milestone for 1.1</a> <em>DONE</em></li>
+</ul>
+<h4 id="version-12">Version 1.2</h4>
+<p><em>This version has been released: <a href="https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.2.0.md">https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.2.0.md</a></em></p>
+<ul>
+<li>Fixed maxspeed normalization issue.</li>
+<li>Implemented support for nested relations by allowing multiple passes over relations if requested.</li>
+<li>Implemented support for nested cycle route relations in the default bicycle profile.</li>
+<li>Fixed directed weight matrix issue related to resolved points on oneway segments.</li>
+</ul>
+<h4 id="version-13">Version 1.3</h4>
+<p><em>This version has been released: <a href="https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.3.0.md">https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.3.0.md</a></em></p>
+<ul>
+<li>Meta-data on vertices: More details <a href="https://github.com/itinero/routing/wiki/Development-Plan:--Meta-data-on-vertices">here</a>.</li>
+<li>A way to extract parts of the network and save them as a new routerDb.</li>
+</ul>
+<h4 id="version-14">Version 1.4</h4>
+<p><em>This version has been released: <a href="https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.4.0.md">https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.4.0.md</a></em></p>
+<ul>
+<li>Added support for elevation, an example with <a href="https://github.com/itinero/srtm">SRTM</a> is available <a href="https://github.com/itinero/routing/tree/develop/samples/Sample.Elevation">here</a>.</li>
+<li>.NET core support for Itinero.IO.Shape and Itinero.Geo. (Thanks NTS!)</li>
+<li>CancellationToken support in most algorithms.</li>
+<li>Improved the Itinero native Geo operations.</li>
+<li>Support for extra data (non-attributes) to be linked to edges and vertices.</li>
+<li>Support for keeping OSM way/node IDs.</li>
+<li>Support for removing restrictions from RouterDb.</li>
+<li>AttributesIndex is writeable after serializing RouterDb.</li>
+<li>Support to start/end routes in a given direction (angle).</li>
+<li>Support for island detection: this feature makes sure all resolved points can be routed.</li>
+<li>Support for optimizing a sequence to prevent u-turns.</li>
+<li>Support for cached routerpoints to prevent recalculation.</li>
+<li>Support for disabling tag &#39;normalization&#39; in (lua) vehicle profiles.</li>
+</ul>
+<p>Bugfixes:</p>
+<ul>
+<li>We don&#39;t register profiles globally anymore, it&#39;s now possible to load multiple routerdbs in the same process.</li>
+<li>Fixed #157 &#39;Route.ProjectOn timeFromStartInSeconds is always 0&#39;.</li>
+<li>Fixed #153 &#39;DirectionCalculator sometimes erroneously returns default turn direction of &#39;Left&#39;&#39;.</li>
+<li>Fixed #141 &#39;Add extension method to get directed edge id on routerpoint.&#39;</li>
+<li>Fixed #203 &#39;One-to-many routing returns only first path&#39;.</li>
+<li>Fixed #214 &#39;The index out of range exception has been thrown when I try to build the whole US router db&#39;</li>
+<li>Fixed #209 &#39;AddContraction Stalls&#39;</li>
+<li>Fixed #238 &#39;DynamicProfile is not thread safe&#39;</li>
+<li>Fixed #253 &#39;Exception contracting europe-latest.osm.pbf&#39;</li>
+</ul>
+<h4 id="version-15">Version 1.5</h4>
+<p><em>This version has been released: <a href="https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.5.0.md">https://github.com/itinero/routing/blob/master/docs/releasenotes/itinero-1.5.0.md</a></em></p>
+<p>This is a minor update.</p>
+<ul>
+<li>It is now possible to control node-based restrictions in the lua profiles.</li>
+<li>Updated Reminiscense to 1.3.0.</li>
+</ul>
+<h4 id="version-16-and-beyond">Version 1.6 and beyond</h4>
+<p><em>An idea of the next priorities, this is subject to changes!</em></p>
+<ul>
+<li>[ ] Implement a proper <a class="xref" href="features/2017-11-15-isochrones.html">Isochrones</a> algorithm.</li>
+<li>[ ] Figure out <a class="xref" href="features/2018-03-01-unity-support.html">Unity Support</a>.</li>
+<li>[ ] Implement support for <a class="xref" href="features/2018-03-02-speed-limit-areas.html">Speed Limit Areas</a>.</li>
+</ul>
+<h3 id="itinero-2">Itinero 2</h3>
+<p>STATUS: <strong>Planned</strong><br>ETA: <strong>01-07-2020</strong>  </p>
+<p>This will be the first update of Itinero with breaking changes. The work is ongoing here:</p>
+<p><a href="https://github.com/openplannerteam/itinero-tiled-routing">https://github.com/openplannerteam/itinero-tiled-routing</a>  </p>
+<p>The goal is to use lessons learned from building Itinero 1 and use this towards a simpler Itinero 2. Basically we want to be on-par feature-wise with Itinero 1 when we release Itinero 2, you should be able to port any project using Itinero 1 to Itinero 2.</p>
+<p><strong>What we plan to support starting 2.0:</strong></p>
+<ul>
+<li>Routeable tiles: We support loading data on-the-fly and consuming routeable tiles. This enables projects to use Itinero without the need to worry about routing data.</li>
+<li>Contraction: Support contraction. We are still looking at options to support this best but we definetely want to be on-par feature-wise with Itinero 1. This means supporting:<ul>
+<li>Planet-wide contraction.</li>
+<li>Restrictions support.</li>
+<li>Edge-based directed routing.</li>
+<li>Once contracted it won&#39;t be possible to add extra data to the network. </li>
+</ul>
+</li>
+<li>Better profiles: We want to simplify the lua profiles. There is too much legacy in the profiles. We also want to:<ul>
+<li>Seperate loading data from the supported profiles. It should be possible to create a routerdb without defining profiles and add them afterwards.</li>
+<li>Support different weights going forward or backwards on the same edge.</li>
+</ul>
+</li>
+<li>Itinero 1 features:<ul>
+<li>Elevation support: support adding elevation data to the routerdb.</li>
+<li>Island detection: support island detection to make sure routes are always found.</li>
+</ul>
+</li>
+</ul>
+<p><strong>What we won&#39;t be implementing just yet but we keep in mind designing the API:</strong></p>
+<ul>
+<li>Elevation-aware routing: Support profiles that take into account elevation.</li>
+<li>Support for turning-costs: We want to support scenarios where it is important to add costs to turns. Turning right can be cheaper compared to turning left in right-hand driving countries.</li>
+<li>Support for vertex-weights: We want to support extra costs on vertices, for example a cost associated with traffic lights or toll-booths.</li>
+</ul>
+<p><strong>Updating depending projects:</strong>
+Check this section of you use Itinero but also one it&#39;s depending projects. How will we be handling updates to depending projects like OpenLR, IDP and the routing-api:</p>
+<ul>
+<li>OpenLR: We will start updating this only after the release of 2.0.</li>
+<li>Itinero.IO.OpenLR: We will start updating this only after the release of 2.0.</li>
+<li>vector-tiles: If you use Itinero 1 to generate vector-tiles, it&#39;s not sure yet we will be updating the vector-tiles module.</li>
+<li>optimization: The optimization module will also be update after the 2.0 release but we will probably has a prerelease version reading at the time of the 2.0 release.</li>
+<li>IDP: Same time as 2.0 release.</li>
+<li>routing-api: Same time as 2.0 release.</li>
+</ul>
+<h2 id="itinerotransit">Itinero.Transit</h2>
+<p><em>this is currently unreleased</em><br>STATUS: <strong>Planned</strong><br>ETA: <strong>31-12-2019</strong>  </p>
+<p>This package adds transit routing capabilities to Itinero. This is still in development here:</p>
+<p><a href="https://github.com/openplannerteam/itinero-transit">https://github.com/openplannerteam/itinero-transit</a></p>
+<p>A prelease version is already available but we still have the following main TODOs before a release:</p>
+<ul>
+<li>Implementing a better scaling connections db: The current database gets too big when there are too many dates loaded and 90% of connections repeat themselves.</li>
+<li>Add support to load GTFS directly: We use <a href="https://linkedconnections.org/">linked-connections</a>, this is the way to go, but we know users will ask for GTFS-support.</li>
+<li><del>Refactor the IO.OSM package, remove Itinero2 from the package and move this capability elsewhere.</del></li>
+<li>Add a new package to support intermodal routing based on Itinero1.</li>
+</ul>
+<h2 id="itineroioosmtiles">Itinero.IO.Osm.Tiles</h2>
+<p>This package enables Itinero 1.X to use <a href="https://github.com/openplannerteam/routable-tiles">routeable tiles</a>.</p>
+<h3 id="version-1">Version 1</h3>
+<p><em>this is currently unreleased</em><br>STATUS: <strong>Planned</strong><br>ETA: <strong>31-10-2019</strong>  </p>
+<p>The package is already largely functional but some crucial options are missing:</p>
+<ul>
+<li>[ ] Use compression to consume tiles.</li>
+<li>[ ] Add support for restrictions.</li>
+</ul>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

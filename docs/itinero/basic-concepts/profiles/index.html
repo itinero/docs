@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Profile | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Profile | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="profile">
+<h1 id="profile">Profile</h1>
+
+<p>A profile is the most important concept to configure routing. There are two important concepts related to this:</p>
+<ul>
+<li>Vehicle: A <strong>definition of a vehicle</strong> that travels the network. This can be a <em>car</em> but also a <em>pedestrian</em> for example.</li>
+<li>Profile: A profile describes <strong>the behaviour of a vehicle</strong>. </li>
+</ul>
+<h2 id="default-profiles">Default profiles</h2>
+<p>A few default vehicle profiles are available, but only for <a class="xref" href="../../data-sources/openstreetmap.html">OpenStreetMap (OSM)</a>.</p>
+<h4 id="openstreetmap-osm">OpenStreetMap (OSM)</h4>
+<p>If you are only planning on using <a class="xref" href="../../data-sources/openstreetmap.html">OpenStreetMap (OSM)</a> and you just need a default profile these are available:</p>
+<ul>
+<li><em>Car</em> (<code>Itinero.Osm.Vehicles.Vehicle.Car</code>): A default car profile, all restrictions enabled.<ul>
+<li><em>Fastest</em>: Calculates fastest functional routes.</li>
+<li><em>Shortest</em>: The shortest route.</li>
+<li><em>Classifications</em>: Follows a bit more aggressively the road classifications.</li>
+</ul>
+</li>
+<li>Bicycle (<code>Itinero.Osm.Vehicles.Vehicle.Bicycle</code>): A default bicycle profile.<ul>
+<li><em>Fastest</em>: Calculates fastest functional routes.</li>
+<li><em>Shortest</em>: The shortest route.</li>
+<li><em>Balanced</em>: Chooses dedicated cycling infrastructure.</li>
+<li><em>Networks</em>: Chooses dedicated cycling networks.</li>
+</ul>
+</li>
+<li><em>Pedestrian</em> (<code>Itinero.Osm.Vehicles.Vehicle.Pedestrian</code>): A default pedestrian profile.<ul>
+<li><em>Shortest</em>: The shortest route.</li>
+</ul>
+</li>
+</ul>
+<p>You can use the profiles as follows:</p>
+<pre><code class="lang-csharp">// using Itinero;
+// using Itinero.IO.Osm;
+// using Itinero.Osm.Vehicles;
+
+// get a profile.
+var profile = Vehicle.Car.Fastest(); // the default OSM car profile.
+</code></pre><h2 id="custom-profiles">Custom profiles</h2>
+<p>One of the most important features in Itinero is the option to define your own profiles and completely customize them using either:</p>
+<ul>
+<li><a class="xref" href="lua.html">Lua Profiles</a>: A scripting language, this allows embedding the profiles in the <a class="xref" href="../routerdb.html">RouterDb</a>. <strong>This is the default and preferred option.</strong></li>
+<li><a class="xref" href="csharp.html">C# Profile</a>: Define your profiles in C#, or any other .NET language for that matter.</li>
+</ul>
+<h2 id="what-to-read-next">What to read next?</h2>
+<p>Learn more about the <a class="xref" href="../routerpoint.html">RouterPoint</a> concept.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

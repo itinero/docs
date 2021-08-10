@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>C# Profile | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="C# Profile | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="csharp-profile">
+<h1 id="c-profile">C# Profile</h1>
+
+<p>Defining a C# based profile works pretty much the same as the <a class="xref" href="lua.html">Lua Profiles</a> alternative but it has the disadvantage of not being embeddable in the <a class="xref" href="../routerdb.html">RouterDb</a>.</p>
+<h2 id="factor-and-speed">Factor and Speed</h2>
+<p>Define a vehicle can be done by implementing the <a class="xref" href="../../../../itinero/Itinero.Profiles.Vehicle.html">Vehicle</a> class and overriding the one method FactorAndSpeed:</p>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// Calculates a factor and speed and adds keys to the given whitelist that are relevant.
+/// &lt;/summary&gt;
+/// &lt;returns&gt;A non-zero factor and speed when the edge with the given attributes is usefull for this vehicle.&lt;/returns&gt;
+FactorAndSpeed FactorAndSpeed(IAttributeCollection attributes, Whitelist whitelist);
+</code></pre><p>The <a class="xref" href="../../../../itinero/Itinero.Profiles.FactorAndSpeed.html">FactorAndSpeed</a> struct defines:</p>
+<ul>
+<li>Speed: The speed in m/s over the edge with the given attributes.</li>
+<li>Factor: The factor, in the default case 1/Speed.</li>
+<li>Direction: <ul>
+<li>0: Bidirectional.</li>
+<li>1: Oneway in the direction of the edge.</li>
+<li>2: Oneway agains the direction of the edge.</li>
+</ul>
+</li>
+</ul>
+<p>When Factor &gt; 0 the edge is considered routable.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

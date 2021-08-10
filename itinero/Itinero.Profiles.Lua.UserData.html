@@ -1,0 +1,1677 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UserData
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UserData
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.UserData">
+  <h1 id="Itinero_Profiles_Lua_UserData" data-uid="Itinero.Profiles.Lua.UserData">Class UserData
+  </h1>
+  <div class="markdown level0 summary"><p>Class exposing C# objects as Lua userdata.
+For efficiency, a global registry of types is maintained, instead of a per-script one.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Itinero.Profiles.Lua.RefIdObject.html">RefIdObject</a></div>
+    <div class="level2"><span class="xref">UserData</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Itinero.Profiles.Lua.RefIdObject.html#Itinero_Profiles_Lua_RefIdObject_ReferenceID">RefIdObject.ReferenceID</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Profiles.Lua.RefIdObject.html#Itinero_Profiles_Lua_RefIdObject_FormatTypeString_System_String_">RefIdObject.FormatTypeString(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_UserData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserData : RefIdObject</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_DefaultAccessMode_" data-uid="Itinero.Profiles.Lua.UserData.DefaultAccessMode*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_DefaultAccessMode" data-uid="Itinero.Profiles.Lua.UserData.DefaultAccessMode"><a href="#collapsible-Itinero_Profiles_Lua_UserData_DefaultAccessMode" class="expander" data-toggle="collapse">DefaultAccessMode</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_DefaultAccessMode" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the default access mode to be used in the whole application</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InteropAccessMode DefaultAccessMode { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a>
+        <p><p>The default access mode.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentException</span>
+        <p><p>InteropAccessMode is InteropAccessMode.Default</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_Descriptor_" data-uid="Itinero.Profiles.Lua.UserData.Descriptor*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_Descriptor" data-uid="Itinero.Profiles.Lua.UserData.Descriptor"><a href="#collapsible-Itinero_Profiles_Lua_UserData_Descriptor" class="expander" data-toggle="collapse">Descriptor</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_Descriptor" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the type descriptor of this userdata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserDataDescriptor Descriptor { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_Object_" data-uid="Itinero.Profiles.Lua.UserData.Object*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_Object" data-uid="Itinero.Profiles.Lua.UserData.Object"><a href="#collapsible-Itinero_Profiles_Lua_UserData_Object" class="expander" data-toggle="collapse">Object</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_Object" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the object associated to this userdata (null for statics)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Object { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegistrationPolicy_" data-uid="Itinero.Profiles.Lua.UserData.RegistrationPolicy*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegistrationPolicy" data-uid="Itinero.Profiles.Lua.UserData.RegistrationPolicy"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegistrationPolicy" class="expander" data-toggle="collapse">RegistrationPolicy</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegistrationPolicy" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the registration policy to be used in the whole application</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRegistrationPolicy RegistrationPolicy { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IRegistrationPolicy</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_UserValue_" data-uid="Itinero.Profiles.Lua.UserData.UserValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_UserValue" data-uid="Itinero.Profiles.Lua.UserData.UserValue"><a href="#collapsible-Itinero_Profiles_Lua_UserData_UserValue" class="expander" data-toggle="collapse">UserValue</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_UserValue" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the &quot;uservalue&quot;. See debug.getuservalue and debug.setuservalue.
+<a href="http://www.lua.org/manual/5.2/manual.html#pdf-debug.setuservalue">http://www.lua.org/manual/5.2/manual.html#pdf-debug.setuservalue</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue UserValue { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_Create_" data-uid="Itinero.Profiles.Lua.UserData.Create*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_Create_System_Object_" data-uid="Itinero.Profiles.Lua.UserData.Create(System.Object)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_Create_System_Object_" class="expander" data-toggle="collapse">Create(Object)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_Create_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a userdata DynValue from the specified object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue Create(object o)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">o</span>
+        <p><p>The object</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_Create_" data-uid="Itinero.Profiles.Lua.UserData.Create*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_Create_System_Object_IUserDataDescriptor_" data-uid="Itinero.Profiles.Lua.UserData.Create(System.Object,IUserDataDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_Create_System_Object_IUserDataDescriptor_" class="expander" data-toggle="collapse">Create(Object, IUserDataDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_Create_System_Object_IUserDataDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a userdata DynValue from the specified object, using a specific descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue Create(object o, IUserDataDescriptor descr)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">o</span>
+        <p><p>The object</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IUserDataDescriptor</span></span>
+        <span class="parametername">descr</span>
+        <p><p>The descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_CreateStatic_" data-uid="Itinero.Profiles.Lua.UserData.CreateStatic*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_CreateStatic_IUserDataDescriptor_" data-uid="Itinero.Profiles.Lua.UserData.CreateStatic(IUserDataDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_CreateStatic_IUserDataDescriptor_" class="expander" data-toggle="collapse">CreateStatic(IUserDataDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_CreateStatic_IUserDataDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a static userdata DynValue from the specified IUserDataDescriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue CreateStatic(IUserDataDescriptor descr)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IUserDataDescriptor</span></span>
+        <span class="parametername">descr</span>
+        <p><p>The IUserDataDescriptor</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_CreateStatic_" data-uid="Itinero.Profiles.Lua.UserData.CreateStatic*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_CreateStatic_Type_" data-uid="Itinero.Profiles.Lua.UserData.CreateStatic(Type)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_CreateStatic_Type_" class="expander" data-toggle="collapse">CreateStatic(Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_CreateStatic_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a static userdata DynValue from the specified Type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue CreateStatic(Type t)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">t</span>
+        <p><p>The type</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_CreateStatic_" data-uid="Itinero.Profiles.Lua.UserData.CreateStatic*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_CreateStatic__1" data-uid="Itinero.Profiles.Lua.UserData.CreateStatic``1"><a href="#collapsible-Itinero_Profiles_Lua_UserData_CreateStatic__1" class="expander" data-toggle="collapse">CreateStatic&lt;T&gt;()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_CreateStatic__1" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a static userdata DynValue from the specified Type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue CreateStatic&lt;T&gt;()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The Type</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_GetDescriptionOfRegisteredTypes_" data-uid="Itinero.Profiles.Lua.UserData.GetDescriptionOfRegisteredTypes*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_GetDescriptionOfRegisteredTypes_System_Boolean_" data-uid="Itinero.Profiles.Lua.UserData.GetDescriptionOfRegisteredTypes(System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_GetDescriptionOfRegisteredTypes_System_Boolean_" class="expander" data-toggle="collapse">GetDescriptionOfRegisteredTypes(Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_GetDescriptionOfRegisteredTypes_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a table with the description of registered types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Table GetDescriptionOfRegisteredTypes(bool useHistoricalData = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">useHistoricalData</span>
+        <p><p>if set to true, it will also include the last found descriptor of all unregistered types.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.Table.html">Table</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_GetDescriptorForObject_" data-uid="Itinero.Profiles.Lua.UserData.GetDescriptorForObject*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_GetDescriptorForObject_System_Object_" data-uid="Itinero.Profiles.Lua.UserData.GetDescriptorForObject(System.Object)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_GetDescriptorForObject_System_Object_" class="expander" data-toggle="collapse">GetDescriptorForObject(Object)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_GetDescriptorForObject_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the best possible type descriptor for a specified CLR object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor GetDescriptorForObject(object o)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">o</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_GetDescriptorForType_" data-uid="Itinero.Profiles.Lua.UserData.GetDescriptorForType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_GetDescriptorForType_Type_System_Boolean_" data-uid="Itinero.Profiles.Lua.UserData.GetDescriptorForType(Type,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_GetDescriptorForType_Type_System_Boolean_" class="expander" data-toggle="collapse">GetDescriptorForType(Type, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_GetDescriptorForType_Type_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the best possible type descriptor for a specified CLR type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor GetDescriptorForType(Type type, bool searchInterfaces)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p><p>The CLR type for which the descriptor is desired.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">searchInterfaces</span>
+        <p><p>if set to <code>true</code> interfaces are used in the search.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_GetDescriptorForType_" data-uid="Itinero.Profiles.Lua.UserData.GetDescriptorForType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_GetDescriptorForType__1_System_Boolean_" data-uid="Itinero.Profiles.Lua.UserData.GetDescriptorForType``1(System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_GetDescriptorForType__1_System_Boolean_" class="expander" data-toggle="collapse">GetDescriptorForType&lt;T&gt;(Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_GetDescriptorForType__1_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the best possible type descriptor for a specified CLR type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor GetDescriptorForType&lt;T&gt;(bool searchInterfaces)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">searchInterfaces</span>
+        <p><p>if set to <code>true</code> interfaces are used in the search.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The CLR type for which the descriptor is desired.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_GetExtensionMethodsByNameAndType_" data-uid="Itinero.Profiles.Lua.UserData.GetExtensionMethodsByNameAndType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_GetExtensionMethodsByNameAndType_System_String_Type_" data-uid="Itinero.Profiles.Lua.UserData.GetExtensionMethodsByNameAndType(System.String,Type)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_GetExtensionMethodsByNameAndType_System_String_Type_" class="expander" data-toggle="collapse">GetExtensionMethodsByNameAndType(String, Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_GetExtensionMethodsByNameAndType_System_String_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all the extension methods which can match a given name and extending a given Type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;IOverloadableMemberDescriptor&gt; GetExtensionMethodsByNameAndType(string name, Type extendedType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">extendedType</span>
+        <p><p>The extended type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">IOverloadableMemberDescriptor</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_GetExtensionMethodsChangeVersion_" data-uid="Itinero.Profiles.Lua.UserData.GetExtensionMethodsChangeVersion*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_GetExtensionMethodsChangeVersion" data-uid="Itinero.Profiles.Lua.UserData.GetExtensionMethodsChangeVersion"><a href="#collapsible-Itinero_Profiles_Lua_UserData_GetExtensionMethodsChangeVersion" class="expander" data-toggle="collapse">GetExtensionMethodsChangeVersion()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_GetExtensionMethodsChangeVersion" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a number which gets incremented everytime the extension methods registry changes.
+Use this to invalidate caches based on extension methods</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetExtensionMethodsChangeVersion()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_GetRegisteredTypes_" data-uid="Itinero.Profiles.Lua.UserData.GetRegisteredTypes*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_GetRegisteredTypes_System_Boolean_" data-uid="Itinero.Profiles.Lua.UserData.GetRegisteredTypes(System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_GetRegisteredTypes_System_Boolean_" class="expander" data-toggle="collapse">GetRegisteredTypes(Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_GetRegisteredTypes_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all the registered types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Type&gt; GetRegisteredTypes(bool useHistoricalData = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">useHistoricalData</span>
+        <p><p>if set to true, it will also include the last found descriptor of all unregistered types.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">Type</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_IsTypeRegistered_" data-uid="Itinero.Profiles.Lua.UserData.IsTypeRegistered*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_IsTypeRegistered_Type_" data-uid="Itinero.Profiles.Lua.UserData.IsTypeRegistered(Type)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_IsTypeRegistered_Type_" class="expander" data-toggle="collapse">IsTypeRegistered(Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_IsTypeRegistered_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the specified type is registered. Note that this should be used only to check if a descriptor
+has been registered EXACTLY. For many types a descriptor can still be created, for example through the descriptor
+of a base type or implemented interfaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTypeRegistered(Type t)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">t</span>
+        <p><p>The type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_IsTypeRegistered_" data-uid="Itinero.Profiles.Lua.UserData.IsTypeRegistered*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_IsTypeRegistered__1" data-uid="Itinero.Profiles.Lua.UserData.IsTypeRegistered``1"><a href="#collapsible-Itinero_Profiles_Lua_UserData_IsTypeRegistered__1" class="expander" data-toggle="collapse">IsTypeRegistered&lt;T&gt;()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_IsTypeRegistered__1" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the specified type is registered. Note that this should be used only to check if a descriptor
+has been registered EXACTLY. For many types a descriptor can still be created, for example through the descriptor
+of a base type or implemented interfaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTypeRegistered&lt;T&gt;()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterAssembly_" data-uid="Itinero.Profiles.Lua.UserData.RegisterAssembly*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterAssembly_Assembly_System_Boolean_" data-uid="Itinero.Profiles.Lua.UserData.RegisterAssembly(Assembly,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterAssembly_Assembly_System_Boolean_" class="expander" data-toggle="collapse">RegisterAssembly(Assembly, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterAssembly_Assembly_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers all types marked with a MoonSharpUserDataAttribute that ar contained in an assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterAssembly(Assembly asm = null, bool includeExtensionTypes = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Assembly</span></span>
+        <span class="parametername">asm</span>
+        <p><p>The assembly.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeExtensionTypes</span>
+        <p><p>if set to <code>true</code> extension types are registered to the appropriate registry.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterExtensionType_" data-uid="Itinero.Profiles.Lua.UserData.RegisterExtensionType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterExtensionType_Type_Itinero_Profiles_Lua_InteropAccessMode_" data-uid="Itinero.Profiles.Lua.UserData.RegisterExtensionType(Type,Itinero.Profiles.Lua.InteropAccessMode)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterExtensionType_Type_Itinero_Profiles_Lua_InteropAccessMode_" class="expander" data-toggle="collapse">RegisterExtensionType(Type, InteropAccessMode)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterExtensionType_Type_Itinero_Profiles_Lua_InteropAccessMode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers an extension Type (that is a type containing extension methods)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterExtensionType(Type type, InteropAccessMode mode = InteropAccessMode.Default)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p><p>The type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">mode</span>
+        <p><p>The InteropAccessMode.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterProxyType_" data-uid="Itinero.Profiles.Lua.UserData.RegisterProxyType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterProxyType_IProxyFactory_Itinero_Profiles_Lua_InteropAccessMode_System_String_" data-uid="Itinero.Profiles.Lua.UserData.RegisterProxyType(IProxyFactory,Itinero.Profiles.Lua.InteropAccessMode,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterProxyType_IProxyFactory_Itinero_Profiles_Lua_InteropAccessMode_System_String_" class="expander" data-toggle="collapse">RegisterProxyType(IProxyFactory, InteropAccessMode, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterProxyType_IProxyFactory_Itinero_Profiles_Lua_InteropAccessMode_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a proxy type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterProxyType(IProxyFactory proxyFactory, InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IProxyFactory</span></span>
+        <span class="parametername">proxyFactory</span>
+        <p><p>The proxy factory.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">accessMode</span>
+        <p><p>The access mode.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">friendlyName</span>
+        <p><p>A friendly name for the descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterProxyType_" data-uid="Itinero.Profiles.Lua.UserData.RegisterProxyType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterProxyType__2_Func___1___0__Itinero_Profiles_Lua_InteropAccessMode_System_String_" data-uid="Itinero.Profiles.Lua.UserData.RegisterProxyType``2(Func{``1,``0},Itinero.Profiles.Lua.InteropAccessMode,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterProxyType__2_Func___1___0__Itinero_Profiles_Lua_InteropAccessMode_System_String_" class="expander" data-toggle="collapse">RegisterProxyType&lt;TProxy, TTarget&gt;(Func&lt;TTarget, TProxy&gt;, InteropAccessMode, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterProxyType__2_Func___1___0__Itinero_Profiles_Lua_InteropAccessMode_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a proxy type using a delegate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterProxyType&lt;TProxy, TTarget&gt;(Func&lt;TTarget, TProxy&gt; wrapDelegate, InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)where TProxy : class where TTarget : class</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;TTarget, TProxy&gt;</span>
+        <span class="parametername">wrapDelegate</span>
+        <p><p>A delegate creating a proxy object from a target object.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">accessMode</span>
+        <p><p>The access mode.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">friendlyName</span>
+        <p><p>A friendly name for the descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">TProxy</span>
+        <p><p>The type of the proxy.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="parametername">TTarget</span>
+        <p><p>The type of the target.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterType_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterType_IUserDataDescriptor_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType(IUserDataDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterType_IUserDataDescriptor_" class="expander" data-toggle="collapse">RegisterType(IUserDataDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterType_IUserDataDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a type with a custom userdata descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType(IUserDataDescriptor customDescriptor)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IUserDataDescriptor</span></span>
+        <span class="parametername">customDescriptor</span>
+        <p><p>The custom descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterType_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterType_Type_Itinero_Profiles_Lua_InteropAccessMode_System_String_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType(Type,Itinero.Profiles.Lua.InteropAccessMode,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterType_Type_Itinero_Profiles_Lua_InteropAccessMode_System_String_" class="expander" data-toggle="collapse">RegisterType(Type, InteropAccessMode, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterType_Type_Itinero_Profiles_Lua_InteropAccessMode_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a type for userdata interop</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType(Type type, InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p><p>The type to be registered</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">accessMode</span>
+        <p><p>The access mode (optional).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">friendlyName</span>
+        <p><p>Friendly name for the type (optional)</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterType_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterType_Type_IUserDataDescriptor_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType(Type,IUserDataDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterType_Type_IUserDataDescriptor_" class="expander" data-toggle="collapse">RegisterType(Type, IUserDataDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterType_Type_IUserDataDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a type with a custom userdata descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType(Type type, IUserDataDescriptor customDescriptor)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p><p>The type to be registered</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IUserDataDescriptor</span></span>
+        <span class="parametername">customDescriptor</span>
+        <p><p>The custom descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterType_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterType__1_Itinero_Profiles_Lua_InteropAccessMode_System_String_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType``1(Itinero.Profiles.Lua.InteropAccessMode,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterType__1_Itinero_Profiles_Lua_InteropAccessMode_System_String_" class="expander" data-toggle="collapse">RegisterType&lt;T&gt;(InteropAccessMode, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterType__1_Itinero_Profiles_Lua_InteropAccessMode_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a type for userdata interop</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType&lt;T&gt;(InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.InteropAccessMode.html">InteropAccessMode</a></span>
+        <span class="parametername">accessMode</span>
+        <p><p>The access mode (optional).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">friendlyName</span>
+        <p><p>Friendly name for the type (optional)</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The type to be registered</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_RegisterType_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_RegisterType__1_IUserDataDescriptor_" data-uid="Itinero.Profiles.Lua.UserData.RegisterType``1(IUserDataDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_RegisterType__1_IUserDataDescriptor_" class="expander" data-toggle="collapse">RegisterType&lt;T&gt;(IUserDataDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_RegisterType__1_IUserDataDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a type with a custom userdata descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType&lt;T&gt;(IUserDataDescriptor customDescriptor)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IUserDataDescriptor</span></span>
+        <span class="parametername">customDescriptor</span>
+        <p><p>The custom descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IUserDataDescriptor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The type to be registered</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_UnregisterType_" data-uid="Itinero.Profiles.Lua.UserData.UnregisterType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_UnregisterType_Type_" data-uid="Itinero.Profiles.Lua.UserData.UnregisterType(Type)"><a href="#collapsible-Itinero_Profiles_Lua_UserData_UnregisterType_Type_" class="expander" data-toggle="collapse">UnregisterType(Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_UnregisterType_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Unregisters a type.
+WARNING: unregistering types at runtime is a dangerous practice and may cause unwanted errors.
+Use this only for testing purposes or to re-register the same type in a slightly different way.
+Additionally, it&apos;s a good practice to discard all previous loaded scripts after calling this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterType(Type t)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">t</span>
+        <p><p>The The type to be unregistered</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_UserData_UnregisterType_" data-uid="Itinero.Profiles.Lua.UserData.UnregisterType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_UserData_UnregisterType__1" data-uid="Itinero.Profiles.Lua.UserData.UnregisterType``1"><a href="#collapsible-Itinero_Profiles_Lua_UserData_UnregisterType__1" class="expander" data-toggle="collapse">UnregisterType&lt;T&gt;()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_UserData_UnregisterType__1" class="collapse in">
+  <div class="markdown level1 summary"><p>Unregisters a type. 
+WARNING: unregistering types at runtime is a dangerous practice and may cause unwanted errors.
+Use this only for testing purposes or to re-register the same type in a slightly different way.
+Additionally, it&apos;s a good practice to discard all previous loaded scripts after calling this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterType&lt;T&gt;()</code></pre>
+  </div>
+  
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The type to be unregistered</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

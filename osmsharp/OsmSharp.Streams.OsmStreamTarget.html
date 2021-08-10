@@ -1,0 +1,752 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OsmStreamTarget
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OsmStreamTarget
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OsmSharp.Streams.OsmStreamTarget">
+  <h1 id="OsmSharp_Streams_OsmStreamTarget" data-uid="OsmSharp.Streams.OsmStreamTarget">Class OsmStreamTarget
+  </h1>
+  <div class="markdown level0 summary"><p>Any target of osm data (Nodes, Ways and Relations).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OsmStreamTarget</span></div>
+  </div>
+  
+      <div class="level2"><a class="xref" href="OsmSharp.Streams.OsmStreamTargetEmpty.html">OsmStreamTargetEmpty</a></div>
+      <div class="level2"><a class="xref" href="OsmSharp.Streams.PBFOsmStreamTarget.html">PBFOsmStreamTarget</a></div>
+      <div class="level2"><a class="xref" href="OsmSharp.Streams.XmlOsmStreamTarget.html">XmlOsmStreamTarget</a></div>
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OsmSharp_Streams_OsmStreamTarget_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class OsmStreamTarget : IOsmStreamTarget</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget__ctor_" data-uid="OsmSharp.Streams.OsmStreamTarget.#ctor*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget__ctor" data-uid="OsmSharp.Streams.OsmStreamTarget.#ctor"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget__ctor" class="expander" data-toggle="collapse">OsmStreamTarget()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget__ctor" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected OsmStreamTarget()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_Meta_" data-uid="OsmSharp.Streams.OsmStreamTarget.Meta*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_Meta" data-uid="OsmSharp.Streams.OsmStreamTarget.Meta"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_Meta" class="expander" data-toggle="collapse">Meta</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_Meta" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the meta-data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TagsCollectionBase Meta { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">TagsCollectionBase</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_Source_" data-uid="OsmSharp.Streams.OsmStreamTarget.Source*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_Source" data-uid="OsmSharp.Streams.OsmStreamTarget.Source"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_Source" class="expander" data-toggle="collapse">Source</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_Source" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the registered reader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected OsmStreamSource Source { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="OsmSharp.Streams.OsmStreamSource.html">OsmStreamSource</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_AddNode_" data-uid="OsmSharp.Streams.OsmStreamTarget.AddNode*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_AddNode_OsmSharp_Node_" data-uid="OsmSharp.Streams.OsmStreamTarget.AddNode(OsmSharp.Node)"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_AddNode_OsmSharp_Node_" class="expander" data-toggle="collapse">AddNode(Node)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_AddNode_OsmSharp_Node_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a node to the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void AddNode(Node node)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.Node.html">Node</a></span>
+        <span class="parametername">node</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_AddRelation_" data-uid="OsmSharp.Streams.OsmStreamTarget.AddRelation*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_AddRelation_OsmSharp_Relation_" data-uid="OsmSharp.Streams.OsmStreamTarget.AddRelation(OsmSharp.Relation)"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_AddRelation_OsmSharp_Relation_" class="expander" data-toggle="collapse">AddRelation(Relation)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_AddRelation_OsmSharp_Relation_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a relation to the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void AddRelation(Relation relation)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.Relation.html">Relation</a></span>
+        <span class="parametername">relation</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_AddWay_" data-uid="OsmSharp.Streams.OsmStreamTarget.AddWay*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_AddWay_OsmSharp_Way_" data-uid="OsmSharp.Streams.OsmStreamTarget.AddWay(OsmSharp.Way)"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_AddWay_OsmSharp_Way_" class="expander" data-toggle="collapse">AddWay(Way)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_AddWay_OsmSharp_Way_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a way to the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void AddWay(Way way)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.Way.html">Way</a></span>
+        <span class="parametername">way</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_Close_" data-uid="OsmSharp.Streams.OsmStreamTarget.Close*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_Close" data-uid="OsmSharp.Streams.OsmStreamTarget.Close"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_Close" class="expander" data-toggle="collapse">Close()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_Close" class="collapse in">
+  <div class="markdown level1 summary"><p>Closes the current target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Close()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_DoPull_" data-uid="OsmSharp.Streams.OsmStreamTarget.DoPull*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_DoPull" data-uid="OsmSharp.Streams.OsmStreamTarget.DoPull"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_DoPull" class="expander" data-toggle="collapse">DoPull()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_DoPull" class="collapse in">
+  <div class="markdown level1 summary"><p>Does the pull operation until source is exhausted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DoPull()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_DoPull_" data-uid="OsmSharp.Streams.OsmStreamTarget.DoPull*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_DoPull_System_Boolean_System_Boolean_System_Boolean_" data-uid="OsmSharp.Streams.OsmStreamTarget.DoPull(System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_DoPull_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">DoPull(Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_DoPull_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Does the pull operation until source is exhausted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DoPull(bool ignoreNodes, bool ignoreWays, bool ignoreRelations)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">ignoreNodes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">ignoreWays</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">ignoreRelations</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_Flush_" data-uid="OsmSharp.Streams.OsmStreamTarget.Flush*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_Flush" data-uid="OsmSharp.Streams.OsmStreamTarget.Flush"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_Flush" class="expander" data-toggle="collapse">Flush()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_Flush" class="collapse in">
+  <div class="markdown level1 summary"><p>Flushes the current target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Flush()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_GetAllMeta_" data-uid="OsmSharp.Streams.OsmStreamTarget.GetAllMeta*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_GetAllMeta" data-uid="OsmSharp.Streams.OsmStreamTarget.GetAllMeta"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_GetAllMeta" class="expander" data-toggle="collapse">GetAllMeta()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_GetAllMeta" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all meta-data from all sources and filters that provide this target of data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TagsCollection GetAllMeta()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">TagsCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_Initialize_" data-uid="OsmSharp.Streams.OsmStreamTarget.Initialize*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_Initialize" data-uid="OsmSharp.Streams.OsmStreamTarget.Initialize"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_Initialize" class="expander" data-toggle="collapse">Initialize()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_Initialize" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Initialize()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_OnAfterPull_" data-uid="OsmSharp.Streams.OsmStreamTarget.OnAfterPull*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_OnAfterPull" data-uid="OsmSharp.Streams.OsmStreamTarget.OnAfterPull"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_OnAfterPull" class="expander" data-toggle="collapse">OnAfterPull()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_OnAfterPull" class="collapse in">
+  <div class="markdown level1 summary"><p>Called right after pull and right before flush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAfterPull()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_OnBeforePull_" data-uid="OsmSharp.Streams.OsmStreamTarget.OnBeforePull*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_OnBeforePull" data-uid="OsmSharp.Streams.OsmStreamTarget.OnBeforePull"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_OnBeforePull" class="expander" data-toggle="collapse">OnBeforePull()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_OnBeforePull" class="collapse in">
+  <div class="markdown level1 summary"><p>Called right before pull and right after initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool OnBeforePull()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_Pull_" data-uid="OsmSharp.Streams.OsmStreamTarget.Pull*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_Pull" data-uid="OsmSharp.Streams.OsmStreamTarget.Pull"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_Pull" class="expander" data-toggle="collapse">Pull()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_Pull" class="collapse in">
+  <div class="markdown level1 summary"><p>Pulls the changes from the source to this target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pull()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_PullNext_" data-uid="OsmSharp.Streams.OsmStreamTarget.PullNext*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_PullNext" data-uid="OsmSharp.Streams.OsmStreamTarget.PullNext"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_PullNext" class="expander" data-toggle="collapse">PullNext()</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_PullNext" class="collapse in">
+  <div class="markdown level1 summary"><p>Pulls the next object and returns true if there was one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PullNext()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Streams_OsmStreamTarget_RegisterSource_" data-uid="OsmSharp.Streams.OsmStreamTarget.RegisterSource*"></a>
+  
+  <h4 id="OsmSharp_Streams_OsmStreamTarget_RegisterSource_OsmSharp_Streams_OsmStreamSource_" data-uid="OsmSharp.Streams.OsmStreamTarget.RegisterSource(OsmSharp.Streams.OsmStreamSource)"><a href="#collapsible-OsmSharp_Streams_OsmStreamTarget_RegisterSource_OsmSharp_Streams_OsmStreamSource_" class="expander" data-toggle="collapse">RegisterSource(OsmStreamSource)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Streams_OsmStreamTarget_RegisterSource_OsmSharp_Streams_OsmStreamSource_" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers a reader on this writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterSource(OsmStreamSource source)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.Streams.OsmStreamSource.html">OsmStreamSource</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="OsmSharp.Streams.IOsmStreamTarget.html#OsmSharp_Streams_IOsmStreamTarget_RegisterSource_OsmSharp_Streams_OsmStreamSource_">IOsmStreamTarget.RegisterSource(OsmStreamSource)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

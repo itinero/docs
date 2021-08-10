@@ -1,0 +1,1161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Extensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Extensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.LocalGeo.Extensions">
+  <h1 id="Itinero_LocalGeo_Extensions" data-uid="Itinero.LocalGeo.Extensions">Class Extensions
+  </h1>
+  <div class="markdown level0 summary"><p>Extension methods for the local geo objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Extensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_LocalGeo_Extensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Extensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_BoundingBox_" data-uid="Itinero.LocalGeo.Extensions.BoundingBox*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_BoundingBox_Itinero_LocalGeo_Polygon_System_Single__System_Single__System_Single__System_Single__" data-uid="Itinero.LocalGeo.Extensions.BoundingBox(Itinero.LocalGeo.Polygon,System.Single@,System.Single@,System.Single@,System.Single@)"><a href="#collapsible-Itinero_LocalGeo_Extensions_BoundingBox_Itinero_LocalGeo_Polygon_System_Single__System_Single__System_Single__System_Single__" class="expander" data-toggle="collapse">BoundingBox(Polygon, out Single, out Single, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_BoundingBox_Itinero_LocalGeo_Polygon_System_Single__System_Single__System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates a bounding box for the polygon.
+TODO: if this is needed a lot, we should cache it in the polygon, see <a href="https://github.com/itinero/routing/issues/138">https://github.com/itinero/routing/issues/138</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BoundingBox(this Polygon polygon, out float north, out float east, out float south, out float west)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Polygon.html">Polygon</a></span>
+        <span class="parametername">polygon</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">north</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">east</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">south</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">west</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_BoundingBox_" data-uid="Itinero.LocalGeo.Extensions.BoundingBox*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_BoundingBox_List_Itinero_LocalGeo_Coordinate__System_Single__System_Single__System_Single__System_Single__" data-uid="Itinero.LocalGeo.Extensions.BoundingBox(List{Itinero.LocalGeo.Coordinate},System.Single@,System.Single@,System.Single@,System.Single@)"><a href="#collapsible-Itinero_LocalGeo_Extensions_BoundingBox_List_Itinero_LocalGeo_Coordinate__System_Single__System_Single__System_Single__System_Single__" class="expander" data-toggle="collapse">BoundingBox(List&lt;Coordinate&gt;, out Single, out Single, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_BoundingBox_List_Itinero_LocalGeo_Coordinate__System_Single__System_Single__System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates a bounding box for the ring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BoundingBox(this List&lt;Coordinate&gt; exteriorRing, out float north, out float east, out float south, out float west)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;</span>
+        <span class="parametername">exteriorRing</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">north</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">east</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">south</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">west</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_ConvexHull_" data-uid="Itinero.LocalGeo.Extensions.ConvexHull*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_ConvexHull_IEnumerable_Itinero_LocalGeo_Coordinate__" data-uid="Itinero.LocalGeo.Extensions.ConvexHull(IEnumerable{Itinero.LocalGeo.Coordinate})"><a href="#collapsible-Itinero_LocalGeo_Extensions_ConvexHull_IEnumerable_Itinero_LocalGeo_Coordinate__" class="expander" data-toggle="collapse">ConvexHull(IEnumerable&lt;Coordinate&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_ConvexHull_IEnumerable_Itinero_LocalGeo_Coordinate__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the convex hull around the given points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Polygon ConvexHull(this IEnumerable&lt;Coordinate&gt; points)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;</span>
+        <span class="parametername">points</span>
+        <p><p>The points.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.LocalGeo.Polygon.html">Polygon</a>
+        <p><p>A convex hull ring around the given points.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_Flip_" data-uid="Itinero.LocalGeo.Extensions.Flip*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_Flip_System_Single__" data-uid="Itinero.LocalGeo.Extensions.Flip(System.Single@)"><a href="#collapsible-Itinero_LocalGeo_Extensions_Flip_System_Single__" class="expander" data-toggle="collapse">Flip(ref Single)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_Flip_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>If the longitude is smaller then 0, add 360.
+Usefull when coordinates are near the antemeridian</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Flip(ref float longitude)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">longitude</span>
+        <p><p>The paramater that is flipped</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_Intersect_" data-uid="Itinero.LocalGeo.Extensions.Intersect*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_Intersect_Itinero_LocalGeo_Polygon_System_Single_System_Single_System_Single_System_Single_" data-uid="Itinero.LocalGeo.Extensions.Intersect(Itinero.LocalGeo.Polygon,System.Single,System.Single,System.Single,System.Single)"><a href="#collapsible-Itinero_LocalGeo_Extensions_Intersect_Itinero_LocalGeo_Polygon_System_Single_System_Single_System_Single_System_Single_" class="expander" data-toggle="collapse">Intersect(Polygon, Single, Single, Single, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_Intersect_Itinero_LocalGeo_Polygon_System_Single_System_Single_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns intersection points with the given polygon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Coordinate&gt; Intersect(this Polygon polygon, float latitude1, float longitude1, float latitude2, float longitude2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Polygon.html">Polygon</a></span>
+        <span class="parametername">polygon</span>
+        <p><p>The polygon</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">latitude1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">longitude1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">latitude2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">longitude2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_LocationAfterDistance_" data-uid="Itinero.LocalGeo.Extensions.LocationAfterDistance*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Coordinate_Itinero_LocalGeo_Coordinate_System_Single_" data-uid="Itinero.LocalGeo.Extensions.LocationAfterDistance(Itinero.LocalGeo.Coordinate,Itinero.LocalGeo.Coordinate,System.Single)"><a href="#collapsible-Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Coordinate_Itinero_LocalGeo_Coordinate_System_Single_" class="expander" data-toggle="collapse">LocationAfterDistance(Coordinate, Coordinate, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Coordinate_Itinero_LocalGeo_Coordinate_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the location between the two coordinates at the given offset distance in meter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate LocationAfterDistance(Coordinate coordinate1, Coordinate coordinate2, float offset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a></span>
+        <span class="parametername">coordinate1</span>
+        <p><p>The first coordinate.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a></span>
+        <span class="parametername">coordinate2</span>
+        <p><p>The second coordinate.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset in meter starting at coordinate1.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_LocationAfterDistance_" data-uid="Itinero.LocalGeo.Extensions.LocationAfterDistance*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Coordinate_Itinero_LocalGeo_Coordinate_System_Single_System_Single_" data-uid="Itinero.LocalGeo.Extensions.LocationAfterDistance(Itinero.LocalGeo.Coordinate,Itinero.LocalGeo.Coordinate,System.Single,System.Single)"><a href="#collapsible-Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Coordinate_Itinero_LocalGeo_Coordinate_System_Single_System_Single_" class="expander" data-toggle="collapse">LocationAfterDistance(Coordinate, Coordinate, Single, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Coordinate_Itinero_LocalGeo_Coordinate_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the location between the two coordinates at the given offset distance in meter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate LocationAfterDistance(Coordinate coordinate1, Coordinate coordinate2, float distanceBetween, float offset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a></span>
+        <span class="parametername">coordinate1</span>
+        <p><p>The first coordinate.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a></span>
+        <span class="parametername">coordinate2</span>
+        <p><p>The second coordinate.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distanceBetween</span>
+        <p><p>The distance between the two, when we already calculated it before.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset in meter starting at coordinate1.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_LocationAfterDistance_" data-uid="Itinero.LocalGeo.Extensions.LocationAfterDistance*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Line_System_Single_System_Boolean_" data-uid="Itinero.LocalGeo.Extensions.LocationAfterDistance(Itinero.LocalGeo.Line,System.Single,System.Boolean)"><a href="#collapsible-Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Line_System_Single_System_Boolean_" class="expander" data-toggle="collapse">LocationAfterDistance(Line, Single, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_LocationAfterDistance_Itinero_LocalGeo_Line_System_Single_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the location along the line at the given offset distance in meter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate LocationAfterDistance(this Line line, float offset, bool forward = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Line.html">Line</a></span>
+        <span class="parametername">line</span>
+        <p><p>The line.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset in meter.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">forward</span>
+        <p><p>When true the offset starts at the first location, otherwise the second..</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_PointIn_" data-uid="Itinero.LocalGeo.Extensions.PointIn*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_PointIn_Itinero_LocalGeo_Polygon_Itinero_LocalGeo_Coordinate_" data-uid="Itinero.LocalGeo.Extensions.PointIn(Itinero.LocalGeo.Polygon,Itinero.LocalGeo.Coordinate)"><a href="#collapsible-Itinero_LocalGeo_Extensions_PointIn_Itinero_LocalGeo_Polygon_Itinero_LocalGeo_Coordinate_" class="expander" data-toggle="collapse">PointIn(Polygon, Coordinate)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_PointIn_Itinero_LocalGeo_Polygon_Itinero_LocalGeo_Coordinate_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given point lies within the polygon.</p>
+<p>Note that polygons spanning a pole, without a point at the pole itself, will fail to detect points within the polygon;
+(e.g. Polygon=[(lat=80°, 0), (80, 90), (80, 180)] will <em>not</em> detect the point (85, 90))</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PointIn(this Polygon poly, Coordinate point)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Polygon.html">Polygon</a></span>
+        <span class="parametername">poly</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_PointIn_" data-uid="Itinero.LocalGeo.Extensions.PointIn*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_PointIn_List_Itinero_LocalGeo_Coordinate__Itinero_LocalGeo_Coordinate_" data-uid="Itinero.LocalGeo.Extensions.PointIn(List{Itinero.LocalGeo.Coordinate},Itinero.LocalGeo.Coordinate)"><a href="#collapsible-Itinero_LocalGeo_Extensions_PointIn_List_Itinero_LocalGeo_Coordinate__Itinero_LocalGeo_Coordinate_" class="expander" data-toggle="collapse">PointIn(List&lt;Coordinate&gt;, Coordinate)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_PointIn_List_Itinero_LocalGeo_Coordinate__Itinero_LocalGeo_Coordinate_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given point lies within the ring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PointIn(List&lt;Coordinate&gt; ring, Coordinate point)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;</span>
+        <span class="parametername">ring</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_Simplify_" data-uid="Itinero.LocalGeo.Extensions.Simplify*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_Simplify_Itinero_LocalGeo_Coordinate___System_Single_" data-uid="Itinero.LocalGeo.Extensions.Simplify(Itinero.LocalGeo.Coordinate[],System.Single)"><a href="#collapsible-Itinero_LocalGeo_Extensions_Simplify_Itinero_LocalGeo_Coordinate___System_Single_" class="expander" data-toggle="collapse">Simplify(Coordinate[], Single)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_Simplify_Itinero_LocalGeo_Coordinate___System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Simplify the specified points using epsilon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate[] Simplify(this Coordinate[] points, float epsilonInMeter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>[]</span>
+        <span class="parametername">points</span>
+        <p><p>Points.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">epsilonInMeter</span>
+        <p><p>Epsilon.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_Simplify_" data-uid="Itinero.LocalGeo.Extensions.Simplify*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_Simplify_List_Itinero_LocalGeo_Coordinate__System_Single_" data-uid="Itinero.LocalGeo.Extensions.Simplify(List{Itinero.LocalGeo.Coordinate},System.Single)"><a href="#collapsible-Itinero_LocalGeo_Extensions_Simplify_List_Itinero_LocalGeo_Coordinate__System_Single_" class="expander" data-toggle="collapse">Simplify(List&lt;Coordinate&gt;, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_Simplify_List_Itinero_LocalGeo_Coordinate__System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Simplifies the specified points using episilon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Coordinate&gt; Simplify(this List&lt;Coordinate&gt; shape, float epsilonInMeter = 0.1F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;</span>
+        <span class="parametername">shape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">epsilonInMeter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_SimplifyBetween_" data-uid="Itinero.LocalGeo.Extensions.SimplifyBetween*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_SimplifyBetween_Itinero_LocalGeo_Coordinate___System_Single_System_Int32_System_Int32_" data-uid="Itinero.LocalGeo.Extensions.SimplifyBetween(Itinero.LocalGeo.Coordinate[],System.Single,System.Int32,System.Int32)"><a href="#collapsible-Itinero_LocalGeo_Extensions_SimplifyBetween_Itinero_LocalGeo_Coordinate___System_Single_System_Int32_System_Int32_" class="expander" data-toggle="collapse">SimplifyBetween(Coordinate[], Single, Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_SimplifyBetween_Itinero_LocalGeo_Coordinate___System_Single_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Simplify the specified points using epsilon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate[] SimplifyBetween(this Coordinate[] points, float epsilonInMeter, int first, int last)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>[]</span>
+        <span class="parametername">points</span>
+        <p><p>Points.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">epsilonInMeter</span>
+        <p><p>Epsilon.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p><p>First.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">last</span>
+        <p><p>Last.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_SimplifyBetween_" data-uid="Itinero.LocalGeo.Extensions.SimplifyBetween*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_SimplifyBetween_List_Itinero_LocalGeo_Coordinate__System_Single_System_Int32_System_Int32_" data-uid="Itinero.LocalGeo.Extensions.SimplifyBetween(List{Itinero.LocalGeo.Coordinate},System.Single,System.Int32,System.Int32)"><a href="#collapsible-Itinero_LocalGeo_Extensions_SimplifyBetween_List_Itinero_LocalGeo_Coordinate__System_Single_System_Int32_System_Int32_" class="expander" data-toggle="collapse">SimplifyBetween(List&lt;Coordinate&gt;, Single, Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_SimplifyBetween_List_Itinero_LocalGeo_Coordinate__System_Single_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Simplify the specified points using epsilon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Coordinate&gt; SimplifyBetween(this List&lt;Coordinate&gt; points, float epsilonInMeter, int first, int last)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;</span>
+        <span class="parametername">points</span>
+        <p><p>Points.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">epsilonInMeter</span>
+        <p><p>Epsilon.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">first</span>
+        <p><p>First.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">last</span>
+        <p><p>Last.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_SurfaceArea_" data-uid="Itinero.LocalGeo.Extensions.SurfaceArea*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_SurfaceArea_Itinero_LocalGeo_Polygon_" data-uid="Itinero.LocalGeo.Extensions.SurfaceArea(Itinero.LocalGeo.Polygon)"><a href="#collapsible-Itinero_LocalGeo_Extensions_SurfaceArea_Itinero_LocalGeo_Polygon_" class="expander" data-toggle="collapse">SurfaceArea(Polygon)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_SurfaceArea_Itinero_LocalGeo_Polygon_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the area of the polygon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SurfaceArea(this Polygon poly)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Polygon.html">Polygon</a></span>
+        <span class="parametername">poly</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_ToLonLatArray_" data-uid="Itinero.LocalGeo.Extensions.ToLonLatArray*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_ToLonLatArray_List_Itinero_LocalGeo_Coordinate__" data-uid="Itinero.LocalGeo.Extensions.ToLonLatArray(List{Itinero.LocalGeo.Coordinate})"><a href="#collapsible-Itinero_LocalGeo_Extensions_ToLonLatArray_List_Itinero_LocalGeo_Coordinate__" class="expander" data-toggle="collapse">ToLonLatArray(List&lt;Coordinate&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_ToLonLatArray_List_Itinero_LocalGeo_Coordinate__" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the coordinates to a double double array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double[][] ToLonLatArray(this List&lt;Coordinate&gt; coordinates)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="Itinero.LocalGeo.Coordinate.html">Coordinate</a>&gt;</span>
+        <span class="parametername">coordinates</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>[][]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_LocalGeo_Extensions_ToPolygon_" data-uid="Itinero.LocalGeo.Extensions.ToPolygon*"></a>
+  
+  <h4 id="Itinero_LocalGeo_Extensions_ToPolygon_Itinero_LocalGeo_Box_" data-uid="Itinero.LocalGeo.Extensions.ToPolygon(Itinero.LocalGeo.Box)"><a href="#collapsible-Itinero_LocalGeo_Extensions_ToPolygon_Itinero_LocalGeo_Box_" class="expander" data-toggle="collapse">ToPolygon(Box)</a></h4>
+  
+  <div id="collapsible-Itinero_LocalGeo_Extensions_ToPolygon_Itinero_LocalGeo_Box_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the box to a polygon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Polygon ToPolygon(this Box box)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.LocalGeo.Box.html">Box</a></span>
+        <span class="parametername">box</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.LocalGeo.Polygon.html">Polygon</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

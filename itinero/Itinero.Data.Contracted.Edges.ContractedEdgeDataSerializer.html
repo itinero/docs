@@ -1,0 +1,1516 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ContractedEdgeDataSerializer
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ContractedEdgeDataSerializer
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer">
+  <h1 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer">Class ContractedEdgeDataSerializer
+  </h1>
+  <div class="markdown level0 summary"><p>Parses edge data.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ContractedEdgeDataSerializer</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ContractedEdgeDataSerializer</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeWeightFunc" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DeserializeWeightFunc"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeWeightFunc" class="expander" data-toggle="collapse">DeserializeWeightFunc</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeWeightFunc" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;uint[], float&gt; DeserializeWeightFunc</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<span class="xref">System.UInt32</span>[], <span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MAX_DISTANCE" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.MAX_DISTANCE"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MAX_DISTANCE" class="expander" data-toggle="collapse">MAX_DISTANCE</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MAX_DISTANCE" class="collapse in">
+  <div class="markdown level1 summary"><p>Holds the maxium distance that can be stored on an edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MAX_DISTANCE</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_PRECISION_FACTOR" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.PRECISION_FACTOR"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_PRECISION_FACTOR" class="expander" data-toggle="collapse">PRECISION_FACTOR</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_PRECISION_FACTOR" class="collapse in">
+  <div class="markdown level1 summary"><p>Holds the precision-factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PRECISION_FACTOR = 10</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DynamicAugmentedFixedSize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DynamicAugmentedFixedSize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DynamicAugmentedFixedSize" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DynamicAugmentedFixedSize"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DynamicAugmentedFixedSize" class="expander" data-toggle="collapse">DynamicAugmentedFixedSize</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DynamicAugmentedFixedSize" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the size of the fixed component of the data in the dynamic graph including augmented weights.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DynamicAugmentedFixedSize { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DynamicFixedSize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DynamicFixedSize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DynamicFixedSize" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DynamicFixedSize"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DynamicFixedSize" class="expander" data-toggle="collapse">DynamicFixedSize</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DynamicFixedSize" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the size of the fixed component of the data in the dynamic graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DynamicFixedSize { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MetaAugmentedSize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.MetaAugmentedSize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MetaAugmentedSize" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.MetaAugmentedSize"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MetaAugmentedSize" class="expander" data-toggle="collapse">MetaAugmentedSize</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MetaAugmentedSize" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the size of a the meta data in uint&apos;s when serialized and including augmented weights.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MetaAugmentedSize { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MetaSize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.MetaSize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MetaSize" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.MetaSize"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MetaSize" class="expander" data-toggle="collapse">MetaSize</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_MetaSize" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the size of a the meta data in uint&apos;s when serialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MetaSize { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Size_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Size*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Size" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Size"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Size" class="expander" data-toggle="collapse">Size</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Size" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the size of a the data in uint&apos;s when serialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize(System.UInt32)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_" class="expander" data-toggle="collapse">Deserialize(UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WeightAndDir&lt;float&gt; Deserialize(uint data0)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data0</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">WeightAndDir</span>&lt;<span class="xref">System.Single</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_Dir__System_Single__" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize(System.UInt32,Dir@,System.Single@)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_Dir__System_Single__" class="expander" data-toggle="collapse">Deserialize(UInt32, out Dir, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_Dir__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Deserialize(uint data0, out Dir direction, out float weight)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data0</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Dir</span></span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_Dir__System_UInt32__" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize(System.UInt32,Dir@,System.UInt32@)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_Dir__System_UInt32__" class="expander" data-toggle="collapse">Deserialize(UInt32, out Dir, out UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_Dir__System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Deserialize(uint data0, out Dir direction, out uint weight)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data0</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Dir</span></span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_Single__System_Nullable_System_Boolean___" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize(System.UInt32,System.Single@,System.Nullable{System.Boolean}@)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_Single__System_Nullable_System_Boolean___" class="expander" data-toggle="collapse">Deserialize(UInt32, out Single, out Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_Single__System_Nullable_System_Boolean___" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Deserialize(uint data0, out float weight, out bool ? direction)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data0</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_UInt32_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize(System.UInt32,System.UInt32)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_UInt32_" class="expander" data-toggle="collapse">Deserialize(UInt32, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Deserializes edges data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContractedEdgeData Deserialize(uint data, uint metaData)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">metaData</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Data.Contracted.Edges.ContractedEdgeData.html">ContractedEdgeData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_UInt32_System_Single__System_Nullable_System_Boolean___System_UInt32__" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Deserialize(System.UInt32,System.UInt32,System.Single@,System.Nullable{System.Boolean}@,System.UInt32@)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_UInt32_System_Single__System_Nullable_System_Boolean___System_UInt32__" class="expander" data-toggle="collapse">Deserialize(UInt32, UInt32, out Single, out Nullable&lt;Boolean&gt;, out UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Deserialize_System_UInt32_System_UInt32_System_Single__System_Nullable_System_Boolean___System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Deserialize(uint data0, uint data1, out float weight, out bool ? direction, out uint contractedId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data0</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">contractedId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeDynamic_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DeserializeDynamic*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeDynamic_System_UInt32___System_Single__System_Nullable_System_Boolean___System_Single__System_Single__" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DeserializeDynamic(System.UInt32[],System.Single@,System.Nullable{System.Boolean}@,System.Single@,System.Single@)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeDynamic_System_UInt32___System_Single__System_Nullable_System_Boolean___System_Single__System_Single__" class="expander" data-toggle="collapse">DeserializeDynamic(UInt32[], out Single, out Nullable&lt;Boolean&gt;, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeDynamic_System_UInt32___System_Single__System_Nullable_System_Boolean___System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeserializeDynamic(uint[] data, out float weight, out bool ? direction, out float distance, out float time)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeMetaAgumented_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DeserializeMetaAgumented*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeMetaAgumented_System_UInt32___System_UInt32__System_Single__System_Single__" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DeserializeMetaAgumented(System.UInt32[],System.UInt32@,System.Single@,System.Single@)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeMetaAgumented_System_UInt32___System_UInt32__System_Single__System_Single__" class="expander" data-toggle="collapse">DeserializeMetaAgumented(UInt32[], out UInt32, out Single, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeMetaAgumented_System_UInt32___System_UInt32__System_Single__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Deserializes the agugmented data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeserializeMetaAgumented(uint[] data, out uint contractedId, out float distance, out float time)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">contractedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeWeight_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DeserializeWeight*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeWeight_System_UInt32_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.DeserializeWeight(System.UInt32)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeWeight_System_UInt32_" class="expander" data-toggle="collapse">DeserializeWeight(UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_DeserializeWeight_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses the edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DeserializeWeight(uint data)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedEdgeData_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.GetContractedEdgeData*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedEdgeData_MetaEdge_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.GetContractedEdgeData(MetaEdge)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedEdgeData_MetaEdge_" class="expander" data-toggle="collapse">GetContractedEdgeData(MetaEdge)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedEdgeData_MetaEdge_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets contracted edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContractedEdgeData GetContractedEdgeData(this MetaEdge edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">MetaEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Data.Contracted.Edges.ContractedEdgeData.html">ContractedEdgeData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.GetContractedId*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_DirectedMetaGraph_EdgeEnumerator_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.GetContractedId(DirectedMetaGraph.EdgeEnumerator)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_DirectedMetaGraph_EdgeEnumerator_" class="expander" data-toggle="collapse">GetContractedId(DirectedMetaGraph.EdgeEnumerator)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_DirectedMetaGraph_EdgeEnumerator_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets contracted id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint GetContractedId(this DirectedMetaGraph.EdgeEnumerator edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedMetaGraph.EdgeEnumerator</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.GetContractedId*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_MetaEdge_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.GetContractedId(MetaEdge)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_MetaEdge_" class="expander" data-toggle="collapse">GetContractedId(MetaEdge)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_MetaEdge_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets contracted id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint GetContractedId(this MetaEdge edge)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">MetaEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.GetContractedId*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_System_UInt32___" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.GetContractedId(System.UInt32[])"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_System_UInt32___" class="expander" data-toggle="collapse">GetContractedId(UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_GetContractedId_System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets contracted id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint GetContractedId(this uint[] metaData)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">metaData</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_HasDirection_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.HasDirection*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_HasDirection_System_UInt32_System_Nullable_System_Boolean__" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.HasDirection(System.UInt32,System.Nullable{System.Boolean})"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_HasDirection_System_UInt32_System_Nullable_System_Boolean__" class="expander" data-toggle="collapse">HasDirection(UInt32, Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_HasDirection_System_UInt32_System_Nullable_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the data represents the same direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasDirection(uint data, bool ? direction)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Serialize_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Serialize*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Serialize_System_Single_System_Nullable_System_Boolean__" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.Serialize(System.Single,System.Nullable{System.Boolean})"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Serialize_System_Single_System_Nullable_System_Boolean__" class="expander" data-toggle="collapse">Serialize(Single, Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_Serialize_System_Single_System_Nullable_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint Serialize(float weight, bool ? direction)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeDistance_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeDistance*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeDistance_System_Single_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeDistance(System.Single)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeDistance_System_Single_" class="expander" data-toggle="collapse">SerializeDistance(Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeDistance_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint SerializeDistance(float distance)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeDynamicAugmented_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeDynamicAugmented*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeDynamicAugmented_System_Single_System_Nullable_System_Boolean__System_Single_System_Single_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeDynamicAugmented(System.Single,System.Nullable{System.Boolean},System.Single,System.Single)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeDynamicAugmented_System_Single_System_Nullable_System_Boolean__System_Single_System_Single_" class="expander" data-toggle="collapse">SerializeDynamicAugmented(Single, Nullable&lt;Boolean&gt;, Single, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeDynamicAugmented_System_Single_System_Nullable_System_Boolean__System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes augmented edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] SerializeDynamicAugmented(float weight, bool ? direction, float distance, float time)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">weight</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">direction</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeMeta_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeMeta*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeMeta_Itinero_Data_Contracted_Edges_ContractedEdgeData_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeMeta(Itinero.Data.Contracted.Edges.ContractedEdgeData)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeMeta_Itinero_Data_Contracted_Edges_ContractedEdgeData_" class="expander" data-toggle="collapse">SerializeMeta(ContractedEdgeData)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeMeta_Itinero_Data_Contracted_Edges_ContractedEdgeData_" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] SerializeMeta(ContractedEdgeData data)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Data.Contracted.Edges.ContractedEdgeData.html">ContractedEdgeData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeMetaAugmented_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeMetaAugmented*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeMetaAugmented_System_UInt32_System_Single_System_Single_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeMetaAugmented(System.UInt32,System.Single,System.Single)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeMetaAugmented_System_UInt32_System_Single_System_Single_" class="expander" data-toggle="collapse">SerializeMetaAugmented(UInt32, Single, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeMetaAugmented_System_UInt32_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes augmented edge data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] SerializeMetaAugmented(uint contractedId, float distance, float time)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">contractedId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeTime_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeTime*"></a>
+  
+  <h4 id="Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeTime_System_Single_" data-uid="Itinero.Data.Contracted.Edges.ContractedEdgeDataSerializer.SerializeTime(System.Single)"><a href="#collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeTime_System_Single_" class="expander" data-toggle="collapse">SerializeTime(Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Data_Contracted_Edges_ContractedEdgeDataSerializer_SerializeTime_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint SerializeTime(float time)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">time</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

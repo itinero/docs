@@ -1,0 +1,2012 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ScriptRuntimeException
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ScriptRuntimeException
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException">
+  <h1 id="Itinero_Profiles_Lua_ScriptRuntimeException" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException">Class ScriptRuntimeException
+  </h1>
+  <div class="markdown level0 summary"><p>Exception for all runtime errors. In addition to constructors, it offers a lot of static methods
+generating more &quot;standard&quot; Lua errors.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Itinero.Profiles.Lua.InterpreterException.html">InterpreterException</a></div>
+    <div class="level2"><span class="xref">ScriptRuntimeException</span></div>
+  </div>
+  
+      <div class="level3"><a class="xref" href="Itinero.Profiles.Lua.DynamicExpressionException.html">DynamicExpressionException</a></div>
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Itinero.Profiles.Lua.InterpreterException.html#Itinero_Profiles_Lua_InterpreterException_InstructionPtr">InterpreterException.InstructionPtr</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Profiles.Lua.InterpreterException.html#Itinero_Profiles_Lua_InterpreterException_CallStack">InterpreterException.CallStack</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Profiles.Lua.InterpreterException.html#Itinero_Profiles_Lua_InterpreterException_DecoratedMessage">InterpreterException.DecoratedMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Itinero.Profiles.Lua.InterpreterException.html#Itinero_Profiles_Lua_InterpreterException_DoNotDecorateMessage">InterpreterException.DoNotDecorateMessage</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Profiles_Lua_ScriptRuntimeException_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScriptRuntimeException : InterpreterException</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException__ctor_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException__ctor_Exception_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.#ctor(Exception)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException__ctor_Exception_" class="expander" data-toggle="collapse">ScriptRuntimeException(Exception)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException__ctor_Exception_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptRuntimeException(Exception ex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Exception</span></span>
+        <span class="parametername">ex</span>
+        <p><p>The ex.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException__ctor_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException__ctor_Itinero_Profiles_Lua_ScriptRuntimeException_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.#ctor(Itinero.Profiles.Lua.ScriptRuntimeException)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException__ctor_Itinero_Profiles_Lua_ScriptRuntimeException_" class="expander" data-toggle="collapse">ScriptRuntimeException(ScriptRuntimeException)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException__ctor_Itinero_Profiles_Lua_ScriptRuntimeException_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptRuntimeException(ScriptRuntimeException ex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a></span>
+        <span class="parametername">ex</span>
+        <p><p>The ex.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException__ctor_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException__ctor_System_String_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.#ctor(System.String)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException__ctor_System_String_" class="expander" data-toggle="collapse">ScriptRuntimeException(String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException__ctor_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptRuntimeException(string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p><p>The message that describes the error.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException__ctor_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.#ctor*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException__ctor_System_String_System_Object___" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.#ctor(System.String,System.Object[])"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException__ctor_System_String_System_Object___" class="expander" data-toggle="collapse">ScriptRuntimeException(String, Object[])</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException__ctor_System_String_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptRuntimeException(string format, params object[] args)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">format</span>
+        <p><p>The format.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">args</span>
+        <p><p>The arguments.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_AccessInstanceMemberOnStatics_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.AccessInstanceMemberOnStatics*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_AccessInstanceMemberOnStatics_IMemberDescriptor_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.AccessInstanceMemberOnStatics(IMemberDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_AccessInstanceMemberOnStatics_IMemberDescriptor_" class="expander" data-toggle="collapse">AccessInstanceMemberOnStatics(IMemberDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_AccessInstanceMemberOnStatics_IMemberDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an attempt to access a non-static member from a static userdata was made</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException AccessInstanceMemberOnStatics(IMemberDescriptor desc)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IMemberDescriptor</span></span>
+        <span class="parametername">desc</span>
+        <p><p>The member descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_AccessInstanceMemberOnStatics_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.AccessInstanceMemberOnStatics*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_AccessInstanceMemberOnStatics_IUserDataDescriptor_IMemberDescriptor_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.AccessInstanceMemberOnStatics(IUserDataDescriptor,IMemberDescriptor)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_AccessInstanceMemberOnStatics_IUserDataDescriptor_IMemberDescriptor_" class="expander" data-toggle="collapse">AccessInstanceMemberOnStatics(IUserDataDescriptor, IMemberDescriptor)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_AccessInstanceMemberOnStatics_IUserDataDescriptor_IMemberDescriptor_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an attempt to access a non-static member from a static userdata was made</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException AccessInstanceMemberOnStatics(IUserDataDescriptor typeDescr, IMemberDescriptor desc)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IUserDataDescriptor</span></span>
+        <span class="parametername">typeDescr</span>
+        <p><p>The type descriptor.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IMemberDescriptor</span></span>
+        <span class="parametername">desc</span>
+        <p><p>The member descriptor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_ArithmeticOnNonNumber_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ArithmeticOnNonNumber*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_ArithmeticOnNonNumber_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ArithmeticOnNonNumber(Itinero.Profiles.Lua.DynValue,Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ArithmeticOnNonNumber_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">ArithmeticOnNonNumber(DynValue, DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ArithmeticOnNonNumber_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an arithmetic operation was attempted on non-numbers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException ArithmeticOnNonNumber(DynValue l, DynValue r = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">l</span>
+        <p><p>The left operand.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">r</span>
+        <p><p>The right operand (or null).</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.InternalErrorException.html">InternalErrorException</a>
+        <p><p>If both are numbers</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_AttemptToCallNonFunc_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.AttemptToCallNonFunc*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_AttemptToCallNonFunc_Itinero_Profiles_Lua_DataType_System_String_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.AttemptToCallNonFunc(Itinero.Profiles.Lua.DataType,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_AttemptToCallNonFunc_Itinero_Profiles_Lua_DataType_System_String_" class="expander" data-toggle="collapse">AttemptToCallNonFunc(DataType, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_AttemptToCallNonFunc_Itinero_Profiles_Lua_DataType_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an attempt to call a non-function was made</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException AttemptToCallNonFunc(DataType type, string debugText = null)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">type</span>
+        <p><p>The lua non-function data type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">debugText</span>
+        <p><p>The debug text to aid location (appears as &quot;near &apos;xxx&apos;&quot;).</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgument*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_Itinero_Profiles_Lua_DataType_Itinero_Profiles_Lua_DataType_System_Boolean_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgument(System.Int32,System.String,Itinero.Profiles.Lua.DataType,Itinero.Profiles.Lua.DataType,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_Itinero_Profiles_Lua_DataType_Itinero_Profiles_Lua_DataType_System_Boolean_" class="expander" data-toggle="collapse">BadArgument(Int32, String, DataType, DataType, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_Itinero_Profiles_Lua_DataType_Itinero_Profiles_Lua_DataType_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a function was called with a bad argument</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException BadArgument(int argNum, string funcName, DataType expected, DataType got, bool allowNil)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">argNum</span>
+        <p><p>The argument number (0-based).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">funcName</span>
+        <p><p>Name of the function generating this error.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">expected</span>
+        <p><p>The expected data type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">got</span>
+        <p><p>The data type received.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">allowNil</span>
+        <p><p>True if nils were allowed in this call.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgument*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_System_String_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgument(System.Int32,System.String,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_System_String_" class="expander" data-toggle="collapse">BadArgument(Int32, String, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a function was called with a bad argument</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException BadArgument(int argNum, string funcName, string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">argNum</span>
+        <p><p>The argument number (0-based).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">funcName</span>
+        <p><p>Name of the function generating this error.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p><p>The error message.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgument*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_System_String_System_String_System_Boolean_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgument(System.Int32,System.String,System.String,System.String,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_System_String_System_String_System_Boolean_" class="expander" data-toggle="collapse">BadArgument(Int32, String, String, String, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgument_System_Int32_System_String_System_String_System_String_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a function was called with a bad argument</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException BadArgument(int argNum, string funcName, string expected, string got, bool allowNil)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">argNum</span>
+        <p><p>The argument number (0-based).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">funcName</span>
+        <p><p>Name of the function generating this error.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">expected</span>
+        <p><p>The expected type description.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">got</span>
+        <p><p>The description of the type received.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">allowNil</span>
+        <p><p>True if nils were allowed in this call.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentIndexOutOfRange_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentIndexOutOfRange*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentIndexOutOfRange_System_String_System_Int32_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentIndexOutOfRange(System.String,System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentIndexOutOfRange_System_String_System_Int32_" class="expander" data-toggle="collapse">BadArgumentIndexOutOfRange(String, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentIndexOutOfRange_System_String_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an out of range index was specified</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException BadArgumentIndexOutOfRange(string funcName, int argNum)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">funcName</span>
+        <p><p>Name of the function generating this error.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">argNum</span>
+        <p><p>The argument number (0-based).</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoNegativeNumbers_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentNoNegativeNumbers*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoNegativeNumbers_System_Int32_System_String_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentNoNegativeNumbers(System.Int32,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoNegativeNumbers_System_Int32_System_String_" class="expander" data-toggle="collapse">BadArgumentNoNegativeNumbers(Int32, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoNegativeNumbers_System_Int32_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a function was called with a negative number when a positive one was expected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException BadArgumentNoNegativeNumbers(int argNum, string funcName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">argNum</span>
+        <p><p>The argument number (0-based).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">funcName</span>
+        <p><p>Name of the function generating this error.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoValue_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentNoValue*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoValue_System_Int32_System_String_Itinero_Profiles_Lua_DataType_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentNoValue(System.Int32,System.String,Itinero.Profiles.Lua.DataType)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoValue_System_Int32_System_String_Itinero_Profiles_Lua_DataType_" class="expander" data-toggle="collapse">BadArgumentNoValue(Int32, String, DataType)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoValue_System_Int32_System_String_Itinero_Profiles_Lua_DataType_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a function was called with no value when a value was required.</p>
+<p>This function creates a message like &quot;bad argument #xxx to &apos;yyy&apos; (zzz expected, got no value)&quot;
+while <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html#Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentValueExpected_System_Int32_System_String_">BadArgumentValueExpected(Int32, String)</a> creates a message like &quot;bad argument #xxx to &apos;yyy&apos; (value expected)&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException BadArgumentNoValue(int argNum, string funcName, DataType expected)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">argNum</span>
+        <p><p>The argument number (0-based).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">funcName</span>
+        <p><p>Name of the function generating this error.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">expected</span>
+        <p><p>The expected data type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentUserData_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentUserData*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentUserData_System_Int32_System_String_Type_System_Object_System_Boolean_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentUserData(System.Int32,System.String,Type,System.Object,System.Boolean)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentUserData_System_Int32_System_String_Type_System_Object_System_Boolean_" class="expander" data-toggle="collapse">BadArgumentUserData(Int32, String, Type, Object, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentUserData_System_Int32_System_String_Type_System_Object_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a function was called with a bad userdata argument</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException BadArgumentUserData(int argNum, string funcName, Type expected, object got, bool allowNil)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">argNum</span>
+        <p><p>The argument number (0-based).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">funcName</span>
+        <p><p>Name of the function generating this error.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">expected</span>
+        <p><p>The expected System.Type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">got</span>
+        <p><p>The object which was used.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">allowNil</span>
+        <p><p>True if nils were allowed in this call.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentValueExpected_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentValueExpected*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentValueExpected_System_Int32_System_String_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.BadArgumentValueExpected(System.Int32,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentValueExpected_System_Int32_System_String_" class="expander" data-toggle="collapse">BadArgumentValueExpected(Int32, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentValueExpected_System_Int32_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a function was called with no value when a value was required.
+This function creates a message like &quot;bad argument #xxx to &apos;yyy&apos; (value expected)&quot;
+while <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html#Itinero_Profiles_Lua_ScriptRuntimeException_BadArgumentNoValue_System_Int32_System_String_Itinero_Profiles_Lua_DataType_">BadArgumentNoValue(Int32, String, DataType)</a> creates a message like &quot;bad argument #xxx to &apos;yyy&apos; (zzz expected, got no value)&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException BadArgumentValueExpected(int argNum, string funcName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">argNum</span>
+        <p><p>The argument number (0-based).</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">funcName</span>
+        <p><p>Name of the function generating this error.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_CannotResumeNotSuspended_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.CannotResumeNotSuspended*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_CannotResumeNotSuspended_Itinero_Profiles_Lua_CoroutineState_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.CannotResumeNotSuspended(Itinero.Profiles.Lua.CoroutineState)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_CannotResumeNotSuspended_Itinero_Profiles_Lua_CoroutineState_" class="expander" data-toggle="collapse">CannotResumeNotSuspended(CoroutineState)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_CannotResumeNotSuspended_Itinero_Profiles_Lua_CoroutineState_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an attempt resume a coroutine in an invalid state was done.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException CannotResumeNotSuspended(CoroutineState state)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.CoroutineState.html">CoroutineState</a></span>
+        <span class="parametername">state</span>
+        <p><p>The state of the coroutine.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_CannotYield_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.CannotYield*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_CannotYield" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.CannotYield"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_CannotYield" class="expander" data-toggle="collapse">CannotYield()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_CannotYield" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an attempt to yield across a CLR boundary was made.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException CannotYield()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_CannotYieldMain_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.CannotYieldMain*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_CannotYieldMain" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.CannotYieldMain"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_CannotYieldMain" class="expander" data-toggle="collapse">CannotYieldMain()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_CannotYieldMain" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an attempt to yield from the main coroutine was made.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException CannotYieldMain()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_CompareInvalidType_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.CompareInvalidType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_CompareInvalidType_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.CompareInvalidType(Itinero.Profiles.Lua.DynValue,Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_CompareInvalidType_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">CompareInvalidType(DynValue, DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_CompareInvalidType_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a comparison operator was applied on an invalid combination of operand types</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException CompareInvalidType(DynValue l, DynValue r)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">l</span>
+        <p><p>The left operand.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">r</span>
+        <p><p>The right operand.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_ConcatOnNonString_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConcatOnNonString*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_ConcatOnNonString_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConcatOnNonString(Itinero.Profiles.Lua.DynValue,Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConcatOnNonString_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">ConcatOnNonString(DynValue, DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConcatOnNonString_Itinero_Profiles_Lua_DynValue_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a concat operation was attempted on non-strings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException ConcatOnNonString(DynValue l, DynValue r)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">l</span>
+        <p><p>The left operand.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">r</span>
+        <p><p>The right operand.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.InternalErrorException.html">InternalErrorException</a>
+        <p><p>If both are numbers or strings</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConvertObjectFailed*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_Itinero_Profiles_Lua_DataType_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConvertObjectFailed(Itinero.Profiles.Lua.DataType)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_Itinero_Profiles_Lua_DataType_" class="expander" data-toggle="collapse">ConvertObjectFailed(DataType)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_Itinero_Profiles_Lua_DataType_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a conversion of a Lua type to a CLR type has failed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException ConvertObjectFailed(DataType t)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">t</span>
+        <p><p>The Lua type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConvertObjectFailed*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_Itinero_Profiles_Lua_DataType_Type_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConvertObjectFailed(Itinero.Profiles.Lua.DataType,Type)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_Itinero_Profiles_Lua_DataType_Type_" class="expander" data-toggle="collapse">ConvertObjectFailed(DataType, Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_Itinero_Profiles_Lua_DataType_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a constrained conversion of a Lua type to a CLR type has failed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException ConvertObjectFailed(DataType t, Type t2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">t</span>
+        <p><p>The Lua type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">t2</span>
+        <p><p>The expected CLR type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConvertObjectFailed*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_System_Object_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConvertObjectFailed(System.Object)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_System_Object_" class="expander" data-toggle="collapse">ConvertObjectFailed(Object)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConvertObjectFailed_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a conversion of a CLR type to a Lua type has failed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException ConvertObjectFailed(object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p><p>The object which could not be converted.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_ConvertToNumberFailed_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConvertToNumberFailed*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_ConvertToNumberFailed_System_Int32_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.ConvertToNumberFailed(System.Int32)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConvertToNumberFailed_System_Int32_" class="expander" data-toggle="collapse">ConvertToNumberFailed(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_ConvertToNumberFailed_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a conversion to number failed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException ConvertToNumberFailed(int stage)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">stage</span>
+        <p><p>Selects the correct error message:
+0 - &quot;value must be a number&quot;
+1 - &quot;&apos;for&apos; initial value must be a number&quot;
+2 - &quot;&apos;for&apos; step must be a number&quot;
+3 - &quot;&apos;for&apos; limit must be a number&quot;</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_IndexType_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.IndexType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_IndexType_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.IndexType(Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_IndexType_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">IndexType(DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_IndexType_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an invalid attempt to index the specified object was made</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException IndexType(DynValue obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">obj</span>
+        <p><p>The object.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_LenOnInvalidType_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.LenOnInvalidType*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_LenOnInvalidType_Itinero_Profiles_Lua_DynValue_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.LenOnInvalidType(Itinero.Profiles.Lua.DynValue)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_LenOnInvalidType_Itinero_Profiles_Lua_DynValue_" class="expander" data-toggle="collapse">LenOnInvalidType(DynValue)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_LenOnInvalidType_Itinero_Profiles_Lua_DynValue_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a len operator was applied on an invalid operand</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException LenOnInvalidType(DynValue r)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DynValue.html">DynValue</a></span>
+        <span class="parametername">r</span>
+        <p><p>The operand.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_LoopInCall_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.LoopInCall*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_LoopInCall" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.LoopInCall"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_LoopInCall" class="expander" data-toggle="collapse">LoopInCall()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_LoopInCall" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a loop was detected when performing __call over metatables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException LoopInCall()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_LoopInIndex_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.LoopInIndex*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_LoopInIndex" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.LoopInIndex"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_LoopInIndex" class="expander" data-toggle="collapse">LoopInIndex()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_LoopInIndex" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a loop was detected when performing __index over metatables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException LoopInIndex()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_LoopInNewIndex_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.LoopInNewIndex*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_LoopInNewIndex" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.LoopInNewIndex"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_LoopInNewIndex" class="expander" data-toggle="collapse">LoopInNewIndex()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_LoopInNewIndex" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a loop was detected when performing __newindex over metatables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException LoopInNewIndex()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_Rethrow_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.Rethrow*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_Rethrow" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.Rethrow"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_Rethrow" class="expander" data-toggle="collapse">Rethrow()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_Rethrow" class="collapse in">
+  <div class="markdown level1 summary"><p>Rethrows this instance if </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Rethrow()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Itinero.Profiles.Lua.InterpreterException.html#Itinero_Profiles_Lua_InterpreterException_Rethrow">InterpreterException.Rethrow()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_TableIndexIsNaN_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.TableIndexIsNaN*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_TableIndexIsNaN" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.TableIndexIsNaN"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_TableIndexIsNaN" class="expander" data-toggle="collapse">TableIndexIsNaN()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_TableIndexIsNaN" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a table indexing operation used a NaN as the key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException TableIndexIsNaN()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_TableIndexIsNil_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.TableIndexIsNil*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_TableIndexIsNil" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.TableIndexIsNil"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_TableIndexIsNil" class="expander" data-toggle="collapse">TableIndexIsNil()</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_TableIndexIsNil" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a table indexing operation used nil as the key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException TableIndexIsNil()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_UserDataArgumentTypeMismatch_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.UserDataArgumentTypeMismatch*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_UserDataArgumentTypeMismatch_Itinero_Profiles_Lua_DataType_Type_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.UserDataArgumentTypeMismatch(Itinero.Profiles.Lua.DataType,Type)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_UserDataArgumentTypeMismatch_Itinero_Profiles_Lua_DataType_Type_" class="expander" data-toggle="collapse">UserDataArgumentTypeMismatch(DataType, Type)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_UserDataArgumentTypeMismatch_Itinero_Profiles_Lua_DataType_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+a userdata of a specific CLR type was expected and a non-userdata type was passed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException UserDataArgumentTypeMismatch(DataType t, Type clrType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Lua.DataType.html">DataType</a></span>
+        <span class="parametername">t</span>
+        <p><p>The Lua type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">clrType</span>
+        <p><p>The expected CLR type.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Profiles_Lua_ScriptRuntimeException_UserDataMissingField_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.UserDataMissingField*"></a>
+  
+  <h4 id="Itinero_Profiles_Lua_ScriptRuntimeException_UserDataMissingField_System_String_System_String_" data-uid="Itinero.Profiles.Lua.ScriptRuntimeException.UserDataMissingField(System.String,System.String)"><a href="#collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_UserDataMissingField_System_String_System_String_" class="expander" data-toggle="collapse">UserDataMissingField(String, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Profiles_Lua_ScriptRuntimeException_UserDataMissingField_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a ScriptRuntimeException with a predefined error message specifying that
+an attempt to index an invalid member of a userdata was done.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptRuntimeException UserDataMissingField(string typename, string fieldname)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">typename</span>
+        <p><p>The name of the userdata type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">fieldname</span>
+        <p><p>The field name.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Profiles.Lua.ScriptRuntimeException.html">ScriptRuntimeException</a>
+        <p><p>The exception to be raised.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

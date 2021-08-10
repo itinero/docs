@@ -1,0 +1,2038 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RouterPointExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RouterPointExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.RouterPointExtensions">
+  <h1 id="Itinero_RouterPointExtensions" data-uid="Itinero.RouterPointExtensions">Class RouterPointExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains extension methods for the routerpoint.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RouterPointExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_RouterPointExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RouterPointExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_RouterPointExtensions_Angle_" data-uid="Itinero.RouterPointExtensions.Angle*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_Angle_Itinero_RouterPoint_RoutingNetwork_System_Single_" data-uid="Itinero.RouterPointExtensions.Angle(Itinero.RouterPoint,RoutingNetwork,System.Single)"><a href="#collapsible-Itinero_RouterPointExtensions_Angle_Itinero_RouterPoint_RoutingNetwork_System_Single_" class="expander" data-toggle="collapse">Angle(RouterPoint, RoutingNetwork, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_Angle_Itinero_RouterPoint_RoutingNetwork_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the angle in degress at the given routerpoint over a given distance. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ? Angle(this RouterPoint point, RoutingNetwork network, float distance = 100F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p><p>The router point.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RoutingNetwork</span></span>
+        <span class="parametername">network</span>
+        <p><p>The routing network.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distance</span>
+        <p><p>The distance to average over.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;
+        <p><p>The angle relative to the meridians.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_CreateRouterPoint_" data-uid="Itinero.RouterPointExtensions.CreateRouterPoint*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_CreateRouterPoint_Itinero_RouterDb_System_UInt32_System_UInt16_" data-uid="Itinero.RouterPointExtensions.CreateRouterPoint(Itinero.RouterDb,System.UInt32,System.UInt16)"><a href="#collapsible-Itinero_RouterPointExtensions_CreateRouterPoint_Itinero_RouterDb_System_UInt32_System_UInt16_" class="expander" data-toggle="collapse">CreateRouterPoint(RouterDb, UInt32, UInt16)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_CreateRouterPoint_Itinero_RouterDb_System_UInt32_System_UInt16_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new router point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint CreateRouterPoint(this RouterDb routerDb, uint edgeId, ushort offset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">edgeId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt16</span></span>
+        <span class="parametername">offset</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_CreateRouterPointForEdge_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForEdge*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_CreateRouterPointForEdge_Itinero_RouterDb_RoutingEdge_System_Boolean_System_Boolean_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForEdge(Itinero.RouterDb,RoutingEdge,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterPointExtensions_CreateRouterPointForEdge_Itinero_RouterDb_RoutingEdge_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">CreateRouterPointForEdge(RouterDb, RoutingEdge, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_CreateRouterPointForEdge_Itinero_RouterDb_RoutingEdge_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a router point for the given edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint CreateRouterPointForEdge(this RouterDb routerDb, RoutingEdge edge, bool edgeIsForward, bool atStart)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RoutingEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">edgeIsForward</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">atStart</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_CreateRouterPointForEdge_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForEdge*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_CreateRouterPointForEdge_Itinero_RouterDb_System_Int64_System_Boolean_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForEdge(Itinero.RouterDb,System.Int64,System.Boolean)"><a href="#collapsible-Itinero_RouterPointExtensions_CreateRouterPointForEdge_Itinero_RouterDb_System_Int64_System_Boolean_" class="expander" data-toggle="collapse">CreateRouterPointForEdge(RouterDb, Int64, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_CreateRouterPointForEdge_Itinero_RouterDb_System_Int64_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a router point for the given edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint CreateRouterPointForEdge(this RouterDb routerDb, long directedEdgeId, bool atStart)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">directedEdgeId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">atStart</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_GeometricGraph_System_UInt32_Func_GeometricEdge_System_Boolean__" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex(GeometricGraph,System.UInt32,Func{GeometricEdge,System.Boolean})"><a href="#collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_GeometricGraph_System_UInt32_Func_GeometricEdge_System_Boolean__" class="expander" data-toggle="collapse">CreateRouterPointForVertex(GeometricGraph, UInt32, Func&lt;GeometricEdge, Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_GeometricGraph_System_UInt32_Func_GeometricEdge_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a router point for the given vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint CreateRouterPointForVertex(this GeometricGraph graph, uint vertex, Func&lt;GeometricEdge, bool&gt; isAcceptable)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">GeometricGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">GeometricEdge</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isAcceptable</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_GeometricGraph_System_UInt32_System_UInt32_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex(GeometricGraph,System.UInt32,System.UInt32)"><a href="#collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_GeometricGraph_System_UInt32_System_UInt32_" class="expander" data-toggle="collapse">CreateRouterPointForVertex(GeometricGraph, UInt32, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_GeometricGraph_System_UInt32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a router point for the given vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint CreateRouterPointForVertex(this GeometricGraph graph, uint vertex, uint neighbour)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">GeometricGraph</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">neighbour</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_Itinero_RouterDb_System_UInt32_Profile___" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex(Itinero.RouterDb,System.UInt32,Profile[])"><a href="#collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_Itinero_RouterDb_System_UInt32_Profile___" class="expander" data-toggle="collapse">CreateRouterPointForVertex(RouterDb, UInt32, Profile[])</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_Itinero_RouterDb_System_UInt32_Profile___" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a router point for the given vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint CreateRouterPointForVertex(this RouterDb routerDb, uint vertex, params Profile[] profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span>[]</span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_RoutingNetwork_System_UInt32_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex(RoutingNetwork,System.UInt32)"><a href="#collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_RoutingNetwork_System_UInt32_" class="expander" data-toggle="collapse">CreateRouterPointForVertex(RoutingNetwork, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_RoutingNetwork_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a router point for the given vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint CreateRouterPointForVertex(this RoutingNetwork graph, uint vertex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RoutingNetwork</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_CreateRouterPointForVertex_RoutingNetwork_System_UInt32_System_UInt32_" data-uid="Itinero.RouterPointExtensions.CreateRouterPointForVertex(RoutingNetwork,System.UInt32,System.UInt32)"><a href="#collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_RoutingNetwork_System_UInt32_System_UInt32_" class="expander" data-toggle="collapse">CreateRouterPointForVertex(RoutingNetwork, UInt32, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_CreateRouterPointForVertex_RoutingNetwork_System_UInt32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a router point for the given vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterPoint CreateRouterPointForVertex(this RoutingNetwork graph, uint vertex, uint neighbour)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RoutingNetwork</span></span>
+        <span class="parametername">graph</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">neighbour</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_DirectionFromAngle_" data-uid="Itinero.RouterPointExtensions.DirectionFromAngle*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_DirectionFromAngle_Itinero_RouterPoint_Itinero_RouterDb_System_Nullable_System_Single__System_Single_" data-uid="Itinero.RouterPointExtensions.DirectionFromAngle(Itinero.RouterPoint,Itinero.RouterDb,System.Nullable{System.Single},System.Single)"><a href="#collapsible-Itinero_RouterPointExtensions_DirectionFromAngle_Itinero_RouterPoint_Itinero_RouterDb_System_Nullable_System_Single__System_Single_" class="expander" data-toggle="collapse">DirectionFromAngle(RouterPoint, RouterDb, Nullable&lt;Single&gt;, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_DirectionFromAngle_Itinero_RouterPoint_Itinero_RouterDb_System_Nullable_System_Single__System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines the direction from the given angle, true meaning forward relative to the edge in the routerpoint, false backwards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ? DirectionFromAngle(this RouterPoint routerPoint, RouterDb routerDb, float ? angle, float diffLimit = 90F)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">routerPoint</span>
+        <p><p>The router point.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</span>
+        <span class="parametername">angle</span>
+        <p><p>The angle in degrees relative to the longitudinal lines.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">diffLimit</span>
+        <p><p>The diff limit when the angle is smaller than this we consider it the same direction.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;
+        <p><p>True when forward, false when backward, null when direction couldn&apos;t be determined (outside of difflimit for example).</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_DistanceTo_" data-uid="Itinero.RouterPointExtensions.DistanceTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_DistanceTo_Itinero_RouterPoint_Itinero_RouterDb_Itinero_RouterPoint_" data-uid="Itinero.RouterPointExtensions.DistanceTo(Itinero.RouterPoint,Itinero.RouterDb,Itinero.RouterPoint)"><a href="#collapsible-Itinero_RouterPointExtensions_DistanceTo_Itinero_RouterPoint_Itinero_RouterDb_Itinero_RouterPoint_" class="expander" data-toggle="collapse">DistanceTo(RouterPoint, RouterDb, RouterPoint)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_DistanceTo_Itinero_RouterPoint_Itinero_RouterDb_Itinero_RouterPoint_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the distance to one of the vertices on the edge this router point is on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceTo(this RouterPoint point, RouterDb routerDb, RouterPoint target)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_DistanceTo_" data-uid="Itinero.RouterPointExtensions.DistanceTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_DistanceTo_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" data-uid="Itinero.RouterPointExtensions.DistanceTo(Itinero.RouterPoint,Itinero.RouterDb,System.UInt32)"><a href="#collapsible-Itinero_RouterPointExtensions_DistanceTo_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" class="expander" data-toggle="collapse">DistanceTo(RouterPoint, RouterDb, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_DistanceTo_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the distance to one of the vertices on the edge this router point is on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceTo(this RouterPoint point, RouterDb routerDb, uint vertex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Single</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_EdgeIdDirected_" data-uid="Itinero.RouterPointExtensions.EdgeIdDirected*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_EdgeIdDirected_Itinero_RouterPoint_System_Boolean_" data-uid="Itinero.RouterPointExtensions.EdgeIdDirected(Itinero.RouterPoint,System.Boolean)"><a href="#collapsible-Itinero_RouterPointExtensions_EdgeIdDirected_Itinero_RouterPoint_System_Boolean_" class="expander" data-toggle="collapse">EdgeIdDirected(RouterPoint, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_EdgeIdDirected_Itinero_RouterPoint_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the directed edge id for the routerpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long EdgeIdDirected(this RouterPoint point, bool forward = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">forward</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_EdgePathTo_" data-uid="Itinero.RouterPointExtensions.EdgePathTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_" data-uid="Itinero.RouterPointExtensions.EdgePathTo``1(Itinero.RouterPoint,Itinero.RouterDb,WeightHandler{``0},Itinero.RouterPoint)"><a href="#collapsible-Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_" class="expander" data-toggle="collapse">EdgePathTo&lt;T&gt;(RouterPoint, RouterDb, WeightHandler&lt;T&gt;, RouterPoint)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the edge path between this router point and the given router point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; EdgePathTo&lt;T&gt;(this RouterPoint point, RouterDb db, WeightHandler&lt;T&gt; weightHandler, RouterPoint target)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_EdgePathTo_" data-uid="Itinero.RouterPointExtensions.EdgePathTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_System_Boolean_" data-uid="Itinero.RouterPointExtensions.EdgePathTo``1(Itinero.RouterPoint,Itinero.RouterDb,WeightHandler{``0},Itinero.RouterPoint,System.Boolean)"><a href="#collapsible-Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_System_Boolean_" class="expander" data-toggle="collapse">EdgePathTo&lt;T&gt;(RouterPoint, RouterDb, WeightHandler&lt;T&gt;, RouterPoint, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the edge path between this router point and the given router point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; EdgePathTo&lt;T&gt;(this RouterPoint point, RouterDb db, WeightHandler&lt;T&gt; weightHandler, RouterPoint target, bool backward = false)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p><p>The source point.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p><p>The weight handler.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p><p>The target point.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">backward</span>
+        <p><p>Forces the direction on the edge to travel in.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_EdgePathTo_" data-uid="Itinero.RouterPointExtensions.EdgePathTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Nullable_System_Boolean__Itinero_RouterPoint_System_Nullable_System_Boolean__" data-uid="Itinero.RouterPointExtensions.EdgePathTo``1(Itinero.RouterPoint,Itinero.RouterDb,WeightHandler{``0},System.Nullable{System.Boolean},Itinero.RouterPoint,System.Nullable{System.Boolean})"><a href="#collapsible-Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Nullable_System_Boolean__Itinero_RouterPoint_System_Nullable_System_Boolean__" class="expander" data-toggle="collapse">EdgePathTo&lt;T&gt;(RouterPoint, RouterDb, WeightHandler&lt;T&gt;, Nullable&lt;Boolean&gt;, RouterPoint, Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Nullable_System_Boolean__Itinero_RouterPoint_System_Nullable_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the edge path between this router point and the given router point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; EdgePathTo&lt;T&gt;(this RouterPoint point, RouterDb db, WeightHandler&lt;T&gt; weightHandler, bool ? sourceForward, RouterPoint target, bool ? targetForward)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p><p>The source point.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p><p>The weight handler.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">sourceForward</span>
+        <p><p>The source forward flag, true if forward, false if backward, null if don&apos;t care.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p><p>The target point.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">targetForward</span>
+        <p><p>The target forward flag, true if forward, false if backward, null if don&apos;t care.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_EdgePathTo_" data-uid="Itinero.RouterPointExtensions.EdgePathTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_UInt32_System_Boolean_" data-uid="Itinero.RouterPointExtensions.EdgePathTo``1(Itinero.RouterPoint,Itinero.RouterDb,WeightHandler{``0},System.UInt32,System.Boolean)"><a href="#collapsible-Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_UInt32_System_Boolean_" class="expander" data-toggle="collapse">EdgePathTo&lt;T&gt;(RouterPoint, RouterDb, WeightHandler&lt;T&gt;, UInt32, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_EdgePathTo__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_UInt32_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the edge path between this router point and one of it&apos;s neighbours.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; EdgePathTo&lt;T&gt;(this RouterPoint point, RouterDb db, WeightHandler&lt;T&gt; weightHandler, uint neighbour, bool backward = false)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">neighbour</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">backward</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_IsIdenticalTo_" data-uid="Itinero.RouterPointExtensions.IsIdenticalTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_IsIdenticalTo_Itinero_RouterPoint_Itinero_RouterPoint_" data-uid="Itinero.RouterPointExtensions.IsIdenticalTo(Itinero.RouterPoint,Itinero.RouterPoint)"><a href="#collapsible-Itinero_RouterPointExtensions_IsIdenticalTo_Itinero_RouterPoint_Itinero_RouterPoint_" class="expander" data-toggle="collapse">IsIdenticalTo(RouterPoint, RouterPoint)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_IsIdenticalTo_Itinero_RouterPoint_Itinero_RouterPoint_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given point is identical.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsIdenticalTo(this RouterPoint point, RouterPoint other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_IsVertex_" data-uid="Itinero.RouterPointExtensions.IsVertex*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_IsVertex_Itinero_RouterPoint_" data-uid="Itinero.RouterPointExtensions.IsVertex(Itinero.RouterPoint)"><a href="#collapsible-Itinero_RouterPointExtensions_IsVertex_Itinero_RouterPoint_" class="expander" data-toggle="collapse">IsVertex(RouterPoint)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_IsVertex_Itinero_RouterPoint_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the router point matches exactly with the given vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVertex(this RouterPoint point)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_IsVertex_" data-uid="Itinero.RouterPointExtensions.IsVertex*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_IsVertex_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" data-uid="Itinero.RouterPointExtensions.IsVertex(Itinero.RouterPoint,Itinero.RouterDb,System.UInt32)"><a href="#collapsible-Itinero_RouterPointExtensions_IsVertex_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" class="expander" data-toggle="collapse">IsVertex(RouterPoint, RouterDb, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_IsVertex_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the router point matches exactly with the given vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVertex(this RouterPoint point, RouterDb router, uint vertex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">router</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_Location_" data-uid="Itinero.RouterPointExtensions.Location*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_Location_Itinero_RouterPoint_" data-uid="Itinero.RouterPointExtensions.Location(Itinero.RouterPoint)"><a href="#collapsible-Itinero_RouterPointExtensions_Location_Itinero_RouterPoint_" class="expander" data-toggle="collapse">Location(RouterPoint)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_Location_Itinero_RouterPoint_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate Location(this RouterPoint point)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_LocationOnNetwork_" data-uid="Itinero.RouterPointExtensions.LocationOnNetwork*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_LocationOnNetwork_Itinero_RouterPoint_Itinero_RouterDb_" data-uid="Itinero.RouterPointExtensions.LocationOnNetwork(Itinero.RouterPoint,Itinero.RouterDb)"><a href="#collapsible-Itinero_RouterPointExtensions_LocationOnNetwork_Itinero_RouterPoint_Itinero_RouterDb_" class="expander" data-toggle="collapse">LocationOnNetwork(RouterPoint, RouterDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_LocationOnNetwork_Itinero_RouterPoint_Itinero_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the location on the network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate LocationOnNetwork(this RouterPoint point, RouterDb db)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_ShapePointsTo_" data-uid="Itinero.RouterPointExtensions.ShapePointsTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_ShapePointsTo_Itinero_RouterPoint_Itinero_RouterDb_Itinero_RouterPoint_" data-uid="Itinero.RouterPointExtensions.ShapePointsTo(Itinero.RouterPoint,Itinero.RouterDb,Itinero.RouterPoint)"><a href="#collapsible-Itinero_RouterPointExtensions_ShapePointsTo_Itinero_RouterPoint_Itinero_RouterDb_Itinero_RouterPoint_" class="expander" data-toggle="collapse">ShapePointsTo(RouterPoint, RouterDb, RouterPoint)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_ShapePointsTo_Itinero_RouterPoint_Itinero_RouterDb_Itinero_RouterPoint_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the shape points along the way from this router point to another routerpoint on the same edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Coordinate&gt; ShapePointsTo(this RouterPoint point, RouterDb routerDb, RouterPoint other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">Coordinate</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_ShapePointsTo_" data-uid="Itinero.RouterPointExtensions.ShapePointsTo*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_ShapePointsTo_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" data-uid="Itinero.RouterPointExtensions.ShapePointsTo(Itinero.RouterPoint,Itinero.RouterDb,System.UInt32)"><a href="#collapsible-Itinero_RouterPointExtensions_ShapePointsTo_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" class="expander" data-toggle="collapse">ShapePointsTo(RouterPoint, RouterDb, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_ShapePointsTo_Itinero_RouterPoint_Itinero_RouterDb_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the shape points along the way from this router point to one of it&apos;s vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Coordinate&gt; ShapePointsTo(this RouterPoint point, RouterDb routerDb, uint vertex)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">Coordinate</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_ToEdgePaths_" data-uid="Itinero.RouterPointExtensions.ToEdgePaths*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_ToEdgePaths__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_" data-uid="Itinero.RouterPointExtensions.ToEdgePaths``1(Itinero.RouterPoint,Itinero.RouterDb,WeightHandler{``0},System.Boolean)"><a href="#collapsible-Itinero_RouterPointExtensions_ToEdgePaths__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_" class="expander" data-toggle="collapse">ToEdgePaths&lt;T&gt;(RouterPoint, RouterDb, WeightHandler&lt;T&gt;, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_ToEdgePaths__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the router point to paths leading to the closest 2 vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt;[] ToEdgePaths&lt;T&gt;(this RouterPoint point, RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, bool asSource)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">asSource</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_ToEdgePaths_" data-uid="Itinero.RouterPointExtensions.ToEdgePaths*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_ToEdgePaths__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_System_Nullable_System_Boolean__" data-uid="Itinero.RouterPointExtensions.ToEdgePaths``1(Itinero.RouterPoint,Itinero.RouterDb,WeightHandler{``0},System.Boolean,System.Nullable{System.Boolean})"><a href="#collapsible-Itinero_RouterPointExtensions_ToEdgePaths__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_System_Nullable_System_Boolean__" class="expander" data-toggle="collapse">ToEdgePaths&lt;T&gt;(RouterPoint, RouterDb, WeightHandler&lt;T&gt;, Boolean, Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_ToEdgePaths__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_System_Nullable_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the router point to paths leading to the closest 2 vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt;[] ToEdgePaths&lt;T&gt;(this RouterPoint point, RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, bool asSource, bool ? forward)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">asSource</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">forward</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_ToEdgePathsDirected_" data-uid="Itinero.RouterPointExtensions.ToEdgePathsDirected*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_ToEdgePathsDirected__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_" data-uid="Itinero.RouterPointExtensions.ToEdgePathsDirected``1(Itinero.RouterPoint,Itinero.RouterDb,WeightHandler{``0},System.Boolean)"><a href="#collapsible-Itinero_RouterPointExtensions_ToEdgePathsDirected__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_" class="expander" data-toggle="collapse">ToEdgePathsDirected&lt;T&gt;(RouterPoint, RouterDb, WeightHandler&lt;T&gt;, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_ToEdgePathsDirected__1_Itinero_RouterPoint_Itinero_RouterDb_WeightHandler___0__System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the router point to paths leading to the closest 2 vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt;[] ToEdgePathsDirected&lt;T&gt;(this RouterPoint point, RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, bool asSource)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">asSource</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_ToGeoJson_" data-uid="Itinero.RouterPointExtensions.ToGeoJson*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_ToGeoJson_Itinero_RouterPoint_Itinero_RouterDb_" data-uid="Itinero.RouterPointExtensions.ToGeoJson(Itinero.RouterPoint,Itinero.RouterDb)"><a href="#collapsible-Itinero_RouterPointExtensions_ToGeoJson_Itinero_RouterPoint_Itinero_RouterDb_" class="expander" data-toggle="collapse">ToGeoJson(RouterPoint, RouterDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_ToGeoJson_Itinero_RouterPoint_Itinero_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns a geojson description for </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToGeoJson(this RouterPoint routerPoint, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">routerPoint</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterPointExtensions_VertexId_" data-uid="Itinero.RouterPointExtensions.VertexId*"></a>
+  
+  <h4 id="Itinero_RouterPointExtensions_VertexId_Itinero_RouterPoint_Itinero_RouterDb_" data-uid="Itinero.RouterPointExtensions.VertexId(Itinero.RouterPoint,Itinero.RouterDb)"><a href="#collapsible-Itinero_RouterPointExtensions_VertexId_Itinero_RouterPoint_Itinero_RouterDb_" class="expander" data-toggle="collapse">VertexId(RouterPoint, RouterDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterPointExtensions_VertexId_Itinero_RouterPoint_Itinero_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the vertex id if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint VertexId(this RouterPoint point, RouterDb db)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

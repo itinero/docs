@@ -1,0 +1,538 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Extensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Extensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OsmSharp.Geo.Extensions">
+  <h1 id="OsmSharp_Geo_Extensions" data-uid="OsmSharp.Geo.Extensions">Class Extensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains extensions methods related to OSM-GeoAPI-NTS objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Extensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OsmSharp_Geo_Extensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Extensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OsmSharp_Geo_Extensions_Contains_" data-uid="OsmSharp.Geo.Extensions.Contains*"></a>
+  
+  <h4 id="OsmSharp_Geo_Extensions_Contains_IAttributesTable_System_String_System_Object_" data-uid="OsmSharp.Geo.Extensions.Contains(IAttributesTable,System.String,System.Object)"><a href="#collapsible-OsmSharp_Geo_Extensions_Contains_IAttributesTable_System_String_System_Object_" class="expander" data-toggle="collapse">Contains(IAttributesTable, String, Object)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Geo_Extensions_Contains_IAttributesTable_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this table contains the given attribute and value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(this IAttributesTable table, string attribute, object value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IAttributesTable</span></span>
+        <span class="parametername">table</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attribute</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Geo_Extensions_FilterSpatial_" data-uid="OsmSharp.Geo.Extensions.FilterSpatial*"></a>
+  
+  <h4 id="OsmSharp_Geo_Extensions_FilterSpatial_IEnumerable_OsmSharp_OsmGeo__Polygon_System_Boolean_" data-uid="OsmSharp.Geo.Extensions.FilterSpatial(IEnumerable{OsmSharp.OsmGeo},Polygon,System.Boolean)"><a href="#collapsible-OsmSharp_Geo_Extensions_FilterSpatial_IEnumerable_OsmSharp_OsmGeo__Polygon_System_Boolean_" class="expander" data-toggle="collapse">FilterSpatial(IEnumerable&lt;OsmGeo&gt;, Polygon, Boolean)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Geo_Extensions_FilterSpatial_IEnumerable_OsmSharp_OsmGeo__Polygon_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Filters a stream of objects spatially.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OsmStreamSource FilterSpatial(this IEnumerable&lt;OsmGeo&gt; source, Polygon polygon, bool completeWays = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>&gt;</span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Polygon</span></span>
+        <span class="parametername">polygon</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">completeWays</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">OsmStreamSource</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Geo_Extensions_GetCoordinate_" data-uid="OsmSharp.Geo.Extensions.GetCoordinate*"></a>
+  
+  <h4 id="OsmSharp_Geo_Extensions_GetCoordinate_OsmSharp_Node_" data-uid="OsmSharp.Geo.Extensions.GetCoordinate(OsmSharp.Node)"><a href="#collapsible-OsmSharp_Geo_Extensions_GetCoordinate_OsmSharp_Node_" class="expander" data-toggle="collapse">GetCoordinate(Node)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Geo_Extensions_GetCoordinate_OsmSharp_Node_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the coordinate from the given node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate GetCoordinate(this Node node)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.Node.html">Node</a></span>
+        <span class="parametername">node</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Geo_Extensions_GetCoordinates_" data-uid="OsmSharp.Geo.Extensions.GetCoordinates*"></a>
+  
+  <h4 id="OsmSharp_Geo_Extensions_GetCoordinates_CompleteWay_" data-uid="OsmSharp.Geo.Extensions.GetCoordinates(CompleteWay)"><a href="#collapsible-OsmSharp_Geo_Extensions_GetCoordinates_CompleteWay_" class="expander" data-toggle="collapse">GetCoordinates(CompleteWay)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Geo_Extensions_GetCoordinates_CompleteWay_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the coordinates from the given way.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Coordinate&gt; GetCoordinates(this CompleteWay way)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CompleteWay</span></span>
+        <span class="parametername">way</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">Coordinate</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Geo_Extensions_GetRange_" data-uid="OsmSharp.Geo.Extensions.GetRange*"></a>
+  
+  <h4 id="OsmSharp_Geo_Extensions_GetRange__1___0___System_Int32_System_Int32_" data-uid="OsmSharp.Geo.Extensions.GetRange``1(``0[],System.Int32,System.Int32)"><a href="#collapsible-OsmSharp_Geo_Extensions_GetRange__1___0___System_Int32_System_Int32_" class="expander" data-toggle="collapse">GetRange&lt;T&gt;(T[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Geo_Extensions_GetRange__1___0___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a range of elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; GetRange&lt;T&gt;(this T[] array, int index, int count)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right">T[]</span>
+        <span class="parametername">array</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">count</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Geo_Extensions_ToAttributeTable_" data-uid="OsmSharp.Geo.Extensions.ToAttributeTable*"></a>
+  
+  <h4 id="OsmSharp_Geo_Extensions_ToAttributeTable_TagsCollectionBase_" data-uid="OsmSharp.Geo.Extensions.ToAttributeTable(TagsCollectionBase)"><a href="#collapsible-OsmSharp_Geo_Extensions_ToAttributeTable_TagsCollectionBase_" class="expander" data-toggle="collapse">ToAttributeTable(TagsCollectionBase)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Geo_Extensions_ToAttributeTable_TagsCollectionBase_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this tags collection to an attribute table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AttributesTable ToAttributeTable(this TagsCollectionBase tags)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TagsCollectionBase</span></span>
+        <span class="parametername">tags</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">AttributesTable</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_Geo_Extensions_ToFeatureSource_" data-uid="OsmSharp.Geo.Extensions.ToFeatureSource*"></a>
+  
+  <h4 id="OsmSharp_Geo_Extensions_ToFeatureSource_IEnumerable_OsmSharp_OsmGeo__" data-uid="OsmSharp.Geo.Extensions.ToFeatureSource(IEnumerable{OsmSharp.OsmGeo})"><a href="#collapsible-OsmSharp_Geo_Extensions_ToFeatureSource_IEnumerable_OsmSharp_OsmGeo__" class="expander" data-toggle="collapse">ToFeatureSource(IEnumerable&lt;OsmGeo&gt;)</a></h4>
+  
+  <div id="collapsible-OsmSharp_Geo_Extensions_ToFeatureSource_IEnumerable_OsmSharp_OsmGeo__" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the given source into a feature source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFeatureStreamSource ToFeatureSource(this IEnumerable&lt;OsmGeo&gt; source)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OsmSharp.OsmGeo.html">OsmGeo</a>&gt;</span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IFeatureStreamSource</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

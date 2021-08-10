@@ -1,0 +1,1616 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Tour
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Tour
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Optimization.Tours.Tour">
+  <h1 id="Itinero_Optimization_Tours_Tour" data-uid="Itinero.Optimization.Tours.Tour">Class Tour
+  </h1>
+  <div class="markdown level0 summary"><p>a route or a sequence of customers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Tour</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Optimization_Tours_Tour_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Tour : ITour, IEnumerable&lt;int&gt;, ISolution</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour__ctor_" data-uid="Itinero.Optimization.Tours.Tour.#ctor*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour__ctor_IEnumerable_System_Int32__" data-uid="Itinero.Optimization.Tours.Tour.#ctor(IEnumerable{System.Int32})"><a href="#collapsible-Itinero_Optimization_Tours_Tour__ctor_IEnumerable_System_Int32__" class="expander" data-toggle="collapse">Tour(IEnumerable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour__ctor_IEnumerable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new closed route using a preexisting sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tour(IEnumerable&lt;int&gt; customers)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">customers</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour__ctor_" data-uid="Itinero.Optimization.Tours.Tour.#ctor*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour__ctor_IEnumerable_System_Int32__System_Nullable_System_Int32__" data-uid="Itinero.Optimization.Tours.Tour.#ctor(IEnumerable{System.Int32},System.Nullable{System.Int32})"><a href="#collapsible-Itinero_Optimization_Tours_Tour__ctor_IEnumerable_System_Int32__System_Nullable_System_Int32__" class="expander" data-toggle="collapse">Tour(IEnumerable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour__ctor_IEnumerable_System_Int32__System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new route using a preexisting sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tour(IEnumerable&lt;int&gt; customers, int ? last)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">customers</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">last</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Count_" data-uid="Itinero.Optimization.Tours.Tour.Count*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Count" data-uid="Itinero.Optimization.Tours.Tour.Count"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Count" class="expander" data-toggle="collapse">Count</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Count" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the size of the route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Count">ITour.Count</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_First_" data-uid="Itinero.Optimization.Tours.Tour.First*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_First" data-uid="Itinero.Optimization.Tours.Tour.First"><a href="#collapsible-Itinero_Optimization_Tours_Tour_First" class="expander" data-toggle="collapse">First</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_First" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the first customer in this route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int First { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_First">ITour.First</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Last_" data-uid="Itinero.Optimization.Tours.Tour.Last*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Last" data-uid="Itinero.Optimization.Tours.Tour.Last"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Last" class="expander" data-toggle="collapse">Last</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Last" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the last customer in this route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ? Last { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Last">ITour.Last</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Between_" data-uid="Itinero.Optimization.Tours.Tour.Between*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Between_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.Between(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Between_System_Int32_System_Int32_" class="expander" data-toggle="collapse">Between(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Between_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns an enumerable between.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;int&gt; Between(int from, int to)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">from</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">to</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Between_System_Int32_System_Int32_">ITour.Between(Int32, Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Clear_" data-uid="Itinero.Optimization.Tours.Tour.Clear*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Clear" data-uid="Itinero.Optimization.Tours.Tour.Clear"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Clear" class="collapse in">
+  <div class="markdown level1 summary"><p>Clears out all the customers in this route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Clear">ITour.Clear()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Clone_" data-uid="Itinero.Optimization.Tours.Tour.Clone*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Clone" data-uid="Itinero.Optimization.Tours.Tour.Clone"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Clone" class="expander" data-toggle="collapse">Clone()</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Clone" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates an exact deep-copy of this route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Contains_" data-uid="Itinero.Optimization.Tours.Tour.Contains*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Contains_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.Contains(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Contains_System_Int32_" class="expander" data-toggle="collapse">Contains(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Contains_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the customer exists in this route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Contains_System_Int32_">ITour.Contains(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Contains_" data-uid="Itinero.Optimization.Tours.Tour.Contains*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Contains_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.Contains(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Contains_System_Int32_System_Int32_" class="expander" data-toggle="collapse">Contains(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Contains_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if there exists an edge from the given customer to another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(int from, int to)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">from</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">to</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Contains_System_Int32_System_Int32_">ITour.Contains(Int32, Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_CopyFrom_" data-uid="Itinero.Optimization.Tours.Tour.CopyFrom*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_CopyFrom_ISolution_" data-uid="Itinero.Optimization.Tours.Tour.CopyFrom(ISolution)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_CopyFrom_ISolution_" class="expander" data-toggle="collapse">CopyFrom(ISolution)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_CopyFrom_ISolution_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies the given solution into this solution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyFrom(ISolution solution)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">ISolution</span></span>
+        <span class="parametername">solution</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_CutAndRemove_" data-uid="Itinero.Optimization.Tours.Tour.CutAndRemove*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_CutAndRemove_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.CutAndRemove(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_CutAndRemove_System_Int32_System_Int32_" class="expander" data-toggle="collapse">CutAndRemove(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_CutAndRemove_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Cuts out a part of the route and returns the customers contained.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] CutAndRemove(int start, int length)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">start</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">length</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_GetCustomerAt_" data-uid="Itinero.Optimization.Tours.Tour.GetCustomerAt*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_GetCustomerAt_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.GetCustomerAt(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_GetCustomerAt_System_Int32_" class="expander" data-toggle="collapse">GetCustomerAt(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_GetCustomerAt_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the customer at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCustomerAt(int index)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p><p>The position of the customer in the route, the first being at O.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_GetCustomerAt_System_Int32_">ITour.GetCustomerAt(Int32)</a></div>
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentOutOfRangeException</span>
+        <p><p>When the index is out of range.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_GetEnumerator_" data-uid="Itinero.Optimization.Tours.Tour.GetEnumerator*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_GetEnumerator" data-uid="Itinero.Optimization.Tours.Tour.GetEnumerator"><a href="#collapsible-Itinero_Optimization_Tours_Tour_GetEnumerator" class="expander" data-toggle="collapse">GetEnumerator()</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_GetEnumerator" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;int&gt; GetEnumerator()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerator</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_GetEnumerator_" data-uid="Itinero.Optimization.Tours.Tour.GetEnumerator*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_GetEnumerator_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.GetEnumerator(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_GetEnumerator_System_Int32_" class="expander" data-toggle="collapse">GetEnumerator(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_GetEnumerator_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;int&gt; GetEnumerator(int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerator</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_GetEnumerator_System_Int32_">ITour.GetEnumerator(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_GetIndexOf_" data-uid="Itinero.Optimization.Tours.Tour.GetIndexOf*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_GetIndexOf_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.GetIndexOf(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_GetIndexOf_System_Int32_" class="expander" data-toggle="collapse">GetIndexOf(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_GetIndexOf_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the index of the given customer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIndexOf(int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_GetIndexOf_System_Int32_">ITour.GetIndexOf(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_GetNeigbour_" data-uid="Itinero.Optimization.Tours.Tour.GetNeigbour*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_GetNeigbour_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.GetNeigbour(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_GetNeigbour_System_Int32_" class="expander" data-toggle="collapse">GetNeigbour(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_GetNeigbour_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the neigbour of the given customer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNeigbour(int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_GetNeigbour_System_Int32_">ITour.GetNeigbour(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_InsertAfter_" data-uid="Itinero.Optimization.Tours.Tour.InsertAfter*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_InsertAfter_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.InsertAfter(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_InsertAfter_System_Int32_System_Int32_" class="expander" data-toggle="collapse">InsertAfter(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_InsertAfter_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Inserts a customer right after from and before to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertAfter(int from, int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">from</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_InsertAfter_System_Int32_System_Int32_">ITour.InsertAfter(Int32, Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_IsFirst_" data-uid="Itinero.Optimization.Tours.Tour.IsFirst*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_IsFirst_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.IsFirst(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_IsFirst_System_Int32_" class="expander" data-toggle="collapse">IsFirst(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_IsFirst_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given customer is the first one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFirst(int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_IsLast_" data-uid="Itinero.Optimization.Tours.Tour.IsLast*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_IsLast_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.IsLast(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_IsLast_System_Int32_" class="expander" data-toggle="collapse">IsLast(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_IsLast_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given customer is the last one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLast(int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Next_" data-uid="Itinero.Optimization.Tours.Tour.Next*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Next_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.Next(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Next_System_Int32_" class="expander" data-toggle="collapse">Next(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Next_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the neigbour of the given customer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Next(int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Pairs_" data-uid="Itinero.Optimization.Tours.Tour.Pairs*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Pairs" data-uid="Itinero.Optimization.Tours.Tour.Pairs"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Pairs" class="expander" data-toggle="collapse">Pairs()</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Pairs" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns an enumerable that enumerates all customer pairs that occur in the route as 1-&gt;2. If the route is a round the pair that contains last-&gt;first is also included.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Pair&gt; Pairs()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.Optimization.Tours.Pair.html">Pair</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Pairs">ITour.Pairs()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Remove_" data-uid="Itinero.Optimization.Tours.Tour.Remove*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Remove_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.Remove(System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Remove_System_Int32_" class="expander" data-toggle="collapse">Remove(Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Remove_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes a customer from the route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Remove_System_Int32_">ITour.Remove(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Remove_" data-uid="Itinero.Optimization.Tours.Tour.Remove*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Remove_System_Int32_System_Int32__System_Int32__" data-uid="Itinero.Optimization.Tours.Tour.Remove(System.Int32,System.Int32@,System.Int32@)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Remove_System_Int32_System_Int32__System_Int32__" class="expander" data-toggle="collapse">Remove(Int32, out Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Remove_System_Int32_System_Int32__System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes a customer from the route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(int customer, out int before, out int after)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p><p>The customer to remove.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">before</span>
+        <p><p>The customer that used to exist before.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">after</span>
+        <p><p>The customer that used to exist after.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Remove_System_Int32_System_Int32__System_Int32__">ITour.Remove(Int32, out Int32, out Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Replace_" data-uid="Itinero.Optimization.Tours.Tour.Replace*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Replace_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.Replace(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Replace_System_Int32_System_Int32_" class="expander" data-toggle="collapse">Replace(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Replace_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Replaces the given old customer with the new customer. Assumes the new customer doesn&apos;t exist yet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Replace(int oldCustomer, int newCustomer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">oldCustomer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">newCustomer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Replace_System_Int32_System_Int32_">ITour.Replace(Int32, Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_ReplaceEdgeFrom_" data-uid="Itinero.Optimization.Tours.Tour.ReplaceEdgeFrom*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_ReplaceEdgeFrom_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.ReplaceEdgeFrom(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_ReplaceEdgeFrom_System_Int32_System_Int32_" class="expander" data-toggle="collapse">ReplaceEdgeFrom(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_ReplaceEdgeFrom_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Inserts a customer right after from and before to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceEdgeFrom(int from, int customer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">from</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_ReplaceEdgeFrom_System_Int32_System_Int32_">ITour.ReplaceEdgeFrom(Int32, Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_ShiftAfter_" data-uid="Itinero.Optimization.Tours.Tour.ShiftAfter*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_ShiftAfter_System_Int32_System_Int32_" data-uid="Itinero.Optimization.Tours.Tour.ShiftAfter(System.Int32,System.Int32)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_ShiftAfter_System_Int32_System_Int32_" class="expander" data-toggle="collapse">ShiftAfter(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_ShiftAfter_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Shifts the given customer to a new location and places it after the given &apos;before&apos; customer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShiftAfter(int customer, int before)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p><p>The customer to shift.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">before</span>
+        <p><p>The new customer that will come right before.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_ShiftAfter_System_Int32_System_Int32_">ITour.ShiftAfter(Int32, Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_ShiftAfter_" data-uid="Itinero.Optimization.Tours.Tour.ShiftAfter*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_ShiftAfter_System_Int32_System_Int32_System_Int32__System_Int32__System_Int32__" data-uid="Itinero.Optimization.Tours.Tour.ShiftAfter(System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)"><a href="#collapsible-Itinero_Optimization_Tours_Tour_ShiftAfter_System_Int32_System_Int32_System_Int32__System_Int32__System_Int32__" class="expander" data-toggle="collapse">ShiftAfter(Int32, Int32, out Int32, out Int32, out Int32)</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_ShiftAfter_System_Int32_System_Int32_System_Int32__System_Int32__System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Shifts the given customer to a new location and places it after the given &apos;before&apos; customer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShiftAfter(int customer, int before, out int oldBefore, out int oldAfter, out int newAfter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">customer</span>
+        <p><p>The customer to shift.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">before</span>
+        <p><p>The new customer that will come right before.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">oldBefore</span>
+        <p><p>The customer that used to exist before.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">oldAfter</span>
+        <p><p>The customer that used to exist after.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">newAfter</span>
+        <p><p>The customer that new exists after.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_ShiftAfter_System_Int32_System_Int32_System_Int32__System_Int32__System_Int32__">ITour.ShiftAfter(Int32, Int32, out Int32, out Int32, out Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_ToString_" data-uid="Itinero.Optimization.Tours.Tour.ToString*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_ToString" data-uid="Itinero.Optimization.Tours.Tour.ToString"><a href="#collapsible-Itinero_Optimization_Tours_Tour_ToString" class="expander" data-toggle="collapse">ToString()</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_ToString" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns a description of this route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_Triples_" data-uid="Itinero.Optimization.Tours.Tour.Triples*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_Triples" data-uid="Itinero.Optimization.Tours.Tour.Triples"><a href="#collapsible-Itinero_Optimization_Tours_Tour_Triples" class="expander" data-toggle="collapse">Triples()</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_Triples" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns an enumerable that enumerates all customer triples that occur in the route as 1-&gt;2-3. If the route is a round the tuples that contain last-&gt;first are also included.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Triple&gt; Triples()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.Optimization.Tours.Triple.html">Triple</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Itinero.Optimization.Tours.ITour.html#Itinero_Optimization_Tours_ITour_Triples">ITour.Triples()</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Itinero_Optimization_Tours_Tour_System_Collections_IEnumerable_GetEnumerator_" data-uid="Itinero.Optimization.Tours.Tour.System#Collections#IEnumerable#GetEnumerator*"></a>
+  
+  <h4 id="Itinero_Optimization_Tours_Tour_System_Collections_IEnumerable_GetEnumerator" data-uid="Itinero.Optimization.Tours.Tour.System#Collections#IEnumerable#GetEnumerator"><a href="#collapsible-Itinero_Optimization_Tours_Tour_System_Collections_IEnumerable_GetEnumerator" class="expander" data-toggle="collapse">IEnumerable.GetEnumerator()</a></h4>
+  
+  <div id="collapsible-Itinero_Optimization_Tours_Tour_System_Collections_IEnumerable_GetEnumerator" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.IEnumerator</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

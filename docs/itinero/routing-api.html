@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Routing API | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Routing API | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="routing-api">
+<h1 id="routing-api">Routing API</h1>
+
+<p>There is a standalone app that can be used as a routing-api:</p>
+<p><a href="https://github.com/itinero/routing-api">https://github.com/itinero/routing-api</a></p>
+<h3 id="setup">Setup</h3>
+<p>Basically you need build the project and place a RouterDb file into the configured data folder.</p>
+<ol>
+<li>Install <a href="https://www.microsoft.com/net/core">.NET core</a> for your platform.</li>
+<li>Run the build script, build.sh or build.bat on windows.</li>
+<li>Then <a href="http://files.itinero.tech/data/itinero/routerdbs/planet/europe/">download a RouterDb</a> file or create one using the <a href="https://github.com/itinero/idp">Itinero data processing tool</a>.</li>
+<li>Place the RouterDb file into the configured data folder, by default this is ./src/Itinero.API/data. Configuration file is <a href="https://github.com/itinero/routing-api/blob/develop/src/Itinero.API/appsettings.json">here</a>.</li>
+<li>Run the run script, run.sh or run.bat on windows.</li>
+</ol>
+<p>You should new see the service reporting messages on loading the RouterDb&#39;s you configured:</p>
+<pre><code>[Bootstrapper] information - Loading all routerdb&#39;s from path: \path\to\src\Itinero.API\data
+[Bootstrapper] information - Loaded instance luxembourg from: \path\to\src\Itinero.API\data\luxembourg.c.cf.routerdb
+Hosting environment: Production
+Content root path: \path\to\src\Itinero.API
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+[Bootstrapper] information - Loaded instance belgium from: \path\to\src\Itinero.API\data\belgium.c.cf.routerdb
+[Bootstrapper] information - Loaded instance netherlands from: \path\to\rc\Itinero.API\data\netherlands.c.cf.routerd
+</code></pre><h3 id="api">API</h3>
+<p>When the service is setup one instance per RouterDb will be available. The name of the instance is identical to the name of the file until the first &#39;.&#39;. For example, &#39;belgium.c.cf.routerdb&#39; will be &#39;belgium&#39;.</p>
+<p>By default when opening your browser at <a href="http://localhost:5000/">http://localhost:5000/</a> there will be a list with loaded instances. When you click one of the instances a map will open centered on the loaded area, clicking on the map still set a startpoint and clicking again an instance.</p>
+<p>The following is available:</p>
+<ul>
+<li><a href="http://localhost:5000/">http://localhost:5000/</a> : A list of loaded instances.</li>
+<li>http://localhost:5000/{instance} : The map centered on the loaded area in the instance with routing enable for cars.</li>
+</ul>
+<p>The API:</p>
+<p>http://localhost:5000/{instance}/routing : Accepts requests using the following parameters:</p>
+<ul>
+<li>profile: One of the profiles loaded in the RouterDb, think <em>car</em>, <em>bicycle</em> or <em>pedestrian</em>.</li>
+<li>loc: Add this parameter at least twice, first is startpoint, last is the destination.</li>
+</ul>
+<p>Make sure to ask the API for JSON by adding <em>Content-Type: application/json</em> header. The route is returned as GeoJson.</p>
+<p>Example: <a href="http://localhost:5000/belgium/routing?profile=car&amp;loc=51.055207,3.722992&amp;loc=50.906497,4.194031">http://localhost:5000/belgium/routing?profile=car&loc=51.055207,3.722992&loc=50.906497,4.194031</a></p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Itinero.Profiles.Lua.Interop.BasicDescriptors
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Itinero.Profiles.Lua.Interop.BasicDescriptors
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors">
+  <h1 id="Itinero_Profiles_Lua_Interop_BasicDescriptors" data-uid="Itinero.Profiles.Lua.Interop.BasicDescriptors">Namespace Itinero.Profiles.Lua.Interop.BasicDescriptors
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.html">DispatchingUserDataDescriptor</a></p>
+          <p><p>An abstract user data descriptor which accepts members described by <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a> objects and
+correctly dispatches to them.
+Metamethods are also by default dispatched to operator overloads and other similar methods - see
+<a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.html#Itinero_Profiles_Lua_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_Itinero_Profiles_Lua_Script_System_Object_System_String_">MetaIndex(Script, Object, String)</a> .</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.MemberDescriptor.html">MemberDescriptor</a></p>
+          <p><p>Extension methods for <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a> and <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.MemberDescriptorAccess.html">MemberDescriptorAccess</a> .</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.ParameterDescriptor.html">ParameterDescriptor</a></p>
+          <p><p>Descriptor of parameters used in <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IOverloadableMemberDescriptor.html">IOverloadableMemberDescriptor</a> implementations.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></p>
+          <p><p>Base interface to describe access to members of a given type.
+While it&apos;s not infrastructural to implement custom type descriptors, it&apos;s needed for 
+classes extending <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.DispatchingUserDataDescriptor.html">DispatchingUserDataDescriptor</a>.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IOptimizableDescriptor.html">IOptimizableDescriptor</a></p>
+          <p><p>Interface for descriptors of any kind which support optimizations of their implementation according to InteropAccessMode
+modes. This should seldom - if ever - be implemented in user code.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IOverloadableMemberDescriptor.html">IOverloadableMemberDescriptor</a></p>
+          <p><p>Specialized <a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a> for members supporting overloads resolution.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.IWireableDescriptor.html">IWireableDescriptor</a></p>
+          <p><p>Interface for descriptors with the capability of being serialized
+for later hardwiring.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="enums">Enums
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Itinero.Profiles.Lua.Interop.BasicDescriptors.MemberDescriptorAccess.html">MemberDescriptorAccess</a></p>
+          <p><p>Permissions for members access</p>
+</p>
+        </td>
+      </tr>
+    </table>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

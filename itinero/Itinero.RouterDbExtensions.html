@@ -1,0 +1,2941 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RouterDbExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RouterDbExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.RouterDbExtensions">
+  <h1 id="Itinero_RouterDbExtensions" data-uid="Itinero.RouterDbExtensions">Class RouterDbExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains extension methods for the router db.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RouterDbExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_RouterDbExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RouterDbExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddAsVertex_" data-uid="Itinero.RouterDbExtensions.AddAsVertex*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddAsVertex_Itinero_RouterDb_Itinero_RouterPoint_" data-uid="Itinero.RouterDbExtensions.AddAsVertex(Itinero.RouterDb,Itinero.RouterPoint)"><a href="#collapsible-Itinero_RouterDbExtensions_AddAsVertex_Itinero_RouterDb_Itinero_RouterPoint_" class="expander" data-toggle="collapse">AddAsVertex(RouterDb, RouterPoint)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddAsVertex_Itinero_RouterDb_Itinero_RouterPoint_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds the router point as a vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint AddAsVertex(this RouterDb routerDb, RouterPoint point)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddAsVertices_" data-uid="Itinero.RouterDbExtensions.AddAsVertices*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddAsVertices_Itinero_RouterDb_Itinero_RouterPoint___" data-uid="Itinero.RouterDbExtensions.AddAsVertices(Itinero.RouterDb,Itinero.RouterPoint[])"><a href="#collapsible-Itinero_RouterDbExtensions_AddAsVertices_Itinero_RouterDb_Itinero_RouterPoint___" class="expander" data-toggle="collapse">AddAsVertices(RouterDb, RouterPoint[])</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddAsVertices_Itinero_RouterDb_Itinero_RouterPoint___" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds the router point as a vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint[] AddAsVertices(this RouterDb routerDb, RouterPoint[] points)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a>[]</span>
+        <span class="parametername">points</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.UInt32</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddContracted_" data-uid="Itinero.RouterDbExtensions.AddContracted*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddContracted_Itinero_RouterDb_Itinero_Profiles_Profile_System_Boolean_" data-uid="Itinero.RouterDbExtensions.AddContracted(Itinero.RouterDb,Itinero.Profiles.Profile,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_AddContracted_Itinero_RouterDb_Itinero_Profiles_Profile_System_Boolean_" class="expander" data-toggle="collapse">AddContracted(RouterDb, Profile, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddContracted_Itinero_RouterDb_Itinero_Profiles_Profile_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new contracted graph and adds it to the router db for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddContracted(this RouterDb db, Profile profile, bool forceEdgeBased = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">forceEdgeBased</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddContracted_" data-uid="Itinero.RouterDbExtensions.AddContracted*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddContracted_Itinero_RouterDb_Itinero_Profiles_Profile_System_Boolean_CancellationToken_" data-uid="Itinero.RouterDbExtensions.AddContracted(Itinero.RouterDb,Itinero.Profiles.Profile,System.Boolean,CancellationToken)"><a href="#collapsible-Itinero_RouterDbExtensions_AddContracted_Itinero_RouterDb_Itinero_Profiles_Profile_System_Boolean_CancellationToken_" class="expander" data-toggle="collapse">AddContracted(RouterDb, Profile, Boolean, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddContracted_Itinero_RouterDb_Itinero_Profiles_Profile_System_Boolean_CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new contracted graph and adds it to the router db for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddContracted(this RouterDb db, Profile profile, bool forceEdgeBased, CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">forceEdgeBased</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddContracted_" data-uid="Itinero.RouterDbExtensions.AddContracted*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddContracted__1_Itinero_RouterDb_Itinero_Profiles_Profile_WeightHandler___0__System_Boolean_" data-uid="Itinero.RouterDbExtensions.AddContracted``1(Itinero.RouterDb,Itinero.Profiles.Profile,WeightHandler{``0},System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_AddContracted__1_Itinero_RouterDb_Itinero_Profiles_Profile_WeightHandler___0__System_Boolean_" class="expander" data-toggle="collapse">AddContracted&lt;T&gt;(RouterDb, Profile, WeightHandler&lt;T&gt;, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddContracted__1_Itinero_RouterDb_Itinero_Profiles_Profile_WeightHandler___0__System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new contracted graph and adds it to the router db for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddContracted&lt;T&gt;(this RouterDb db, Profile profile, WeightHandler&lt;T&gt; weightHandler, bool forceEdgeBased = false)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">forceEdgeBased</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddContracted_" data-uid="Itinero.RouterDbExtensions.AddContracted*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddContracted__1_Itinero_RouterDb_Itinero_Profiles_Profile_WeightHandler___0__System_Boolean_CancellationToken_" data-uid="Itinero.RouterDbExtensions.AddContracted``1(Itinero.RouterDb,Itinero.Profiles.Profile,WeightHandler{``0},System.Boolean,CancellationToken)"><a href="#collapsible-Itinero_RouterDbExtensions_AddContracted__1_Itinero_RouterDb_Itinero_Profiles_Profile_WeightHandler___0__System_Boolean_CancellationToken_" class="expander" data-toggle="collapse">AddContracted&lt;T&gt;(RouterDb, Profile, WeightHandler&lt;T&gt;, Boolean, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddContracted__1_Itinero_RouterDb_Itinero_Profiles_Profile_WeightHandler___0__System_Boolean_CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new contracted graph and adds it to the router db for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddContracted&lt;T&gt;(this RouterDb db, Profile profile, WeightHandler&lt;T&gt; weightHandler, bool forceEdgeBased, CancellationToken cancellationToken)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">forceEdgeBased</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddIslandData_" data-uid="Itinero.RouterDbExtensions.AddIslandData*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_" data-uid="Itinero.RouterDbExtensions.AddIslandData(Itinero.RouterDb,Profile)"><a href="#collapsible-Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_" class="expander" data-toggle="collapse">AddIslandData(RouterDb, Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds and detects island data to improve resolving.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddIslandData(this RouterDb db, Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddIslandData_" data-uid="Itinero.RouterDbExtensions.AddIslandData*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_System_Boolean_" data-uid="Itinero.RouterDbExtensions.AddIslandData(Itinero.RouterDb,Profile,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_System_Boolean_" class="expander" data-toggle="collapse">AddIslandData(RouterDb, Profile, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds and detects island data to improve resolving.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddIslandData(this RouterDb db, Profile profile, bool buildEdgeMeta)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">buildEdgeMeta</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_AddIslandData_" data-uid="Itinero.RouterDbExtensions.AddIslandData*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_System_Boolean_CancellationToken_" data-uid="Itinero.RouterDbExtensions.AddIslandData(Itinero.RouterDb,Profile,System.Boolean,CancellationToken)"><a href="#collapsible-Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_System_Boolean_CancellationToken_" class="expander" data-toggle="collapse">AddIslandData(RouterDb, Profile, Boolean, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_AddIslandData_Itinero_RouterDb_Profile_System_Boolean_CancellationToken_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds and detects island data to improve resolving.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddIslandData(this RouterDb db, Profile profile, bool buildEdgeMeta, CancellationToken cancellationToken)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">buildEdgeMeta</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CancellationToken</span></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_BuildDualEdgePath_" data-uid="Itinero.RouterDbExtensions.BuildDualEdgePath*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_BuildDualEdgePath__1_Itinero_RouterDb_WeightHandler___0__EdgePath___0__" data-uid="Itinero.RouterDbExtensions.BuildDualEdgePath``1(Itinero.RouterDb,WeightHandler{``0},EdgePath{``0})"><a href="#collapsible-Itinero_RouterDbExtensions_BuildDualEdgePath__1_Itinero_RouterDb_WeightHandler___0__EdgePath___0__" class="expander" data-toggle="collapse">BuildDualEdgePath&lt;T&gt;(RouterDb, WeightHandler&lt;T&gt;, EdgePath&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_BuildDualEdgePath__1_Itinero_RouterDb_WeightHandler___0__EdgePath___0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a non-dual edge path from a dual edge path taking into account the original router points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; BuildDualEdgePath&lt;T&gt;(this RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, EdgePath&lt;T&gt; dualPath)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">EdgePath</span>&lt;T&gt;</span>
+        <span class="parametername">dualPath</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_BuildDualEdgePath_" data-uid="Itinero.RouterDbExtensions.BuildDualEdgePath*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_BuildDualEdgePath__1_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_EdgePath___0__" data-uid="Itinero.RouterDbExtensions.BuildDualEdgePath``1(Itinero.RouterDb,WeightHandler{``0},Itinero.RouterPoint,Itinero.RouterPoint,EdgePath{``0})"><a href="#collapsible-Itinero_RouterDbExtensions_BuildDualEdgePath__1_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_EdgePath___0__" class="expander" data-toggle="collapse">BuildDualEdgePath&lt;T&gt;(RouterDb, WeightHandler&lt;T&gt;, RouterPoint, RouterPoint, EdgePath&lt;T&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_BuildDualEdgePath__1_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_EdgePath___0__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds a non-dual edge path from a dual edge path taking into account the original router points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; BuildDualEdgePath&lt;T&gt;(this RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, RouterPoint source, RouterPoint target, EdgePath&lt;T&gt; dualPath)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">EdgePath</span>&lt;T&gt;</span>
+        <span class="parametername">dualPath</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_BuildEdgePath_" data-uid="Itinero.RouterDbExtensions.BuildEdgePath*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_BuildEdgePath__1_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" data-uid="Itinero.RouterDbExtensions.BuildEdgePath``1(Itinero.RouterDb,WeightHandler{``0},Itinero.RouterPoint,Itinero.RouterPoint,List{System.UInt32})"><a href="#collapsible-Itinero_RouterDbExtensions_BuildEdgePath__1_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" class="expander" data-toggle="collapse">BuildEdgePath&lt;T&gt;(RouterDb, WeightHandler&lt;T&gt;, RouterPoint, RouterPoint, List&lt;UInt32&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_BuildEdgePath__1_Itinero_RouterDb_WeightHandler___0__Itinero_RouterPoint_Itinero_RouterPoint_List_System_UInt32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Builds an edge path from a path consisiting of only vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; BuildEdgePath&lt;T&gt;(this RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, RouterPoint source, RouterPoint target, List&lt;uint&gt; vertexPath)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterPoint.html">RouterPoint</a></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.UInt32</span>&gt;</span>
+        <span class="parametername">vertexPath</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_ExtractArea_" data-uid="Itinero.RouterDbExtensions.ExtractArea*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_Coordinate_System_Boolean__System_Boolean_" data-uid="Itinero.RouterDbExtensions.ExtractArea(Itinero.RouterDb,Func{Coordinate,System.Boolean},System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_Coordinate_System_Boolean__System_Boolean_" class="expander" data-toggle="collapse">ExtractArea(RouterDb, Func&lt;Coordinate, Boolean&gt;, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_Coordinate_System_Boolean__System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts part of the routerdb defined by the isInside function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterDb ExtractArea(this RouterDb db, Func&lt;Coordinate, bool&gt; isInside, bool insideOnly = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The routerdb to extract from.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">Coordinate</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isInside</span>
+        <p><p>The is inside function.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">insideOnly</span>
+        <p><p>Don&apos;t keep vertices outside, even if they have a neighbour that is inside.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterDb.html">RouterDb</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_ExtractArea_" data-uid="Itinero.RouterDbExtensions.ExtractArea*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_System_UInt32_System_Boolean__Func_System_UInt32_System_UInt32_System_Boolean__" data-uid="Itinero.RouterDbExtensions.ExtractArea(Itinero.RouterDb,Func{System.UInt32,System.Boolean},Func{System.UInt32,System.UInt32,System.Boolean})"><a href="#collapsible-Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_System_UInt32_System_Boolean__Func_System_UInt32_System_UInt32_System_Boolean__" class="expander" data-toggle="collapse">ExtractArea(RouterDb, Func&lt;UInt32, Boolean&gt;, Func&lt;UInt32, UInt32, Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_System_UInt32_System_Boolean__Func_System_UInt32_System_UInt32_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts part of the routerdb defined by the isInside function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterDb ExtractArea(this RouterDb db, Func&lt;uint, bool&gt; isInside, Func&lt;uint, uint, bool&gt; isEdgeInside)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The routerdb to extract from.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt32</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isInside</span>
+        <p><p>The is inside function, is the vertex to be included. Vertex won&apos;t be included if none of it&apos;s edge are.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt32</span>, <span class="xref">System.UInt32</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isEdgeInside</span>
+        <p><p>The is inside function, is the edge to be included.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterDb.html">RouterDb</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_ExtractArea_" data-uid="Itinero.RouterDbExtensions.ExtractArea*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_System_UInt32_System_Boolean__System_Boolean_" data-uid="Itinero.RouterDbExtensions.ExtractArea(Itinero.RouterDb,Func{System.UInt32,System.Boolean},System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_System_UInt32_System_Boolean__System_Boolean_" class="expander" data-toggle="collapse">ExtractArea(RouterDb, Func&lt;UInt32, Boolean&gt;, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_Func_System_UInt32_System_Boolean__System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts part of the routerdb defined by the isInside function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterDb ExtractArea(this RouterDb db, Func&lt;uint, bool&gt; isInside, bool insideOnly = false)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The routerdb to extract from.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.UInt32</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">isInside</span>
+        <p><p>The is inside function.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">insideOnly</span>
+        <p><p>Don&apos;t keep vertices outside, even if they have a neighbour that is inside.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterDb.html">RouterDb</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_ExtractArea_" data-uid="Itinero.RouterDbExtensions.ExtractArea*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Single_" data-uid="Itinero.RouterDbExtensions.ExtractArea(Itinero.RouterDb,System.Single,System.Single,System.Single,System.Single)"><a href="#collapsible-Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Single_" class="expander" data-toggle="collapse">ExtractArea(RouterDb, Single, Single, Single, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_ExtractArea_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Extracts part of the routerdb defined by the isInside function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RouterDb ExtractArea(this RouterDb db, float minLatitude, float minLongitude, float maxLatitude, float maxLongitude)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The routerdb to extract from.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLongitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLongitude</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.RouterDb.html">RouterDb</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetGeoJson_" data-uid="Itinero.RouterDbExtensions.GetGeoJson*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetGeoJson_Itinero_RouterDb_System_Boolean_System_Boolean_System_Boolean_" data-uid="Itinero.RouterDbExtensions.GetGeoJson(Itinero.RouterDb,System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_GetGeoJson_Itinero_RouterDb_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">GetGeoJson(RouterDb, Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetGeoJson_Itinero_RouterDb_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all features inside the given bounding box and builds a geojson string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetGeoJson(this RouterDb db, bool includeEdges = true, bool includeVertices = true, bool includeProfileDetails = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeEdges</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeVertices</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetGeoJsonAround_" data-uid="Itinero.RouterDbExtensions.GetGeoJsonAround*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetGeoJsonAround_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" data-uid="Itinero.RouterDbExtensions.GetGeoJsonAround(Itinero.RouterDb,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_GetGeoJsonAround_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">GetGeoJsonAround(RouterDb, Single, Single, Single, Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetGeoJsonAround_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all features around the given location as geojson.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetGeoJsonAround(this RouterDb db, float latitude, float longitude, float distanceInMeter = 250F, bool includeEdges = true, bool includeVertices = true, bool includeProfileDetails = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">latitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">longitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distanceInMeter</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeEdges</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeVertices</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetGeoJsonAround_" data-uid="Itinero.RouterDbExtensions.GetGeoJsonAround*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetGeoJsonAround_Itinero_RouterDb_System_UInt32_System_Single_System_Boolean_System_Boolean_System_Boolean_" data-uid="Itinero.RouterDbExtensions.GetGeoJsonAround(Itinero.RouterDb,System.UInt32,System.Single,System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_GetGeoJsonAround_Itinero_RouterDb_System_UInt32_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">GetGeoJsonAround(RouterDb, UInt32, Single, Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetGeoJsonAround_Itinero_RouterDb_System_UInt32_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all features around the given vertex as geojson.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetGeoJsonAround(this RouterDb db, uint vertex, float distanceInMeter = 250F, bool includeEdges = true, bool includeVertices = true, bool includeProfileDetails = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">vertex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">distanceInMeter</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeEdges</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeVertices</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetGeoJsonEdges_" data-uid="Itinero.RouterDbExtensions.GetGeoJsonEdges*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetGeoJsonEdges_Itinero_RouterDb_System_Boolean_System_Boolean_System_Boolean_System_UInt32___" data-uid="Itinero.RouterDbExtensions.GetGeoJsonEdges(Itinero.RouterDb,System.Boolean,System.Boolean,System.Boolean,System.UInt32[])"><a href="#collapsible-Itinero_RouterDbExtensions_GetGeoJsonEdges_Itinero_RouterDb_System_Boolean_System_Boolean_System_Boolean_System_UInt32___" class="expander" data-toggle="collapse">GetGeoJsonEdges(RouterDb, Boolean, Boolean, Boolean, UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetGeoJsonEdges_Itinero_RouterDb_System_Boolean_System_Boolean_System_Boolean_System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a geojson containing the given edge and optionally it&apos;s neighbours.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetGeoJsonEdges(this RouterDb db, bool neighbours = false, bool includeVertices = true, bool includeProfileDetails = true, params uint[] edgeIds)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">neighbours</span>
+        <p><p>Flag to get neighbours or not.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeVertices</span>
+        <p><p>Flag to get vertices or not.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">edgeIds</span>
+        <p><p>The edge id&apos;s to get.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetGeoJsonIn_" data-uid="Itinero.RouterDbExtensions.GetGeoJsonIn*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetGeoJsonIn_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" data-uid="Itinero.RouterDbExtensions.GetGeoJsonIn(Itinero.RouterDb,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_GetGeoJsonIn_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">GetGeoJsonIn(RouterDb, Single, Single, Single, Single, Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetGeoJsonIn_Itinero_RouterDb_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all features inside the given bounding box and builds a geojson string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetGeoJsonIn(this RouterDb db, float minLatitude, float minLongitude, float maxLatitude, float maxLongitude, bool includeEdges = true, bool includeVertices = true, bool includeProfileDetails = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLongitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLongitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeEdges</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeVertices</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetGeoJsonVertices_" data-uid="Itinero.RouterDbExtensions.GetGeoJsonVertices*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetGeoJsonVertices_Itinero_RouterDb_System_Boolean_System_Boolean_System_UInt32___" data-uid="Itinero.RouterDbExtensions.GetGeoJsonVertices(Itinero.RouterDb,System.Boolean,System.Boolean,System.UInt32[])"><a href="#collapsible-Itinero_RouterDbExtensions_GetGeoJsonVertices_Itinero_RouterDb_System_Boolean_System_Boolean_System_UInt32___" class="expander" data-toggle="collapse">GetGeoJsonVertices(RouterDb, Boolean, Boolean, UInt32[])</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetGeoJsonVertices_Itinero_RouterDb_System_Boolean_System_Boolean_System_UInt32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a geojson containing the given edge and optionally it&apos;s neighbours.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetGeoJsonVertices(this RouterDb db, bool neighbours = false, bool includeProfileDetails = false, params uint[] vertexIds)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">neighbours</span>
+        <p><p>Flag to get neighbours or not.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p><p>Flag to get profile details or not.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span>[]</span>
+        <span class="parametername">vertexIds</span>
+        <p><p>The vertices to get.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetGetRestrictions_" data-uid="Itinero.RouterDbExtensions.GetGetRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetGetRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_System_Nullable_System_Boolean__" data-uid="Itinero.RouterDbExtensions.GetGetRestrictions(Itinero.RouterDb,Itinero.Profiles.Profile,System.Nullable{System.Boolean})"><a href="#collapsible-Itinero_RouterDbExtensions_GetGetRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_System_Nullable_System_Boolean__" class="expander" data-toggle="collapse">GetGetRestrictions(RouterDb, Profile, Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetGetRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_System_Nullable_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the get restriction function for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;uint, IEnumerable&lt;uint[]&gt;&gt; GetGetRestrictions(this RouterDb db, Profile profile, bool ? first)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p><p>The vehicle profile.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">first</span>
+        <p><p>When true, only restrictions starting with given vertex, when false only restrictions ending with given vertex already reversed, when null all restrictions are returned.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<span class="xref">System.UInt32</span>, <span class="xref">IEnumerable</span>&lt;<span class="xref">System.UInt32</span>[]&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetGetSimpleRestrictions_" data-uid="Itinero.RouterDbExtensions.GetGetSimpleRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetGetSimpleRestrictions_Itinero_RouterDb_Profile_" data-uid="Itinero.RouterDbExtensions.GetGetSimpleRestrictions(Itinero.RouterDb,Profile)"><a href="#collapsible-Itinero_RouterDbExtensions_GetGetSimpleRestrictions_Itinero_RouterDb_Profile_" class="expander" data-toggle="collapse">GetGetSimpleRestrictions(RouterDb, Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetGetSimpleRestrictions_Itinero_RouterDb_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the simple restriction function for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;uint, uint&gt; GetGetSimpleRestrictions(this RouterDb db, Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p><p>The vehicle profile.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<span class="xref">System.UInt32</span>, <span class="xref">System.UInt32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetHasAnyRestriction_" data-uid="Itinero.RouterDbExtensions.GetHasAnyRestriction*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetHasAnyRestriction_Itinero_RouterDb_" data-uid="Itinero.RouterDbExtensions.GetHasAnyRestriction(Itinero.RouterDb)"><a href="#collapsible-Itinero_RouterDbExtensions_GetHasAnyRestriction_Itinero_RouterDb_" class="expander" data-toggle="collapse">GetHasAnyRestriction(RouterDb)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetHasAnyRestriction_Itinero_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the has any restriction function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;uint, bool&gt; GetHasAnyRestriction(this RouterDb db)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<span class="xref">System.UInt32</span>, <span class="xref">System.Boolean</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetPathForEdge_" data-uid="Itinero.RouterDbExtensions.GetPathForEdge*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__DirectedEdgeId_System_Boolean_" data-uid="Itinero.RouterDbExtensions.GetPathForEdge``1(Itinero.RouterDb,WeightHandler{``0},DirectedEdgeId,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__DirectedEdgeId_System_Boolean_" class="expander" data-toggle="collapse">GetPathForEdge&lt;T&gt;(RouterDb, WeightHandler&lt;T&gt;, DirectedEdgeId, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__DirectedEdgeId_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates an edge path for the given edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; GetPathForEdge&lt;T&gt;(this RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, DirectedEdgeId directedEdgeId, bool asSource)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DirectedEdgeId</span></span>
+        <span class="parametername">directedEdgeId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">asSource</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetPathForEdge_" data-uid="Itinero.RouterDbExtensions.GetPathForEdge*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__RoutingEdge_System_Boolean_System_Boolean_" data-uid="Itinero.RouterDbExtensions.GetPathForEdge``1(Itinero.RouterDb,WeightHandler{``0},RoutingEdge,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__RoutingEdge_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">GetPathForEdge&lt;T&gt;(RouterDb, WeightHandler&lt;T&gt;, RoutingEdge, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__RoutingEdge_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates an edge path for the given edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; GetPathForEdge&lt;T&gt;(this RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, RoutingEdge edge, bool edgeForward, bool asSource)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RoutingEdge</span></span>
+        <span class="parametername">edge</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">edgeForward</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">asSource</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetPathForEdge_" data-uid="Itinero.RouterDbExtensions.GetPathForEdge*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__System_Int64_System_Boolean_" data-uid="Itinero.RouterDbExtensions.GetPathForEdge``1(Itinero.RouterDb,WeightHandler{``0},System.Int64,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__System_Int64_System_Boolean_" class="expander" data-toggle="collapse">GetPathForEdge&lt;T&gt;(RouterDb, WeightHandler&lt;T&gt;, Int64, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetPathForEdge__1_Itinero_RouterDb_WeightHandler___0__System_Int64_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates an edge path for the given edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgePath&lt;T&gt; GetPathForEdge&lt;T&gt;(this RouterDb routerDb, WeightHandler&lt;T&gt; weightHandler, long directedEdgeId, bool asSource)where T : struct</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">WeightHandler</span>&lt;T&gt;</span>
+        <span class="parametername">weightHandler</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">directedEdgeId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">asSource</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">EdgePath</span>&lt;T&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetProfileAndMeta_" data-uid="Itinero.RouterDbExtensions.GetProfileAndMeta*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetProfileAndMeta_Itinero_RouterDb_System_UInt32_System_UInt32_" data-uid="Itinero.RouterDbExtensions.GetProfileAndMeta(Itinero.RouterDb,System.UInt32,System.UInt32)"><a href="#collapsible-Itinero_RouterDbExtensions_GetProfileAndMeta_Itinero_RouterDb_System_UInt32_System_UInt32_" class="expander" data-toggle="collapse">GetProfileAndMeta(RouterDb, UInt32, UInt32)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetProfileAndMeta_Itinero_RouterDb_System_UInt32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns one attribute collection containing both the profile and meta tags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAttributeCollection GetProfileAndMeta(this RouterDb db, uint profileId, uint meta)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">profileId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">meta</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IAttributeCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_GetRestrictions_" data-uid="Itinero.RouterDbExtensions.GetRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_GetRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_" data-uid="Itinero.RouterDbExtensions.GetRestrictions(Itinero.RouterDb,Itinero.Profiles.Profile)"><a href="#collapsible-Itinero_RouterDbExtensions_GetRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_" class="expander" data-toggle="collapse">GetRestrictions(RouterDb, Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_GetRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the restriction collection for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RestrictionCollection GetRestrictions(this RouterDb db, Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p><p>The vehicle profile.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">RestrictionCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_HasComplexRestrictions_" data-uid="Itinero.RouterDbExtensions.HasComplexRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_IEnumerable_System_String__" data-uid="Itinero.RouterDbExtensions.HasComplexRestrictions(Itinero.RouterDb,IEnumerable{System.String})"><a href="#collapsible-Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_IEnumerable_System_String__" class="expander" data-toggle="collapse">HasComplexRestrictions(RouterDb, IEnumerable&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_IEnumerable_System_String__" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this db contains complex restrictions for the given vehicle types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasComplexRestrictions(this RouterDb db, IEnumerable&lt;string&gt; vehicleTypes)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">vehicleTypes</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_HasComplexRestrictions_" data-uid="Itinero.RouterDbExtensions.HasComplexRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_" data-uid="Itinero.RouterDbExtensions.HasComplexRestrictions(Itinero.RouterDb,Itinero.Profiles.Profile)"><a href="#collapsible-Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_" class="expander" data-toggle="collapse">HasComplexRestrictions(RouterDb, Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_Itinero_Profiles_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this db contains complex restrictions for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasComplexRestrictions(this RouterDb db, Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_HasComplexRestrictions_" data-uid="Itinero.RouterDbExtensions.HasComplexRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_System_String_" data-uid="Itinero.RouterDbExtensions.HasComplexRestrictions(Itinero.RouterDb,System.String)"><a href="#collapsible-Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_System_String_" class="expander" data-toggle="collapse">HasComplexRestrictions(RouterDb, String)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_HasComplexRestrictions_Itinero_RouterDb_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this db contains complex restrictions for the given vehicle type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasComplexRestrictions(this RouterDb db, string vehicleType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">vehicleType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_HasIslandData_" data-uid="Itinero.RouterDbExtensions.HasIslandData*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_HasIslandData_Itinero_RouterDb_Profile_" data-uid="Itinero.RouterDbExtensions.HasIslandData(Itinero.RouterDb,Profile)"><a href="#collapsible-Itinero_RouterDbExtensions_HasIslandData_Itinero_RouterDb_Profile_" class="expander" data-toggle="collapse">HasIslandData(RouterDb, Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_HasIslandData_Itinero_RouterDb_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the routerdb already has island data for the given profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasIslandData(this RouterDb db, Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p><p>The router db.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Profile</span></span>
+        <span class="parametername">profile</span>
+        <p><p>The profile.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>True if there is island data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_HasRestrictions_" data-uid="Itinero.RouterDbExtensions.HasRestrictions*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_HasRestrictions_Itinero_RouterDb_System_String_" data-uid="Itinero.RouterDbExtensions.HasRestrictions(Itinero.RouterDb,System.String)"><a href="#collapsible-Itinero_RouterDbExtensions_HasRestrictions_Itinero_RouterDb_System_String_" class="expander" data-toggle="collapse">HasRestrictions(RouterDb, String)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_HasRestrictions_Itinero_RouterDb_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if this db contains restrictions for the given vehicle type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasRestrictions(this RouterDb db, string vehicleType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">vehicleType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_LocationOnNetwork_" data-uid="Itinero.RouterDbExtensions.LocationOnNetwork*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_LocationOnNetwork_Itinero_RouterDb_System_UInt32_System_UInt16_" data-uid="Itinero.RouterDbExtensions.LocationOnNetwork(Itinero.RouterDb,System.UInt32,System.UInt16)"><a href="#collapsible-Itinero_RouterDbExtensions_LocationOnNetwork_Itinero_RouterDb_System_UInt32_System_UInt16_" class="expander" data-toggle="collapse">LocationOnNetwork(RouterDb, UInt32, UInt16)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_LocationOnNetwork_Itinero_RouterDb_System_UInt32_System_UInt16_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the location on the network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate LocationOnNetwork(this RouterDb db, uint edgeId, ushort offset)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt32</span></span>
+        <span class="parametername">edgeId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.UInt16</span></span>
+        <span class="parametername">offset</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_Supports_" data-uid="Itinero.RouterDbExtensions.Supports*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_Supports_Itinero_RouterDb_Itinero_Profiles_Profile_" data-uid="Itinero.RouterDbExtensions.Supports(Itinero.RouterDb,Itinero.Profiles.Profile)"><a href="#collapsible-Itinero_RouterDbExtensions_Supports_Itinero_RouterDb_Itinero_Profiles_Profile_" class="expander" data-toggle="collapse">Supports(RouterDb, Profile)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_Supports_Itinero_RouterDb_Itinero_Profiles_Profile_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given profile is supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Supports(this RouterDb db, Profile profile)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a></span>
+        <span class="parametername">profile</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_SupportsAll_" data-uid="Itinero.RouterDbExtensions.SupportsAll*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_SupportsAll_Itinero_RouterDb_Itinero_Profiles_IProfileInstance___" data-uid="Itinero.RouterDbExtensions.SupportsAll(Itinero.RouterDb,Itinero.Profiles.IProfileInstance[])"><a href="#collapsible-Itinero_RouterDbExtensions_SupportsAll_Itinero_RouterDb_Itinero_Profiles_IProfileInstance___" class="expander" data-toggle="collapse">SupportsAll(RouterDb, IProfileInstance[])</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_SupportsAll_Itinero_RouterDb_Itinero_Profiles_IProfileInstance___" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if all of the given profiles are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SupportsAll(this RouterDb db, params IProfileInstance[] profiles)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.IProfileInstance.html">IProfileInstance</a>[]</span>
+        <span class="parametername">profiles</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_SupportsAll_" data-uid="Itinero.RouterDbExtensions.SupportsAll*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_SupportsAll_Itinero_RouterDb_Itinero_Profiles_Profile___" data-uid="Itinero.RouterDbExtensions.SupportsAll(Itinero.RouterDb,Itinero.Profiles.Profile[])"><a href="#collapsible-Itinero_RouterDbExtensions_SupportsAll_Itinero_RouterDb_Itinero_Profiles_Profile___" class="expander" data-toggle="collapse">SupportsAll(RouterDb, Profile[])</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_SupportsAll_Itinero_RouterDb_Itinero_Profiles_Profile___" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if all of the given profiles are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SupportsAll(this RouterDb db, params Profile[] profiles)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Profiles.Profile.html">Profile</a>[]</span>
+        <span class="parametername">profiles</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_WriteGeoJson_" data-uid="Itinero.RouterDbExtensions.WriteGeoJson*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_Stream_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" data-uid="Itinero.RouterDbExtensions.WriteGeoJson(Itinero.RouterDb,Stream,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_Stream_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">WriteGeoJson(RouterDb, Stream, Single, Single, Single, Single, Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_Stream_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all features inside the given bounding box and writes them as a geojson string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteGeoJson(this RouterDb db, Stream stream, float minLatitude, float minLongitude, float maxLatitude, float maxLongitude, bool includeEdges = true, bool includeVertices = true, bool includeProfileDetails = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLongitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLongitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeEdges</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeVertices</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_WriteGeoJson_" data-uid="Itinero.RouterDbExtensions.WriteGeoJson*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_TextWriter_System_Boolean_System_Boolean_System_Boolean_" data-uid="Itinero.RouterDbExtensions.WriteGeoJson(Itinero.RouterDb,TextWriter,System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_TextWriter_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">WriteGeoJson(RouterDb, TextWriter, Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_TextWriter_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all features inside the given bounding box and writes them as a geojson string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteGeoJson(this RouterDb db, TextWriter writer, bool includeEdges = true, bool includeVertices = true, bool includeProfileDetails = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TextWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeEdges</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeVertices</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_RouterDbExtensions_WriteGeoJson_" data-uid="Itinero.RouterDbExtensions.WriteGeoJson*"></a>
+  
+  <h4 id="Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_TextWriter_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" data-uid="Itinero.RouterDbExtensions.WriteGeoJson(Itinero.RouterDb,TextWriter,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean)"><a href="#collapsible-Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_TextWriter_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">WriteGeoJson(RouterDb, TextWriter, Single, Single, Single, Single, Boolean, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Itinero_RouterDbExtensions_WriteGeoJson_Itinero_RouterDb_TextWriter_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all features inside the given bounding box and writes them as a geojson string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteGeoJson(this RouterDb db, TextWriter writer, float minLatitude, float minLongitude, float maxLatitude, float maxLongitude, bool includeEdges = true, bool includeVertices = true, bool includeProfileDetails = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.RouterDb.html">RouterDb</a></span>
+        <span class="parametername">db</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">TextWriter</span></span>
+        <span class="parametername">writer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">minLongitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLatitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">maxLongitude</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeEdges</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeVertices</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">includeProfileDetails</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

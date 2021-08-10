@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NtsExtensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NtsExtensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenLR.Geo.NtsExtensions">
+  <h1 id="OpenLR_Geo_NtsExtensions" data-uid="OpenLR.Geo.NtsExtensions">Class NtsExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains extension methods related to NTS.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NtsExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OpenLR_Geo_NtsExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class NtsExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToAttributes_" data-uid="OpenLR.Geo.NtsExtensions.ToAttributes*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToAttributes_IAttributeCollection_" data-uid="OpenLR.Geo.NtsExtensions.ToAttributes(IAttributeCollection)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToAttributes_IAttributeCollection_" class="expander" data-toggle="collapse">ToAttributes(IAttributeCollection)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToAttributes_IAttributeCollection_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the attribute collection to an NTS attributes table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AttributesTable ToAttributes(this IAttributeCollection attributes)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IAttributeCollection</span></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">AttributesTable</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToCoordinate_" data-uid="OpenLR.Geo.NtsExtensions.ToCoordinate*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToCoordinate_OpenLR_Model_Coordinate_" data-uid="OpenLR.Geo.NtsExtensions.ToCoordinate(OpenLR.Model.Coordinate)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToCoordinate_OpenLR_Model_Coordinate_" class="expander" data-toggle="collapse">ToCoordinate(Coordinate)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToCoordinate_OpenLR_Model_Coordinate_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this line location to features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate ToCoordinate(this Coordinate coordinate)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Model.Coordinate.html">Coordinate</a></span>
+        <span class="parametername">coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToFeature_" data-uid="OpenLR.Geo.NtsExtensions.ToFeature*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToFeature_OpenLR_Model_LocationReferencePoint_" data-uid="OpenLR.Geo.NtsExtensions.ToFeature(OpenLR.Model.LocationReferencePoint)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToFeature_OpenLR_Model_LocationReferencePoint_" class="expander" data-toggle="collapse">ToFeature(LocationReferencePoint)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToFeature_OpenLR_Model_LocationReferencePoint_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this LRP to a feature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Feature ToFeature(this LocationReferencePoint point)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Model.LocationReferencePoint.html">LocationReferencePoint</a></span>
+        <span class="parametername">point</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Feature</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToFeature_" data-uid="OpenLR.Geo.NtsExtensions.ToFeature*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToFeature_RouterPoint_RouterDb_" data-uid="OpenLR.Geo.NtsExtensions.ToFeature(RouterPoint,RouterDb)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToFeature_RouterPoint_RouterDb_" class="expander" data-toggle="collapse">ToFeature(RouterPoint, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToFeature_RouterPoint_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this router point to a feature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Feature ToFeature(this RouterPoint routerPoint, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterPoint</span></span>
+        <span class="parametername">routerPoint</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Feature</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToFeatures_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToFeatures_CandidatePathSegment_RouterDb_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures(CandidatePathSegment,RouterDb)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_CandidatePathSegment_RouterDb_" class="expander" data-toggle="collapse">ToFeatures(CandidatePathSegment, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_CandidatePathSegment_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this candidate to a feature collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FeatureCollection ToFeatures(this CandidatePathSegment candidate, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">CandidatePathSegment</span></span>
+        <span class="parametername">candidate</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">FeatureCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToFeatures_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToFeatures_Feature_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures(Feature)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_Feature_" class="expander" data-toggle="collapse">ToFeatures(Feature)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_Feature_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts one feature into a feature collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FeatureCollection ToFeatures(this Feature feature)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Feature</span></span>
+        <span class="parametername">feature</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">FeatureCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToFeatures_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Model_Locations_LineLocation_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures(OpenLR.Model.Locations.LineLocation)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Model_Locations_LineLocation_" class="expander" data-toggle="collapse">ToFeatures(LineLocation)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Model_Locations_LineLocation_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the given line location to features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FeatureCollection ToFeatures(this LineLocation line)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Model.Locations.LineLocation.html">LineLocation</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">FeatureCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToFeatures_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Model_Locations_PointAlongLineLocation_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures(OpenLR.Model.Locations.PointAlongLineLocation)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Model_Locations_PointAlongLineLocation_" class="expander" data-toggle="collapse">ToFeatures(PointAlongLineLocation)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Model_Locations_PointAlongLineLocation_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this location to a feature collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FeatureCollection ToFeatures(this PointAlongLineLocation location)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Model.Locations.PointAlongLineLocation.html">PointAlongLineLocation</a></span>
+        <span class="parametername">location</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">FeatureCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToFeatures_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures(OpenLR.Referenced.Locations.ReferencedLine,RouterDb)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="expander" data-toggle="collapse">ToFeatures(ReferencedLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this line location to features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FeatureCollection ToFeatures(this ReferencedLine line, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">FeatureCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToFeatures_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_" data-uid="OpenLR.Geo.NtsExtensions.ToFeatures(OpenLR.Referenced.Locations.ReferencedPointAlongLine,RouterDb)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_" class="expander" data-toggle="collapse">ToFeatures(ReferencedPointAlongLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToFeatures_OpenLR_Referenced_Locations_ReferencedPointAlongLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this line location to features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FeatureCollection ToFeatures(this ReferencedPointAlongLine line, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedPointAlongLine.html">ReferencedPointAlongLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">FeatureCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToGeoAPICoordinate_" data-uid="OpenLR.Geo.NtsExtensions.ToGeoAPICoordinate*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToGeoAPICoordinate_Itinero_LocalGeo_Coordinate_" data-uid="OpenLR.Geo.NtsExtensions.ToGeoAPICoordinate(Itinero.LocalGeo.Coordinate)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToGeoAPICoordinate_Itinero_LocalGeo_Coordinate_" class="expander" data-toggle="collapse">ToGeoAPICoordinate(Itinero.LocalGeo.Coordinate)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToGeoAPICoordinate_Itinero_LocalGeo_Coordinate_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts the given coordinate to corresponding GeoAPI coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coordinate ToGeoAPICoordinate(this Itinero.LocalGeo.Coordinate coordinate)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="../itinero/Itinero.LocalGeo.Coordinate.html">Itinero.LocalGeo.Coordinate</a></span>
+        <span class="parametername">coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Coordinate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OpenLR_Geo_NtsExtensions_ToLineString_" data-uid="OpenLR.Geo.NtsExtensions.ToLineString*"></a>
+  
+  <h4 id="OpenLR_Geo_NtsExtensions_ToLineString_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" data-uid="OpenLR.Geo.NtsExtensions.ToLineString(OpenLR.Referenced.Locations.ReferencedLine,RouterDb)"><a href="#collapsible-OpenLR_Geo_NtsExtensions_ToLineString_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="expander" data-toggle="collapse">ToLineString(ReferencedLine, RouterDb)</a></h4>
+  
+  <div id="collapsible-OpenLR_Geo_NtsExtensions_ToLineString_OpenLR_Referenced_Locations_ReferencedLine_RouterDb_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts this line location to a line string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LineString ToLineString(this ReferencedLine line, RouterDb routerDb)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OpenLR.Referenced.Locations.ReferencedLine.html">ReferencedLine</a></span>
+        <span class="parametername">line</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">RouterDb</span></span>
+        <span class="parametername">routerDb</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">LineString</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

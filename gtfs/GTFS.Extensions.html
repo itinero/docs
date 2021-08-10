@@ -1,0 +1,927 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Extensions
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Extensions
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GTFS.Extensions">
+  <h1 id="GTFS_Extensions" data-uid="GTFS.Extensions">Class Extensions
+  </h1>
+  <div class="markdown level0 summary"><p>Contains common extensions for this GTFS library.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Extensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="GTFS_Extensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Extensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GTFS_Extensions_AddOrReplace_" data-uid="GTFS.Extensions.AddOrReplace*"></a>
+  
+  <h4 id="GTFS_Extensions_AddOrReplace_GTFS_Entities_Collections_IStopTimeCollection_GTFS_Entities_StopTime_" data-uid="GTFS.Extensions.AddOrReplace(GTFS.Entities.Collections.IStopTimeCollection,GTFS.Entities.StopTime)"><a href="#collapsible-GTFS_Extensions_AddOrReplace_GTFS_Entities_Collections_IStopTimeCollection_GTFS_Entities_StopTime_" class="expander" data-toggle="collapse">AddOrReplace(IStopTimeCollection, StopTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_AddOrReplace_GTFS_Entities_Collections_IStopTimeCollection_GTFS_Entities_StopTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or replaces an entity in the given collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOrReplace(this IStopTimeCollection collection, StopTime entity)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Collections.IStopTimeCollection.html">IStopTimeCollection</a></span>
+        <span class="parametername">collection</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.StopTime.html">StopTime</a></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_AddOrReplace_" data-uid="GTFS.Extensions.AddOrReplace*"></a>
+  
+  <h4 id="GTFS_Extensions_AddOrReplace_GTFS_Entities_Collections_ITransferCollection_GTFS_Entities_Transfer_" data-uid="GTFS.Extensions.AddOrReplace(GTFS.Entities.Collections.ITransferCollection,GTFS.Entities.Transfer)"><a href="#collapsible-GTFS_Extensions_AddOrReplace_GTFS_Entities_Collections_ITransferCollection_GTFS_Entities_Transfer_" class="expander" data-toggle="collapse">AddOrReplace(ITransferCollection, Transfer)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_AddOrReplace_GTFS_Entities_Collections_ITransferCollection_GTFS_Entities_Transfer_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or replaces an entity in the given collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOrReplace(this ITransferCollection collection, Transfer entity)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Collections.ITransferCollection.html">ITransferCollection</a></span>
+        <span class="parametername">collection</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Transfer.html">Transfer</a></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_AddOrReplace_" data-uid="GTFS.Extensions.AddOrReplace*"></a>
+  
+  <h4 id="GTFS_Extensions_AddOrReplace__1_GTFS_Entities_Collections_IEntityCollection___0____0_" data-uid="GTFS.Extensions.AddOrReplace``1(GTFS.Entities.Collections.IEntityCollection{``0},``0)"><a href="#collapsible-GTFS_Extensions_AddOrReplace__1_GTFS_Entities_Collections_IEntityCollection___0____0_" class="expander" data-toggle="collapse">AddOrReplace&lt;T&gt;(IEntityCollection&lt;T&gt;, T)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_AddOrReplace__1_GTFS_Entities_Collections_IEntityCollection___0____0_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or replaces an entity in the given collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOrReplace&lt;T&gt;(this IEntityCollection&lt;T&gt; collection, T entity)where T : GTFSEntity</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Collections.IEntityCollection-1.html">IEntityCollection</a>&lt;T&gt;</span>
+        <span class="parametername">collection</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_AddOrReplace_" data-uid="GTFS.Extensions.AddOrReplace*"></a>
+  
+  <h4 id="GTFS_Extensions_AddOrReplace__1_GTFS_Entities_Collections_IUniqueEntityCollection___0____0_System_Func___0_System_String__" data-uid="GTFS.Extensions.AddOrReplace``1(GTFS.Entities.Collections.IUniqueEntityCollection{``0},``0,System.Func{``0,System.String})"><a href="#collapsible-GTFS_Extensions_AddOrReplace__1_GTFS_Entities_Collections_IUniqueEntityCollection___0____0_System_Func___0_System_String__" class="expander" data-toggle="collapse">AddOrReplace&lt;T&gt;(IUniqueEntityCollection&lt;T&gt;, T, Func&lt;T, String&gt;)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_AddOrReplace__1_GTFS_Entities_Collections_IUniqueEntityCollection___0____0_System_Func___0_System_String__" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or replaces an entity in the given collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOrReplace&lt;T&gt;(this IUniqueEntityCollection&lt;T&gt; collection, T entity, Func&lt;T, string&gt; getId)where T : GTFSEntity</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.Entities.Collections.IUniqueEntityCollection-1.html">IUniqueEntityCollection</a>&lt;T&gt;</span>
+        <span class="parametername">collection</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Func</span>&lt;T, <span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">getId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_CopyTo_" data-uid="GTFS.Extensions.CopyTo*"></a>
+  
+  <h4 id="GTFS_Extensions_CopyTo_GTFS_IGTFSFeed_GTFS_IGTFSFeed_" data-uid="GTFS.Extensions.CopyTo(GTFS.IGTFSFeed,GTFS.IGTFSFeed)"><a href="#collapsible-GTFS_Extensions_CopyTo_GTFS_IGTFSFeed_GTFS_IGTFSFeed_" class="expander" data-toggle="collapse">CopyTo(IGTFSFeed, IGTFSFeed)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_CopyTo_GTFS_IGTFSFeed_GTFS_IGTFSFeed_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies this feed to the given feed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyTo(this IGTFSFeed thisFeed, IGTFSFeed feed)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.IGTFSFeed.html">IGTFSFeed</a></span>
+        <span class="parametername">thisFeed</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.IGTFSFeed.html">IGTFSFeed</a></span>
+        <span class="parametername">feed</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_DistanceInMeter_" data-uid="GTFS.Extensions.DistanceInMeter*"></a>
+  
+  <h4 id="GTFS_Extensions_DistanceInMeter_System_Double_System_Double_System_Double_System_Double_" data-uid="GTFS.Extensions.DistanceInMeter(System.Double,System.Double,System.Double,System.Double)"><a href="#collapsible-GTFS_Extensions_DistanceInMeter_System_Double_System_Double_System_Double_System_Double_" class="expander" data-toggle="collapse">DistanceInMeter(Double, Double, Double, Double)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_DistanceInMeter_System_Double_System_Double_System_Double_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the distance in meter between the two given coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DistanceInMeter(double latitude1, double longitude1, double latitude2, double longitude2)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">latitude1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">longitude1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">latitude2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">longitude2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_FastParse_" data-uid="GTFS.Extensions.FastParse*"></a>
+  
+  <h4 id="GTFS_Extensions_FastParse_System_Char_" data-uid="GTFS.Extensions.FastParse(System.Char)"><a href="#collapsible-GTFS_Extensions_FastParse_System_Char_" class="expander" data-toggle="collapse">FastParse(Char)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_FastParse_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses a number from a char value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FastParse(this char value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Char</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_FastParse_" data-uid="GTFS.Extensions.FastParse*"></a>
+  
+  <h4 id="GTFS_Extensions_FastParse_System_String_System_Int32_System_Int32_" data-uid="GTFS.Extensions.FastParse(System.String,System.Int32,System.Int32)"><a href="#collapsible-GTFS_Extensions_FastParse_System_String_System_Int32_System_Int32_" class="expander" data-toggle="collapse">FastParse(String, Int32, Int32)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_FastParse_System_String_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses an integer number from a string at the given index and with the given length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FastParse(this string value, int idx, int count)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">idx</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">count</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_FromUnixTime_" data-uid="GTFS.Extensions.FromUnixTime*"></a>
+  
+  <h4 id="GTFS_Extensions_FromUnixTime_System_Int64_" data-uid="GTFS.Extensions.FromUnixTime(System.Int64)"><a href="#collapsible-GTFS_Extensions_FromUnixTime_System_Int64_" class="expander" data-toggle="collapse">FromUnixTime(Int64)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_FromUnixTime_System_Int64_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts a number of milliseconds from 1/1/1970 into a standard DateTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime FromUnixTime(this long milliseconds)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">milliseconds</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.DateTime</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_Merge_" data-uid="GTFS.Extensions.Merge*"></a>
+  
+  <h4 id="GTFS_Extensions_Merge_GTFS_IGTFSFeed_GTFS_IGTFSFeed_" data-uid="GTFS.Extensions.Merge(GTFS.IGTFSFeed,GTFS.IGTFSFeed)"><a href="#collapsible-GTFS_Extensions_Merge_GTFS_IGTFSFeed_GTFS_IGTFSFeed_" class="expander" data-toggle="collapse">Merge(IGTFSFeed, IGTFSFeed)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_Merge_GTFS_IGTFSFeed_GTFS_IGTFSFeed_" class="collapse in">
+  <div class="markdown level1 summary"><p>Merges the content of the given feed with this feed by adding or replacing entities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Merge(this IGTFSFeed thisFeed, IGTFSFeed feed)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.IGTFSFeed.html">IGTFSFeed</a></span>
+        <span class="parametername">thisFeed</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="GTFS.IGTFSFeed.html">IGTFSFeed</a></span>
+        <span class="parametername">feed</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_SplitIntoGroupsByGroupIdx_" data-uid="GTFS.Extensions.SplitIntoGroupsByGroupIdx*"></a>
+  
+  <h4 id="GTFS_Extensions_SplitIntoGroupsByGroupIdx__1_System_Collections_Generic_IEnumerable___0__System_Int32_" data-uid="GTFS.Extensions.SplitIntoGroupsByGroupIdx``1(System.Collections.Generic.IEnumerable{``0},System.Int32)"><a href="#collapsible-GTFS_Extensions_SplitIntoGroupsByGroupIdx__1_System_Collections_Generic_IEnumerable___0__System_Int32_" class="expander" data-toggle="collapse">SplitIntoGroupsByGroupIdx&lt;T&gt;(IEnumerable&lt;T&gt;, Int32)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_SplitIntoGroupsByGroupIdx__1_System_Collections_Generic_IEnumerable___0__System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Splits the given list of entities into groups of size maxGroupCount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;int, List&lt;T&gt;&gt; SplitIntoGroupsByGroupIdx&lt;T&gt;(this IEnumerable&lt;T&gt; _self, int maxGroupCount = 900)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</span>
+        <span class="parametername">_self</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">maxGroupCount</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_ToArgbInt_" data-uid="GTFS.Extensions.ToArgbInt*"></a>
+  
+  <h4 id="GTFS_Extensions_ToArgbInt_System_String_" data-uid="GTFS.Extensions.ToArgbInt(System.String)"><a href="#collapsible-GTFS_Extensions_ToArgbInt_System_String_" class="expander" data-toggle="collapse">ToArgbInt(String)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_ToArgbInt_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts a hex color string to an argb value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ? ToArgbInt(this string value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_ToHexColorString_" data-uid="GTFS.Extensions.ToHexColorString*"></a>
+  
+  <h4 id="GTFS_Extensions_ToHexColorString_System_Nullable_System_Int32__" data-uid="GTFS.Extensions.ToHexColorString(System.Nullable{System.Int32})"><a href="#collapsible-GTFS_Extensions_ToHexColorString_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">ToHexColorString(Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_ToHexColorString_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts an integer rgb color value to a hex color string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToHexColorString(this int ? value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_ToInvariantString_" data-uid="GTFS.Extensions.ToInvariantString*"></a>
+  
+  <h4 id="GTFS_Extensions_ToInvariantString_System_Object_" data-uid="GTFS.Extensions.ToInvariantString(System.Object)"><a href="#collapsible-GTFS_Extensions_ToInvariantString_System_Object_" class="expander" data-toggle="collapse">ToInvariantString(Object)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_ToInvariantString_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns a string representing the object in a culture invariant way.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToInvariantString(this object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="GTFS_Extensions_ToUnixTime_" data-uid="GTFS.Extensions.ToUnixTime*"></a>
+  
+  <h4 id="GTFS_Extensions_ToUnixTime_System_DateTime_" data-uid="GTFS.Extensions.ToUnixTime(System.DateTime)"><a href="#collapsible-GTFS_Extensions_ToUnixTime_System_DateTime_" class="expander" data-toggle="collapse">ToUnixTime(DateTime)</a></h4>
+  
+  <div id="collapsible-GTFS_Extensions_ToUnixTime_System_DateTime_" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts a standard DateTime into the number of milliseconds since 1/1/1970.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long ToUnixTime(this DateTime date)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.DateTime</span></span>
+        <span class="parametername">date</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

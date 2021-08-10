@@ -1,0 +1,1508 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IAttributeCollectionExtension
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IAttributeCollectionExtension
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Itinero.Attributes.IAttributeCollectionExtension">
+  <h1 id="Itinero_Attributes_IAttributeCollectionExtension" data-uid="Itinero.Attributes.IAttributeCollectionExtension">Class IAttributeCollectionExtension
+  </h1>
+  <div class="markdown level0 summary"><p>Contains extension methods for attribute collections.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IAttributeCollectionExtension</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="Itinero_Attributes_IAttributeCollectionExtension_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class IAttributeCollectionExtension</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_AddOrReplace_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.AddOrReplace*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_AddOrReplace_Itinero_Attributes_IAttributeCollection_IEnumerable_Itinero_Attributes_Attribute__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.AddOrReplace(Itinero.Attributes.IAttributeCollection,IEnumerable{Itinero.Attributes.Attribute})"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_AddOrReplace_Itinero_Attributes_IAttributeCollection_IEnumerable_Itinero_Attributes_Attribute__" class="expander" data-toggle="collapse">AddOrReplace(IAttributeCollection, IEnumerable&lt;Attribute&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_AddOrReplace_Itinero_Attributes_IAttributeCollection_IEnumerable_Itinero_Attributes_Attribute__" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or replaces the existing attributes to/in the given collection of attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOrReplace(this IAttributeCollection attributes, IEnumerable&lt;Attribute&gt; other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IAttributeCollection.html">IAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Itinero.Attributes.Attribute.html">Attribute</a>&gt;</span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_AddOrReplace_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.AddOrReplace*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_AddOrReplace_Itinero_Attributes_IAttributeCollection_Itinero_Attributes_Attribute_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.AddOrReplace(Itinero.Attributes.IAttributeCollection,Itinero.Attributes.Attribute)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_AddOrReplace_Itinero_Attributes_IAttributeCollection_Itinero_Attributes_Attribute_" class="expander" data-toggle="collapse">AddOrReplace(IAttributeCollection, Attribute)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_AddOrReplace_Itinero_Attributes_IAttributeCollection_Itinero_Attributes_Attribute_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddOrReplace(this IAttributeCollection attributes, Attribute attribute)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IAttributeCollection.html">IAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.Attribute.html">Attribute</a></span>
+        <span class="parametername">attribute</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_Contains_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.Contains*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_Contains_Itinero_Attributes_IReadonlyAttributeCollection_System_String_System_String_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.Contains(Itinero.Attributes.IReadonlyAttributeCollection,System.String,System.String)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_Contains_Itinero_Attributes_IReadonlyAttributeCollection_System_String_System_String_" class="expander" data-toggle="collapse">Contains(IReadonlyAttributeCollection, String, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_Contains_Itinero_Attributes_IReadonlyAttributeCollection_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given attribute is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(this IReadonlyAttributeCollection attributes, string key, string value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_ContainsSame_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.ContainsSame*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_ContainsSame_Itinero_Attributes_IReadonlyAttributeCollection_Itinero_Attributes_IReadonlyAttributeCollection_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.ContainsSame(Itinero.Attributes.IReadonlyAttributeCollection,Itinero.Attributes.IReadonlyAttributeCollection)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_ContainsSame_Itinero_Attributes_IReadonlyAttributeCollection_Itinero_Attributes_IReadonlyAttributeCollection_" class="expander" data-toggle="collapse">ContainsSame(IReadonlyAttributeCollection, IReadonlyAttributeCollection)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_ContainsSame_Itinero_Attributes_IReadonlyAttributeCollection_Itinero_Attributes_IReadonlyAttributeCollection_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given attribute collection contains the same attributes than the given collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsSame(this IReadonlyAttributeCollection attributes, IReadonlyAttributeCollection other)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_ContainsSame_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.ContainsSame*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_ContainsSame_Itinero_Attributes_IReadonlyAttributeCollection_Itinero_Attributes_IReadonlyAttributeCollection_System_String___" data-uid="Itinero.Attributes.IAttributeCollectionExtension.ContainsSame(Itinero.Attributes.IReadonlyAttributeCollection,Itinero.Attributes.IReadonlyAttributeCollection,System.String[])"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_ContainsSame_Itinero_Attributes_IReadonlyAttributeCollection_Itinero_Attributes_IReadonlyAttributeCollection_System_String___" class="expander" data-toggle="collapse">ContainsSame(IReadonlyAttributeCollection, IReadonlyAttributeCollection, String[])</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_ContainsSame_Itinero_Attributes_IReadonlyAttributeCollection_Itinero_Attributes_IReadonlyAttributeCollection_System_String___" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given attribute collection contains the same attributes than the given collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsSame(this IReadonlyAttributeCollection attributes, IReadonlyAttributeCollection other, params string[] exclude)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span>[]</span>
+        <span class="parametername">exclude</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_DeserializeWithSize_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.DeserializeWithSize*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_DeserializeWithSize_Stream_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.DeserializeWithSize(Stream)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_DeserializeWithSize_Stream_" class="expander" data-toggle="collapse">DeserializeWithSize(Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_DeserializeWithSize_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Deserializes the attribute collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAttributeCollection DeserializeWithSize(Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Itinero.Attributes.IAttributeCollection.html">IAttributeCollection</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_GetAccessTag_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.GetAccessTag*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_GetAccessTag_Itinero_Attributes_IReadonlyAttributeCollection_IEnumerable_System_String__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.GetAccessTag(Itinero.Attributes.IReadonlyAttributeCollection,IEnumerable{System.String})"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_GetAccessTag_Itinero_Attributes_IReadonlyAttributeCollection_IEnumerable_System_String__" class="expander" data-toggle="collapse">GetAccessTag(IReadonlyAttributeCollection, IEnumerable&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_GetAccessTag_Itinero_Attributes_IReadonlyAttributeCollection_IEnumerable_System_String__" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches the attributes collection for the access attributes and returns the associated values.</p>
+<p><a href="http://wiki.openstreetmap.org/wiki/Key:access">http://wiki.openstreetmap.org/wiki/Key:access</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetAccessTag(this IReadonlyAttributeCollection tags, IEnumerable&lt;string&gt; accessTagHierachy)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">tags</span>
+        <p><p>The tags to search.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">accessTagHierachy</span>
+        <p><p>The hierarchy of <code>Access</code>-Tags for different vehicle types.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p>The best fitting value is returned.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_IsFalse_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.IsFalse*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_IsFalse_Itinero_Attributes_IReadonlyAttributeCollection_System_String_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.IsFalse(Itinero.Attributes.IReadonlyAttributeCollection,System.String)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_IsFalse_Itinero_Attributes_IReadonlyAttributeCollection_System_String_" class="expander" data-toggle="collapse">IsFalse(IReadonlyAttributeCollection, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_IsFalse_Itinero_Attributes_IReadonlyAttributeCollection_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given tags key has an associated value that can be interpreted as false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFalse(this IReadonlyAttributeCollection tags, string tagKey)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">tags</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">tagKey</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_IsTrue_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.IsTrue*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_IsTrue_Itinero_Attributes_IReadonlyAttributeCollection_System_String_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.IsTrue(Itinero.Attributes.IReadonlyAttributeCollection,System.String)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_IsTrue_Itinero_Attributes_IReadonlyAttributeCollection_System_String_" class="expander" data-toggle="collapse">IsTrue(IReadonlyAttributeCollection, String)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_IsTrue_Itinero_Attributes_IReadonlyAttributeCollection_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns true if the given tags key has an associated value that can be interpreted as true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTrue(this IReadonlyAttributeCollection tags, string tagKey)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">tags</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">tagKey</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_SerializeWithSize_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.SerializeWithSize*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_SerializeWithSize_Itinero_Attributes_IAttributeCollection_Stream_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.SerializeWithSize(Itinero.Attributes.IAttributeCollection,Stream)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_SerializeWithSize_Itinero_Attributes_IAttributeCollection_Stream_" class="expander" data-toggle="collapse">SerializeWithSize(IAttributeCollection, Stream)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_SerializeWithSize_Itinero_Attributes_IAttributeCollection_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes this attribute collection with size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long SerializeWithSize(this IAttributeCollection attributes, Stream stream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IAttributeCollection.html">IAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_SetSingle_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.SetSingle*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_SetSingle_Itinero_Attributes_IAttributeCollection_System_String_System_Single_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.SetSingle(Itinero.Attributes.IAttributeCollection,System.String,System.Single)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_SetSingle_Itinero_Attributes_IAttributeCollection_System_String_System_Single_" class="expander" data-toggle="collapse">SetSingle(IAttributeCollection, String, Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_SetSingle_Itinero_Attributes_IAttributeCollection_System_String_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets a single value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSingle(this IAttributeCollection attributes, string key, float value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IAttributeCollection.html">IAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_ToStringEmptyWhenNull_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.ToStringEmptyWhenNull*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_ToStringEmptyWhenNull_System_Object_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.ToStringEmptyWhenNull(System.Object)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_ToStringEmptyWhenNull_System_Object_" class="expander" data-toggle="collapse">ToStringEmptyWhenNull(Object)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_ToStringEmptyWhenNull_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the result of the ToString() method or an empty string
+when the given object is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToStringEmptyWhenNull(this object obj)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxAxleLoad_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxAxleLoad*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxAxleLoad_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxAxleLoad(Itinero.Attributes.IReadonlyAttributeCollection,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxAxleLoad_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="expander" data-toggle="collapse">TryGetMaxAxleLoad(IReadonlyAttributeCollection, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxAxleLoad_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches for a max axle load tag and returns the associated value.</p>
+<p><a href="http://wiki.openstreetmap.org/wiki/Key:maxaxleload">http://wiki.openstreetmap.org/wiki/Key:maxaxleload</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetMaxAxleLoad(this IReadonlyAttributeCollection tags, out float kilogram)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">tags</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">kilogram</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxHeight_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxHeight*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxHeight_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxHeight(Itinero.Attributes.IReadonlyAttributeCollection,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxHeight_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="expander" data-toggle="collapse">TryGetMaxHeight(IReadonlyAttributeCollection, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxHeight_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches for a max height tag and returns the associated value.</p>
+<p><a href="http://wiki.openstreetmap.org/wiki/Maxheight">http://wiki.openstreetmap.org/wiki/Maxheight</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetMaxHeight(this IReadonlyAttributeCollection tags, out float meter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">tags</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">meter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxLength_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxLength*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxLength_IDictionary_System_String_System_String__System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxLength(IDictionary{System.String,System.String},System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxLength_IDictionary_System_String_System_String__System_Single__" class="expander" data-toggle="collapse">TryGetMaxLength(IDictionary&lt;String, String&gt;, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxLength_IDictionary_System_String_System_String__System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches for a max length tag and returns the associated value.</p>
+<p><a href="http://wiki.openstreetmap.org/wiki/Key:maxlength">http://wiki.openstreetmap.org/wiki/Key:maxlength</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetMaxLength(this IDictionary&lt;string, string&gt; tags, out float meter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">tags</span>
+        <p><p>The tags to search.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">meter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxSpeed_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxSpeed*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxSpeed_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxSpeed(Itinero.Attributes.IReadonlyAttributeCollection,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxSpeed_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="expander" data-toggle="collapse">TryGetMaxSpeed(IReadonlyAttributeCollection, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxSpeed_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches for a maxspeed tag and returns the associated value.</p>
+<p><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed">http://wiki.openstreetmap.org/wiki/Key:maxspeed</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetMaxSpeed(this IReadonlyAttributeCollection attributes, out float kmPerHour)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">kmPerHour</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxWeight_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxWeight*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxWeight_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxWeight(Itinero.Attributes.IReadonlyAttributeCollection,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxWeight_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="expander" data-toggle="collapse">TryGetMaxWeight(IReadonlyAttributeCollection, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxWeight_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches for a maxweight tag and returns the associated value.</p>
+<p><a href="http://wiki.openstreetmap.org/wiki/Key:maxweight">http://wiki.openstreetmap.org/wiki/Key:maxweight</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetMaxWeight(this IReadonlyAttributeCollection tags, out float kilogram)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">tags</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">kilogram</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxWidth_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxWidth*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxWidth_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetMaxWidth(Itinero.Attributes.IReadonlyAttributeCollection,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxWidth_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="expander" data-toggle="collapse">TryGetMaxWidth(IReadonlyAttributeCollection, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetMaxWidth_Itinero_Attributes_IReadonlyAttributeCollection_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches for a max width tag and returns the associated value.</p>
+<p><a href="http://wiki.openstreetmap.org/wiki/Key:maxwidth">http://wiki.openstreetmap.org/wiki/Key:maxwidth</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetMaxWidth(this IReadonlyAttributeCollection attributes, out float meter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p><p>The tags to search.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">meter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryGetSingle_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetSingle*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryGetSingle_Itinero_Attributes_IReadonlyAttributeCollection_System_String_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryGetSingle(Itinero.Attributes.IReadonlyAttributeCollection,System.String,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetSingle_Itinero_Attributes_IReadonlyAttributeCollection_System_String_System_Single__" class="expander" data-toggle="collapse">TryGetSingle(IReadonlyAttributeCollection, String, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryGetSingle_Itinero_Attributes_IReadonlyAttributeCollection_System_String_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to get a single value for the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSingle(this IReadonlyAttributeCollection attributes, string key, out float value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Itinero.Attributes.IReadonlyAttributeCollection.html">IReadonlyAttributeCollection</a></span>
+        <span class="parametername">attributes</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryParseKilometerPerHour_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseKilometerPerHour*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryParseKilometerPerHour_System_String_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseKilometerPerHour(System.String,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseKilometerPerHour_System_String_System_Single__" class="expander" data-toggle="collapse">TryParseKilometerPerHour(String, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseKilometerPerHour_System_String_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to parse a string containing a kilometer per hour value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParseKilometerPerHour(string s, out float kmPerHour)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">kmPerHour</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryParseKnots_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseKnots*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryParseKnots_System_String_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseKnots(System.String,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseKnots_System_String_System_Single__" class="expander" data-toggle="collapse">TryParseKnots(String, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseKnots_System_String_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to parse a string containing knots.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParseKnots(string s, out float knots)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">knots</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryParseLength_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseLength*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryParseLength_System_String_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseLength(System.String,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseLength_System_String_System_Single__" class="expander" data-toggle="collapse">TryParseLength(String, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseLength_System_String_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to parse a distance measure from a given tag-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParseLength(string s, out float meter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">meter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryParseMilesPerHour_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseMilesPerHour*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryParseMilesPerHour_System_String_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseMilesPerHour(System.String,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseMilesPerHour_System_String_System_Single__" class="expander" data-toggle="collapse">TryParseMilesPerHour(String, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseMilesPerHour_System_String_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to parse a string containing a miles per hour value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParseMilesPerHour(string s, out float milesPerHour)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">milesPerHour</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryParseSpeed_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseSpeed*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryParseSpeed_System_String_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseSpeed(System.String,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseSpeed_System_String_System_Single__" class="expander" data-toggle="collapse">TryParseSpeed(String, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseSpeed_System_String_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to parse a speed value from a given tag-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParseSpeed(string s, out float kmPerHour)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">kmPerHour</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Itinero_Attributes_IAttributeCollectionExtension_TryParseWeight_" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseWeight*"></a>
+  
+  <h4 id="Itinero_Attributes_IAttributeCollectionExtension_TryParseWeight_System_String_System_Single__" data-uid="Itinero.Attributes.IAttributeCollectionExtension.TryParseWeight(System.String,System.Single@)"><a href="#collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseWeight_System_String_System_Single__" class="expander" data-toggle="collapse">TryParseWeight(String, out Single)</a></h4>
+  
+  <div id="collapsible-Itinero_Attributes_IAttributeCollectionExtension_TryParseWeight_System_String_System_Single__" class="collapse in">
+  <div class="markdown level1 summary"><p>Tries to parse a weight value from a given tag-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParseWeight(string s, out float kilogram)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">s</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Single</span></span>
+        <span class="parametername">kilogram</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

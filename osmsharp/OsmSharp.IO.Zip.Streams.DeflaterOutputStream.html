@@ -1,0 +1,1190 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DeflaterOutputStream
+   | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DeflaterOutputStream
+   | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream">
+  <h1 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream">Class DeflaterOutputStream
+  </h1>
+  <div class="markdown level0 summary"><p>A special stream deflating or compressing the bytes that are
+written to it.  It uses a Deflater to perform actual deflating.<br>
+Authors of the original java version : Tom Tromey, Jochen Hoenicke </p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DeflaterOutputStream</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  
+  <h5 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DeflaterOutputStream : Stream</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.#ctor*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.#ctor(Stream)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_" class="expander" data-toggle="collapse">DeflaterOutputStream(Stream)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new DeflaterOutputStream with a default Deflater and default buffer size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeflaterOutputStream(Stream baseOutputStream)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">baseOutputStream</span>
+        <p><p>the output stream where deflated output should be written.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.#ctor*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_OsmSharp_IO_Zip_Deflater_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.#ctor(Stream,OsmSharp.IO.Zip.Deflater)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_OsmSharp_IO_Zip_Deflater_" class="expander" data-toggle="collapse">DeflaterOutputStream(Stream, Deflater)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_OsmSharp_IO_Zip_Deflater_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new DeflaterOutputStream with the given Deflater and
+default buffer size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeflaterOutputStream(Stream baseOutputStream, Deflater deflater)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">baseOutputStream</span>
+        <p><p>the output stream where deflated output should be written.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.IO.Zip.Deflater.html">Deflater</a></span>
+        <span class="parametername">deflater</span>
+        <p><p>the underlying deflater.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.#ctor*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_OsmSharp_IO_Zip_Deflater_System_Int32_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.#ctor(Stream,OsmSharp.IO.Zip.Deflater,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_OsmSharp_IO_Zip_Deflater_System_Int32_" class="expander" data-toggle="collapse">DeflaterOutputStream(Stream, Deflater, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream__ctor_Stream_OsmSharp_IO_Zip_Deflater_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a new DeflaterOutputStream with the given Deflater and
+buffer size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeflaterOutputStream(Stream baseOutputStream, Deflater deflater, int bufferSize)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">baseOutputStream</span>
+        <p><p>The output stream where deflated output is written.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="OsmSharp.IO.Zip.Deflater.html">Deflater</a></span>
+        <span class="parametername">deflater</span>
+        <p><p>The underlying deflater to use</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">bufferSize</span>
+        <p><p>The buffer size in bytes to use when deflating (minimum value 512)</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentOutOfRangeException</span>
+        <p><p>bufsize is less than or equal to zero.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentException</span>
+        <p><p>baseOutputStream does not support writing</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentNullException</span>
+        <p><p>deflater instance is null</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_AESAuthCode" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.AESAuthCode"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_AESAuthCode" class="expander" data-toggle="collapse">AESAuthCode</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_AESAuthCode" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the 10 byte AUTH CODE to be appended immediately following the AES data stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte[] AESAuthCode</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Byte</span>[]
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_baseOutputStream_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.baseOutputStream_"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_baseOutputStream_" class="expander" data-toggle="collapse">baseOutputStream_</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_baseOutputStream_" class="collapse in">
+  <div class="markdown level1 summary"><p>Base stream the deflater depends on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Stream baseOutputStream_</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_deflater_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.deflater_"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_deflater_" class="expander" data-toggle="collapse">deflater_</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_deflater_" class="collapse in">
+  <div class="markdown level1 summary"><p>The deflater which is used to deflate the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Deflater deflater_</code></pre>
+  </div>
+  
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="OsmSharp.IO.Zip.Deflater.html">Deflater</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanPatchEntries_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.CanPatchEntries*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanPatchEntries" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.CanPatchEntries"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanPatchEntries" class="expander" data-toggle="collapse">CanPatchEntries</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanPatchEntries" class="collapse in">
+  <div class="markdown level1 summary"><p>Allows client to determine if an entry can be patched after its added</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanPatchEntries { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanRead_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.CanRead*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanRead" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.CanRead"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanRead" class="expander" data-toggle="collapse">CanRead</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanRead" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets value indicating stream can be read from</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanRead { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanSeek_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.CanSeek*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanSeek" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.CanSeek"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanSeek" class="expander" data-toggle="collapse">CanSeek</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanSeek" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating if seeking is supported for this stream
+This property always returns false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanSeek { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanWrite_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.CanWrite*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanWrite" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.CanWrite"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanWrite" class="expander" data-toggle="collapse">CanWrite</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_CanWrite" class="collapse in">
+  <div class="markdown level1 summary"><p>Get value indicating if this stream supports writing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanWrite { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_IsStreamOwner_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.IsStreamOwner*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_IsStreamOwner" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.IsStreamOwner"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_IsStreamOwner" class="expander" data-toggle="collapse">IsStreamOwner</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_IsStreamOwner" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a flag indicating ownership of underlying stream.
+When the flag is true <see cref="!:Stream.Dispose()"></see> will close the underlying stream also.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStreamOwner { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_IsStreamOwner_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is true.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Length_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Length*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Length" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Length"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Length" class="expander" data-toggle="collapse">Length</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Length" class="collapse in">
+  <div class="markdown level1 summary"><p>Get current length of stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long Length { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Password_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Password*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Password" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Password"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Password" class="expander" data-toggle="collapse">Password</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Password" class="collapse in">
+  <div class="markdown level1 summary"><p>Get/set the password used for encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Password { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Password_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When set to null or if the password is empty no encryption is performed</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Position_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Position*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Position" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Position"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Position" class="expander" data-toggle="collapse">Position</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Position" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the current position within the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long Position { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotSupportedException</span>
+        <p><p>Any attempt to set position</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Deflate_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Deflate*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Deflate" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Deflate"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Deflate" class="expander" data-toggle="collapse">Deflate()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Deflate" class="collapse in">
+  <div class="markdown level1 summary"><p>Deflates everything in the input buffers.  This will call</p>
+<pre><code>def.deflate()</code></pre> until all bytes from the input buffers
+<p>are processed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Deflate()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Dispose_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Dispose*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Dispose_System_Boolean_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Dispose(System.Boolean)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Dispose_System_Boolean_" class="expander" data-toggle="collapse">Dispose(Boolean)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Dispose_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calls <a class="xref" href="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.html#OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Finish">Finish()</a> and closes the underlying
+stream when <a class="xref" href="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.html#OsmSharp_IO_Zip_Streams_DeflaterOutputStream_IsStreamOwner">IsStreamOwner</a> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">disposing</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Finish_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Finish*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Finish" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Finish"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Finish" class="expander" data-toggle="collapse">Finish()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Finish" class="collapse in">
+  <div class="markdown level1 summary"><p>Finishes the stream by calling finish() on the deflater. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Finish()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Flush_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Flush*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Flush" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Flush"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Flush" class="expander" data-toggle="collapse">Flush()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Flush" class="collapse in">
+  <div class="markdown level1 summary"><p>Flushes the stream by calling <a class="xref" href="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.html#OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Flush">Flush()</a> on the deflater and then
+on the underlying stream.  This ensures that all bytes are flushed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Flush()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Read_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Read*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Read_System_Byte___System_Int32_System_Int32_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Read(System.Byte[],System.Int32,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Read_System_Byte___System_Int32_System_Int32_" class="expander" data-toggle="collapse">Read(Byte[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Read_System_Byte___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Read a block of bytes from stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Read(byte[] buffer, int offset, int count)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">buffer</span>
+        <p><p>The buffer to store read data in.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset to start storing at.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">count</span>
+        <p><p>The maximum number of bytes to read.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The actual number of bytes read.  Zero if end of stream is detected.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotSupportedException</span>
+        <p><p>Any access</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_ReadByte_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.ReadByte*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_ReadByte" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.ReadByte"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_ReadByte" class="expander" data-toggle="collapse">ReadByte()</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_ReadByte" class="collapse in">
+  <div class="markdown level1 summary"><p>Read a byte from stream advancing position by one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ReadByte()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The byte read cast to an int.  THe value is -1 if at the end of the stream.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotSupportedException</span>
+        <p><p>Any access</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Seek_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Seek*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Seek_System_Int64_SeekOrigin_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Seek(System.Int64,SeekOrigin)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Seek_System_Int64_SeekOrigin_" class="expander" data-toggle="collapse">Seek(Int64, SeekOrigin)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Seek_System_Int64_SeekOrigin_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the current position of this stream to the given value. Not supported by this class!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long Seek(long offset, SeekOrigin origin)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset relative to the <code data-dev-comment-type="paramref" class="paramref">origin</code> to seek.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">SeekOrigin</span></span>
+        <span class="parametername">origin</span>
+        <p><p>The <see cref="!:SeekOrigin"></see> to seek from.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int64</span>
+        <p><p>The new position in the stream.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotSupportedException</span>
+        <p><p>Any access</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_SetLength_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.SetLength*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_SetLength_System_Int64_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.SetLength(System.Int64)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_SetLength_System_Int64_" class="expander" data-toggle="collapse">SetLength(Int64)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_SetLength_System_Int64_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the length of this stream to the given value. Not supported by this class!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetLength(long value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int64</span></span>
+        <span class="parametername">value</span>
+        <p><p>The new stream length.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.NotSupportedException</span>
+        <p><p>Any access</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Write_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Write*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Write_System_Byte___System_Int32_System_Int32_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.Write(System.Byte[],System.Int32,System.Int32)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Write_System_Byte___System_Int32_System_Int32_" class="expander" data-toggle="collapse">Write(Byte[], Int32, Int32)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_Write_System_Byte___System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes bytes from an array to the compressed stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Write(byte[] buffer, int offset, int count)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span>[]</span>
+        <span class="parametername">buffer</span>
+        <p><p>The byte array</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset into the byte array where to start.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">count</span>
+        <p><p>The number of bytes to write.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_WriteByte_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.WriteByte*"></a>
+  
+  <h4 id="OsmSharp_IO_Zip_Streams_DeflaterOutputStream_WriteByte_System_Byte_" data-uid="OsmSharp.IO.Zip.Streams.DeflaterOutputStream.WriteByte(System.Byte)"><a href="#collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_WriteByte_System_Byte_" class="expander" data-toggle="collapse">WriteByte(Byte)</a></h4>
+  
+  <div id="collapsible-OsmSharp_IO_Zip_Streams_DeflaterOutputStream_WriteByte_System_Byte_" class="collapse in">
+  <div class="markdown level1 summary"><p>Writes a single byte to the compressed output stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteByte(byte value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Byte</span></span>
+        <span class="parametername">value</span>
+        <p><p>The byte value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

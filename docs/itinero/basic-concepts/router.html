@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Router | Itinero - Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Router | Itinero - Documentation ">
+    <meta name="generator" content="docfx 2.27.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="router">
+<h1 id="router">Router</h1>
+
+<p>The router class is where all the magic happens. Once you have a <a class="xref" href="routerdb.html">RouterDb</a> setup, you can create a router. The router class functions as a façade for most if not all routing requests.</p>
+<p>An overview of available features:</p>
+<ul>
+<li>Resolving: <em>Snapping</em> locations to the network.</li>
+<li>Routing: Calculating one, multiple routes or a matrix of routes.</li>
+<li>Weight Matrices: Calculating weight matrices between a collection of locations.</li>
+<li>Connectivity checks: Check if a <a class="xref" href="routerpoint.html">RouterPoint</a> is connected to the rest of the network.</li>
+</ul>
+<p>The router is setup with the following priorities in mind:</p>
+<ul>
+<li>Correctness: A route has to be correct as requested.</li>
+<li>Performance: Performance is the next primary choice.</li>
+</ul>
+<h4 id="result-object">Result object</h4>
+<p>Each method has two counterparts, one that returns the result in a <a class="xref" href="../../../itinero/Itinero.Result-1.html">Result&lt;T&gt;</a> object and one that doesn&#39;t:</p>
+<ul>
+<li>Calculate: As expected just returns the route or routes that have been calculated. </li>
+<li>TryCalculate: Also returns the route or routes that have been calculated but in a <a class="xref" href="../../../itinero/Itinero.Result-1.html">Result&lt;T&gt;</a> object. When, for whatever reason, calculation fails, route is not found or resolving fails, the result object just contains the error message.</li>
+</ul>
+<p>We do this because exceptions are bad for performance, if you are in a high-performance environment, consider using the TryCalculation methods and checking the result object.</p>
+<h3 id="resolving">Resolving</h3>
+<p>One of the most important functions of the router is the option to <em>resolve</em> points. Read more about this in the <a class="xref" href="routerpoint.html">RouterPoint</a> section.</p>
+<p><code>RouterPoint Resolve(Profile profile, float latitude, float longitude)</code></p>
+<ul>
+<li><em>profile</em>: The <a class="xref" href="profiles/index.html">Profile</a>, defines the vehicle to resolve for.</li>
+<li><em>latitude</em>,<em>longitude</em>: Defines the location to resolve.</li>
+</ul>
+<p>There are several more overloads and functions to resolve multiple locations at the same time. Check the API documentation for the <a class="xref" href="../../../itinero/Itinero.Router.html">Router</a> object and the extension methods in <a class="xref" href="../../../itinero/Itinero.RouterBaseExtensions.html">RouterBaseExtensions</a>.</p>
+<h3 id="routing">Routing</h3>
+<p>The most basic function of the router is to calculate routes:</p>
+<p><code>Route Calculate(Profile profile, float sourceLatitude, float sourceLongitude, float targetLatitude, float targetLongitude)</code></p>
+<ul>
+<li><em>profile</em>: The <a class="xref" href="profiles/index.html">Profile</a>, defines the vehicle&#39;s behavour to calculate a route for.</li>
+<li><em>latitude</em>,<em>longitude</em>: Defines the source and target location of this route.</li>
+</ul>
+<p>There are several more overloads, to calculate multiple routes at the same time or to calculate matrices of routes. Check the API documentation for the <a class="xref" href="../../../itinero/Itinero.Router.html">Router</a> object and the extension methods in <a class="xref" href="../../../itinero/Itinero.RouterBaseExtensions.html">RouterBaseExtensions</a>.</p>
+<h3 id="weight-matrices">Weight Matrices</h3>
+<p>The most basic function of the router is to calculate routes:</p>
+<p><code>float[][] CalculateWeight(IProfileInstance profile, RouterPoint[] locations, ISet&lt;int&gt; invalids)</code></p>
+<ul>
+<li><em>profile</em>: The <a class="xref" href="profiles/index.html">Profile</a>, defines the vehicle&#39;s behavour to calculate a route for.</li>
+<li><em>locations</em>: The locations to calculate the matrix for.</li>
+<li><em>invalids</em>: The set of invalid locations, some may not be routable.</li>
+</ul>
+<p>There are several more overloads. Check the API documentation for the <a class="xref" href="../../../itinero/Itinero.Router.html">Router</a> object and the extension methods in <a class="xref" href="../../../itinero/Itinero.RouterBaseExtensions.html">RouterBaseExtensions</a>.</p>
+<h3 id="check-connectivity">Check Connectivity</h3>
+<p>Checks connectivity of the given router point:</p>
+<p><code>bool CheckConnectivity(IProfileInstance profile, RouterPoint point, float radiusInMeters)</code></p>
+<ul>
+<li><em>profile</em>: The <a class="xref" href="profiles/index.html">Profile</a>, defines the vehicle&#39;s behavour to calculate a route for.</li>
+<li><em>point</em>: The point to check for.</li>
+<li><em>radiusInMeters</em>: The radius in meter to check.</li>
+</ul>
+<p>There are several more overloads. Check the API documentation for the <a class="xref" href="../../../itinero/Itinero.Router.html">Router</a> object and the extension methods in <a class="xref" href="../../../itinero/Itinero.RouterBaseExtensions.html">RouterBaseExtensions</a>.</p>
+<h2 id="what-to-read-next">What to read next?</h2>
+<p>If you followed the <em>what to read next</em> sections you pretty much covered all the most important concepts. Interesting could be the information about the <a class="xref" href="route.html">Route</a> concept.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Built by Itinero, MIT licensed.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
