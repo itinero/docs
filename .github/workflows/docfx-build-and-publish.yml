@@ -16,6 +16,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - uses: actions/checkout@v2
+        with:
+          name: itinero/docfx-tmpl 
+          ref: refs/heads/master
+
       - name: Setup DocFX
         uses: crazy-max/ghaction-chocolatey@v1
         with:
